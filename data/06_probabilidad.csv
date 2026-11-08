@@ -1,0 +1,2001 @@
+macrozona,minutos,sci_name,common_name,salidas_con,salidas,probabilidad
+Austral,15,Daptrius chimango,Chimango Caracara,15858,39594,0.4005
+Austral,15,Vanellus chilensis,Southern Lapwing,15019,39594,0.3793
+Austral,15,Larus dominicanus,Kelp Gull,11719,39594,0.296
+Austral,15,Theristicus melanopis,Black-faced Ibis,11334,39594,0.2863
+Austral,15,Turdus falcklandii,Austral Thrush,10317,39594,0.2606
+Austral,15,Passer domesticus,House Sparrow,9411,39594,0.2377
+Austral,15,Zonotrichia capensis,Rufous-collared Sparrow,7930,39594,0.2003
+Austral,15,Tachycineta leucopyga,Chilean Swallow,7436,39594,0.1878
+Austral,15,Sephanoides sephaniodes,Green-backed Firecrown,7395,39594,0.1868
+Austral,15,Coragyps atratus,Black Vulture,6730,39594,0.17
+Austral,15,Chroicocephalus maculipennis,Brown-hooded Gull,6611,39594,0.167
+Austral,15,Troglodytes musculus,Southern House Wren,5852,39594,0.1478
+Austral,15,Elaenia albiceps,White-crested Elaenia,5249,39594,0.1326
+Austral,15,Nannopterum brasilianum,Neotropic Cormorant,5141,39594,0.1298
+Austral,15,Cinclodes patagonicus,Dark-bellied Cinclodes,4264,39594,0.1077
+Austral,15,Chloephaga picta,Upland Goose,4122,39594,0.1041
+Austral,15,Spinus barbatus,Black-chinned Siskin,4027,39594,0.1017
+Austral,15,Pyrope pyrope,Fire-eyed Diucon,3953,39594,0.0998
+Austral,15,Columba livia,Rock Pigeon,3877,39594,0.0979
+Austral,15,Leucocarbo atriceps,Imperial Cormorant,3858,39594,0.0974
+Austral,15,Leistes loyca,Long-tailed Meadowlark,3757,39594,0.0949
+Austral,15,Phrygilus patagonicus,Patagonian Sierra Finch,3625,39594,0.0916
+Austral,15,Caracara plancus,Crested Caracara,3545,39594,0.0895
+Austral,15,Sicalis luteola,Grassland Yellow-Finch,3298,39594,0.0833
+Austral,15,Curaeus curaeus,Austral Blackbird,3174,39594,0.0802
+Austral,30,Daptrius chimango,Chimango Caracara,12742,27348,0.4659
+Austral,30,Vanellus chilensis,Southern Lapwing,12304,27348,0.4499
+Austral,30,Larus dominicanus,Kelp Gull,10697,27348,0.3911
+Austral,30,Theristicus melanopis,Black-faced Ibis,9205,27348,0.3366
+Austral,30,Turdus falcklandii,Austral Thrush,7885,27348,0.2883
+Austral,30,Zonotrichia capensis,Rufous-collared Sparrow,6802,27348,0.2487
+Austral,30,Chroicocephalus maculipennis,Brown-hooded Gull,6600,27348,0.2413
+Austral,30,Tachycineta leucopyga,Chilean Swallow,6498,27348,0.2376
+Austral,30,Coragyps atratus,Black Vulture,6370,27348,0.2329
+Austral,30,Passer domesticus,House Sparrow,6044,27348,0.221
+Austral,30,Sephanoides sephaniodes,Green-backed Firecrown,5444,27348,0.1991
+Austral,30,Nannopterum brasilianum,Neotropic Cormorant,5330,27348,0.1949
+Austral,30,Troglodytes musculus,Southern House Wren,5324,27348,0.1947
+Austral,30,Elaenia albiceps,White-crested Elaenia,4484,27348,0.164
+Austral,30,Leucocarbo atriceps,Imperial Cormorant,4347,27348,0.159
+Austral,30,Cinclodes patagonicus,Dark-bellied Cinclodes,4180,27348,0.1528
+Austral,30,Spinus barbatus,Black-chinned Siskin,3950,27348,0.1444
+Austral,30,Leistes loyca,Long-tailed Meadowlark,3791,27348,0.1386
+Austral,30,Anas flavirostris,Yellow-billed Teal,3719,27348,0.136
+Austral,30,Chloephaga picta,Upland Goose,3380,27348,0.1236
+Austral,30,Anairetes parulus,Tufted Tit-Tyrant,3350,27348,0.1225
+Austral,30,Caracara plancus,Crested Caracara,3301,27348,0.1207
+Austral,30,Anas georgica,Yellow-billed Pintail,3285,27348,0.1201
+Austral,30,Pyrope pyrope,Fire-eyed Diucon,3282,27348,0.12
+Austral,30,Sicalis luteola,Grassland Yellow-Finch,3206,27348,0.1172
+Austral,45,Daptrius chimango,Chimango Caracara,6690,13147,0.5089
+Austral,45,Vanellus chilensis,Southern Lapwing,6341,13147,0.4823
+Austral,45,Larus dominicanus,Kelp Gull,5616,13147,0.4272
+Austral,45,Theristicus melanopis,Black-faced Ibis,4971,13147,0.3781
+Austral,45,Turdus falcklandii,Austral Thrush,4496,13147,0.342
+Austral,45,Zonotrichia capensis,Rufous-collared Sparrow,3978,13147,0.3026
+Austral,45,Tachycineta leucopyga,Chilean Swallow,3739,13147,0.2844
+Austral,45,Coragyps atratus,Black Vulture,3647,13147,0.2774
+Austral,45,Chroicocephalus maculipennis,Brown-hooded Gull,3271,13147,0.2488
+Austral,45,Troglodytes musculus,Southern House Wren,3230,13147,0.2457
+Austral,45,Sephanoides sephaniodes,Green-backed Firecrown,3010,13147,0.2289
+Austral,45,Nannopterum brasilianum,Neotropic Cormorant,2923,13147,0.2223
+Austral,45,Passer domesticus,House Sparrow,2811,13147,0.2138
+Austral,45,Cinclodes patagonicus,Dark-bellied Cinclodes,2557,13147,0.1945
+Austral,45,Elaenia albiceps,White-crested Elaenia,2508,13147,0.1908
+Austral,45,Spinus barbatus,Black-chinned Siskin,2498,13147,0.19
+Austral,45,Leucocarbo atriceps,Imperial Cormorant,2395,13147,0.1822
+Austral,45,Leistes loyca,Long-tailed Meadowlark,2325,13147,0.1768
+Austral,45,Anairetes parulus,Tufted Tit-Tyrant,2267,13147,0.1724
+Austral,45,Anas flavirostris,Yellow-billed Teal,2227,13147,0.1694
+Austral,45,Caracara plancus,Crested Caracara,2079,13147,0.1581
+Austral,45,Pyrope pyrope,Fire-eyed Diucon,2064,13147,0.157
+Austral,45,Chloephaga picta,Upland Goose,2013,13147,0.1531
+Austral,45,Anas georgica,Yellow-billed Pintail,1999,13147,0.152
+Austral,45,Sicalis luteola,Grassland Yellow-Finch,1861,13147,0.1416
+Austral,60,Daptrius chimango,Chimango Caracara,4740,10168,0.4662
+Austral,60,Vanellus chilensis,Southern Lapwing,4483,10168,0.4409
+Austral,60,Larus dominicanus,Kelp Gull,4357,10168,0.4285
+Austral,60,Turdus falcklandii,Austral Thrush,3634,10168,0.3574
+Austral,60,Theristicus melanopis,Black-faced Ibis,3579,10168,0.352
+Austral,60,Zonotrichia capensis,Rufous-collared Sparrow,3196,10168,0.3143
+Austral,60,Tachycineta leucopyga,Chilean Swallow,2768,10168,0.2722
+Austral,60,Troglodytes musculus,Southern House Wren,2371,10168,0.2332
+Austral,60,Coragyps atratus,Black Vulture,2356,10168,0.2317
+Austral,60,Chroicocephalus maculipennis,Brown-hooded Gull,2335,10168,0.2296
+Austral,60,Nannopterum brasilianum,Neotropic Cormorant,2188,10168,0.2152
+Austral,60,Sephanoides sephaniodes,Green-backed Firecrown,2171,10168,0.2135
+Austral,60,Elaenia albiceps,White-crested Elaenia,2035,10168,0.2001
+Austral,60,Leucocarbo atriceps,Imperial Cormorant,1958,10168,0.1926
+Austral,60,Cinclodes patagonicus,Dark-bellied Cinclodes,1952,10168,0.192
+Austral,60,Chloephaga picta,Upland Goose,1896,10168,0.1865
+Austral,60,Caracara plancus,Crested Caracara,1857,10168,0.1826
+Austral,60,Leistes loyca,Long-tailed Meadowlark,1807,10168,0.1777
+Austral,60,Passer domesticus,House Sparrow,1804,10168,0.1774
+Austral,60,Spinus barbatus,Black-chinned Siskin,1753,10168,0.1724
+Austral,60,Pyrope pyrope,Fire-eyed Diucon,1739,10168,0.171
+Austral,60,Anas georgica,Yellow-billed Pintail,1692,10168,0.1664
+Austral,60,Anas flavirostris,Yellow-billed Teal,1679,10168,0.1651
+Austral,60,Anairetes parulus,Tufted Tit-Tyrant,1676,10168,0.1648
+Austral,60,Phrygilus patagonicus,Patagonian Sierra Finch,1652,10168,0.1625
+Austral,75,Daptrius chimango,Chimango Caracara,2532,5047,0.5017
+Austral,75,Vanellus chilensis,Southern Lapwing,2358,5047,0.4672
+Austral,75,Larus dominicanus,Kelp Gull,2278,5047,0.4514
+Austral,75,Turdus falcklandii,Austral Thrush,2101,5047,0.4163
+Austral,75,Theristicus melanopis,Black-faced Ibis,2033,5047,0.4028
+Austral,75,Zonotrichia capensis,Rufous-collared Sparrow,1817,5047,0.36
+Austral,75,Tachycineta leucopyga,Chilean Swallow,1535,5047,0.3041
+Austral,75,Troglodytes musculus,Southern House Wren,1381,5047,0.2736
+Austral,75,Coragyps atratus,Black Vulture,1362,5047,0.2699
+Austral,75,Elaenia albiceps,White-crested Elaenia,1171,5047,0.232
+Austral,75,Chroicocephalus maculipennis,Brown-hooded Gull,1133,5047,0.2245
+Austral,75,Caracara plancus,Crested Caracara,1114,5047,0.2207
+Austral,75,Sephanoides sephaniodes,Green-backed Firecrown,1112,5047,0.2203
+Austral,75,Leistes loyca,Long-tailed Meadowlark,1111,5047,0.2201
+Austral,75,Nannopterum brasilianum,Neotropic Cormorant,1104,5047,0.2187
+Austral,75,Chloephaga picta,Upland Goose,1061,5047,0.2102
+Austral,75,Spinus barbatus,Black-chinned Siskin,1057,5047,0.2094
+Austral,75,Leucocarbo atriceps,Imperial Cormorant,1034,5047,0.2049
+Austral,75,Cinclodes patagonicus,Dark-bellied Cinclodes,1028,5047,0.2037
+Austral,75,Pyrope pyrope,Fire-eyed Diucon,1018,5047,0.2017
+Austral,75,Anairetes parulus,Tufted Tit-Tyrant,984,5047,0.195
+Austral,75,Aphrastura spinicauda,Thorn-tailed Rayadito,983,5047,0.1948
+Austral,75,Phrygilus patagonicus,Patagonian Sierra Finch,966,5047,0.1914
+Austral,75,Passer domesticus,House Sparrow,950,5047,0.1882
+Austral,75,Anas flavirostris,Yellow-billed Teal,929,5047,0.1841
+Austral,90,Daptrius chimango,Chimango Caracara,1965,3846,0.5109
+Austral,90,Vanellus chilensis,Southern Lapwing,1834,3846,0.4769
+Austral,90,Larus dominicanus,Kelp Gull,1772,3846,0.4607
+Austral,90,Turdus falcklandii,Austral Thrush,1736,3846,0.4514
+Austral,90,Zonotrichia capensis,Rufous-collared Sparrow,1513,3846,0.3934
+Austral,90,Theristicus melanopis,Black-faced Ibis,1498,3846,0.3895
+Austral,90,Tachycineta leucopyga,Chilean Swallow,1248,3846,0.3245
+Austral,90,Troglodytes musculus,Southern House Wren,1129,3846,0.2936
+Austral,90,Coragyps atratus,Black Vulture,1022,3846,0.2657
+Austral,90,Elaenia albiceps,White-crested Elaenia,964,3846,0.2507
+Austral,90,Chloephaga picta,Upland Goose,933,3846,0.2426
+Austral,90,Sephanoides sephaniodes,Green-backed Firecrown,921,3846,0.2395
+Austral,90,Chroicocephalus maculipennis,Brown-hooded Gull,921,3846,0.2395
+Austral,90,Nannopterum brasilianum,Neotropic Cormorant,909,3846,0.2363
+Austral,90,Caracara plancus,Crested Caracara,906,3846,0.2356
+Austral,90,Spinus barbatus,Black-chinned Siskin,866,3846,0.2252
+Austral,90,Aphrastura spinicauda,Thorn-tailed Rayadito,861,3846,0.2239
+Austral,90,Pyrope pyrope,Fire-eyed Diucon,852,3846,0.2215
+Austral,90,Cinclodes patagonicus,Dark-bellied Cinclodes,849,3846,0.2207
+Austral,90,Phrygilus patagonicus,Patagonian Sierra Finch,816,3846,0.2122
+Austral,90,Leucocarbo atriceps,Imperial Cormorant,801,3846,0.2083
+Austral,90,Leistes loyca,Long-tailed Meadowlark,800,3846,0.208
+Austral,90,Curaeus curaeus,Austral Blackbird,756,3846,0.1966
+Austral,90,Anairetes parulus,Tufted Tit-Tyrant,744,3846,0.1934
+Austral,90,Anas flavirostris,Yellow-billed Teal,738,3846,0.1919
+Austral,105,Daptrius chimango,Chimango Caracara,1233,2299,0.5363
+Austral,105,Larus dominicanus,Kelp Gull,1112,2299,0.4837
+Austral,105,Vanellus chilensis,Southern Lapwing,1092,2299,0.475
+Austral,105,Turdus falcklandii,Austral Thrush,1084,2299,0.4715
+Austral,105,Zonotrichia capensis,Rufous-collared Sparrow,964,2299,0.4193
+Austral,105,Theristicus melanopis,Black-faced Ibis,949,2299,0.4128
+Austral,105,Tachycineta leucopyga,Chilean Swallow,801,2299,0.3484
+Austral,105,Troglodytes musculus,Southern House Wren,737,2299,0.3206
+Austral,105,Elaenia albiceps,White-crested Elaenia,634,2299,0.2758
+Austral,105,Caracara plancus,Crested Caracara,614,2299,0.2671
+Austral,105,Coragyps atratus,Black Vulture,596,2299,0.2592
+Austral,105,Aphrastura spinicauda,Thorn-tailed Rayadito,585,2299,0.2545
+Austral,105,Sephanoides sephaniodes,Green-backed Firecrown,573,2299,0.2492
+Austral,105,Spinus barbatus,Black-chinned Siskin,550,2299,0.2392
+Austral,105,Chloephaga picta,Upland Goose,547,2299,0.2379
+Austral,105,Chroicocephalus maculipennis,Brown-hooded Gull,546,2299,0.2375
+Austral,105,Nannopterum brasilianum,Neotropic Cormorant,532,2299,0.2314
+Austral,105,Phrygilus patagonicus,Patagonian Sierra Finch,527,2299,0.2292
+Austral,105,Pyrope pyrope,Fire-eyed Diucon,520,2299,0.2262
+Austral,105,Leistes loyca,Long-tailed Meadowlark,510,2299,0.2218
+Austral,105,Cinclodes patagonicus,Dark-bellied Cinclodes,501,2299,0.2179
+Austral,105,Anairetes parulus,Tufted Tit-Tyrant,498,2299,0.2166
+Austral,105,Leucocarbo atriceps,Imperial Cormorant,494,2299,0.2149
+Austral,105,Curaeus curaeus,Austral Blackbird,460,2299,0.2001
+Austral,105,Anas georgica,Yellow-billed Pintail,438,2299,0.1905
+Austral,120,Daptrius chimango,Chimango Caracara,1562,3194,0.489
+Austral,120,Turdus falcklandii,Austral Thrush,1445,3194,0.4524
+Austral,120,Larus dominicanus,Kelp Gull,1430,3194,0.4477
+Austral,120,Vanellus chilensis,Southern Lapwing,1384,3194,0.4333
+Austral,120,Zonotrichia capensis,Rufous-collared Sparrow,1205,3194,0.3773
+Austral,120,Theristicus melanopis,Black-faced Ibis,1153,3194,0.361
+Austral,120,Tachycineta leucopyga,Chilean Swallow,1073,3194,0.3359
+Austral,120,Troglodytes musculus,Southern House Wren,945,3194,0.2959
+Austral,120,Caracara plancus,Crested Caracara,905,3194,0.2833
+Austral,120,Elaenia albiceps,White-crested Elaenia,836,3194,0.2617
+Austral,120,Chloephaga picta,Upland Goose,772,3194,0.2417
+Austral,120,Aphrastura spinicauda,Thorn-tailed Rayadito,769,3194,0.2408
+Austral,120,Chroicocephalus maculipennis,Brown-hooded Gull,755,3194,0.2364
+Austral,120,Pyrope pyrope,Fire-eyed Diucon,745,3194,0.2332
+Austral,120,Nannopterum brasilianum,Neotropic Cormorant,736,3194,0.2304
+Austral,120,Coragyps atratus,Black Vulture,716,3194,0.2242
+Austral,120,Leucocarbo atriceps,Imperial Cormorant,713,3194,0.2232
+Austral,120,Sephanoides sephaniodes,Green-backed Firecrown,704,3194,0.2204
+Austral,120,Phrygilus patagonicus,Patagonian Sierra Finch,699,3194,0.2188
+Austral,120,Spinus barbatus,Black-chinned Siskin,688,3194,0.2154
+Austral,120,Leistes loyca,Long-tailed Meadowlark,664,3194,0.2079
+Austral,120,Cinclodes patagonicus,Dark-bellied Cinclodes,650,3194,0.2035
+Austral,120,Curaeus curaeus,Austral Blackbird,637,3194,0.1994
+Austral,120,Anas georgica,Yellow-billed Pintail,596,3194,0.1866
+Austral,120,Scelorchilus rubecula,Chucao Tapaculo,586,3194,0.1835
+Austral,135,Daptrius chimango,Chimango Caracara,763,1365,0.559
+Austral,135,Turdus falcklandii,Austral Thrush,716,1365,0.5245
+Austral,135,Larus dominicanus,Kelp Gull,667,1365,0.4886
+Austral,135,Vanellus chilensis,Southern Lapwing,628,1365,0.4601
+Austral,135,Theristicus melanopis,Black-faced Ibis,587,1365,0.43
+Austral,135,Zonotrichia capensis,Rufous-collared Sparrow,584,1365,0.4278
+Austral,135,Tachycineta leucopyga,Chilean Swallow,533,1365,0.3905
+Austral,135,Troglodytes musculus,Southern House Wren,477,1365,0.3495
+Austral,135,Elaenia albiceps,White-crested Elaenia,447,1365,0.3275
+Austral,135,Aphrastura spinicauda,Thorn-tailed Rayadito,447,1365,0.3275
+Austral,135,Caracara plancus,Crested Caracara,405,1365,0.2967
+Austral,135,Phrygilus patagonicus,Patagonian Sierra Finch,384,1365,0.2813
+Austral,135,Sephanoides sephaniodes,Green-backed Firecrown,378,1365,0.2769
+Austral,135,Pyrope pyrope,Fire-eyed Diucon,367,1365,0.2689
+Austral,135,Coragyps atratus,Black Vulture,364,1365,0.2667
+Austral,135,Chloephaga picta,Upland Goose,361,1365,0.2645
+Austral,135,Spinus barbatus,Black-chinned Siskin,347,1365,0.2542
+Austral,135,Leucocarbo atriceps,Imperial Cormorant,341,1365,0.2498
+Austral,135,Curaeus curaeus,Austral Blackbird,340,1365,0.2491
+Austral,135,Nannopterum brasilianum,Neotropic Cormorant,337,1365,0.2469
+Austral,135,Chroicocephalus maculipennis,Brown-hooded Gull,331,1365,0.2425
+Austral,135,Leistes loyca,Long-tailed Meadowlark,331,1365,0.2425
+Austral,135,Cinclodes patagonicus,Dark-bellied Cinclodes,325,1365,0.2381
+Austral,135,Scelorchilus rubecula,Chucao Tapaculo,313,1365,0.2293
+Austral,135,Anairetes parulus,Tufted Tit-Tyrant,311,1365,0.2278
+Austral,150,Turdus falcklandii,Austral Thrush,670,1246,0.5377
+Austral,150,Daptrius chimango,Chimango Caracara,667,1246,0.5353
+Austral,150,Larus dominicanus,Kelp Gull,596,1246,0.4783
+Austral,150,Vanellus chilensis,Southern Lapwing,557,1246,0.447
+Austral,150,Zonotrichia capensis,Rufous-collared Sparrow,539,1246,0.4326
+Austral,150,Theristicus melanopis,Black-faced Ibis,527,1246,0.423
+Austral,150,Tachycineta leucopyga,Chilean Swallow,446,1246,0.3579
+Austral,150,Aphrastura spinicauda,Thorn-tailed Rayadito,417,1246,0.3347
+Austral,150,Elaenia albiceps,White-crested Elaenia,411,1246,0.3299
+Austral,150,Troglodytes musculus,Southern House Wren,409,1246,0.3283
+Austral,150,Caracara plancus,Crested Caracara,388,1246,0.3114
+Austral,150,Phrygilus patagonicus,Patagonian Sierra Finch,373,1246,0.2994
+Austral,150,Chloephaga picta,Upland Goose,349,1246,0.2801
+Austral,150,Pyrope pyrope,Fire-eyed Diucon,341,1246,0.2737
+Austral,150,Leucocarbo atriceps,Imperial Cormorant,335,1246,0.2689
+Austral,150,Sephanoides sephaniodes,Green-backed Firecrown,332,1246,0.2665
+Austral,150,Spinus barbatus,Black-chinned Siskin,330,1246,0.2648
+Austral,150,Curaeus curaeus,Austral Blackbird,308,1246,0.2472
+Austral,150,Leistes loyca,Long-tailed Meadowlark,303,1246,0.2432
+Austral,150,Anairetes parulus,Tufted Tit-Tyrant,301,1246,0.2416
+Austral,150,Coragyps atratus,Black Vulture,295,1246,0.2368
+Austral,150,Nannopterum brasilianum,Neotropic Cormorant,287,1246,0.2303
+Austral,150,Scelorchilus rubecula,Chucao Tapaculo,286,1246,0.2295
+Austral,150,Chroicocephalus maculipennis,Brown-hooded Gull,275,1246,0.2207
+Austral,150,Cinclodes patagonicus,Dark-bellied Cinclodes,258,1246,0.2071
+Austral,165,Turdus falcklandii,Austral Thrush,416,764,0.5445
+Austral,165,Daptrius chimango,Chimango Caracara,413,764,0.5406
+Austral,165,Larus dominicanus,Kelp Gull,361,764,0.4725
+Austral,165,Vanellus chilensis,Southern Lapwing,353,764,0.462
+Austral,165,Zonotrichia capensis,Rufous-collared Sparrow,349,764,0.4568
+Austral,165,Theristicus melanopis,Black-faced Ibis,334,764,0.4372
+Austral,165,Tachycineta leucopyga,Chilean Swallow,306,764,0.4005
+Austral,165,Aphrastura spinicauda,Thorn-tailed Rayadito,275,764,0.3599
+Austral,165,Troglodytes musculus,Southern House Wren,274,764,0.3586
+Austral,165,Elaenia albiceps,White-crested Elaenia,261,764,0.3416
+Austral,165,Phrygilus patagonicus,Patagonian Sierra Finch,258,764,0.3377
+Austral,165,Caracara plancus,Crested Caracara,248,764,0.3246
+Austral,165,Spinus barbatus,Black-chinned Siskin,227,764,0.2971
+Austral,165,Curaeus curaeus,Austral Blackbird,223,764,0.2919
+Austral,165,Chloephaga picta,Upland Goose,215,764,0.2814
+Austral,165,Pyrope pyrope,Fire-eyed Diucon,211,764,0.2762
+Austral,165,Anairetes parulus,Tufted Tit-Tyrant,183,764,0.2395
+Austral,165,Sephanoides sephaniodes,Green-backed Firecrown,181,764,0.2369
+Austral,165,Leistes loyca,Long-tailed Meadowlark,179,764,0.2343
+Austral,165,Leucocarbo atriceps,Imperial Cormorant,179,764,0.2343
+Austral,165,Coragyps atratus,Black Vulture,174,764,0.2277
+Austral,165,Chroicocephalus maculipennis,Brown-hooded Gull,170,764,0.2225
+Austral,165,Passer domesticus,House Sparrow,170,764,0.2225
+Austral,165,Nannopterum brasilianum,Neotropic Cormorant,167,764,0.2186
+Austral,165,Scelorchilus rubecula,Chucao Tapaculo,165,764,0.216
+Austral,180,Turdus falcklandii,Austral Thrush,674,1330,0.5068
+Austral,180,Daptrius chimango,Chimango Caracara,667,1330,0.5015
+Austral,180,Zonotrichia capensis,Rufous-collared Sparrow,573,1330,0.4308
+Austral,180,Larus dominicanus,Kelp Gull,536,1330,0.403
+Austral,180,Vanellus chilensis,Southern Lapwing,519,1330,0.3902
+Austral,180,Theristicus melanopis,Black-faced Ibis,488,1330,0.3669
+Austral,180,Tachycineta leucopyga,Chilean Swallow,447,1330,0.3361
+Austral,180,Caracara plancus,Crested Caracara,446,1330,0.3353
+Austral,180,Troglodytes musculus,Southern House Wren,438,1330,0.3293
+Austral,180,Aphrastura spinicauda,Thorn-tailed Rayadito,433,1330,0.3256
+Austral,180,Elaenia albiceps,White-crested Elaenia,405,1330,0.3045
+Austral,180,Phrygilus patagonicus,Patagonian Sierra Finch,386,1330,0.2902
+Austral,180,Pyrope pyrope,Fire-eyed Diucon,363,1330,0.2729
+Austral,180,Chloephaga picta,Upland Goose,359,1330,0.2699
+Austral,180,Sephanoides sephaniodes,Green-backed Firecrown,328,1330,0.2466
+Austral,180,Leucocarbo atriceps,Imperial Cormorant,323,1330,0.2429
+Austral,180,Curaeus curaeus,Austral Blackbird,322,1330,0.2421
+Austral,180,Spinus barbatus,Black-chinned Siskin,316,1330,0.2376
+Austral,180,Nannopterum brasilianum,Neotropic Cormorant,305,1330,0.2293
+Austral,180,Leistes loyca,Long-tailed Meadowlark,299,1330,0.2248
+Austral,180,Scelorchilus rubecula,Chucao Tapaculo,286,1330,0.215
+Austral,180,Cinclodes patagonicus,Dark-bellied Cinclodes,280,1330,0.2105
+Austral,180,Coragyps atratus,Black Vulture,256,1330,0.1925
+Austral,180,Anairetes parulus,Tufted Tit-Tyrant,252,1330,0.1895
+Austral,180,Chroicocephalus maculipennis,Brown-hooded Gull,252,1330,0.1895
+Austral,195,Turdus falcklandii,Austral Thrush,296,475,0.6232
+Austral,195,Daptrius chimango,Chimango Caracara,262,475,0.5516
+Austral,195,Zonotrichia capensis,Rufous-collared Sparrow,236,475,0.4968
+Austral,195,Vanellus chilensis,Southern Lapwing,225,475,0.4737
+Austral,195,Larus dominicanus,Kelp Gull,207,475,0.4358
+Austral,195,Theristicus melanopis,Black-faced Ibis,202,475,0.4253
+Austral,195,Troglodytes musculus,Southern House Wren,200,475,0.4211
+Austral,195,Tachycineta leucopyga,Chilean Swallow,196,475,0.4126
+Austral,195,Aphrastura spinicauda,Thorn-tailed Rayadito,189,475,0.3979
+Austral,195,Elaenia albiceps,White-crested Elaenia,186,475,0.3916
+Austral,195,Phrygilus patagonicus,Patagonian Sierra Finch,174,475,0.3663
+Austral,195,Spinus barbatus,Black-chinned Siskin,154,475,0.3242
+Austral,195,Caracara plancus,Crested Caracara,149,475,0.3137
+Austral,195,Curaeus curaeus,Austral Blackbird,141,475,0.2968
+Austral,195,Pyrope pyrope,Fire-eyed Diucon,138,475,0.2905
+Austral,195,Scelorchilus rubecula,Chucao Tapaculo,133,475,0.28
+Austral,195,Sephanoides sephaniodes,Green-backed Firecrown,132,475,0.2779
+Austral,195,Chloephaga picta,Upland Goose,130,475,0.2737
+Austral,195,Leucocarbo atriceps,Imperial Cormorant,126,475,0.2653
+Austral,195,Leistes loyca,Long-tailed Meadowlark,122,475,0.2568
+Austral,195,Anairetes parulus,Tufted Tit-Tyrant,121,475,0.2547
+Austral,195,Cinclodes patagonicus,Dark-bellied Cinclodes,111,475,0.2337
+Austral,195,Coragyps atratus,Black Vulture,104,475,0.2189
+Austral,195,Nannopterum brasilianum,Neotropic Cormorant,103,475,0.2168
+Austral,195,Passer domesticus,House Sparrow,98,475,0.2063
+Austral,210,Turdus falcklandii,Austral Thrush,286,511,0.5597
+Austral,210,Daptrius chimango,Chimango Caracara,279,511,0.546
+Austral,210,Vanellus chilensis,Southern Lapwing,226,511,0.4423
+Austral,210,Zonotrichia capensis,Rufous-collared Sparrow,225,511,0.4403
+Austral,210,Theristicus melanopis,Black-faced Ibis,219,511,0.4286
+Austral,210,Larus dominicanus,Kelp Gull,207,511,0.4051
+Austral,210,Tachycineta leucopyga,Chilean Swallow,197,511,0.3855
+Austral,210,Troglodytes musculus,Southern House Wren,195,511,0.3816
+Austral,210,Aphrastura spinicauda,Thorn-tailed Rayadito,194,511,0.3796
+Austral,210,Elaenia albiceps,White-crested Elaenia,184,511,0.3601
+Austral,210,Phrygilus patagonicus,Patagonian Sierra Finch,170,511,0.3327
+Austral,210,Pyrope pyrope,Fire-eyed Diucon,161,511,0.3151
+Austral,210,Caracara plancus,Crested Caracara,160,511,0.3131
+Austral,210,Sephanoides sephaniodes,Green-backed Firecrown,147,511,0.2877
+Austral,210,Chloephaga picta,Upland Goose,146,511,0.2857
+Austral,210,Curaeus curaeus,Austral Blackbird,145,511,0.2838
+Austral,210,Spinus barbatus,Black-chinned Siskin,144,511,0.2818
+Austral,210,Leistes loyca,Long-tailed Meadowlark,132,511,0.2583
+Austral,210,Scelorchilus rubecula,Chucao Tapaculo,125,511,0.2446
+Austral,210,Leucocarbo atriceps,Imperial Cormorant,124,511,0.2427
+Austral,210,Cinclodes patagonicus,Dark-bellied Cinclodes,123,511,0.2407
+Austral,210,Anairetes parulus,Tufted Tit-Tyrant,120,511,0.2348
+Austral,210,Nannopterum brasilianum,Neotropic Cormorant,113,511,0.2211
+Austral,210,Coragyps atratus,Black Vulture,107,511,0.2094
+Austral,210,Passer domesticus,House Sparrow,99,511,0.1937
+Austral,225,Turdus falcklandii,Austral Thrush,187,297,0.6296
+Austral,225,Daptrius chimango,Chimango Caracara,162,297,0.5455
+Austral,225,Zonotrichia capensis,Rufous-collared Sparrow,153,297,0.5152
+Austral,225,Vanellus chilensis,Southern Lapwing,133,297,0.4478
+Austral,225,Theristicus melanopis,Black-faced Ibis,127,297,0.4276
+Austral,225,Elaenia albiceps,White-crested Elaenia,124,297,0.4175
+Austral,225,Larus dominicanus,Kelp Gull,123,297,0.4141
+Austral,225,Troglodytes musculus,Southern House Wren,123,297,0.4141
+Austral,225,Tachycineta leucopyga,Chilean Swallow,120,297,0.404
+Austral,225,Caracara plancus,Crested Caracara,114,297,0.3838
+Austral,225,Phrygilus patagonicus,Patagonian Sierra Finch,113,297,0.3805
+Austral,225,Aphrastura spinicauda,Thorn-tailed Rayadito,110,297,0.3704
+Austral,225,Chloephaga picta,Upland Goose,93,297,0.3131
+Austral,225,Pyrope pyrope,Fire-eyed Diucon,90,297,0.303
+Austral,225,Spinus barbatus,Black-chinned Siskin,89,297,0.2997
+Austral,225,Curaeus curaeus,Austral Blackbird,86,297,0.2896
+Austral,225,Scelorchilus rubecula,Chucao Tapaculo,85,297,0.2862
+Austral,225,Cinclodes patagonicus,Dark-bellied Cinclodes,82,297,0.2761
+Austral,225,Nannopterum brasilianum,Neotropic Cormorant,80,297,0.2694
+Austral,225,Anairetes parulus,Tufted Tit-Tyrant,78,297,0.2626
+Austral,225,Leistes loyca,Long-tailed Meadowlark,78,297,0.2626
+Austral,225,Chroicocephalus maculipennis,Brown-hooded Gull,69,297,0.2323
+Austral,225,Sephanoides sephaniodes,Green-backed Firecrown,68,297,0.229
+Austral,225,Leucocarbo atriceps,Imperial Cormorant,67,297,0.2256
+Austral,225,Coragyps atratus,Black Vulture,61,297,0.2054
+Austral,240,Daptrius chimango,Chimango Caracara,351,679,0.5169
+Austral,240,Turdus falcklandii,Austral Thrush,345,679,0.5081
+Austral,240,Zonotrichia capensis,Rufous-collared Sparrow,286,679,0.4212
+Austral,240,Vanellus chilensis,Southern Lapwing,274,679,0.4035
+Austral,240,Larus dominicanus,Kelp Gull,273,679,0.4021
+Austral,240,Caracara plancus,Crested Caracara,259,679,0.3814
+Austral,240,Theristicus melanopis,Black-faced Ibis,248,679,0.3652
+Austral,240,Aphrastura spinicauda,Thorn-tailed Rayadito,236,679,0.3476
+Austral,240,Tachycineta leucopyga,Chilean Swallow,227,679,0.3343
+Austral,240,Phrygilus patagonicus,Patagonian Sierra Finch,220,679,0.324
+Austral,240,Troglodytes musculus,Southern House Wren,218,679,0.3211
+Austral,240,Chloephaga picta,Upland Goose,211,679,0.3108
+Austral,240,Elaenia albiceps,White-crested Elaenia,200,679,0.2946
+Austral,240,Pyrope pyrope,Fire-eyed Diucon,193,679,0.2842
+Austral,240,Curaeus curaeus,Austral Blackbird,178,679,0.2622
+Austral,240,Spinus barbatus,Black-chinned Siskin,175,679,0.2577
+Austral,240,Nannopterum brasilianum,Neotropic Cormorant,168,679,0.2474
+Austral,240,Leucocarbo atriceps,Imperial Cormorant,167,679,0.2459
+Austral,240,Leistes loyca,Long-tailed Meadowlark,167,679,0.2459
+Austral,240,Sephanoides sephaniodes,Green-backed Firecrown,154,679,0.2268
+Austral,240,Scelorchilus rubecula,Chucao Tapaculo,139,679,0.2047
+Austral,240,Vultur gryphus,Andean Condor,139,679,0.2047
+Austral,240,Cinclodes patagonicus,Dark-bellied Cinclodes,133,679,0.1959
+Austral,240,Chroicocephalus maculipennis,Brown-hooded Gull,125,679,0.1841
+Austral,240,Lessonia rufa,Austral Negrito,124,679,0.1826
+Centro,15,Turdus falcklandii,Austral Thrush,27983,47414,0.5902
+Centro,15,Zenaida auriculata,Eared Dove,21696,47414,0.4576
+Centro,15,Columba livia,Rock Pigeon,21531,47414,0.4541
+Centro,15,Zonotrichia capensis,Rufous-collared Sparrow,20681,47414,0.4362
+Centro,15,Troglodytes musculus,Southern House Wren,15174,47414,0.32
+Centro,15,Daptrius chimango,Chimango Caracara,14594,47414,0.3078
+Centro,15,Passer domesticus,House Sparrow,14074,47414,0.2968
+Centro,15,Myiopsitta monachus,Monk Parakeet,13318,47414,0.2809
+Centro,15,Larus dominicanus,Kelp Gull,9832,47414,0.2074
+Centro,15,Sephanoides sephaniodes,Green-backed Firecrown,9772,47414,0.2061
+Centro,15,Vanellus chilensis,Southern Lapwing,8084,47414,0.1705
+Centro,15,Curaeus curaeus,Austral Blackbird,6612,47414,0.1395
+Centro,15,Tachycineta leucopyga,Chilean Swallow,6489,47414,0.1369
+Centro,15,Elaenia albiceps,White-crested Elaenia,6321,47414,0.1333
+Centro,15,Molothrus bonariensis,Shiny Cowbird,5475,47414,0.1155
+Centro,15,Phytotoma rara,Rufous-tailed Plantcutter,5204,47414,0.1098
+Centro,15,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,4878,47414,0.1029
+Centro,15,Mimus thenca,Chilean Mockingbird,4856,47414,0.1024
+Centro,15,Spinus barbatus,Black-chinned Siskin,4655,47414,0.0982
+Centro,15,Diuca diuca,Diuca Finch,4511,47414,0.0951
+Centro,15,Anairetes parulus,Tufted Tit-Tyrant,4505,47414,0.095
+Centro,15,Columbina picui,Picui Ground Dove,3805,47414,0.0803
+Centro,15,Nannopterum brasilianum,Neotropic Cormorant,3666,47414,0.0773
+Centro,15,Leistes loyca,Long-tailed Meadowlark,3212,47414,0.0677
+Centro,15,Cathartes aura,Turkey Vulture,2358,47414,0.0497
+Centro,30,Turdus falcklandii,Austral Thrush,15643,26829,0.5831
+Centro,30,Zonotrichia capensis,Rufous-collared Sparrow,13525,26829,0.5041
+Centro,30,Zenaida auriculata,Eared Dove,12493,26829,0.4657
+Centro,30,Columba livia,Rock Pigeon,10965,26829,0.4087
+Centro,30,Troglodytes musculus,Southern House Wren,10603,26829,0.3952
+Centro,30,Daptrius chimango,Chimango Caracara,10373,26829,0.3866
+Centro,30,Larus dominicanus,Kelp Gull,7451,26829,0.2777
+Centro,30,Passer domesticus,House Sparrow,7337,26829,0.2735
+Centro,30,Vanellus chilensis,Southern Lapwing,7133,26829,0.2659
+Centro,30,Myiopsitta monachus,Monk Parakeet,6793,26829,0.2532
+Centro,30,Sephanoides sephaniodes,Green-backed Firecrown,6565,26829,0.2447
+Centro,30,Tachycineta leucopyga,Chilean Swallow,6284,26829,0.2342
+Centro,30,Curaeus curaeus,Austral Blackbird,5596,26829,0.2086
+Centro,30,Mimus thenca,Chilean Mockingbird,4530,26829,0.1688
+Centro,30,Anairetes parulus,Tufted Tit-Tyrant,4194,26829,0.1563
+Centro,30,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,4022,26829,0.1499
+Centro,30,Elaenia albiceps,White-crested Elaenia,3954,26829,0.1474
+Centro,30,Nannopterum brasilianum,Neotropic Cormorant,3870,26829,0.1442
+Centro,30,Phytotoma rara,Rufous-tailed Plantcutter,3809,26829,0.142
+Centro,30,Spinus barbatus,Black-chinned Siskin,3758,26829,0.1401
+Centro,30,Diuca diuca,Diuca Finch,3752,26829,0.1398
+Centro,30,Molothrus bonariensis,Shiny Cowbird,3680,26829,0.1372
+Centro,30,Leistes loyca,Long-tailed Meadowlark,3251,26829,0.1212
+Centro,30,Columbina picui,Picui Ground Dove,3247,26829,0.121
+Centro,30,Cathartes aura,Turkey Vulture,2654,26829,0.0989
+Centro,45,Turdus falcklandii,Austral Thrush,8325,13817,0.6025
+Centro,45,Zonotrichia capensis,Rufous-collared Sparrow,7958,13817,0.576
+Centro,45,Zenaida auriculata,Eared Dove,6786,13817,0.4911
+Centro,45,Troglodytes musculus,Southern House Wren,6702,13817,0.4851
+Centro,45,Daptrius chimango,Chimango Caracara,6465,13817,0.4679
+Centro,45,Columba livia,Rock Pigeon,5145,13817,0.3724
+Centro,45,Vanellus chilensis,Southern Lapwing,4891,13817,0.354
+Centro,45,Tachycineta leucopyga,Chilean Swallow,4416,13817,0.3196
+Centro,45,Larus dominicanus,Kelp Gull,4255,13817,0.308
+Centro,45,Curaeus curaeus,Austral Blackbird,3858,13817,0.2792
+Centro,45,Sephanoides sephaniodes,Green-backed Firecrown,3847,13817,0.2784
+Centro,45,Passer domesticus,House Sparrow,3755,13817,0.2718
+Centro,45,Mimus thenca,Chilean Mockingbird,3430,13817,0.2482
+Centro,45,Myiopsitta monachus,Monk Parakeet,3216,13817,0.2328
+Centro,45,Anairetes parulus,Tufted Tit-Tyrant,3205,13817,0.232
+Centro,45,Diuca diuca,Diuca Finch,2911,13817,0.2107
+Centro,45,Nannopterum brasilianum,Neotropic Cormorant,2857,13817,0.2068
+Centro,45,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,2795,13817,0.2023
+Centro,45,Leistes loyca,Long-tailed Meadowlark,2703,13817,0.1956
+Centro,45,Spinus barbatus,Black-chinned Siskin,2684,13817,0.1943
+Centro,45,Phytotoma rara,Rufous-tailed Plantcutter,2578,13817,0.1866
+Centro,45,Elaenia albiceps,White-crested Elaenia,2410,13817,0.1744
+Centro,45,Columbina picui,Picui Ground Dove,2250,13817,0.1628
+Centro,45,Molothrus bonariensis,Shiny Cowbird,2201,13817,0.1593
+Centro,45,Cathartes aura,Turkey Vulture,1913,13817,0.1385
+Centro,60,Zonotrichia capensis,Rufous-collared Sparrow,7030,11946,0.5885
+Centro,60,Turdus falcklandii,Austral Thrush,6888,11946,0.5766
+Centro,60,Troglodytes musculus,Southern House Wren,6187,11946,0.5179
+Centro,60,Daptrius chimango,Chimango Caracara,5860,11946,0.4905
+Centro,60,Zenaida auriculata,Eared Dove,5798,11946,0.4854
+Centro,60,Vanellus chilensis,Southern Lapwing,4505,11946,0.3771
+Centro,60,Tachycineta leucopyga,Chilean Swallow,4292,11946,0.3593
+Centro,60,Columba livia,Rock Pigeon,4064,11946,0.3402
+Centro,60,Larus dominicanus,Kelp Gull,3914,11946,0.3276
+Centro,60,Curaeus curaeus,Austral Blackbird,3768,11946,0.3154
+Centro,60,Mimus thenca,Chilean Mockingbird,3436,11946,0.2876
+Centro,60,Sephanoides sephaniodes,Green-backed Firecrown,3410,11946,0.2855
+Centro,60,Anairetes parulus,Tufted Tit-Tyrant,3190,11946,0.267
+Centro,60,Passer domesticus,House Sparrow,3163,11946,0.2648
+Centro,60,Nannopterum brasilianum,Neotropic Cormorant,3022,11946,0.253
+Centro,60,Diuca diuca,Diuca Finch,2998,11946,0.251
+Centro,60,Leistes loyca,Long-tailed Meadowlark,2864,11946,0.2397
+Centro,60,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,2700,11946,0.226
+Centro,60,Spinus barbatus,Black-chinned Siskin,2515,11946,0.2105
+Centro,60,Phytotoma rara,Rufous-tailed Plantcutter,2461,11946,0.206
+Centro,60,Myiopsitta monachus,Monk Parakeet,2450,11946,0.2051
+Centro,60,Columbina picui,Picui Ground Dove,2300,11946,0.1925
+Centro,60,Elaenia albiceps,White-crested Elaenia,2247,11946,0.1881
+Centro,60,Pyrope pyrope,Fire-eyed Diucon,2027,11946,0.1697
+Centro,60,Callipepla californica,California Quail,1999,11946,0.1673
+Centro,75,Zonotrichia capensis,Rufous-collared Sparrow,4268,6421,0.6647
+Centro,75,Turdus falcklandii,Austral Thrush,3886,6421,0.6052
+Centro,75,Troglodytes musculus,Southern House Wren,3746,6421,0.5834
+Centro,75,Daptrius chimango,Chimango Caracara,3475,6421,0.5412
+Centro,75,Zenaida auriculata,Eared Dove,3304,6421,0.5146
+Centro,75,Vanellus chilensis,Southern Lapwing,2739,6421,0.4266
+Centro,75,Tachycineta leucopyga,Chilean Swallow,2683,6421,0.4178
+Centro,75,Larus dominicanus,Kelp Gull,2357,6421,0.3671
+Centro,75,Columba livia,Rock Pigeon,2266,6421,0.3529
+Centro,75,Curaeus curaeus,Austral Blackbird,2233,6421,0.3478
+Centro,75,Mimus thenca,Chilean Mockingbird,2041,6421,0.3179
+Centro,75,Anairetes parulus,Tufted Tit-Tyrant,1968,6421,0.3065
+Centro,75,Sephanoides sephaniodes,Green-backed Firecrown,1950,6421,0.3037
+Centro,75,Leistes loyca,Long-tailed Meadowlark,1877,6421,0.2923
+Centro,75,Diuca diuca,Diuca Finch,1837,6421,0.2861
+Centro,75,Passer domesticus,House Sparrow,1817,6421,0.283
+Centro,75,Nannopterum brasilianum,Neotropic Cormorant,1763,6421,0.2746
+Centro,75,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,1698,6421,0.2644
+Centro,75,Spinus barbatus,Black-chinned Siskin,1587,6421,0.2472
+Centro,75,Phytotoma rara,Rufous-tailed Plantcutter,1502,6421,0.2339
+Centro,75,Callipepla californica,California Quail,1331,6421,0.2073
+Centro,75,Elaenia albiceps,White-crested Elaenia,1323,6421,0.206
+Centro,75,Columbina picui,Picui Ground Dove,1312,6421,0.2043
+Centro,75,Myiopsitta monachus,Monk Parakeet,1304,6421,0.2031
+Centro,75,Pyrope pyrope,Fire-eyed Diucon,1283,6421,0.1998
+Centro,90,Zonotrichia capensis,Rufous-collared Sparrow,3841,5791,0.6633
+Centro,90,Turdus falcklandii,Austral Thrush,3417,5791,0.5901
+Centro,90,Troglodytes musculus,Southern House Wren,3368,5791,0.5816
+Centro,90,Daptrius chimango,Chimango Caracara,3216,5791,0.5553
+Centro,90,Zenaida auriculata,Eared Dove,2886,5791,0.4984
+Centro,90,Vanellus chilensis,Southern Lapwing,2659,5791,0.4592
+Centro,90,Tachycineta leucopyga,Chilean Swallow,2614,5791,0.4514
+Centro,90,Mimus thenca,Chilean Mockingbird,2219,5791,0.3832
+Centro,90,Curaeus curaeus,Austral Blackbird,2150,5791,0.3713
+Centro,90,Larus dominicanus,Kelp Gull,2145,5791,0.3704
+Centro,90,Leistes loyca,Long-tailed Meadowlark,2075,5791,0.3583
+Centro,90,Anairetes parulus,Tufted Tit-Tyrant,1974,5791,0.3409
+Centro,90,Diuca diuca,Diuca Finch,1923,5791,0.3321
+Centro,90,Columba livia,Rock Pigeon,1791,5791,0.3093
+Centro,90,Sephanoides sephaniodes,Green-backed Firecrown,1775,5791,0.3065
+Centro,90,Nannopterum brasilianum,Neotropic Cormorant,1743,5791,0.301
+Centro,90,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,1723,5791,0.2975
+Centro,90,Passer domesticus,House Sparrow,1579,5791,0.2727
+Centro,90,Spinus barbatus,Black-chinned Siskin,1467,5791,0.2533
+Centro,90,Callipepla californica,California Quail,1413,5791,0.244
+Centro,90,Columbina picui,Picui Ground Dove,1362,5791,0.2352
+Centro,90,Pyrope pyrope,Fire-eyed Diucon,1353,5791,0.2336
+Centro,90,Phytotoma rara,Rufous-tailed Plantcutter,1347,5791,0.2326
+Centro,90,Cathartes aura,Turkey Vulture,1316,5791,0.2272
+Centro,90,Elaenia albiceps,White-crested Elaenia,1261,5791,0.2178
+Centro,105,Zonotrichia capensis,Rufous-collared Sparrow,2348,3336,0.7038
+Centro,105,Troglodytes musculus,Southern House Wren,2042,3336,0.6121
+Centro,105,Turdus falcklandii,Austral Thrush,2019,3336,0.6052
+Centro,105,Daptrius chimango,Chimango Caracara,1948,3336,0.5839
+Centro,105,Zenaida auriculata,Eared Dove,1809,3336,0.5423
+Centro,105,Tachycineta leucopyga,Chilean Swallow,1630,3336,0.4886
+Centro,105,Vanellus chilensis,Southern Lapwing,1578,3336,0.473
+Centro,105,Curaeus curaeus,Austral Blackbird,1406,3336,0.4215
+Centro,105,Mimus thenca,Chilean Mockingbird,1332,3336,0.3993
+Centro,105,Leistes loyca,Long-tailed Meadowlark,1330,3336,0.3987
+Centro,105,Anairetes parulus,Tufted Tit-Tyrant,1279,3336,0.3834
+Centro,105,Diuca diuca,Diuca Finch,1238,3336,0.3711
+Centro,105,Larus dominicanus,Kelp Gull,1213,3336,0.3636
+Centro,105,Sephanoides sephaniodes,Green-backed Firecrown,1088,3336,0.3261
+Centro,105,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,1061,3336,0.318
+Centro,105,Nannopterum brasilianum,Neotropic Cormorant,1048,3336,0.3141
+Centro,105,Columba livia,Rock Pigeon,1031,3336,0.3091
+Centro,105,Callipepla californica,California Quail,984,3336,0.295
+Centro,105,Spinus barbatus,Black-chinned Siskin,965,3336,0.2893
+Centro,105,Phytotoma rara,Rufous-tailed Plantcutter,896,3336,0.2686
+Centro,105,Passer domesticus,House Sparrow,892,3336,0.2674
+Centro,105,Pyrope pyrope,Fire-eyed Diucon,855,3336,0.2563
+Centro,105,Columbina picui,Picui Ground Dove,820,3336,0.2458
+Centro,105,Agelasticus thilius,Yellow-winged Blackbird,780,3336,0.2338
+Centro,105,Cathartes aura,Turkey Vulture,779,3336,0.2335
+Centro,120,Zonotrichia capensis,Rufous-collared Sparrow,3432,5118,0.6706
+Centro,120,Daptrius chimango,Chimango Caracara,3005,5118,0.5871
+Centro,120,Troglodytes musculus,Southern House Wren,2998,5118,0.5858
+Centro,120,Turdus falcklandii,Austral Thrush,2996,5118,0.5854
+Centro,120,Zenaida auriculata,Eared Dove,2573,5118,0.5027
+Centro,120,Vanellus chilensis,Southern Lapwing,2475,5118,0.4836
+Centro,120,Tachycineta leucopyga,Chilean Swallow,2399,5118,0.4687
+Centro,120,Mimus thenca,Chilean Mockingbird,2278,5118,0.4451
+Centro,120,Curaeus curaeus,Austral Blackbird,2202,5118,0.4302
+Centro,120,Leistes loyca,Long-tailed Meadowlark,2119,5118,0.414
+Centro,120,Diuca diuca,Diuca Finch,2048,5118,0.4002
+Centro,120,Anairetes parulus,Tufted Tit-Tyrant,1947,5118,0.3804
+Centro,120,Larus dominicanus,Kelp Gull,1791,5118,0.3499
+Centro,120,Sephanoides sephaniodes,Green-backed Firecrown,1677,5118,0.3277
+Centro,120,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,1611,5118,0.3148
+Centro,120,Callipepla californica,California Quail,1572,5118,0.3072
+Centro,120,Nannopterum brasilianum,Neotropic Cormorant,1568,5118,0.3064
+Centro,120,Pyrope pyrope,Fire-eyed Diucon,1473,5118,0.2878
+Centro,120,Spinus barbatus,Black-chinned Siskin,1384,5118,0.2704
+Centro,120,Columba livia,Rock Pigeon,1351,5118,0.264
+Centro,120,Phytotoma rara,Rufous-tailed Plantcutter,1331,5118,0.2601
+Centro,120,Columbina picui,Picui Ground Dove,1323,5118,0.2585
+Centro,120,Cathartes aura,Turkey Vulture,1271,5118,0.2483
+Centro,120,Passer domesticus,House Sparrow,1255,5118,0.2452
+Centro,120,Anas georgica,Yellow-billed Pintail,1183,5118,0.2311
+Centro,135,Zonotrichia capensis,Rufous-collared Sparrow,1636,2199,0.744
+Centro,135,Troglodytes musculus,Southern House Wren,1432,2199,0.6512
+Centro,135,Turdus falcklandii,Austral Thrush,1401,2199,0.6371
+Centro,135,Daptrius chimango,Chimango Caracara,1381,2199,0.628
+Centro,135,Zenaida auriculata,Eared Dove,1235,2199,0.5616
+Centro,135,Tachycineta leucopyga,Chilean Swallow,1114,2199,0.5066
+Centro,135,Vanellus chilensis,Southern Lapwing,1110,2199,0.5048
+Centro,135,Curaeus curaeus,Austral Blackbird,1021,2199,0.4643
+Centro,135,Leistes loyca,Long-tailed Meadowlark,1004,2199,0.4566
+Centro,135,Mimus thenca,Chilean Mockingbird,1001,2199,0.4552
+Centro,135,Anairetes parulus,Tufted Tit-Tyrant,977,2199,0.4443
+Centro,135,Diuca diuca,Diuca Finch,944,2199,0.4293
+Centro,135,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,847,2199,0.3852
+Centro,135,Sephanoides sephaniodes,Green-backed Firecrown,843,2199,0.3834
+Centro,135,Larus dominicanus,Kelp Gull,842,2199,0.3829
+Centro,135,Callipepla californica,California Quail,770,2199,0.3502
+Centro,135,Spinus barbatus,Black-chinned Siskin,718,2199,0.3265
+Centro,135,Nannopterum brasilianum,Neotropic Cormorant,713,2199,0.3242
+Centro,135,Pyrope pyrope,Fire-eyed Diucon,711,2199,0.3233
+Centro,135,Columba livia,Rock Pigeon,658,2199,0.2992
+Centro,135,Phytotoma rara,Rufous-tailed Plantcutter,657,2199,0.2988
+Centro,135,Columbina picui,Picui Ground Dove,600,2199,0.2729
+Centro,135,Cathartes aura,Turkey Vulture,593,2199,0.2697
+Centro,135,Passer domesticus,House Sparrow,557,2199,0.2533
+Centro,135,Agelasticus thilius,Yellow-winged Blackbird,552,2199,0.251
+Centro,150,Zonotrichia capensis,Rufous-collared Sparrow,1631,2202,0.7407
+Centro,150,Troglodytes musculus,Southern House Wren,1460,2202,0.663
+Centro,150,Daptrius chimango,Chimango Caracara,1458,2202,0.6621
+Centro,150,Turdus falcklandii,Austral Thrush,1400,2202,0.6358
+Centro,150,Zenaida auriculata,Eared Dove,1212,2202,0.5504
+Centro,150,Tachycineta leucopyga,Chilean Swallow,1195,2202,0.5427
+Centro,150,Vanellus chilensis,Southern Lapwing,1159,2202,0.5263
+Centro,150,Mimus thenca,Chilean Mockingbird,1123,2202,0.51
+Centro,150,Leistes loyca,Long-tailed Meadowlark,1102,2202,0.5005
+Centro,150,Curaeus curaeus,Austral Blackbird,1060,2202,0.4814
+Centro,150,Anairetes parulus,Tufted Tit-Tyrant,1014,2202,0.4605
+Centro,150,Diuca diuca,Diuca Finch,1003,2202,0.4555
+Centro,150,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,838,2202,0.3806
+Centro,150,Larus dominicanus,Kelp Gull,832,2202,0.3778
+Centro,150,Sephanoides sephaniodes,Green-backed Firecrown,827,2202,0.3756
+Centro,150,Callipepla californica,California Quail,824,2202,0.3742
+Centro,150,Nannopterum brasilianum,Neotropic Cormorant,779,2202,0.3538
+Centro,150,Pyrope pyrope,Fire-eyed Diucon,761,2202,0.3456
+Centro,150,Spinus barbatus,Black-chinned Siskin,726,2202,0.3297
+Centro,150,Cathartes aura,Turkey Vulture,660,2202,0.2997
+Centro,150,Phytotoma rara,Rufous-tailed Plantcutter,643,2202,0.292
+Centro,150,Columbina picui,Picui Ground Dove,641,2202,0.2911
+Centro,150,Columba livia,Rock Pigeon,625,2202,0.2838
+Centro,150,Agelasticus thilius,Yellow-winged Blackbird,621,2202,0.282
+Centro,150,Anas georgica,Yellow-billed Pintail,599,2202,0.272
+Centro,165,Zonotrichia capensis,Rufous-collared Sparrow,1014,1346,0.7533
+Centro,165,Daptrius chimango,Chimango Caracara,893,1346,0.6634
+Centro,165,Troglodytes musculus,Southern House Wren,892,1346,0.6627
+Centro,165,Turdus falcklandii,Austral Thrush,855,1346,0.6352
+Centro,165,Zenaida auriculata,Eared Dove,784,1346,0.5825
+Centro,165,Tachycineta leucopyga,Chilean Swallow,740,1346,0.5498
+Centro,165,Vanellus chilensis,Southern Lapwing,710,1346,0.5275
+Centro,165,Mimus thenca,Chilean Mockingbird,708,1346,0.526
+Centro,165,Leistes loyca,Long-tailed Meadowlark,706,1346,0.5245
+Centro,165,Diuca diuca,Diuca Finch,663,1346,0.4926
+Centro,165,Curaeus curaeus,Austral Blackbird,645,1346,0.4792
+Centro,165,Anairetes parulus,Tufted Tit-Tyrant,634,1346,0.471
+Centro,165,Callipepla californica,California Quail,558,1346,0.4146
+Centro,165,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,526,1346,0.3908
+Centro,165,Larus dominicanus,Kelp Gull,494,1346,0.367
+Centro,165,Sephanoides sephaniodes,Green-backed Firecrown,480,1346,0.3566
+Centro,165,Pyrope pyrope,Fire-eyed Diucon,454,1346,0.3373
+Centro,165,Nannopterum brasilianum,Neotropic Cormorant,442,1346,0.3284
+Centro,165,Spinus barbatus,Black-chinned Siskin,433,1346,0.3217
+Centro,165,Columbina picui,Picui Ground Dove,422,1346,0.3135
+Centro,165,Phytotoma rara,Rufous-tailed Plantcutter,380,1346,0.2823
+Centro,165,Agelasticus thilius,Yellow-winged Blackbird,379,1346,0.2816
+Centro,165,Elaenia albiceps,White-crested Elaenia,377,1346,0.2801
+Centro,165,Passer domesticus,House Sparrow,374,1346,0.2779
+Centro,165,Parabuteo unicinctus,Harris's Hawk,371,1346,0.2756
+Centro,180,Zonotrichia capensis,Rufous-collared Sparrow,1898,2617,0.7253
+Centro,180,Daptrius chimango,Chimango Caracara,1687,2617,0.6446
+Centro,180,Troglodytes musculus,Southern House Wren,1667,2617,0.637
+Centro,180,Turdus falcklandii,Austral Thrush,1619,2617,0.6186
+Centro,180,Tachycineta leucopyga,Chilean Swallow,1455,2617,0.556
+Centro,180,Mimus thenca,Chilean Mockingbird,1442,2617,0.551
+Centro,180,Zenaida auriculata,Eared Dove,1422,2617,0.5434
+Centro,180,Vanellus chilensis,Southern Lapwing,1379,2617,0.5269
+Centro,180,Curaeus curaeus,Austral Blackbird,1364,2617,0.5212
+Centro,180,Leistes loyca,Long-tailed Meadowlark,1351,2617,0.5162
+Centro,180,Diuca diuca,Diuca Finch,1328,2617,0.5075
+Centro,180,Anairetes parulus,Tufted Tit-Tyrant,1225,2617,0.4681
+Centro,180,Callipepla californica,California Quail,1080,2617,0.4127
+Centro,180,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,1009,2617,0.3856
+Centro,180,Pyrope pyrope,Fire-eyed Diucon,998,2617,0.3814
+Centro,180,Larus dominicanus,Kelp Gull,976,2617,0.3729
+Centro,180,Sephanoides sephaniodes,Green-backed Firecrown,968,2617,0.3699
+Centro,180,Nannopterum brasilianum,Neotropic Cormorant,909,2617,0.3473
+Centro,180,Cathartes aura,Turkey Vulture,859,2617,0.3282
+Centro,180,Spinus barbatus,Black-chinned Siskin,833,2617,0.3183
+Centro,180,Agelasticus thilius,Yellow-winged Blackbird,776,2617,0.2965
+Centro,180,Columbina picui,Picui Ground Dove,773,2617,0.2954
+Centro,180,Phytotoma rara,Rufous-tailed Plantcutter,769,2617,0.2938
+Centro,180,Egretta thula,Snowy Egret,723,2617,0.2763
+Centro,180,Fulica armillata,Red-gartered Coot,720,2617,0.2751
+Centro,195,Zonotrichia capensis,Rufous-collared Sparrow,783,992,0.7893
+Centro,195,Daptrius chimango,Chimango Caracara,686,992,0.6915
+Centro,195,Troglodytes musculus,Southern House Wren,679,992,0.6845
+Centro,195,Turdus falcklandii,Austral Thrush,664,992,0.6694
+Centro,195,Tachycineta leucopyga,Chilean Swallow,591,992,0.5958
+Centro,195,Zenaida auriculata,Eared Dove,576,992,0.5806
+Centro,195,Leistes loyca,Long-tailed Meadowlark,555,992,0.5595
+Centro,195,Mimus thenca,Chilean Mockingbird,545,992,0.5494
+Centro,195,Curaeus curaeus,Austral Blackbird,528,992,0.5323
+Centro,195,Vanellus chilensis,Southern Lapwing,521,992,0.5252
+Centro,195,Anairetes parulus,Tufted Tit-Tyrant,511,992,0.5151
+Centro,195,Diuca diuca,Diuca Finch,500,992,0.504
+Centro,195,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,454,992,0.4577
+Centro,195,Callipepla californica,California Quail,446,992,0.4496
+Centro,195,Larus dominicanus,Kelp Gull,394,992,0.3972
+Centro,195,Pyrope pyrope,Fire-eyed Diucon,387,992,0.3901
+Centro,195,Sephanoides sephaniodes,Green-backed Firecrown,376,992,0.379
+Centro,195,Nannopterum brasilianum,Neotropic Cormorant,351,992,0.3538
+Centro,195,Spinus barbatus,Black-chinned Siskin,340,992,0.3427
+Centro,195,Phytotoma rara,Rufous-tailed Plantcutter,330,992,0.3327
+Centro,195,Columbina picui,Picui Ground Dove,302,992,0.3044
+Centro,195,Cathartes aura,Turkey Vulture,298,992,0.3004
+Centro,195,Veniliornis lignarius,Striped Woodpecker,290,992,0.2923
+Centro,195,Pteroptochos megapodius,Moustached Turca,286,992,0.2883
+Centro,195,Elaenia albiceps,White-crested Elaenia,284,992,0.2863
+Centro,210,Zonotrichia capensis,Rufous-collared Sparrow,827,1080,0.7657
+Centro,210,Daptrius chimango,Chimango Caracara,765,1080,0.7083
+Centro,210,Troglodytes musculus,Southern House Wren,731,1080,0.6769
+Centro,210,Turdus falcklandii,Austral Thrush,701,1080,0.6491
+Centro,210,Mimus thenca,Chilean Mockingbird,658,1080,0.6093
+Centro,210,Zenaida auriculata,Eared Dove,629,1080,0.5824
+Centro,210,Leistes loyca,Long-tailed Meadowlark,616,1080,0.5704
+Centro,210,Tachycineta leucopyga,Chilean Swallow,610,1080,0.5648
+Centro,210,Curaeus curaeus,Austral Blackbird,598,1080,0.5537
+Centro,210,Diuca diuca,Diuca Finch,592,1080,0.5481
+Centro,210,Anairetes parulus,Tufted Tit-Tyrant,576,1080,0.5333
+Centro,210,Vanellus chilensis,Southern Lapwing,543,1080,0.5028
+Centro,210,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,513,1080,0.475
+Centro,210,Callipepla californica,California Quail,507,1080,0.4694
+Centro,210,Sephanoides sephaniodes,Green-backed Firecrown,458,1080,0.4241
+Centro,210,Pyrope pyrope,Fire-eyed Diucon,449,1080,0.4157
+Centro,210,Spinus barbatus,Black-chinned Siskin,397,1080,0.3676
+Centro,210,Larus dominicanus,Kelp Gull,376,1080,0.3481
+Centro,210,Veniliornis lignarius,Striped Woodpecker,364,1080,0.337
+Centro,210,Nannopterum brasilianum,Neotropic Cormorant,353,1080,0.3269
+Centro,210,Pteroptochos megapodius,Moustached Turca,337,1080,0.312
+Centro,210,Columbina picui,Picui Ground Dove,331,1080,0.3065
+Centro,210,Cathartes aura,Turkey Vulture,321,1080,0.2972
+Centro,210,Parabuteo unicinctus,Harris's Hawk,314,1080,0.2907
+Centro,210,Phytotoma rara,Rufous-tailed Plantcutter,303,1080,0.2806
+Centro,225,Zonotrichia capensis,Rufous-collared Sparrow,517,664,0.7786
+Centro,225,Troglodytes musculus,Southern House Wren,466,664,0.7018
+Centro,225,Daptrius chimango,Chimango Caracara,455,664,0.6852
+Centro,225,Turdus falcklandii,Austral Thrush,425,664,0.6401
+Centro,225,Mimus thenca,Chilean Mockingbird,388,664,0.5843
+Centro,225,Zenaida auriculata,Eared Dove,388,664,0.5843
+Centro,225,Leistes loyca,Long-tailed Meadowlark,383,664,0.5768
+Centro,225,Tachycineta leucopyga,Chilean Swallow,380,664,0.5723
+Centro,225,Diuca diuca,Diuca Finch,367,664,0.5527
+Centro,225,Anairetes parulus,Tufted Tit-Tyrant,355,664,0.5346
+Centro,225,Curaeus curaeus,Austral Blackbird,354,664,0.5331
+Centro,225,Callipepla californica,California Quail,339,664,0.5105
+Centro,225,Vanellus chilensis,Southern Lapwing,315,664,0.4744
+Centro,225,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,311,664,0.4684
+Centro,225,Sephanoides sephaniodes,Green-backed Firecrown,282,664,0.4247
+Centro,225,Pyrope pyrope,Fire-eyed Diucon,276,664,0.4157
+Centro,225,Spinus barbatus,Black-chinned Siskin,254,664,0.3825
+Centro,225,Larus dominicanus,Kelp Gull,233,664,0.3509
+Centro,225,Veniliornis lignarius,Striped Woodpecker,224,664,0.3373
+Centro,225,Nannopterum brasilianum,Neotropic Cormorant,221,664,0.3328
+Centro,225,Pteroptochos megapodius,Moustached Turca,211,664,0.3178
+Centro,225,Parabuteo unicinctus,Harris's Hawk,197,664,0.2967
+Centro,225,Columbina picui,Picui Ground Dove,194,664,0.2922
+Centro,225,Cathartes aura,Turkey Vulture,192,664,0.2892
+Centro,225,Elaenia albiceps,White-crested Elaenia,191,664,0.2877
+Centro,240,Zonotrichia capensis,Rufous-collared Sparrow,1183,1621,0.7298
+Centro,240,Daptrius chimango,Chimango Caracara,1092,1621,0.6737
+Centro,240,Troglodytes musculus,Southern House Wren,1055,1621,0.6508
+Centro,240,Turdus falcklandii,Austral Thrush,1020,1621,0.6292
+Centro,240,Mimus thenca,Chilean Mockingbird,975,1621,0.6015
+Centro,240,Curaeus curaeus,Austral Blackbird,949,1621,0.5854
+Centro,240,Leistes loyca,Long-tailed Meadowlark,939,1621,0.5793
+Centro,240,Zenaida auriculata,Eared Dove,927,1621,0.5719
+Centro,240,Tachycineta leucopyga,Chilean Swallow,916,1621,0.5651
+Centro,240,Diuca diuca,Diuca Finch,903,1621,0.5571
+Centro,240,Anairetes parulus,Tufted Tit-Tyrant,868,1621,0.5355
+Centro,240,Vanellus chilensis,Southern Lapwing,831,1621,0.5126
+Centro,240,Callipepla californica,California Quail,776,1621,0.4787
+Centro,240,Pyrope pyrope,Fire-eyed Diucon,732,1621,0.4516
+Centro,240,Sephanoides sephaniodes,Green-backed Firecrown,708,1621,0.4368
+Centro,240,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,692,1621,0.4269
+Centro,240,Larus dominicanus,Kelp Gull,613,1621,0.3782
+Centro,240,Nannopterum brasilianum,Neotropic Cormorant,588,1621,0.3627
+Centro,240,Spinus barbatus,Black-chinned Siskin,567,1621,0.3498
+Centro,240,Veniliornis lignarius,Striped Woodpecker,537,1621,0.3313
+Centro,240,Cathartes aura,Turkey Vulture,528,1621,0.3257
+Centro,240,Parabuteo unicinctus,Harris's Hawk,516,1621,0.3183
+Centro,240,Phrygilus gayi,Gray-hooded Sierra Finch,512,1621,0.3159
+Centro,240,Columbina picui,Picui Ground Dove,476,1621,0.2936
+Centro,240,Fulica armillata,Red-gartered Coot,476,1621,0.2936
+Norte Chico,15,Zonotrichia capensis,Rufous-collared Sparrow,4071,9137,0.4456
+Norte Chico,15,Zenaida meloda,West Peruvian Dove,2984,9137,0.3266
+Norte Chico,15,Diuca diuca,Diuca Finch,2604,9137,0.285
+Norte Chico,15,Mimus thenca,Chilean Mockingbird,2584,9137,0.2828
+Norte Chico,15,Passer domesticus,House Sparrow,2583,9137,0.2827
+Norte Chico,15,Troglodytes musculus,Southern House Wren,2444,9137,0.2675
+Norte Chico,15,Turdus falcklandii,Austral Thrush,2230,9137,0.2441
+Norte Chico,15,Larus dominicanus,Kelp Gull,2145,9137,0.2348
+Norte Chico,15,Cathartes aura,Turkey Vulture,1813,9137,0.1984
+Norte Chico,15,Sephanoides sephaniodes,Green-backed Firecrown,1700,9137,0.1861
+Norte Chico,15,Vanellus chilensis,Southern Lapwing,1561,9137,0.1708
+Norte Chico,15,Zenaida auriculata,Eared Dove,1301,9137,0.1424
+Norte Chico,15,Tachycineta leucopyga,Chilean Swallow,1291,9137,0.1413
+Norte Chico,15,Daptrius chimango,Chimango Caracara,1206,9137,0.132
+Norte Chico,15,Rhodopis vesper,Oasis Hummingbird,1134,9137,0.1241
+Norte Chico,15,Columba livia,Rock Pigeon,1054,9137,0.1154
+Norte Chico,15,Leistes loyca,Long-tailed Meadowlark,962,9137,0.1053
+Norte Chico,15,Nannopterum brasilianum,Neotropic Cormorant,897,9137,0.0982
+Norte Chico,15,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,876,9137,0.0959
+Norte Chico,15,Elaenia albiceps,White-crested Elaenia,802,9137,0.0878
+Norte Chico,15,Rhopospina fruticeti,Mourning Sierra Finch,774,9137,0.0847
+Norte Chico,15,Patagona gigas,Giant Hummingbird,746,9137,0.0816
+Norte Chico,15,Columbina picui,Picui Ground Dove,744,9137,0.0814
+Norte Chico,15,Anairetes parulus,Tufted Tit-Tyrant,711,9137,0.0778
+Norte Chico,15,Phrygilus gayi,Gray-hooded Sierra Finch,709,9137,0.0776
+Norte Chico,30,Zonotrichia capensis,Rufous-collared Sparrow,2811,5808,0.484
+Norte Chico,30,Larus dominicanus,Kelp Gull,2143,5808,0.369
+Norte Chico,30,Diuca diuca,Diuca Finch,1901,5808,0.3273
+Norte Chico,30,Mimus thenca,Chilean Mockingbird,1857,5808,0.3197
+Norte Chico,30,Cathartes aura,Turkey Vulture,1836,5808,0.3161
+Norte Chico,30,Zenaida meloda,West Peruvian Dove,1830,5808,0.3151
+Norte Chico,30,Troglodytes musculus,Southern House Wren,1814,5808,0.3123
+Norte Chico,30,Vanellus chilensis,Southern Lapwing,1590,5808,0.2738
+Norte Chico,30,Passer domesticus,House Sparrow,1585,5808,0.2729
+Norte Chico,30,Turdus falcklandii,Austral Thrush,1470,5808,0.2531
+Norte Chico,30,Tachycineta leucopyga,Chilean Swallow,1386,5808,0.2386
+Norte Chico,30,Nannopterum brasilianum,Neotropic Cormorant,1232,5808,0.2121
+Norte Chico,30,Daptrius chimango,Chimango Caracara,1183,5808,0.2037
+Norte Chico,30,Sephanoides sephaniodes,Green-backed Firecrown,1180,5808,0.2032
+Norte Chico,30,Zenaida auriculata,Eared Dove,1148,5808,0.1977
+Norte Chico,30,Leistes loyca,Long-tailed Meadowlark,1016,5808,0.1749
+Norte Chico,30,Numenius hudsonicus,Hudsonian Whimbrel,965,5808,0.1662
+Norte Chico,30,Rhodopis vesper,Oasis Hummingbird,848,5808,0.146
+Norte Chico,30,Columba livia,Rock Pigeon,837,5808,0.1441
+Norte Chico,30,Columbina picui,Picui Ground Dove,810,5808,0.1395
+Norte Chico,30,Haematopus palliatus,American Oystercatcher,807,5808,0.1389
+Norte Chico,30,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,792,5808,0.1364
+Norte Chico,30,Anairetes parulus,Tufted Tit-Tyrant,758,5808,0.1305
+Norte Chico,30,Rhopospina fruticeti,Mourning Sierra Finch,669,5808,0.1152
+Norte Chico,30,Lessonia rufa,Austral Negrito,652,5808,0.1123
+Norte Chico,45,Zonotrichia capensis,Rufous-collared Sparrow,1574,2885,0.5456
+Norte Chico,45,Larus dominicanus,Kelp Gull,1254,2885,0.4347
+Norte Chico,45,Cathartes aura,Turkey Vulture,1196,2885,0.4146
+Norte Chico,45,Diuca diuca,Diuca Finch,1123,2885,0.3893
+Norte Chico,45,Troglodytes musculus,Southern House Wren,1055,2885,0.3657
+Norte Chico,45,Mimus thenca,Chilean Mockingbird,1030,2885,0.357
+Norte Chico,45,Zenaida meloda,West Peruvian Dove,922,2885,0.3196
+Norte Chico,45,Vanellus chilensis,Southern Lapwing,882,2885,0.3057
+Norte Chico,45,Tachycineta leucopyga,Chilean Swallow,865,2885,0.2998
+Norte Chico,45,Nannopterum brasilianum,Neotropic Cormorant,814,2885,0.2821
+Norte Chico,45,Passer domesticus,House Sparrow,767,2885,0.2659
+Norte Chico,45,Turdus falcklandii,Austral Thrush,721,2885,0.2499
+Norte Chico,45,Daptrius chimango,Chimango Caracara,696,2885,0.2412
+Norte Chico,45,Numenius hudsonicus,Hudsonian Whimbrel,669,2885,0.2319
+Norte Chico,45,Zenaida auriculata,Eared Dove,650,2885,0.2253
+Norte Chico,45,Sephanoides sephaniodes,Green-backed Firecrown,618,2885,0.2142
+Norte Chico,45,Leistes loyca,Long-tailed Meadowlark,593,2885,0.2055
+Norte Chico,45,Haematopus palliatus,American Oystercatcher,546,2885,0.1893
+Norte Chico,45,Rhodopis vesper,Oasis Hummingbird,511,2885,0.1771
+Norte Chico,45,Anairetes parulus,Tufted Tit-Tyrant,506,2885,0.1754
+Norte Chico,45,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,490,2885,0.1698
+Norte Chico,45,Lessonia rufa,Austral Negrito,490,2885,0.1698
+Norte Chico,45,Rhopospina fruticeti,Mourning Sierra Finch,466,2885,0.1615
+Norte Chico,45,Columbina picui,Picui Ground Dove,452,2885,0.1567
+Norte Chico,45,Pelecanus thagus,Peruvian Pelican,441,2885,0.1529
+Norte Chico,60,Zonotrichia capensis,Rufous-collared Sparrow,1247,2351,0.5304
+Norte Chico,60,Larus dominicanus,Kelp Gull,1147,2351,0.4879
+Norte Chico,60,Cathartes aura,Turkey Vulture,1107,2351,0.4709
+Norte Chico,60,Diuca diuca,Diuca Finch,882,2351,0.3752
+Norte Chico,60,Troglodytes musculus,Southern House Wren,854,2351,0.3632
+Norte Chico,60,Mimus thenca,Chilean Mockingbird,811,2351,0.345
+Norte Chico,60,Nannopterum brasilianum,Neotropic Cormorant,795,2351,0.3382
+Norte Chico,60,Tachycineta leucopyga,Chilean Swallow,775,2351,0.3296
+Norte Chico,60,Vanellus chilensis,Southern Lapwing,762,2351,0.3241
+Norte Chico,60,Zenaida meloda,West Peruvian Dove,677,2351,0.288
+Norte Chico,60,Numenius hudsonicus,Hudsonian Whimbrel,660,2351,0.2807
+Norte Chico,60,Daptrius chimango,Chimango Caracara,590,2351,0.251
+Norte Chico,60,Haematopus palliatus,American Oystercatcher,578,2351,0.2459
+Norte Chico,60,Passer domesticus,House Sparrow,577,2351,0.2454
+Norte Chico,60,Turdus falcklandii,Austral Thrush,526,2351,0.2237
+Norte Chico,60,Leistes loyca,Long-tailed Meadowlark,513,2351,0.2182
+Norte Chico,60,Zenaida auriculata,Eared Dove,498,2351,0.2118
+Norte Chico,60,Lessonia rufa,Austral Negrito,458,2351,0.1948
+Norte Chico,60,Sephanoides sephaniodes,Green-backed Firecrown,455,2351,0.1935
+Norte Chico,60,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,438,2351,0.1863
+Norte Chico,60,Fulica armillata,Red-gartered Coot,438,2351,0.1863
+Norte Chico,60,Agelasticus thilius,Yellow-winged Blackbird,430,2351,0.1829
+Norte Chico,60,Pelecanus thagus,Peruvian Pelican,421,2351,0.1791
+Norte Chico,60,Leucophaeus modestus,Gray Gull,417,2351,0.1774
+Norte Chico,60,Rhodopis vesper,Oasis Hummingbird,403,2351,0.1714
+Norte Chico,75,Zonotrichia capensis,Rufous-collared Sparrow,730,1182,0.6176
+Norte Chico,75,Larus dominicanus,Kelp Gull,613,1182,0.5186
+Norte Chico,75,Cathartes aura,Turkey Vulture,605,1182,0.5118
+Norte Chico,75,Troglodytes musculus,Southern House Wren,509,1182,0.4306
+Norte Chico,75,Diuca diuca,Diuca Finch,503,1182,0.4255
+Norte Chico,75,Vanellus chilensis,Southern Lapwing,495,1182,0.4188
+Norte Chico,75,Mimus thenca,Chilean Mockingbird,479,1182,0.4052
+Norte Chico,75,Tachycineta leucopyga,Chilean Swallow,461,1182,0.39
+Norte Chico,75,Nannopterum brasilianum,Neotropic Cormorant,458,1182,0.3875
+Norte Chico,75,Zenaida meloda,West Peruvian Dove,397,1182,0.3359
+Norte Chico,75,Numenius hudsonicus,Hudsonian Whimbrel,393,1182,0.3325
+Norte Chico,75,Daptrius chimango,Chimango Caracara,380,1182,0.3215
+Norte Chico,75,Passer domesticus,House Sparrow,332,1182,0.2809
+Norte Chico,75,Haematopus palliatus,American Oystercatcher,327,1182,0.2766
+Norte Chico,75,Zenaida auriculata,Eared Dove,312,1182,0.264
+Norte Chico,75,Turdus falcklandii,Austral Thrush,310,1182,0.2623
+Norte Chico,75,Leistes loyca,Long-tailed Meadowlark,308,1182,0.2606
+Norte Chico,75,Lessonia rufa,Austral Negrito,294,1182,0.2487
+Norte Chico,75,Fulica armillata,Red-gartered Coot,261,1182,0.2208
+Norte Chico,75,Agelasticus thilius,Yellow-winged Blackbird,260,1182,0.22
+Norte Chico,75,Leucophaeus modestus,Gray Gull,258,1182,0.2183
+Norte Chico,75,Rhodopis vesper,Oasis Hummingbird,253,1182,0.214
+Norte Chico,75,Himantopus mexicanus,Black-necked Stilt,252,1182,0.2132
+Norte Chico,75,Sephanoides sephaniodes,Green-backed Firecrown,251,1182,0.2124
+Norte Chico,75,Anairetes parulus,Tufted Tit-Tyrant,248,1182,0.2098
+Norte Chico,90,Zonotrichia capensis,Rufous-collared Sparrow,624,1054,0.592
+Norte Chico,90,Larus dominicanus,Kelp Gull,569,1054,0.5398
+Norte Chico,90,Cathartes aura,Turkey Vulture,547,1054,0.519
+Norte Chico,90,Vanellus chilensis,Southern Lapwing,482,1054,0.4573
+Norte Chico,90,Tachycineta leucopyga,Chilean Swallow,466,1054,0.4421
+Norte Chico,90,Nannopterum brasilianum,Neotropic Cormorant,458,1054,0.4345
+Norte Chico,90,Troglodytes musculus,Southern House Wren,449,1054,0.426
+Norte Chico,90,Diuca diuca,Diuca Finch,430,1054,0.408
+Norte Chico,90,Mimus thenca,Chilean Mockingbird,422,1054,0.4004
+Norte Chico,90,Numenius hudsonicus,Hudsonian Whimbrel,369,1054,0.3501
+Norte Chico,90,Zenaida meloda,West Peruvian Dove,360,1054,0.3416
+Norte Chico,90,Haematopus palliatus,American Oystercatcher,346,1054,0.3283
+Norte Chico,90,Daptrius chimango,Chimango Caracara,336,1054,0.3188
+Norte Chico,90,Turdus falcklandii,Austral Thrush,296,1054,0.2808
+Norte Chico,90,Passer domesticus,House Sparrow,290,1054,0.2751
+Norte Chico,90,Leistes loyca,Long-tailed Meadowlark,278,1054,0.2638
+Norte Chico,90,Lessonia rufa,Austral Negrito,270,1054,0.2562
+Norte Chico,90,Fulica armillata,Red-gartered Coot,266,1054,0.2524
+Norte Chico,90,Zenaida auriculata,Eared Dove,263,1054,0.2495
+Norte Chico,90,Leucophaeus modestus,Gray Gull,259,1054,0.2457
+Norte Chico,90,Agelasticus thilius,Yellow-winged Blackbird,252,1054,0.2391
+Norte Chico,90,Anairetes parulus,Tufted Tit-Tyrant,246,1054,0.2334
+Norte Chico,90,Rhodopis vesper,Oasis Hummingbird,240,1054,0.2277
+Norte Chico,90,Himantopus mexicanus,Black-necked Stilt,240,1054,0.2277
+Norte Chico,90,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,239,1054,0.2268
+Norte Chico,105,Zonotrichia capensis,Rufous-collared Sparrow,359,584,0.6147
+Norte Chico,105,Larus dominicanus,Kelp Gull,336,584,0.5753
+Norte Chico,105,Cathartes aura,Turkey Vulture,319,584,0.5462
+Norte Chico,105,Vanellus chilensis,Southern Lapwing,262,584,0.4486
+Norte Chico,105,Nannopterum brasilianum,Neotropic Cormorant,255,584,0.4366
+Norte Chico,105,Troglodytes musculus,Southern House Wren,255,584,0.4366
+Norte Chico,105,Diuca diuca,Diuca Finch,254,584,0.4349
+Norte Chico,105,Tachycineta leucopyga,Chilean Swallow,251,584,0.4298
+Norte Chico,105,Mimus thenca,Chilean Mockingbird,245,584,0.4195
+Norte Chico,105,Numenius hudsonicus,Hudsonian Whimbrel,209,584,0.3579
+Norte Chico,105,Daptrius chimango,Chimango Caracara,209,584,0.3579
+Norte Chico,105,Zenaida meloda,West Peruvian Dove,196,584,0.3356
+Norte Chico,105,Haematopus palliatus,American Oystercatcher,187,584,0.3202
+Norte Chico,105,Leistes loyca,Long-tailed Meadowlark,175,584,0.2997
+Norte Chico,105,Zenaida auriculata,Eared Dove,174,584,0.2979
+Norte Chico,105,Passer domesticus,House Sparrow,165,584,0.2825
+Norte Chico,105,Leucophaeus modestus,Gray Gull,163,584,0.2791
+Norte Chico,105,Lessonia rufa,Austral Negrito,161,584,0.2757
+Norte Chico,105,Turdus falcklandii,Austral Thrush,161,584,0.2757
+Norte Chico,105,Fulica armillata,Red-gartered Coot,154,584,0.2637
+Norte Chico,105,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,138,584,0.2363
+Norte Chico,105,Anas georgica,Yellow-billed Pintail,137,584,0.2346
+Norte Chico,105,Himantopus mexicanus,Black-necked Stilt,137,584,0.2346
+Norte Chico,105,Agelasticus thilius,Yellow-winged Blackbird,134,584,0.2295
+Norte Chico,105,Pelecanus thagus,Peruvian Pelican,128,584,0.2192
+Norte Chico,120,Zonotrichia capensis,Rufous-collared Sparrow,529,928,0.57
+Norte Chico,120,Cathartes aura,Turkey Vulture,502,928,0.5409
+Norte Chico,120,Larus dominicanus,Kelp Gull,479,928,0.5162
+Norte Chico,120,Nannopterum brasilianum,Neotropic Cormorant,413,928,0.445
+Norte Chico,120,Vanellus chilensis,Southern Lapwing,379,928,0.4084
+Norte Chico,120,Diuca diuca,Diuca Finch,374,928,0.403
+Norte Chico,120,Troglodytes musculus,Southern House Wren,361,928,0.389
+Norte Chico,120,Tachycineta leucopyga,Chilean Swallow,342,928,0.3685
+Norte Chico,120,Mimus thenca,Chilean Mockingbird,340,928,0.3664
+Norte Chico,120,Numenius hudsonicus,Hudsonian Whimbrel,337,928,0.3631
+Norte Chico,120,Haematopus palliatus,American Oystercatcher,316,928,0.3405
+Norte Chico,120,Daptrius chimango,Chimango Caracara,289,928,0.3114
+Norte Chico,120,Zenaida meloda,West Peruvian Dove,258,928,0.278
+Norte Chico,120,Leistes loyca,Long-tailed Meadowlark,256,928,0.2759
+Norte Chico,120,Lessonia rufa,Austral Negrito,249,928,0.2683
+Norte Chico,120,Pelecanus thagus,Peruvian Pelican,224,928,0.2414
+Norte Chico,120,Zenaida auriculata,Eared Dove,224,928,0.2414
+Norte Chico,120,Egretta thula,Snowy Egret,222,928,0.2392
+Norte Chico,120,Fulica armillata,Red-gartered Coot,214,928,0.2306
+Norte Chico,120,Leucophaeus modestus,Gray Gull,213,928,0.2295
+Norte Chico,120,Passer domesticus,House Sparrow,210,928,0.2263
+Norte Chico,120,Anairetes parulus,Tufted Tit-Tyrant,203,928,0.2188
+Norte Chico,120,Himantopus mexicanus,Black-necked Stilt,195,928,0.2101
+Norte Chico,120,Agelasticus thilius,Yellow-winged Blackbird,193,928,0.208
+Norte Chico,120,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,193,928,0.208
+Norte Chico,135,Larus dominicanus,Kelp Gull,248,417,0.5947
+Norte Chico,135,Cathartes aura,Turkey Vulture,248,417,0.5947
+Norte Chico,135,Zonotrichia capensis,Rufous-collared Sparrow,244,417,0.5851
+Norte Chico,135,Nannopterum brasilianum,Neotropic Cormorant,200,417,0.4796
+Norte Chico,135,Troglodytes musculus,Southern House Wren,191,417,0.458
+Norte Chico,135,Diuca diuca,Diuca Finch,185,417,0.4436
+Norte Chico,135,Vanellus chilensis,Southern Lapwing,184,417,0.4412
+Norte Chico,135,Daptrius chimango,Chimango Caracara,182,417,0.4365
+Norte Chico,135,Tachycineta leucopyga,Chilean Swallow,180,417,0.4317
+Norte Chico,135,Mimus thenca,Chilean Mockingbird,175,417,0.4197
+Norte Chico,135,Leistes loyca,Long-tailed Meadowlark,145,417,0.3477
+Norte Chico,135,Numenius hudsonicus,Hudsonian Whimbrel,142,417,0.3405
+Norte Chico,135,Zenaida meloda,West Peruvian Dove,136,417,0.3261
+Norte Chico,135,Haematopus palliatus,American Oystercatcher,126,417,0.3022
+Norte Chico,135,Zenaida auriculata,Eared Dove,119,417,0.2854
+Norte Chico,135,Fulica armillata,Red-gartered Coot,118,417,0.283
+Norte Chico,135,Turdus falcklandii,Austral Thrush,116,417,0.2782
+Norte Chico,135,Agelasticus thilius,Yellow-winged Blackbird,114,417,0.2734
+Norte Chico,135,Coragyps atratus,Black Vulture,109,417,0.2614
+Norte Chico,135,Lessonia rufa,Austral Negrito,108,417,0.259
+Norte Chico,135,Anairetes parulus,Tufted Tit-Tyrant,107,417,0.2566
+Norte Chico,135,Passer domesticus,House Sparrow,105,417,0.2518
+Norte Chico,135,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,105,417,0.2518
+Norte Chico,135,Rhopospina fruticeti,Mourning Sierra Finch,105,417,0.2518
+Norte Chico,135,Himantopus mexicanus,Black-necked Stilt,103,417,0.247
+Norte Chico,150,Zonotrichia capensis,Rufous-collared Sparrow,214,359,0.5961
+Norte Chico,150,Cathartes aura,Turkey Vulture,195,359,0.5432
+Norte Chico,150,Larus dominicanus,Kelp Gull,191,359,0.532
+Norte Chico,150,Mimus thenca,Chilean Mockingbird,169,359,0.4708
+Norte Chico,150,Diuca diuca,Diuca Finch,161,359,0.4485
+Norte Chico,150,Tachycineta leucopyga,Chilean Swallow,160,359,0.4457
+Norte Chico,150,Nannopterum brasilianum,Neotropic Cormorant,157,359,0.4373
+Norte Chico,150,Troglodytes musculus,Southern House Wren,149,359,0.415
+Norte Chico,150,Vanellus chilensis,Southern Lapwing,146,359,0.4067
+Norte Chico,150,Daptrius chimango,Chimango Caracara,137,359,0.3816
+Norte Chico,150,Leistes loyca,Long-tailed Meadowlark,130,359,0.3621
+Norte Chico,150,Numenius hudsonicus,Hudsonian Whimbrel,130,359,0.3621
+Norte Chico,150,Haematopus palliatus,American Oystercatcher,116,359,0.3231
+Norte Chico,150,Zenaida meloda,West Peruvian Dove,115,359,0.3203
+Norte Chico,150,Zenaida auriculata,Eared Dove,105,359,0.2925
+Norte Chico,150,Turdus falcklandii,Austral Thrush,102,359,0.2841
+Norte Chico,150,Pelecanus thagus,Peruvian Pelican,100,359,0.2786
+Norte Chico,150,Anairetes parulus,Tufted Tit-Tyrant,100,359,0.2786
+Norte Chico,150,Sicalis luteola,Grassland Yellow-Finch,96,359,0.2674
+Norte Chico,150,Lessonia rufa,Austral Negrito,95,359,0.2646
+Norte Chico,150,Egretta thula,Snowy Egret,94,359,0.2618
+Norte Chico,150,Himantopus mexicanus,Black-necked Stilt,93,359,0.2591
+Norte Chico,150,Passer domesticus,House Sparrow,92,359,0.2563
+Norte Chico,150,Leptasthenura aegithaloides,Plain-mantled Tit-Spinetail,92,359,0.2563
+Norte Chico,150,Fulica armillata,Red-gartered Coot,92,359,0.2563
+Norte Chico,165,Zonotrichia capensis,Rufous-collared Sparrow,153,229,0.6681
+Norte Chico,165,Cathartes aura,Turkey Vulture,139,229,0.607
+Norte Chico,165,Larus dominicanus,Kelp Gull,119,229,0.5197
+Norte Chico,165,Troglodytes musculus,Southern House Wren,115,229,0.5022
+Norte Chico,165,Diuca diuca,Diuca Finch,111,229,0.4847
+Norte Chico,165,Mimus thenca,Chilean Mockingbird,107,229,0.4672
+Norte Chico,165,Vanellus chilensis,Southern Lapwing,106,229,0.4629
+Norte Chico,165,Nannopterum brasilianum,Neotropic Cormorant,102,229,0.4454
+Norte Chico,165,Tachycineta leucopyga,Chilean Swallow,102,229,0.4454
+Norte Chico,165,Daptrius chimango,Chimango Caracara,92,229,0.4017
+Norte Chico,165,Leistes loyca,Long-tailed Meadowlark,82,229,0.3581
+Norte Chico,165,Zenaida meloda,West Peruvian Dove,80,229,0.3493
+Norte Chico,165,Zenaida auriculata,Eared Dove,78,229,0.3406
+Norte Chico,165,Numenius hudsonicus,Hudsonian Whimbrel,77,229,0.3362
+Norte Chico,165,Passer domesticus,House Sparrow,75,229,0.3275
+Norte Chico,165,Haematopus palliatus,American Oystercatcher,73,229,0.3188
+Norte Chico,165,Turdus falcklandii,Austral Thrush,70,229,0.3057
+Norte Chico,165,Coragyps atratus,Black Vulture,68,229,0.2969
+Norte Chico,165,Agelasticus thilius,Yellow-winged Blackbird,66,229,0.2882
+Norte Chico,165,Anas georgica,Yellow-billed Pintail,66,229,0.2882
+Norte Chico,165,Lessonia rufa,Austral Negrito,65,229,0.2838
+Norte Chico,165,Fulica armillata,Red-gartered Coot,62,229,0.2707
+Norte Chico,165,Columbina picui,Picui Ground Dove,61,229,0.2664
+Norte Chico,165,Egretta thula,Snowy Egret,61,229,0.2664
+Norte Chico,165,Sicalis luteola,Grassland Yellow-Finch,58,229,0.2533
+Norte Chico,180,Cathartes aura,Turkey Vulture,233,393,0.5929
+Norte Chico,180,Zonotrichia capensis,Rufous-collared Sparrow,230,393,0.5852
+Norte Chico,180,Larus dominicanus,Kelp Gull,207,393,0.5267
+Norte Chico,180,Nannopterum brasilianum,Neotropic Cormorant,190,393,0.4835
+Norte Chico,180,Troglodytes musculus,Southern House Wren,184,393,0.4682
+Norte Chico,180,Mimus thenca,Chilean Mockingbird,181,393,0.4606
+Norte Chico,180,Vanellus chilensis,Southern Lapwing,175,393,0.4453
+Norte Chico,180,Tachycineta leucopyga,Chilean Swallow,172,393,0.4377
+Norte Chico,180,Diuca diuca,Diuca Finch,171,393,0.4351
+Norte Chico,180,Daptrius chimango,Chimango Caracara,154,393,0.3919
+Norte Chico,180,Haematopus palliatus,American Oystercatcher,149,393,0.3791
+Norte Chico,180,Numenius hudsonicus,Hudsonian Whimbrel,147,393,0.374
+Norte Chico,180,Leistes loyca,Long-tailed Meadowlark,137,393,0.3486
+Norte Chico,180,Fulica armillata,Red-gartered Coot,122,393,0.3104
+Norte Chico,180,Lessonia rufa,Austral Negrito,121,393,0.3079
+Norte Chico,180,Zenaida meloda,West Peruvian Dove,120,393,0.3053
+Norte Chico,180,Himantopus mexicanus,Black-necked Stilt,118,393,0.3003
+Norte Chico,180,Agelasticus thilius,Yellow-winged Blackbird,118,393,0.3003
+Norte Chico,180,Zenaida auriculata,Eared Dove,114,393,0.2901
+Norte Chico,180,Turdus falcklandii,Austral Thrush,109,393,0.2774
+Norte Chico,180,Leucophaeus modestus,Gray Gull,109,393,0.2774
+Norte Chico,180,Egretta thula,Snowy Egret,107,393,0.2723
+Norte Chico,180,Mareca sibilatrix,Chiloe Wigeon,106,393,0.2697
+Norte Chico,180,Anas georgica,Yellow-billed Pintail,106,393,0.2697
+Norte Chico,180,Pelecanus thagus,Peruvian Pelican,103,393,0.2621
+Norte Chico,195,Zonotrichia capensis,Rufous-collared Sparrow,87,134,0.6493
+Norte Chico,195,Cathartes aura,Turkey Vulture,83,134,0.6194
+Norte Chico,195,Nannopterum brasilianum,Neotropic Cormorant,69,134,0.5149
+Norte Chico,195,Larus dominicanus,Kelp Gull,68,134,0.5075
+Norte Chico,195,Tachycineta leucopyga,Chilean Swallow,66,134,0.4925
+Norte Chico,195,Troglodytes musculus,Southern House Wren,62,134,0.4627
+Norte Chico,195,Mimus thenca,Chilean Mockingbird,62,134,0.4627
+Norte Chico,195,Daptrius chimango,Chimango Caracara,61,134,0.4552
+Norte Chico,195,Vanellus chilensis,Southern Lapwing,61,134,0.4552
+Norte Chico,195,Diuca diuca,Diuca Finch,60,134,0.4478
+Norte Chico,195,Numenius hudsonicus,Hudsonian Whimbrel,53,134,0.3955
+Norte Chico,195,Leistes loyca,Long-tailed Meadowlark,48,134,0.3582
+Norte Chico,195,Agelasticus thilius,Yellow-winged Blackbird,42,134,0.3134
+Norte Chico,195,Haematopus palliatus,American Oystercatcher,42,134,0.3134
+Norte Chico,195,Fulica armillata,Red-gartered Coot,41,134,0.306
+Norte Chico,195,Zenaida auriculata,Eared Dove,41,134,0.306
+Norte Chico,195,Egretta thula,Snowy Egret,41,134,0.306
+Norte Chico,195,Coragyps atratus,Black Vulture,40,134,0.2985
+Norte Chico,195,Pelecanus thagus,Peruvian Pelican,39,134,0.291
+Norte Chico,195,Anas georgica,Yellow-billed Pintail,39,134,0.291
+Norte Chico,195,Rhopospina fruticeti,Mourning Sierra Finch,38,134,0.2836
+Norte Chico,195,Anairetes parulus,Tufted Tit-Tyrant,37,134,0.2761
+Norte Chico,195,Himantopus mexicanus,Black-necked Stilt,36,134,0.2687
+Norte Chico,195,Leucophaeus modestus,Gray Gull,36,134,0.2687
+Norte Chico,195,Zenaida meloda,West Peruvian Dove,35,134,0.2612
+Norte Chico,210,Zonotrichia capensis,Rufous-collared Sparrow,86,132,0.6515
+Norte Chico,210,Cathartes aura,Turkey Vulture,79,132,0.5985
+Norte Chico,210,Larus dominicanus,Kelp Gull,71,132,0.5379
+Norte Chico,210,Mimus thenca,Chilean Mockingbird,64,132,0.4848
+Norte Chico,210,Nannopterum brasilianum,Neotropic Cormorant,64,132,0.4848
+Norte Chico,210,Troglodytes musculus,Southern House Wren,63,132,0.4773
+Norte Chico,210,Tachycineta leucopyga,Chilean Swallow,62,132,0.4697
+Norte Chico,210,Vanellus chilensis,Southern Lapwing,58,132,0.4394
+Norte Chico,210,Diuca diuca,Diuca Finch,56,132,0.4242
+Norte Chico,210,Daptrius chimango,Chimango Caracara,55,132,0.4167
+Norte Chico,210,Haematopus palliatus,American Oystercatcher,54,132,0.4091
+Norte Chico,210,Zenaida meloda,West Peruvian Dove,54,132,0.4091
+Norte Chico,210,Numenius hudsonicus,Hudsonian Whimbrel,50,132,0.3788
+Norte Chico,210,Egretta thula,Snowy Egret,43,132,0.3258
+Norte Chico,210,Leucophaeus modestus,Gray Gull,43,132,0.3258
+Norte Chico,210,Fulica armillata,Red-gartered Coot,43,132,0.3258
+Norte Chico,210,Turdus falcklandii,Austral Thrush,43,132,0.3258
+Norte Chico,210,Pelecanus thagus,Peruvian Pelican,43,132,0.3258
+Norte Chico,210,Rhodopis vesper,Oasis Hummingbird,40,132,0.303
+Norte Chico,210,Agelasticus thilius,Yellow-winged Blackbird,38,132,0.2879
+Norte Chico,210,Zenaida auriculata,Eared Dove,38,132,0.2879
+Norte Chico,210,Passer domesticus,House Sparrow,38,132,0.2879
+Norte Chico,210,Mareca sibilatrix,Chiloe Wigeon,38,132,0.2879
+Norte Chico,210,Himantopus mexicanus,Black-necked Stilt,38,132,0.2879
+Norte Chico,210,Lessonia rufa,Austral Negrito,37,132,0.2803
+Norte Chico,225,Zonotrichia capensis,Rufous-collared Sparrow,46,66,0.697
+Norte Chico,225,Cathartes aura,Turkey Vulture,43,66,0.6515
+Norte Chico,225,Vanellus chilensis,Southern Lapwing,37,66,0.5606
+Norte Chico,225,Tachycineta leucopyga,Chilean Swallow,37,66,0.5606
+Norte Chico,225,Daptrius chimango,Chimango Caracara,36,66,0.5455
+Norte Chico,225,Larus dominicanus,Kelp Gull,35,66,0.5303
+Norte Chico,225,Mimus thenca,Chilean Mockingbird,33,66,0.5
+Norte Chico,225,Troglodytes musculus,Southern House Wren,33,66,0.5
+Norte Chico,225,Nannopterum brasilianum,Neotropic Cormorant,32,66,0.4848
+Norte Chico,225,Diuca diuca,Diuca Finch,31,66,0.4697
+Norte Chico,225,Haematopus palliatus,American Oystercatcher,27,66,0.4091
+Norte Chico,225,Zenaida meloda,West Peruvian Dove,26,66,0.3939
+Norte Chico,225,Numenius hudsonicus,Hudsonian Whimbrel,25,66,0.3788
+Norte Chico,225,Leistes loyca,Long-tailed Meadowlark,24,66,0.3636
+Norte Chico,225,Rhodopis vesper,Oasis Hummingbird,23,66,0.3485
+Norte Chico,225,Sephanoides sephaniodes,Green-backed Firecrown,23,66,0.3485
+Norte Chico,225,Zenaida auriculata,Eared Dove,22,66,0.3333
+Norte Chico,225,Turdus falcklandii,Austral Thrush,22,66,0.3333
+Norte Chico,225,Fulica armillata,Red-gartered Coot,22,66,0.3333
+Norte Chico,225,Leucophaeus modestus,Gray Gull,21,66,0.3182
+Norte Chico,225,Lessonia rufa,Austral Negrito,21,66,0.3182
+Norte Chico,225,Anairetes parulus,Tufted Tit-Tyrant,21,66,0.3182
+Norte Chico,225,Agelasticus thilius,Yellow-winged Blackbird,20,66,0.303
+Norte Chico,225,Fulica rufifrons,Red-fronted Coot,20,66,0.303
+Norte Chico,225,Sicalis luteola,Grassland Yellow-Finch,20,66,0.303
+Norte Chico,240,Cathartes aura,Turkey Vulture,105,158,0.6646
+Norte Chico,240,Zonotrichia capensis,Rufous-collared Sparrow,95,158,0.6013
+Norte Chico,240,Larus dominicanus,Kelp Gull,86,158,0.5443
+Norte Chico,240,Daptrius chimango,Chimango Caracara,78,158,0.4937
+Norte Chico,240,Nannopterum brasilianum,Neotropic Cormorant,77,158,0.4873
+Norte Chico,240,Mimus thenca,Chilean Mockingbird,72,158,0.4557
+Norte Chico,240,Diuca diuca,Diuca Finch,70,158,0.443
+Norte Chico,240,Troglodytes musculus,Southern House Wren,70,158,0.443
+Norte Chico,240,Vanellus chilensis,Southern Lapwing,66,158,0.4177
+Norte Chico,240,Tachycineta leucopyga,Chilean Swallow,63,158,0.3987
+Norte Chico,240,Egretta thula,Snowy Egret,61,158,0.3861
+Norte Chico,240,Numenius hudsonicus,Hudsonian Whimbrel,60,158,0.3797
+Norte Chico,240,Zenaida meloda,West Peruvian Dove,59,158,0.3734
+Norte Chico,240,Leistes loyca,Long-tailed Meadowlark,57,158,0.3608
+Norte Chico,240,Haematopus palliatus,American Oystercatcher,56,158,0.3544
+Norte Chico,240,Lessonia rufa,Austral Negrito,52,158,0.3291
+Norte Chico,240,Agelasticus thilius,Yellow-winged Blackbird,52,158,0.3291
+Norte Chico,240,Leucophaeus modestus,Gray Gull,52,158,0.3291
+Norte Chico,240,Himantopus mexicanus,Black-necked Stilt,48,158,0.3038
+Norte Chico,240,Fulica armillata,Red-gartered Coot,47,158,0.2975
+Norte Chico,240,Ardea alba,Great Egret,45,158,0.2848
+Norte Chico,240,Pelecanus thagus,Peruvian Pelican,45,158,0.2848
+Norte Chico,240,Turdus falcklandii,Austral Thrush,44,158,0.2785
+Norte Chico,240,Zenaida auriculata,Eared Dove,44,158,0.2785
+Norte Chico,240,Rhodopis vesper,Oasis Hummingbird,43,158,0.2722
+Norte Grande,15,Zonotrichia capensis,Rufous-collared Sparrow,1950,5775,0.3377
+Norte Grande,15,Zenaida meloda,West Peruvian Dove,1869,5775,0.3236
+Norte Grande,15,Cathartes aura,Turkey Vulture,1664,5775,0.2881
+Norte Grande,15,Passer domesticus,House Sparrow,1285,5775,0.2225
+Norte Grande,15,Columba livia,Rock Pigeon,1146,5775,0.1984
+Norte Grande,15,Columbina cruziana,Croaking Ground Dove,792,5775,0.1371
+Norte Grande,15,Rhodopis vesper,Oasis Hummingbird,773,5775,0.1339
+Norte Grande,15,Leucophaeus modestus,Gray Gull,723,5775,0.1252
+Norte Grande,15,Larus belcheri,Belcher's Gull,690,5775,0.1195
+Norte Grande,15,Nannopterum brasilianum,Neotropic Cormorant,661,5775,0.1145
+Norte Grande,15,Pygochelidon cyanoleuca,Blue-and-white Swallow,619,5775,0.1072
+Norte Grande,15,Chroicocephalus serranus,Andean Gull,609,5775,0.1055
+Norte Grande,15,Larus dominicanus,Kelp Gull,550,5775,0.0952
+Norte Grande,15,Pelecanus thagus,Peruvian Pelican,497,5775,0.0861
+Norte Grande,15,Molothrus bonariensis,Shiny Cowbird,479,5775,0.0829
+Norte Grande,15,Numenius hudsonicus,Hudsonian Whimbrel,442,5775,0.0765
+Norte Grande,15,Sula variegata,Peruvian Booby,437,5775,0.0757
+Norte Grande,15,Haematopus palliatus,American Oystercatcher,434,5775,0.0752
+Norte Grande,15,Lophonetta specularioides,Crested Duck,432,5775,0.0748
+Norte Grande,15,Zenaida auriculata,Eared Dove,405,5775,0.0701
+Norte Grande,15,Haematopus ater,Blackish Oystercatcher,393,5775,0.0681
+Norte Grande,15,Anas flavirostris,Yellow-billed Teal,375,5775,0.0649
+Norte Grande,15,Oressochen melanopterus,Andean Goose,365,5775,0.0632
+Norte Grande,15,Conirostrum cinereum,Cinereous Conebill,337,5775,0.0584
+Norte Grande,15,Troglodytes musculus,Southern House Wren,317,5775,0.0549
+Norte Grande,30,Zonotrichia capensis,Rufous-collared Sparrow,1964,5356,0.3667
+Norte Grande,30,Zenaida meloda,West Peruvian Dove,1808,5356,0.3376
+Norte Grande,30,Cathartes aura,Turkey Vulture,1798,5356,0.3357
+Norte Grande,30,Passer domesticus,House Sparrow,1149,5356,0.2145
+Norte Grande,30,Larus belcheri,Belcher's Gull,972,5356,0.1815
+Norte Grande,30,Nannopterum brasilianum,Neotropic Cormorant,938,5356,0.1751
+Norte Grande,30,Leucophaeus modestus,Gray Gull,934,5356,0.1744
+Norte Grande,30,Columba livia,Rock Pigeon,913,5356,0.1705
+Norte Grande,30,Larus dominicanus,Kelp Gull,820,5356,0.1531
+Norte Grande,30,Pygochelidon cyanoleuca,Blue-and-white Swallow,813,5356,0.1518
+Norte Grande,30,Chroicocephalus serranus,Andean Gull,784,5356,0.1464
+Norte Grande,30,Haematopus palliatus,American Oystercatcher,685,5356,0.1279
+Norte Grande,30,Pelecanus thagus,Peruvian Pelican,669,5356,0.1249
+Norte Grande,30,Numenius hudsonicus,Hudsonian Whimbrel,659,5356,0.123
+Norte Grande,30,Rhodopis vesper,Oasis Hummingbird,658,5356,0.1229
+Norte Grande,30,Columbina cruziana,Croaking Ground Dove,643,5356,0.1201
+Norte Grande,30,Sula variegata,Peruvian Booby,615,5356,0.1148
+Norte Grande,30,Troglodytes musculus,Southern House Wren,610,5356,0.1139
+Norte Grande,30,Zenaida auriculata,Eared Dove,595,5356,0.1111
+Norte Grande,30,Haematopus ater,Blackish Oystercatcher,588,5356,0.1098
+Norte Grande,30,Anas flavirostris,Yellow-billed Teal,563,5356,0.1051
+Norte Grande,30,Lophonetta specularioides,Crested Duck,562,5356,0.1049
+Norte Grande,30,Oressochen melanopterus,Andean Goose,514,5356,0.096
+Norte Grande,30,Conirostrum cinereum,Cinereous Conebill,506,5356,0.0945
+Norte Grande,30,Nycticorax nycticorax,Black-crowned Night Heron,500,5356,0.0934
+Norte Grande,45,Zonotrichia capensis,Rufous-collared Sparrow,1412,3273,0.4314
+Norte Grande,45,Cathartes aura,Turkey Vulture,1358,3273,0.4149
+Norte Grande,45,Zenaida meloda,West Peruvian Dove,1261,3273,0.3853
+Norte Grande,45,Nannopterum brasilianum,Neotropic Cormorant,770,3273,0.2353
+Norte Grande,45,Larus belcheri,Belcher's Gull,754,3273,0.2304
+Norte Grande,45,Leucophaeus modestus,Gray Gull,737,3273,0.2252
+Norte Grande,45,Passer domesticus,House Sparrow,718,3273,0.2194
+Norte Grande,45,Larus dominicanus,Kelp Gull,670,3273,0.2047
+Norte Grande,45,Pygochelidon cyanoleuca,Blue-and-white Swallow,601,3273,0.1836
+Norte Grande,45,Haematopus palliatus,American Oystercatcher,592,3273,0.1809
+Norte Grande,45,Columba livia,Rock Pigeon,586,3273,0.179
+Norte Grande,45,Numenius hudsonicus,Hudsonian Whimbrel,584,3273,0.1784
+Norte Grande,45,Pelecanus thagus,Peruvian Pelican,581,3273,0.1775
+Norte Grande,45,Troglodytes musculus,Southern House Wren,564,3273,0.1723
+Norte Grande,45,Rhodopis vesper,Oasis Hummingbird,519,3273,0.1586
+Norte Grande,45,Sula variegata,Peruvian Booby,515,3273,0.1573
+Norte Grande,45,Chroicocephalus serranus,Andean Gull,511,3273,0.1561
+Norte Grande,45,Haematopus ater,Blackish Oystercatcher,486,3273,0.1485
+Norte Grande,45,Nycticorax nycticorax,Black-crowned Night Heron,469,3273,0.1433
+Norte Grande,45,Zenaida auriculata,Eared Dove,464,3273,0.1418
+Norte Grande,45,Conirostrum cinereum,Cinereous Conebill,452,3273,0.1381
+Norte Grande,45,Columbina cruziana,Croaking Ground Dove,427,3273,0.1305
+Norte Grande,45,Anas flavirostris,Yellow-billed Teal,378,3273,0.1155
+Norte Grande,45,Xenospingus concolor,Slender-billed Finch,375,3273,0.1146
+Norte Grande,45,Lophonetta specularioides,Crested Duck,372,3273,0.1137
+Norte Grande,60,Zonotrichia capensis,Rufous-collared Sparrow,1237,2984,0.4145
+Norte Grande,60,Cathartes aura,Turkey Vulture,1141,2984,0.3824
+Norte Grande,60,Zenaida meloda,West Peruvian Dove,1077,2984,0.3609
+Norte Grande,60,Larus belcheri,Belcher's Gull,671,2984,0.2249
+Norte Grande,60,Leucophaeus modestus,Gray Gull,662,2984,0.2218
+Norte Grande,60,Nannopterum brasilianum,Neotropic Cormorant,660,2984,0.2212
+Norte Grande,60,Passer domesticus,House Sparrow,631,2984,0.2115
+Norte Grande,60,Chroicocephalus serranus,Andean Gull,590,2984,0.1977
+Norte Grande,60,Larus dominicanus,Kelp Gull,586,2984,0.1964
+Norte Grande,60,Pygochelidon cyanoleuca,Blue-and-white Swallow,584,2984,0.1957
+Norte Grande,60,Haematopus palliatus,American Oystercatcher,558,2984,0.187
+Norte Grande,60,Numenius hudsonicus,Hudsonian Whimbrel,543,2984,0.182
+Norte Grande,60,Troglodytes musculus,Southern House Wren,522,2984,0.1749
+Norte Grande,60,Pelecanus thagus,Peruvian Pelican,521,2984,0.1746
+Norte Grande,60,Rhodopis vesper,Oasis Hummingbird,459,2984,0.1538
+Norte Grande,60,Nycticorax nycticorax,Black-crowned Night Heron,448,2984,0.1501
+Norte Grande,60,Haematopus ater,Blackish Oystercatcher,443,2984,0.1485
+Norte Grande,60,Conirostrum cinereum,Cinereous Conebill,436,2984,0.1461
+Norte Grande,60,Sula variegata,Peruvian Booby,430,2984,0.1441
+Norte Grande,60,Columba livia,Rock Pigeon,423,2984,0.1418
+Norte Grande,60,Zenaida auriculata,Eared Dove,403,2984,0.1351
+Norte Grande,60,Lophonetta specularioides,Crested Duck,402,2984,0.1347
+Norte Grande,60,Xenospingus concolor,Slender-billed Finch,390,2984,0.1307
+Norte Grande,60,Columbina cruziana,Croaking Ground Dove,389,2984,0.1304
+Norte Grande,60,Anas flavirostris,Yellow-billed Teal,379,2984,0.127
+Norte Grande,75,Zonotrichia capensis,Rufous-collared Sparrow,691,1463,0.4723
+Norte Grande,75,Cathartes aura,Turkey Vulture,659,1463,0.4504
+Norte Grande,75,Zenaida meloda,West Peruvian Dove,625,1463,0.4272
+Norte Grande,75,Nannopterum brasilianum,Neotropic Cormorant,415,1463,0.2837
+Norte Grande,75,Leucophaeus modestus,Gray Gull,411,1463,0.2809
+Norte Grande,75,Larus belcheri,Belcher's Gull,407,1463,0.2782
+Norte Grande,75,Larus dominicanus,Kelp Gull,385,1463,0.2632
+Norte Grande,75,Troglodytes musculus,Southern House Wren,345,1463,0.2358
+Norte Grande,75,Haematopus palliatus,American Oystercatcher,343,1463,0.2344
+Norte Grande,75,Passer domesticus,House Sparrow,340,1463,0.2324
+Norte Grande,75,Pelecanus thagus,Peruvian Pelican,338,1463,0.231
+Norte Grande,75,Numenius hudsonicus,Hudsonian Whimbrel,331,1463,0.2262
+Norte Grande,75,Chroicocephalus serranus,Andean Gull,314,1463,0.2146
+Norte Grande,75,Pygochelidon cyanoleuca,Blue-and-white Swallow,314,1463,0.2146
+Norte Grande,75,Nycticorax nycticorax,Black-crowned Night Heron,301,1463,0.2057
+Norte Grande,75,Sula variegata,Peruvian Booby,266,1463,0.1818
+Norte Grande,75,Conirostrum cinereum,Cinereous Conebill,263,1463,0.1798
+Norte Grande,75,Rhodopis vesper,Oasis Hummingbird,263,1463,0.1798
+Norte Grande,75,Columba livia,Rock Pigeon,262,1463,0.1791
+Norte Grande,75,Xenospingus concolor,Slender-billed Finch,251,1463,0.1716
+Norte Grande,75,Haematopus ater,Blackish Oystercatcher,249,1463,0.1702
+Norte Grande,75,Zenaida auriculata,Eared Dove,237,1463,0.162
+Norte Grande,75,Columbina cruziana,Croaking Ground Dove,202,1463,0.1381
+Norte Grande,75,Anas flavirostris,Yellow-billed Teal,201,1463,0.1374
+Norte Grande,75,Larosterna inca,Inca Tern,198,1463,0.1353
+Norte Grande,90,Zonotrichia capensis,Rufous-collared Sparrow,645,1314,0.4909
+Norte Grande,90,Cathartes aura,Turkey Vulture,575,1314,0.4376
+Norte Grande,90,Zenaida meloda,West Peruvian Dove,532,1314,0.4049
+Norte Grande,90,Leucophaeus modestus,Gray Gull,353,1314,0.2686
+Norte Grande,90,Larus belcheri,Belcher's Gull,350,1314,0.2664
+Norte Grande,90,Nannopterum brasilianum,Neotropic Cormorant,344,1314,0.2618
+Norte Grande,90,Haematopus palliatus,American Oystercatcher,323,1314,0.2458
+Norte Grande,90,Troglodytes musculus,Southern House Wren,316,1314,0.2405
+Norte Grande,90,Pygochelidon cyanoleuca,Blue-and-white Swallow,313,1314,0.2382
+Norte Grande,90,Larus dominicanus,Kelp Gull,310,1314,0.2359
+Norte Grande,90,Nycticorax nycticorax,Black-crowned Night Heron,300,1314,0.2283
+Norte Grande,90,Pelecanus thagus,Peruvian Pelican,299,1314,0.2275
+Norte Grande,90,Numenius hudsonicus,Hudsonian Whimbrel,290,1314,0.2207
+Norte Grande,90,Passer domesticus,House Sparrow,284,1314,0.2161
+Norte Grande,90,Chroicocephalus serranus,Andean Gull,282,1314,0.2146
+Norte Grande,90,Xenospingus concolor,Slender-billed Finch,279,1314,0.2123
+Norte Grande,90,Conirostrum cinereum,Cinereous Conebill,273,1314,0.2078
+Norte Grande,90,Rhodopis vesper,Oasis Hummingbird,235,1314,0.1788
+Norte Grande,90,Zenaida auriculata,Eared Dove,216,1314,0.1644
+Norte Grande,90,Gallinula galeata,Common Gallinule,216,1314,0.1644
+Norte Grande,90,Egretta caerulea,Little Blue Heron,213,1314,0.1621
+Norte Grande,90,Haematopus ater,Blackish Oystercatcher,208,1314,0.1583
+Norte Grande,90,Sula variegata,Peruvian Booby,206,1314,0.1568
+Norte Grande,90,Columba livia,Rock Pigeon,205,1314,0.156
+Norte Grande,90,Spatula cyanoptera,Cinnamon Teal,194,1314,0.1476
+Norte Grande,105,Zonotrichia capensis,Rufous-collared Sparrow,355,647,0.5487
+Norte Grande,105,Cathartes aura,Turkey Vulture,298,647,0.4606
+Norte Grande,105,Zenaida meloda,West Peruvian Dove,274,647,0.4235
+Norte Grande,105,Nannopterum brasilianum,Neotropic Cormorant,185,647,0.2859
+Norte Grande,105,Troglodytes musculus,Southern House Wren,180,647,0.2782
+Norte Grande,105,Pygochelidon cyanoleuca,Blue-and-white Swallow,173,647,0.2674
+Norte Grande,105,Leucophaeus modestus,Gray Gull,171,647,0.2643
+Norte Grande,105,Larus belcheri,Belcher's Gull,167,647,0.2581
+Norte Grande,105,Chroicocephalus serranus,Andean Gull,163,647,0.2519
+Norte Grande,105,Haematopus palliatus,American Oystercatcher,158,647,0.2442
+Norte Grande,105,Larus dominicanus,Kelp Gull,153,647,0.2365
+Norte Grande,105,Xenospingus concolor,Slender-billed Finch,148,647,0.2287
+Norte Grande,105,Conirostrum cinereum,Cinereous Conebill,147,647,0.2272
+Norte Grande,105,Pelecanus thagus,Peruvian Pelican,146,647,0.2257
+Norte Grande,105,Passer domesticus,House Sparrow,146,647,0.2257
+Norte Grande,105,Numenius hudsonicus,Hudsonian Whimbrel,142,647,0.2195
+Norte Grande,105,Nycticorax nycticorax,Black-crowned Night Heron,139,647,0.2148
+Norte Grande,105,Rhodopis vesper,Oasis Hummingbird,118,647,0.1824
+Norte Grande,105,Gallinula galeata,Common Gallinule,117,647,0.1808
+Norte Grande,105,Phrygilus atriceps,Black-hooded Sierra Finch,114,647,0.1762
+Norte Grande,105,Anas flavirostris,Yellow-billed Teal,110,647,0.17
+Norte Grande,105,Spatula cyanoptera,Cinnamon Teal,108,647,0.1669
+Norte Grande,105,Zenaida auriculata,Eared Dove,106,647,0.1638
+Norte Grande,105,Patagioenas maculosa,Spot-winged Pigeon,101,647,0.1561
+Norte Grande,105,Haematopus ater,Blackish Oystercatcher,98,647,0.1515
+Norte Grande,120,Zonotrichia capensis,Rufous-collared Sparrow,574,1397,0.4109
+Norte Grande,120,Cathartes aura,Turkey Vulture,496,1397,0.355
+Norte Grande,120,Zenaida meloda,West Peruvian Dove,470,1397,0.3364
+Norte Grande,120,Leucophaeus modestus,Gray Gull,325,1397,0.2326
+Norte Grande,120,Nannopterum brasilianum,Neotropic Cormorant,319,1397,0.2283
+Norte Grande,120,Larus belcheri,Belcher's Gull,314,1397,0.2248
+Norte Grande,120,Haematopus palliatus,American Oystercatcher,302,1397,0.2162
+Norte Grande,120,Numenius hudsonicus,Hudsonian Whimbrel,289,1397,0.2069
+Norte Grande,120,Pelecanus thagus,Peruvian Pelican,288,1397,0.2062
+Norte Grande,120,Troglodytes musculus,Southern House Wren,275,1397,0.1969
+Norte Grande,120,Pygochelidon cyanoleuca,Blue-and-white Swallow,273,1397,0.1954
+Norte Grande,120,Larus dominicanus,Kelp Gull,270,1397,0.1933
+Norte Grande,120,Sternula lorata,Peruvian Tern,269,1397,0.1926
+Norte Grande,120,Xenospingus concolor,Slender-billed Finch,265,1397,0.1897
+Norte Grande,120,Chroicocephalus serranus,Andean Gull,260,1397,0.1861
+Norte Grande,120,Nycticorax nycticorax,Black-crowned Night Heron,257,1397,0.184
+Norte Grande,120,Passer domesticus,House Sparrow,231,1397,0.1654
+Norte Grande,120,Gallinula galeata,Common Gallinule,225,1397,0.1611
+Norte Grande,120,Spatula cyanoptera,Cinnamon Teal,207,1397,0.1482
+Norte Grande,120,Conirostrum cinereum,Cinereous Conebill,205,1397,0.1467
+Norte Grande,120,Egretta caerulea,Little Blue Heron,202,1397,0.1446
+Norte Grande,120,Leistes bellicosus,Peruvian Meadowlark,199,1397,0.1424
+Norte Grande,120,Haematopus ater,Blackish Oystercatcher,182,1397,0.1303
+Norte Grande,120,Rhodopis vesper,Oasis Hummingbird,181,1397,0.1296
+Norte Grande,120,Ardea alba,Great Egret,179,1397,0.1281
+Norte Grande,135,Zonotrichia capensis,Rufous-collared Sparrow,221,411,0.5377
+Norte Grande,135,Cathartes aura,Turkey Vulture,183,411,0.4453
+Norte Grande,135,Zenaida meloda,West Peruvian Dove,174,411,0.4234
+Norte Grande,135,Leucophaeus modestus,Gray Gull,115,411,0.2798
+Norte Grande,135,Larus belcheri,Belcher's Gull,111,411,0.2701
+Norte Grande,135,Larus dominicanus,Kelp Gull,108,411,0.2628
+Norte Grande,135,Pygochelidon cyanoleuca,Blue-and-white Swallow,107,411,0.2603
+Norte Grande,135,Troglodytes musculus,Southern House Wren,103,411,0.2506
+Norte Grande,135,Nannopterum brasilianum,Neotropic Cormorant,102,411,0.2482
+Norte Grande,135,Haematopus palliatus,American Oystercatcher,100,411,0.2433
+Norte Grande,135,Passer domesticus,House Sparrow,98,411,0.2384
+Norte Grande,135,Conirostrum cinereum,Cinereous Conebill,95,411,0.2311
+Norte Grande,135,Numenius hudsonicus,Hudsonian Whimbrel,93,411,0.2263
+Norte Grande,135,Pelecanus thagus,Peruvian Pelican,91,411,0.2214
+Norte Grande,135,Nycticorax nycticorax,Black-crowned Night Heron,91,411,0.2214
+Norte Grande,135,Xenospingus concolor,Slender-billed Finch,86,411,0.2092
+Norte Grande,135,Chroicocephalus serranus,Andean Gull,83,411,0.2019
+Norte Grande,135,Sula variegata,Peruvian Booby,81,411,0.1971
+Norte Grande,135,Haematopus ater,Blackish Oystercatcher,74,411,0.18
+Norte Grande,135,Patagioenas maculosa,Spot-winged Pigeon,71,411,0.1727
+Norte Grande,135,Phrygilus atriceps,Black-hooded Sierra Finch,70,411,0.1703
+Norte Grande,135,Sicalis olivascens,Greenish Yellow-Finch,70,411,0.1703
+Norte Grande,135,Zenaida auriculata,Eared Dove,69,411,0.1679
+Norte Grande,135,Rhodopis vesper,Oasis Hummingbird,68,411,0.1655
+Norte Grande,135,Rhopospina fruticeti,Mourning Sierra Finch,65,411,0.1582
+Norte Grande,150,Zonotrichia capensis,Rufous-collared Sparrow,237,432,0.5486
+Norte Grande,150,Zenaida meloda,West Peruvian Dove,183,432,0.4236
+Norte Grande,150,Cathartes aura,Turkey Vulture,176,432,0.4074
+Norte Grande,150,Pygochelidon cyanoleuca,Blue-and-white Swallow,132,432,0.3056
+Norte Grande,150,Troglodytes musculus,Southern House Wren,127,432,0.294
+Norte Grande,150,Xenospingus concolor,Slender-billed Finch,127,432,0.294
+Norte Grande,150,Leucophaeus modestus,Gray Gull,114,432,0.2639
+Norte Grande,150,Haematopus palliatus,American Oystercatcher,113,432,0.2616
+Norte Grande,150,Nannopterum brasilianum,Neotropic Cormorant,113,432,0.2616
+Norte Grande,150,Nycticorax nycticorax,Black-crowned Night Heron,111,432,0.2569
+Norte Grande,150,Larus belcheri,Belcher's Gull,107,432,0.2477
+Norte Grande,150,Gallinula galeata,Common Gallinule,105,432,0.2431
+Norte Grande,150,Chroicocephalus serranus,Andean Gull,104,432,0.2407
+Norte Grande,150,Larus dominicanus,Kelp Gull,102,432,0.2361
+Norte Grande,150,Pelecanus thagus,Peruvian Pelican,102,432,0.2361
+Norte Grande,150,Spatula cyanoptera,Cinnamon Teal,99,432,0.2292
+Norte Grande,150,Conirostrum cinereum,Cinereous Conebill,97,432,0.2245
+Norte Grande,150,Ardea alba,Great Egret,94,432,0.2176
+Norte Grande,150,Numenius hudsonicus,Hudsonian Whimbrel,94,432,0.2176
+Norte Grande,150,Egretta caerulea,Little Blue Heron,91,432,0.2106
+Norte Grande,150,Leistes bellicosus,Peruvian Meadowlark,89,432,0.206
+Norte Grande,150,Passer domesticus,House Sparrow,88,432,0.2037
+Norte Grande,150,Egretta thula,Snowy Egret,85,432,0.1968
+Norte Grande,150,Geranoaetus polyosoma,Variable Hawk,83,432,0.1921
+Norte Grande,150,Tringa melanoleuca,Greater Yellowlegs,80,432,0.1852
+Norte Grande,165,Zonotrichia capensis,Rufous-collared Sparrow,116,188,0.617
+Norte Grande,165,Cathartes aura,Turkey Vulture,90,188,0.4787
+Norte Grande,165,Zenaida meloda,West Peruvian Dove,80,188,0.4255
+Norte Grande,165,Pygochelidon cyanoleuca,Blue-and-white Swallow,68,188,0.3617
+Norte Grande,165,Troglodytes musculus,Southern House Wren,62,188,0.3298
+Norte Grande,165,Xenospingus concolor,Slender-billed Finch,55,188,0.2926
+Norte Grande,165,Conirostrum cinereum,Cinereous Conebill,52,188,0.2766
+Norte Grande,165,Geranoaetus polyosoma,Variable Hawk,50,188,0.266
+Norte Grande,165,Leucophaeus modestus,Gray Gull,47,188,0.25
+Norte Grande,165,Passer domesticus,House Sparrow,47,188,0.25
+Norte Grande,165,Chroicocephalus serranus,Andean Gull,44,188,0.234
+Norte Grande,165,Larus belcheri,Belcher's Gull,43,188,0.2287
+Norte Grande,165,Nannopterum brasilianum,Neotropic Cormorant,43,188,0.2287
+Norte Grande,165,Haematopus palliatus,American Oystercatcher,43,188,0.2287
+Norte Grande,165,Gallinula galeata,Common Gallinule,42,188,0.2234
+Norte Grande,165,Nycticorax nycticorax,Black-crowned Night Heron,42,188,0.2234
+Norte Grande,165,Pelecanus thagus,Peruvian Pelican,40,188,0.2128
+Norte Grande,165,Falco sparverius,American Kestrel,40,188,0.2128
+Norte Grande,165,Larus dominicanus,Kelp Gull,40,188,0.2128
+Norte Grande,165,Spatula cyanoptera,Cinnamon Teal,40,188,0.2128
+Norte Grande,165,Phrygilus atriceps,Black-hooded Sierra Finch,39,188,0.2074
+Norte Grande,165,Rhopospina fruticeti,Mourning Sierra Finch,39,188,0.2074
+Norte Grande,165,Leistes bellicosus,Peruvian Meadowlark,39,188,0.2074
+Norte Grande,165,Patagioenas maculosa,Spot-winged Pigeon,37,188,0.1968
+Norte Grande,165,Numenius hudsonicus,Hudsonian Whimbrel,36,188,0.1915
+Norte Grande,180,Sternula lorata,Peruvian Tern,643,1167,0.551
+Norte Grande,180,Zonotrichia capensis,Rufous-collared Sparrow,262,1167,0.2245
+Norte Grande,180,Cathartes aura,Turkey Vulture,225,1167,0.1928
+Norte Grande,180,Zenaida meloda,West Peruvian Dove,214,1167,0.1834
+Norte Grande,180,Leucophaeus modestus,Gray Gull,164,1167,0.1405
+Norte Grande,180,Haematopus palliatus,American Oystercatcher,159,1167,0.1362
+Norte Grande,180,Xenospingus concolor,Slender-billed Finch,152,1167,0.1302
+Norte Grande,180,Larus belcheri,Belcher's Gull,151,1167,0.1294
+Norte Grande,180,Troglodytes musculus,Southern House Wren,146,1167,0.1251
+Norte Grande,180,Pelecanus thagus,Peruvian Pelican,145,1167,0.1243
+Norte Grande,180,Nycticorax nycticorax,Black-crowned Night Heron,142,1167,0.1217
+Norte Grande,180,Nannopterum brasilianum,Neotropic Cormorant,141,1167,0.1208
+Norte Grande,180,Larus dominicanus,Kelp Gull,137,1167,0.1174
+Norte Grande,180,Numenius hudsonicus,Hudsonian Whimbrel,132,1167,0.1131
+Norte Grande,180,Chroicocephalus serranus,Andean Gull,129,1167,0.1105
+Norte Grande,180,Gallinula galeata,Common Gallinule,128,1167,0.1097
+Norte Grande,180,Spatula cyanoptera,Cinnamon Teal,128,1167,0.1097
+Norte Grande,180,Pygochelidon cyanoleuca,Blue-and-white Swallow,128,1167,0.1097
+Norte Grande,180,Egretta caerulea,Little Blue Heron,124,1167,0.1063
+Norte Grande,180,Leistes bellicosus,Peruvian Meadowlark,116,1167,0.0994
+Norte Grande,180,Conirostrum cinereum,Cinereous Conebill,113,1167,0.0968
+Norte Grande,180,Charadrius vociferus,Killdeer,112,1167,0.096
+Norte Grande,180,Ardea alba,Great Egret,110,1167,0.0943
+Norte Grande,180,Columbina cruziana,Croaking Ground Dove,106,1167,0.0908
+Norte Grande,180,Egretta thula,Snowy Egret,103,1167,0.0883
+Norte Grande,195,Zonotrichia capensis,Rufous-collared Sparrow,76,128,0.5938
+Norte Grande,195,Zenaida meloda,West Peruvian Dove,62,128,0.4844
+Norte Grande,195,Cathartes aura,Turkey Vulture,62,128,0.4844
+Norte Grande,195,Troglodytes musculus,Southern House Wren,48,128,0.375
+Norte Grande,195,Haematopus palliatus,American Oystercatcher,40,128,0.3125
+Norte Grande,195,Pygochelidon cyanoleuca,Blue-and-white Swallow,40,128,0.3125
+Norte Grande,195,Larus dominicanus,Kelp Gull,40,128,0.3125
+Norte Grande,195,Larus belcheri,Belcher's Gull,39,128,0.3047
+Norte Grande,195,Numenius hudsonicus,Hudsonian Whimbrel,38,128,0.2969
+Norte Grande,195,Leucophaeus modestus,Gray Gull,38,128,0.2969
+Norte Grande,195,Nannopterum brasilianum,Neotropic Cormorant,38,128,0.2969
+Norte Grande,195,Pelecanus thagus,Peruvian Pelican,38,128,0.2969
+Norte Grande,195,Passer domesticus,House Sparrow,35,128,0.2734
+Norte Grande,195,Chroicocephalus serranus,Andean Gull,35,128,0.2734
+Norte Grande,195,Nycticorax nycticorax,Black-crowned Night Heron,31,128,0.2422
+Norte Grande,195,Geranoaetus polyosoma,Variable Hawk,31,128,0.2422
+Norte Grande,195,Sula variegata,Peruvian Booby,29,128,0.2266
+Norte Grande,195,Xenospingus concolor,Slender-billed Finch,29,128,0.2266
+Norte Grande,195,Conirostrum cinereum,Cinereous Conebill,29,128,0.2266
+Norte Grande,195,Zenaida auriculata,Eared Dove,29,128,0.2266
+Norte Grande,195,Patagioenas maculosa,Spot-winged Pigeon,28,128,0.2188
+Norte Grande,195,Leistes bellicosus,Peruvian Meadowlark,28,128,0.2188
+Norte Grande,195,Haematopus ater,Blackish Oystercatcher,28,128,0.2188
+Norte Grande,195,Sicalis olivascens,Greenish Yellow-Finch,28,128,0.2188
+Norte Grande,195,Tringa melanoleuca,Greater Yellowlegs,27,128,0.2109
+Norte Grande,210,Zonotrichia capensis,Rufous-collared Sparrow,91,168,0.5417
+Norte Grande,210,Cathartes aura,Turkey Vulture,68,168,0.4048
+Norte Grande,210,Zenaida meloda,West Peruvian Dove,66,168,0.3929
+Norte Grande,210,Troglodytes musculus,Southern House Wren,56,168,0.3333
+Norte Grande,210,Conirostrum cinereum,Cinereous Conebill,50,168,0.2976
+Norte Grande,210,Pygochelidon cyanoleuca,Blue-and-white Swallow,49,168,0.2917
+Norte Grande,210,Passer domesticus,House Sparrow,44,168,0.2619
+Norte Grande,210,Xenospingus concolor,Slender-billed Finch,43,168,0.256
+Norte Grande,210,Leucophaeus modestus,Gray Gull,41,168,0.244
+Norte Grande,210,Geranoaetus polyosoma,Variable Hawk,40,168,0.2381
+Norte Grande,210,Larus dominicanus,Kelp Gull,39,168,0.2321
+Norte Grande,210,Larus belcheri,Belcher's Gull,39,168,0.2321
+Norte Grande,210,Nannopterum brasilianum,Neotropic Cormorant,38,168,0.2262
+Norte Grande,210,Spinus magellanicus,Hooded Siskin,37,168,0.2202
+Norte Grande,210,Patagioenas maculosa,Spot-winged Pigeon,36,168,0.2143
+Norte Grande,210,Columbina cruziana,Croaking Ground Dove,35,168,0.2083
+Norte Grande,210,Sula variegata,Peruvian Booby,34,168,0.2024
+Norte Grande,210,Larosterna inca,Inca Tern,34,168,0.2024
+Norte Grande,210,Phrygilus atriceps,Black-hooded Sierra Finch,34,168,0.2024
+Norte Grande,210,Rhodopis vesper,Oasis Hummingbird,32,168,0.1905
+Norte Grande,210,Turdus chiguanco,Chiguanco Thrush,32,168,0.1905
+Norte Grande,210,Haematopus palliatus,American Oystercatcher,32,168,0.1905
+Norte Grande,210,Falco sparverius,American Kestrel,32,168,0.1905
+Norte Grande,210,Pelecanus thagus,Peruvian Pelican,31,168,0.1845
+Norte Grande,210,Leistes bellicosus,Peruvian Meadowlark,31,168,0.1845
+Norte Grande,225,Zonotrichia capensis,Rufous-collared Sparrow,35,68,0.5147
+Norte Grande,225,Cathartes aura,Turkey Vulture,30,68,0.4412
+Norte Grande,225,Zenaida meloda,West Peruvian Dove,29,68,0.4265
+Norte Grande,225,Nannopterum brasilianum,Neotropic Cormorant,21,68,0.3088
+Norte Grande,225,Leucophaeus modestus,Gray Gull,20,68,0.2941
+Norte Grande,225,Larus belcheri,Belcher's Gull,20,68,0.2941
+Norte Grande,225,Numenius hudsonicus,Hudsonian Whimbrel,20,68,0.2941
+Norte Grande,225,Pelecanus thagus,Peruvian Pelican,20,68,0.2941
+Norte Grande,225,Larus dominicanus,Kelp Gull,20,68,0.2941
+Norte Grande,225,Pygochelidon cyanoleuca,Blue-and-white Swallow,19,68,0.2794
+Norte Grande,225,Troglodytes musculus,Southern House Wren,19,68,0.2794
+Norte Grande,225,Nycticorax nycticorax,Black-crowned Night Heron,18,68,0.2647
+Norte Grande,225,Haematopus palliatus,American Oystercatcher,18,68,0.2647
+Norte Grande,225,Xenospingus concolor,Slender-billed Finch,18,68,0.2647
+Norte Grande,225,Conirostrum cinereum,Cinereous Conebill,16,68,0.2353
+Norte Grande,225,Geranoaetus polyosoma,Variable Hawk,15,68,0.2206
+Norte Grande,225,Chroicocephalus serranus,Andean Gull,15,68,0.2206
+Norte Grande,225,Egretta thula,Snowy Egret,13,68,0.1912
+Norte Grande,225,Zenaida auriculata,Eared Dove,13,68,0.1912
+Norte Grande,225,Leistes bellicosus,Peruvian Meadowlark,13,68,0.1912
+Norte Grande,225,Passer domesticus,House Sparrow,13,68,0.1912
+Norte Grande,225,Rynchops niger,Black Skimmer,13,68,0.1912
+Norte Grande,225,Tringa melanoleuca,Greater Yellowlegs,12,68,0.1765
+Norte Grande,225,Calidris bairdii,Baird's Sandpiper,12,68,0.1765
+Norte Grande,225,Phrygilus atriceps,Black-hooded Sierra Finch,12,68,0.1765
+Norte Grande,240,Sternula lorata,Peruvian Tern,292,488,0.5984
+Norte Grande,240,Zonotrichia capensis,Rufous-collared Sparrow,95,488,0.1947
+Norte Grande,240,Zenaida meloda,West Peruvian Dove,81,488,0.166
+Norte Grande,240,Cathartes aura,Turkey Vulture,77,488,0.1578
+Norte Grande,240,Leucophaeus modestus,Gray Gull,62,488,0.127
+Norte Grande,240,Pelecanus thagus,Peruvian Pelican,60,488,0.123
+Norte Grande,240,Larus belcheri,Belcher's Gull,60,488,0.123
+Norte Grande,240,Nannopterum brasilianum,Neotropic Cormorant,59,488,0.1209
+Norte Grande,240,Xenospingus concolor,Slender-billed Finch,57,488,0.1168
+Norte Grande,240,Haematopus palliatus,American Oystercatcher,57,488,0.1168
+Norte Grande,240,Chroicocephalus serranus,Andean Gull,56,488,0.1148
+Norte Grande,240,Larus dominicanus,Kelp Gull,56,488,0.1148
+Norte Grande,240,Nycticorax nycticorax,Black-crowned Night Heron,54,488,0.1107
+Norte Grande,240,Pygochelidon cyanoleuca,Blue-and-white Swallow,50,488,0.1025
+Norte Grande,240,Leistes bellicosus,Peruvian Meadowlark,49,488,0.1004
+Norte Grande,240,Troglodytes musculus,Southern House Wren,48,488,0.0984
+Norte Grande,240,Numenius hudsonicus,Hudsonian Whimbrel,45,488,0.0922
+Norte Grande,240,Egretta thula,Snowy Egret,45,488,0.0922
+Norte Grande,240,Conirostrum cinereum,Cinereous Conebill,44,488,0.0902
+Norte Grande,240,Columbina cruziana,Croaking Ground Dove,43,488,0.0881
+Norte Grande,240,Ardea alba,Great Egret,43,488,0.0881
+Norte Grande,240,Gallinula galeata,Common Gallinule,42,488,0.0861
+Norte Grande,240,Tringa melanoleuca,Greater Yellowlegs,41,488,0.084
+Norte Grande,240,Sula variegata,Peruvian Booby,41,488,0.084
+Norte Grande,240,Spatula cyanoptera,Cinnamon Teal,40,488,0.082
+Sur,15,Vanellus chilensis,Southern Lapwing,8792,18947,0.464
+Sur,15,Daptrius chimango,Chimango Caracara,7674,18947,0.405
+Sur,15,Turdus falcklandii,Austral Thrush,6490,18947,0.3425
+Sur,15,Passer domesticus,House Sparrow,6193,18947,0.3269
+Sur,15,Larus dominicanus,Kelp Gull,4769,18947,0.2517
+Sur,15,Tachycineta leucopyga,Chilean Swallow,4750,18947,0.2507
+Sur,15,Sephanoides sephaniodes,Green-backed Firecrown,4590,18947,0.2423
+Sur,15,Troglodytes musculus,Southern House Wren,4273,18947,0.2255
+Sur,15,Theristicus melanopis,Black-faced Ibis,4235,18947,0.2235
+Sur,15,Coragyps atratus,Black Vulture,3670,18947,0.1937
+Sur,15,Columba livia,Rock Pigeon,3549,18947,0.1873
+Sur,15,Elaenia albiceps,White-crested Elaenia,3127,18947,0.165
+Sur,15,Chroicocephalus maculipennis,Brown-hooded Gull,3022,18947,0.1595
+Sur,15,Nannopterum brasilianum,Neotropic Cormorant,2977,18947,0.1571
+Sur,15,Spinus barbatus,Black-chinned Siskin,2916,18947,0.1539
+Sur,15,Zonotrichia capensis,Rufous-collared Sparrow,2579,18947,0.1361
+Sur,15,Cathartes aura,Turkey Vulture,2499,18947,0.1319
+Sur,15,Anairetes parulus,Tufted Tit-Tyrant,2483,18947,0.131
+Sur,15,Zenaida auriculata,Eared Dove,2446,18947,0.1291
+Sur,15,Curaeus curaeus,Austral Blackbird,2210,18947,0.1166
+Sur,15,Pyrope pyrope,Fire-eyed Diucon,1886,18947,0.0995
+Sur,15,Patagioenas araucana,Chilean Pigeon,1862,18947,0.0983
+Sur,15,Mimus thenca,Chilean Mockingbird,1857,18947,0.098
+Sur,15,Sicalis luteola,Grassland Yellow-Finch,1821,18947,0.0961
+Sur,15,Leistes loyca,Long-tailed Meadowlark,1743,18947,0.092
+Sur,30,Vanellus chilensis,Southern Lapwing,7447,13678,0.5445
+Sur,30,Daptrius chimango,Chimango Caracara,6888,13678,0.5036
+Sur,30,Turdus falcklandii,Austral Thrush,5676,13678,0.415
+Sur,30,Tachycineta leucopyga,Chilean Swallow,4733,13678,0.346
+Sur,30,Larus dominicanus,Kelp Gull,4675,13678,0.3418
+Sur,30,Troglodytes musculus,Southern House Wren,4652,13678,0.3401
+Sur,30,Sephanoides sephaniodes,Green-backed Firecrown,4108,13678,0.3003
+Sur,30,Passer domesticus,House Sparrow,4029,13678,0.2946
+Sur,30,Coragyps atratus,Black Vulture,3793,13678,0.2773
+Sur,30,Nannopterum brasilianum,Neotropic Cormorant,3791,13678,0.2772
+Sur,30,Theristicus melanopis,Black-faced Ibis,3697,13678,0.2703
+Sur,30,Chroicocephalus maculipennis,Brown-hooded Gull,3437,13678,0.2513
+Sur,30,Spinus barbatus,Black-chinned Siskin,3295,13678,0.2409
+Sur,30,Elaenia albiceps,White-crested Elaenia,3055,13678,0.2234
+Sur,30,Cathartes aura,Turkey Vulture,2966,13678,0.2168
+Sur,30,Anairetes parulus,Tufted Tit-Tyrant,2960,13678,0.2164
+Sur,30,Zonotrichia capensis,Rufous-collared Sparrow,2677,13678,0.1957
+Sur,30,Pyrope pyrope,Fire-eyed Diucon,2454,13678,0.1794
+Sur,30,Curaeus curaeus,Austral Blackbird,2421,13678,0.177
+Sur,30,Zenaida auriculata,Eared Dove,2248,13678,0.1644
+Sur,30,Columba livia,Rock Pigeon,2242,13678,0.1639
+Sur,30,Sicalis luteola,Grassland Yellow-Finch,2094,13678,0.1531
+Sur,30,Patagioenas araucana,Chilean Pigeon,2062,13678,0.1508
+Sur,30,Cygnus melancoryphus,Black-necked Swan,1960,13678,0.1433
+Sur,30,Anas georgica,Yellow-billed Pintail,1950,13678,0.1426
+Sur,45,Vanellus chilensis,Southern Lapwing,4404,7341,0.5999
+Sur,45,Daptrius chimango,Chimango Caracara,4247,7341,0.5785
+Sur,45,Turdus falcklandii,Austral Thrush,3731,7341,0.5082
+Sur,45,Troglodytes musculus,Southern House Wren,3031,7341,0.4129
+Sur,45,Tachycineta leucopyga,Chilean Swallow,3015,7341,0.4107
+Sur,45,Larus dominicanus,Kelp Gull,2777,7341,0.3783
+Sur,45,Sephanoides sephaniodes,Green-backed Firecrown,2496,7341,0.34
+Sur,45,Coragyps atratus,Black Vulture,2324,7341,0.3166
+Sur,45,Passer domesticus,House Sparrow,2306,7341,0.3141
+Sur,45,Nannopterum brasilianum,Neotropic Cormorant,2268,7341,0.3089
+Sur,45,Theristicus melanopis,Black-faced Ibis,2089,7341,0.2846
+Sur,45,Spinus barbatus,Black-chinned Siskin,2064,7341,0.2812
+Sur,45,Anairetes parulus,Tufted Tit-Tyrant,2062,7341,0.2809
+Sur,45,Elaenia albiceps,White-crested Elaenia,1946,7341,0.2651
+Sur,45,Zonotrichia capensis,Rufous-collared Sparrow,1933,7341,0.2633
+Sur,45,Chroicocephalus maculipennis,Brown-hooded Gull,1881,7341,0.2562
+Sur,45,Cathartes aura,Turkey Vulture,1871,7341,0.2549
+Sur,45,Pyrope pyrope,Fire-eyed Diucon,1634,7341,0.2226
+Sur,45,Curaeus curaeus,Austral Blackbird,1566,7341,0.2133
+Sur,45,Zenaida auriculata,Eared Dove,1489,7341,0.2028
+Sur,45,Sicalis luteola,Grassland Yellow-Finch,1419,7341,0.1933
+Sur,45,Anas georgica,Yellow-billed Pintail,1404,7341,0.1913
+Sur,45,Fulica armillata,Red-gartered Coot,1385,7341,0.1887
+Sur,45,Columba livia,Rock Pigeon,1364,7341,0.1858
+Sur,45,Egretta thula,Snowy Egret,1283,7341,0.1748
+Sur,60,Vanellus chilensis,Southern Lapwing,3630,6485,0.5598
+Sur,60,Daptrius chimango,Chimango Caracara,3591,6485,0.5537
+Sur,60,Turdus falcklandii,Austral Thrush,3047,6485,0.4699
+Sur,60,Tachycineta leucopyga,Chilean Swallow,2679,6485,0.4131
+Sur,60,Troglodytes musculus,Southern House Wren,2673,6485,0.4122
+Sur,60,Larus dominicanus,Kelp Gull,2156,6485,0.3325
+Sur,60,Sephanoides sephaniodes,Green-backed Firecrown,2075,6485,0.32
+Sur,60,Coragyps atratus,Black Vulture,2039,6485,0.3144
+Sur,60,Spinus barbatus,Black-chinned Siskin,1909,6485,0.2944
+Sur,60,Anairetes parulus,Tufted Tit-Tyrant,1867,6485,0.2879
+Sur,60,Nannopterum brasilianum,Neotropic Cormorant,1861,6485,0.287
+Sur,60,Passer domesticus,House Sparrow,1826,6485,0.2816
+Sur,60,Zonotrichia capensis,Rufous-collared Sparrow,1751,6485,0.27
+Sur,60,Theristicus melanopis,Black-faced Ibis,1678,6485,0.2588
+Sur,60,Elaenia albiceps,White-crested Elaenia,1677,6485,0.2586
+Sur,60,Pyrope pyrope,Fire-eyed Diucon,1613,6485,0.2487
+Sur,60,Cathartes aura,Turkey Vulture,1585,6485,0.2444
+Sur,60,Chroicocephalus maculipennis,Brown-hooded Gull,1509,6485,0.2327
+Sur,60,Curaeus curaeus,Austral Blackbird,1477,6485,0.2278
+Sur,60,Zenaida auriculata,Eared Dove,1402,6485,0.2162
+Sur,60,Leistes loyca,Long-tailed Meadowlark,1344,6485,0.2072
+Sur,60,Sicalis luteola,Grassland Yellow-Finch,1324,6485,0.2042
+Sur,60,Anas georgica,Yellow-billed Pintail,1251,6485,0.1929
+Sur,60,Mimus thenca,Chilean Mockingbird,1176,6485,0.1813
+Sur,60,Anas flavirostris,Yellow-billed Teal,1159,6485,0.1787
+Sur,75,Vanellus chilensis,Southern Lapwing,1915,3042,0.6295
+Sur,75,Daptrius chimango,Chimango Caracara,1889,3042,0.621
+Sur,75,Turdus falcklandii,Austral Thrush,1673,3042,0.55
+Sur,75,Troglodytes musculus,Southern House Wren,1530,3042,0.503
+Sur,75,Tachycineta leucopyga,Chilean Swallow,1480,3042,0.4865
+Sur,75,Coragyps atratus,Black Vulture,1133,3042,0.3725
+Sur,75,Larus dominicanus,Kelp Gull,1120,3042,0.3682
+Sur,75,Sephanoides sephaniodes,Green-backed Firecrown,1120,3042,0.3682
+Sur,75,Spinus barbatus,Black-chinned Siskin,1094,3042,0.3596
+Sur,75,Anairetes parulus,Tufted Tit-Tyrant,1067,3042,0.3508
+Sur,75,Nannopterum brasilianum,Neotropic Cormorant,1006,3042,0.3307
+Sur,75,Zonotrichia capensis,Rufous-collared Sparrow,975,3042,0.3205
+Sur,75,Elaenia albiceps,White-crested Elaenia,963,3042,0.3166
+Sur,75,Pyrope pyrope,Fire-eyed Diucon,920,3042,0.3024
+Sur,75,Passer domesticus,House Sparrow,891,3042,0.2929
+Sur,75,Cathartes aura,Turkey Vulture,857,3042,0.2817
+Sur,75,Curaeus curaeus,Austral Blackbird,849,3042,0.2791
+Sur,75,Theristicus melanopis,Black-faced Ibis,830,3042,0.2728
+Sur,75,Zenaida auriculata,Eared Dove,815,3042,0.2679
+Sur,75,Sicalis luteola,Grassland Yellow-Finch,798,3042,0.2623
+Sur,75,Leistes loyca,Long-tailed Meadowlark,772,3042,0.2538
+Sur,75,Chroicocephalus maculipennis,Brown-hooded Gull,731,3042,0.2403
+Sur,75,Aphrastura spinicauda,Thorn-tailed Rayadito,696,3042,0.2288
+Sur,75,Anas georgica,Yellow-billed Pintail,688,3042,0.2262
+Sur,75,Anas flavirostris,Yellow-billed Teal,619,3042,0.2035
+Sur,90,Daptrius chimango,Chimango Caracara,1822,2861,0.6368
+Sur,90,Vanellus chilensis,Southern Lapwing,1754,2861,0.6131
+Sur,90,Turdus falcklandii,Austral Thrush,1543,2861,0.5393
+Sur,90,Tachycineta leucopyga,Chilean Swallow,1455,2861,0.5086
+Sur,90,Troglodytes musculus,Southern House Wren,1455,2861,0.5086
+Sur,90,Coragyps atratus,Black Vulture,1089,2861,0.3806
+Sur,90,Larus dominicanus,Kelp Gull,1067,2861,0.3729
+Sur,90,Spinus barbatus,Black-chinned Siskin,1056,2861,0.3691
+Sur,90,Anairetes parulus,Tufted Tit-Tyrant,1031,2861,0.3604
+Sur,90,Sephanoides sephaniodes,Green-backed Firecrown,1026,2861,0.3586
+Sur,90,Nannopterum brasilianum,Neotropic Cormorant,1022,2861,0.3572
+Sur,90,Zonotrichia capensis,Rufous-collared Sparrow,982,2861,0.3432
+Sur,90,Elaenia albiceps,White-crested Elaenia,948,2861,0.3314
+Sur,90,Pyrope pyrope,Fire-eyed Diucon,888,2861,0.3104
+Sur,90,Cathartes aura,Turkey Vulture,866,2861,0.3027
+Sur,90,Curaeus curaeus,Austral Blackbird,847,2861,0.2961
+Sur,90,Sicalis luteola,Grassland Yellow-Finch,800,2861,0.2796
+Sur,90,Theristicus melanopis,Black-faced Ibis,799,2861,0.2793
+Sur,90,Passer domesticus,House Sparrow,797,2861,0.2786
+Sur,90,Zenaida auriculata,Eared Dove,780,2861,0.2726
+Sur,90,Leistes loyca,Long-tailed Meadowlark,752,2861,0.2628
+Sur,90,Chroicocephalus maculipennis,Brown-hooded Gull,701,2861,0.245
+Sur,90,Anas georgica,Yellow-billed Pintail,696,2861,0.2433
+Sur,90,Aphrastura spinicauda,Thorn-tailed Rayadito,683,2861,0.2387
+Sur,90,Egretta thula,Snowy Egret,640,2861,0.2237
+Sur,105,Daptrius chimango,Chimango Caracara,1030,1603,0.6425
+Sur,105,Vanellus chilensis,Southern Lapwing,1023,1603,0.6382
+Sur,105,Turdus falcklandii,Austral Thrush,925,1603,0.577
+Sur,105,Troglodytes musculus,Southern House Wren,887,1603,0.5533
+Sur,105,Tachycineta leucopyga,Chilean Swallow,802,1603,0.5003
+Sur,105,Coragyps atratus,Black Vulture,667,1603,0.4161
+Sur,105,Sephanoides sephaniodes,Green-backed Firecrown,645,1603,0.4024
+Sur,105,Spinus barbatus,Black-chinned Siskin,641,1603,0.3999
+Sur,105,Anairetes parulus,Tufted Tit-Tyrant,636,1603,0.3968
+Sur,105,Larus dominicanus,Kelp Gull,619,1603,0.3862
+Sur,105,Nannopterum brasilianum,Neotropic Cormorant,577,1603,0.36
+Sur,105,Elaenia albiceps,White-crested Elaenia,573,1603,0.3575
+Sur,105,Pyrope pyrope,Fire-eyed Diucon,568,1603,0.3543
+Sur,105,Zonotrichia capensis,Rufous-collared Sparrow,553,1603,0.345
+Sur,105,Curaeus curaeus,Austral Blackbird,534,1603,0.3331
+Sur,105,Cathartes aura,Turkey Vulture,528,1603,0.3294
+Sur,105,Theristicus melanopis,Black-faced Ibis,515,1603,0.3213
+Sur,105,Aphrastura spinicauda,Thorn-tailed Rayadito,455,1603,0.2838
+Sur,105,Zenaida auriculata,Eared Dove,446,1603,0.2782
+Sur,105,Passer domesticus,House Sparrow,442,1603,0.2757
+Sur,105,Leistes loyca,Long-tailed Meadowlark,437,1603,0.2726
+Sur,105,Sicalis luteola,Grassland Yellow-Finch,422,1603,0.2633
+Sur,105,Anas georgica,Yellow-billed Pintail,421,1603,0.2626
+Sur,105,Chroicocephalus maculipennis,Brown-hooded Gull,415,1603,0.2589
+Sur,105,Anas flavirostris,Yellow-billed Teal,381,1603,0.2377
+Sur,120,Daptrius chimango,Chimango Caracara,1549,2572,0.6023
+Sur,120,Vanellus chilensis,Southern Lapwing,1448,2572,0.563
+Sur,120,Turdus falcklandii,Austral Thrush,1302,2572,0.5062
+Sur,120,Troglodytes musculus,Southern House Wren,1239,2572,0.4817
+Sur,120,Tachycineta leucopyga,Chilean Swallow,1232,2572,0.479
+Sur,120,Coragyps atratus,Black Vulture,1007,2572,0.3915
+Sur,120,Zonotrichia capensis,Rufous-collared Sparrow,969,2572,0.3767
+Sur,120,Nannopterum brasilianum,Neotropic Cormorant,939,2572,0.3651
+Sur,120,Sephanoides sephaniodes,Green-backed Firecrown,934,2572,0.3631
+Sur,120,Anairetes parulus,Tufted Tit-Tyrant,930,2572,0.3616
+Sur,120,Larus dominicanus,Kelp Gull,909,2572,0.3534
+Sur,120,Spinus barbatus,Black-chinned Siskin,898,2572,0.3491
+Sur,120,Elaenia albiceps,White-crested Elaenia,882,2572,0.3429
+Sur,120,Pyrope pyrope,Fire-eyed Diucon,856,2572,0.3328
+Sur,120,Cathartes aura,Turkey Vulture,816,2572,0.3173
+Sur,120,Curaeus curaeus,Austral Blackbird,816,2572,0.3173
+Sur,120,Leistes loyca,Long-tailed Meadowlark,704,2572,0.2737
+Sur,120,Theristicus melanopis,Black-faced Ibis,702,2572,0.2729
+Sur,120,Chroicocephalus maculipennis,Brown-hooded Gull,687,2572,0.2671
+Sur,120,Zenaida auriculata,Eared Dove,677,2572,0.2632
+Sur,120,Aphrastura spinicauda,Thorn-tailed Rayadito,665,2572,0.2586
+Sur,120,Anas georgica,Yellow-billed Pintail,650,2572,0.2527
+Sur,120,Sicalis luteola,Grassland Yellow-Finch,643,2572,0.25
+Sur,120,Passer domesticus,House Sparrow,640,2572,0.2488
+Sur,120,Patagioenas araucana,Chilean Pigeon,601,2572,0.2337
+Sur,135,Daptrius chimango,Chimango Caracara,640,1000,0.64
+Sur,135,Vanellus chilensis,Southern Lapwing,593,1000,0.593
+Sur,135,Turdus falcklandii,Austral Thrush,574,1000,0.574
+Sur,135,Troglodytes musculus,Southern House Wren,572,1000,0.572
+Sur,135,Tachycineta leucopyga,Chilean Swallow,529,1000,0.529
+Sur,135,Coragyps atratus,Black Vulture,460,1000,0.46
+Sur,135,Anairetes parulus,Tufted Tit-Tyrant,416,1000,0.416
+Sur,135,Nannopterum brasilianum,Neotropic Cormorant,415,1000,0.415
+Sur,135,Sephanoides sephaniodes,Green-backed Firecrown,405,1000,0.405
+Sur,135,Larus dominicanus,Kelp Gull,401,1000,0.401
+Sur,135,Spinus barbatus,Black-chinned Siskin,385,1000,0.385
+Sur,135,Elaenia albiceps,White-crested Elaenia,375,1000,0.375
+Sur,135,Zonotrichia capensis,Rufous-collared Sparrow,361,1000,0.361
+Sur,135,Cathartes aura,Turkey Vulture,350,1000,0.35
+Sur,135,Pyrope pyrope,Fire-eyed Diucon,333,1000,0.333
+Sur,135,Aphrastura spinicauda,Thorn-tailed Rayadito,314,1000,0.314
+Sur,135,Curaeus curaeus,Austral Blackbird,308,1000,0.308
+Sur,135,Theristicus melanopis,Black-faced Ibis,297,1000,0.297
+Sur,135,Chroicocephalus maculipennis,Brown-hooded Gull,294,1000,0.294
+Sur,135,Sicalis luteola,Grassland Yellow-Finch,282,1000,0.282
+Sur,135,Patagioenas araucana,Chilean Pigeon,265,1000,0.265
+Sur,135,Passer domesticus,House Sparrow,263,1000,0.263
+Sur,135,Anas georgica,Yellow-billed Pintail,261,1000,0.261
+Sur,135,Zenaida auriculata,Eared Dove,256,1000,0.256
+Sur,135,Egretta thula,Snowy Egret,253,1000,0.253
+Sur,150,Daptrius chimango,Chimango Caracara,636,992,0.6411
+Sur,150,Vanellus chilensis,Southern Lapwing,610,992,0.6149
+Sur,150,Turdus falcklandii,Austral Thrush,552,992,0.5565
+Sur,150,Troglodytes musculus,Southern House Wren,520,992,0.5242
+Sur,150,Tachycineta leucopyga,Chilean Swallow,517,992,0.5212
+Sur,150,Coragyps atratus,Black Vulture,478,992,0.4819
+Sur,150,Spinus barbatus,Black-chinned Siskin,418,992,0.4214
+Sur,150,Anairetes parulus,Tufted Tit-Tyrant,417,992,0.4204
+Sur,150,Zonotrichia capensis,Rufous-collared Sparrow,400,992,0.4032
+Sur,150,Nannopterum brasilianum,Neotropic Cormorant,395,992,0.3982
+Sur,150,Sephanoides sephaniodes,Green-backed Firecrown,389,992,0.3921
+Sur,150,Pyrope pyrope,Fire-eyed Diucon,384,992,0.3871
+Sur,150,Larus dominicanus,Kelp Gull,378,992,0.381
+Sur,150,Elaenia albiceps,White-crested Elaenia,368,992,0.371
+Sur,150,Cathartes aura,Turkey Vulture,364,992,0.3669
+Sur,150,Curaeus curaeus,Austral Blackbird,363,992,0.3659
+Sur,150,Theristicus melanopis,Black-faced Ibis,327,992,0.3296
+Sur,150,Aphrastura spinicauda,Thorn-tailed Rayadito,317,992,0.3196
+Sur,150,Leistes loyca,Long-tailed Meadowlark,300,992,0.3024
+Sur,150,Anas georgica,Yellow-billed Pintail,294,992,0.2964
+Sur,150,Sicalis luteola,Grassland Yellow-Finch,293,992,0.2954
+Sur,150,Passer domesticus,House Sparrow,285,992,0.2873
+Sur,150,Chroicocephalus maculipennis,Brown-hooded Gull,280,992,0.2823
+Sur,150,Zenaida auriculata,Eared Dove,273,992,0.2752
+Sur,150,Egretta thula,Snowy Egret,261,992,0.2631
+Sur,165,Daptrius chimango,Chimango Caracara,332,537,0.6182
+Sur,165,Turdus falcklandii,Austral Thrush,320,537,0.5959
+Sur,165,Vanellus chilensis,Southern Lapwing,320,537,0.5959
+Sur,165,Troglodytes musculus,Southern House Wren,306,537,0.5698
+Sur,165,Tachycineta leucopyga,Chilean Swallow,298,537,0.5549
+Sur,165,Coragyps atratus,Black Vulture,262,537,0.4879
+Sur,165,Sephanoides sephaniodes,Green-backed Firecrown,250,537,0.4655
+Sur,165,Nannopterum brasilianum,Neotropic Cormorant,237,537,0.4413
+Sur,165,Spinus barbatus,Black-chinned Siskin,232,537,0.432
+Sur,165,Anairetes parulus,Tufted Tit-Tyrant,226,537,0.4209
+Sur,165,Pyrope pyrope,Fire-eyed Diucon,218,537,0.406
+Sur,165,Larus dominicanus,Kelp Gull,217,537,0.4041
+Sur,165,Elaenia albiceps,White-crested Elaenia,209,537,0.3892
+Sur,165,Curaeus curaeus,Austral Blackbird,208,537,0.3873
+Sur,165,Zonotrichia capensis,Rufous-collared Sparrow,207,537,0.3855
+Sur,165,Cathartes aura,Turkey Vulture,199,537,0.3706
+Sur,165,Aphrastura spinicauda,Thorn-tailed Rayadito,181,537,0.3371
+Sur,165,Theristicus melanopis,Black-faced Ibis,173,537,0.3222
+Sur,165,Patagioenas araucana,Chilean Pigeon,158,537,0.2942
+Sur,165,Chroicocephalus maculipennis,Brown-hooded Gull,157,537,0.2924
+Sur,165,Sicalis luteola,Grassland Yellow-Finch,156,537,0.2905
+Sur,165,Leistes loyca,Long-tailed Meadowlark,149,537,0.2775
+Sur,165,Zenaida auriculata,Eared Dove,148,537,0.2756
+Sur,165,Egretta thula,Snowy Egret,140,537,0.2607
+Sur,165,Passer domesticus,House Sparrow,138,537,0.257
+Sur,180,Daptrius chimango,Chimango Caracara,581,1019,0.5702
+Sur,180,Vanellus chilensis,Southern Lapwing,527,1019,0.5172
+Sur,180,Tachycineta leucopyga,Chilean Swallow,525,1019,0.5152
+Sur,180,Turdus falcklandii,Austral Thrush,518,1019,0.5083
+Sur,180,Troglodytes musculus,Southern House Wren,516,1019,0.5064
+Sur,180,Coragyps atratus,Black Vulture,448,1019,0.4396
+Sur,180,Elaenia albiceps,White-crested Elaenia,417,1019,0.4092
+Sur,180,Zonotrichia capensis,Rufous-collared Sparrow,402,1019,0.3945
+Sur,180,Anairetes parulus,Tufted Tit-Tyrant,391,1019,0.3837
+Sur,180,Sephanoides sephaniodes,Green-backed Firecrown,388,1019,0.3808
+Sur,180,Nannopterum brasilianum,Neotropic Cormorant,372,1019,0.3651
+Sur,180,Spinus barbatus,Black-chinned Siskin,367,1019,0.3602
+Sur,180,Pyrope pyrope,Fire-eyed Diucon,355,1019,0.3484
+Sur,180,Aphrastura spinicauda,Thorn-tailed Rayadito,344,1019,0.3376
+Sur,180,Larus dominicanus,Kelp Gull,339,1019,0.3327
+Sur,180,Cathartes aura,Turkey Vulture,332,1019,0.3258
+Sur,180,Curaeus curaeus,Austral Blackbird,327,1019,0.3209
+Sur,180,Theristicus melanopis,Black-faced Ibis,297,1019,0.2915
+Sur,180,Leistes loyca,Long-tailed Meadowlark,291,1019,0.2856
+Sur,180,Patagioenas araucana,Chilean Pigeon,281,1019,0.2758
+Sur,180,Sicalis luteola,Grassland Yellow-Finch,258,1019,0.2532
+Sur,180,Scelorchilus rubecula,Chucao Tapaculo,257,1019,0.2522
+Sur,180,Chroicocephalus maculipennis,Brown-hooded Gull,257,1019,0.2522
+Sur,180,Passer domesticus,House Sparrow,250,1019,0.2453
+Sur,180,Zenaida auriculata,Eared Dove,245,1019,0.2404
+Sur,195,Daptrius chimango,Chimango Caracara,199,318,0.6258
+Sur,195,Turdus falcklandii,Austral Thrush,182,318,0.5723
+Sur,195,Tachycineta leucopyga,Chilean Swallow,167,318,0.5252
+Sur,195,Vanellus chilensis,Southern Lapwing,159,318,0.5
+Sur,195,Troglodytes musculus,Southern House Wren,155,318,0.4874
+Sur,195,Coragyps atratus,Black Vulture,143,318,0.4497
+Sur,195,Anairetes parulus,Tufted Tit-Tyrant,136,318,0.4277
+Sur,195,Sephanoides sephaniodes,Green-backed Firecrown,136,318,0.4277
+Sur,195,Zonotrichia capensis,Rufous-collared Sparrow,131,318,0.4119
+Sur,195,Elaenia albiceps,White-crested Elaenia,130,318,0.4088
+Sur,195,Aphrastura spinicauda,Thorn-tailed Rayadito,127,318,0.3994
+Sur,195,Pyrope pyrope,Fire-eyed Diucon,123,318,0.3868
+Sur,195,Nannopterum brasilianum,Neotropic Cormorant,122,318,0.3836
+Sur,195,Spinus barbatus,Black-chinned Siskin,121,318,0.3805
+Sur,195,Cathartes aura,Turkey Vulture,114,318,0.3585
+Sur,195,Larus dominicanus,Kelp Gull,113,318,0.3553
+Sur,195,Curaeus curaeus,Austral Blackbird,101,318,0.3176
+Sur,195,Scelorchilus rubecula,Chucao Tapaculo,99,318,0.3113
+Sur,195,Theristicus melanopis,Black-faced Ibis,90,318,0.283
+Sur,195,Patagioenas araucana,Chilean Pigeon,85,318,0.2673
+Sur,195,Anas georgica,Yellow-billed Pintail,82,318,0.2579
+Sur,195,Passer domesticus,House Sparrow,80,318,0.2516
+Sur,195,Chroicocephalus maculipennis,Brown-hooded Gull,80,318,0.2516
+Sur,195,Sicalis luteola,Grassland Yellow-Finch,78,318,0.2453
+Sur,195,Zenaida auriculata,Eared Dove,77,318,0.2421
+Sur,210,Daptrius chimango,Chimango Caracara,230,373,0.6166
+Sur,210,Turdus falcklandii,Austral Thrush,211,373,0.5657
+Sur,210,Tachycineta leucopyga,Chilean Swallow,209,373,0.5603
+Sur,210,Vanellus chilensis,Southern Lapwing,208,373,0.5576
+Sur,210,Troglodytes musculus,Southern House Wren,193,373,0.5174
+Sur,210,Coragyps atratus,Black Vulture,185,373,0.496
+Sur,210,Sephanoides sephaniodes,Green-backed Firecrown,167,373,0.4477
+Sur,210,Zonotrichia capensis,Rufous-collared Sparrow,165,373,0.4424
+Sur,210,Spinus barbatus,Black-chinned Siskin,154,373,0.4129
+Sur,210,Cathartes aura,Turkey Vulture,150,373,0.4021
+Sur,210,Elaenia albiceps,White-crested Elaenia,150,373,0.4021
+Sur,210,Aphrastura spinicauda,Thorn-tailed Rayadito,146,373,0.3914
+Sur,210,Larus dominicanus,Kelp Gull,143,373,0.3834
+Sur,210,Anairetes parulus,Tufted Tit-Tyrant,138,373,0.37
+Sur,210,Nannopterum brasilianum,Neotropic Cormorant,137,373,0.3673
+Sur,210,Pyrope pyrope,Fire-eyed Diucon,132,373,0.3539
+Sur,210,Curaeus curaeus,Austral Blackbird,125,373,0.3351
+Sur,210,Theristicus melanopis,Black-faced Ibis,117,373,0.3137
+Sur,210,Scelorchilus rubecula,Chucao Tapaculo,113,373,0.3029
+Sur,210,Zenaida auriculata,Eared Dove,111,373,0.2976
+Sur,210,Chroicocephalus maculipennis,Brown-hooded Gull,110,373,0.2949
+Sur,210,Leistes loyca,Long-tailed Meadowlark,102,373,0.2735
+Sur,210,Sicalis luteola,Grassland Yellow-Finch,102,373,0.2735
+Sur,210,Patagioenas araucana,Chilean Pigeon,101,373,0.2708
+Sur,210,Anas georgica,Yellow-billed Pintail,100,373,0.2681
+Sur,225,Daptrius chimango,Chimango Caracara,137,220,0.6227
+Sur,225,Turdus falcklandii,Austral Thrush,136,220,0.6182
+Sur,225,Troglodytes musculus,Southern House Wren,115,220,0.5227
+Sur,225,Tachycineta leucopyga,Chilean Swallow,111,220,0.5045
+Sur,225,Vanellus chilensis,Southern Lapwing,110,220,0.5
+Sur,225,Sephanoides sephaniodes,Green-backed Firecrown,108,220,0.4909
+Sur,225,Elaenia albiceps,White-crested Elaenia,99,220,0.45
+Sur,225,Coragyps atratus,Black Vulture,98,220,0.4455
+Sur,225,Aphrastura spinicauda,Thorn-tailed Rayadito,91,220,0.4136
+Sur,225,Anairetes parulus,Tufted Tit-Tyrant,91,220,0.4136
+Sur,225,Zonotrichia capensis,Rufous-collared Sparrow,89,220,0.4045
+Sur,225,Spinus barbatus,Black-chinned Siskin,86,220,0.3909
+Sur,225,Curaeus curaeus,Austral Blackbird,76,220,0.3455
+Sur,225,Scelorchilus rubecula,Chucao Tapaculo,75,220,0.3409
+Sur,225,Theristicus melanopis,Black-faced Ibis,73,220,0.3318
+Sur,225,Pyrope pyrope,Fire-eyed Diucon,73,220,0.3318
+Sur,225,Larus dominicanus,Kelp Gull,73,220,0.3318
+Sur,225,Cathartes aura,Turkey Vulture,72,220,0.3273
+Sur,225,Nannopterum brasilianum,Neotropic Cormorant,68,220,0.3091
+Sur,225,Patagioenas araucana,Chilean Pigeon,67,220,0.3045
+Sur,225,Zenaida auriculata,Eared Dove,58,220,0.2636
+Sur,225,Phrygilus patagonicus,Patagonian Sierra Finch,58,220,0.2636
+Sur,225,Pygarrhichas albogularis,White-throated Treerunner,53,220,0.2409
+Sur,225,Leistes loyca,Long-tailed Meadowlark,52,220,0.2364
+Sur,225,Chroicocephalus maculipennis,Brown-hooded Gull,50,220,0.2273
+Sur,240,Daptrius chimango,Chimango Caracara,322,540,0.5963
+Sur,240,Turdus falcklandii,Austral Thrush,287,540,0.5315
+Sur,240,Vanellus chilensis,Southern Lapwing,275,540,0.5093
+Sur,240,Coragyps atratus,Black Vulture,272,540,0.5037
+Sur,240,Troglodytes musculus,Southern House Wren,265,540,0.4907
+Sur,240,Tachycineta leucopyga,Chilean Swallow,263,540,0.487
+Sur,240,Sephanoides sephaniodes,Green-backed Firecrown,244,540,0.4519
+Sur,240,Aphrastura spinicauda,Thorn-tailed Rayadito,218,540,0.4037
+Sur,240,Elaenia albiceps,White-crested Elaenia,216,540,0.4
+Sur,240,Zonotrichia capensis,Rufous-collared Sparrow,216,540,0.4
+Sur,240,Spinus barbatus,Black-chinned Siskin,208,540,0.3852
+Sur,240,Nannopterum brasilianum,Neotropic Cormorant,207,540,0.3833
+Sur,240,Anairetes parulus,Tufted Tit-Tyrant,203,540,0.3759
+Sur,240,Cathartes aura,Turkey Vulture,203,540,0.3759
+Sur,240,Pyrope pyrope,Fire-eyed Diucon,188,540,0.3481
+Sur,240,Larus dominicanus,Kelp Gull,186,540,0.3444
+Sur,240,Curaeus curaeus,Austral Blackbird,177,540,0.3278
+Sur,240,Scelorchilus rubecula,Chucao Tapaculo,167,540,0.3093
+Sur,240,Patagioenas araucana,Chilean Pigeon,154,540,0.2852
+Sur,240,Theristicus melanopis,Black-faced Ibis,150,540,0.2778
+Sur,240,Passer domesticus,House Sparrow,142,540,0.263
+Sur,240,Leistes loyca,Long-tailed Meadowlark,141,540,0.2611
+Sur,240,Zenaida auriculata,Eared Dove,137,540,0.2537
+Sur,240,Geranoaetus polyosoma,Variable Hawk,130,540,0.2407
+Sur,240,Chroicocephalus maculipennis,Brown-hooded Gull,129,540,0.2389

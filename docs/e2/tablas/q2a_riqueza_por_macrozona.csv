@@ -1,0 +1,16 @@
+macrozona,escenario,n,q1,mediana,q3
+Norte Grande,5–240 min (todas),25259,4.0,8.0,14.0
+Norte Chico,5–240 min (todas),25817,6.0,10.0,16.0
+Centro,5–240 min (todas),133393,5.0,9.0,15.0
+Sur,5–240 min (todas),61528,6.0,10.0,17.0
+Austral,5–240 min (todas),111310,5.0,8.0,13.0
+Norte Grande,30–59 min,6178,6.0,10.0,14.0
+Norte Chico,30–59 min,5398,7.0,12.0,18.0
+Centro,30–59 min,25690,7.0,11.0,16.0
+Sur,30–59 min,14532,8.0,12.0,19.0
+Austral,30–59 min,23741,7.0,10.0,16.0
+Norte Grande,60–119 min,5111,7.0,13.0,19.0
+Norte Chico,60–119 min,4029,10.0,16.0,23.0
+Centro,60–119 min,21932,10.0,15.0,22.0
+Sur,60–119 min,11095,9.0,15.0,22.0
+Austral,60–119 min,16100,7.0,12.0,18.0

@@ -1,0 +1,2002 @@
+macrozona,month,hora,salidas,reloj
+,12,12,1,local
+,12,16,1,local
+Austral,1,0,37,local
+Austral,1,1,20,local
+Austral,1,2,18,local
+Austral,1,3,11,local
+Austral,1,4,25,local
+Austral,1,5,66,local
+Austral,1,6,379,local
+Austral,1,7,870,local
+Austral,1,8,1282,local
+Austral,1,9,1385,local
+Austral,1,10,1603,local
+Austral,1,11,1550,local
+Austral,1,12,1334,local
+Austral,1,13,1338,local
+Austral,1,14,1176,local
+Austral,1,15,1351,local
+Austral,1,16,1377,local
+Austral,1,17,1355,local
+Austral,1,18,1328,local
+Austral,1,19,1060,local
+Austral,1,20,936,local
+Austral,1,21,538,local
+Austral,1,22,130,local
+Austral,1,23,47,local
+Austral,2,0,24,local
+Austral,2,1,21,local
+Austral,2,2,12,local
+Austral,2,3,7,local
+Austral,2,4,11,local
+Austral,2,5,34,local
+Austral,2,6,234,local
+Austral,2,7,821,local
+Austral,2,8,1191,local
+Austral,2,9,1348,local
+Austral,2,10,1475,local
+Austral,2,11,1502,local
+Austral,2,12,1256,local
+Austral,2,13,1163,local
+Austral,2,14,1197,local
+Austral,2,15,1091,local
+Austral,2,16,1176,local
+Austral,2,17,1150,local
+Austral,2,18,1170,local
+Austral,2,19,1014,local
+Austral,2,20,765,local
+Austral,2,21,242,local
+Austral,2,22,90,local
+Austral,2,23,53,local
+Austral,3,0,17,local
+Austral,3,1,22,local
+Austral,3,2,10,local
+Austral,3,3,8,local
+Austral,3,4,2,local
+Austral,3,5,10,local
+Austral,3,6,74,local
+Austral,3,7,550,local
+Austral,3,8,1062,local
+Austral,3,9,1225,local
+Austral,3,10,1362,local
+Austral,3,11,1183,local
+Austral,3,12,1057,local
+Austral,3,13,1042,local
+Austral,3,14,1008,local
+Austral,3,15,1122,local
+Austral,3,16,1065,local
+Austral,3,17,1067,local
+Austral,3,18,1110,local
+Austral,3,19,842,local
+Austral,3,20,330,local
+Austral,3,21,87,local
+Austral,3,22,55,local
+Austral,3,23,38,local
+Austral,4,0,18,local
+Austral,4,1,11,local
+Austral,4,2,8,local
+Austral,4,3,2,local
+Austral,4,4,5,local
+Austral,4,5,9,local
+Austral,4,6,31,local
+Austral,4,7,378,local
+Austral,4,8,689,local
+Austral,4,9,808,local
+Austral,4,10,880,local
+Austral,4,11,921,local
+Austral,4,12,828,local
+Austral,4,13,802,local
+Austral,4,14,814,local
+Austral,4,15,808,local
+Austral,4,16,942,local
+Austral,4,17,906,local
+Austral,4,18,570,local
+Austral,4,19,141,local
+Austral,4,20,51,local
+Austral,4,21,36,local
+Austral,4,22,34,local
+Austral,4,23,36,local
+Austral,5,0,26,local
+Austral,5,1,15,local
+Austral,5,2,8,local
+Austral,5,3,7,local
+Austral,5,4,5,local
+Austral,5,5,13,local
+Austral,5,6,33,local
+Austral,5,7,341,local
+Austral,5,8,683,local
+Austral,5,9,842,local
+Austral,5,10,981,local
+Austral,5,11,1113,local
+Austral,5,12,1069,local
+Austral,5,13,1065,local
+Austral,5,14,987,local
+Austral,5,15,990,local
+Austral,5,16,1101,local
+Austral,5,17,927,local
+Austral,5,18,206,local
+Austral,5,19,60,local
+Austral,5,20,52,local
+Austral,5,21,44,local
+Austral,5,22,51,local
+Austral,5,23,21,local
+Austral,6,0,17,local
+Austral,6,1,10,local
+Austral,6,2,8,local
+Austral,6,3,4,local
+Austral,6,4,4,local
+Austral,6,5,5,local
+Austral,6,6,17,local
+Austral,6,7,189,local
+Austral,6,8,434,local
+Austral,6,9,524,local
+Austral,6,10,686,local
+Austral,6,11,752,local
+Austral,6,12,790,local
+Austral,6,13,836,local
+Austral,6,14,836,local
+Austral,6,15,847,local
+Austral,6,16,858,local
+Austral,6,17,557,local
+Austral,6,18,89,local
+Austral,6,19,35,local
+Austral,6,20,38,local
+Austral,6,21,25,local
+Austral,6,22,24,local
+Austral,6,23,13,local
+Austral,7,0,12,local
+Austral,7,1,6,local
+Austral,7,2,7,local
+Austral,7,3,3,local
+Austral,7,4,6,local
+Austral,7,5,5,local
+Austral,7,6,8,local
+Austral,7,7,216,local
+Austral,7,8,476,local
+Austral,7,9,732,local
+Austral,7,10,852,local
+Austral,7,11,940,local
+Austral,7,12,924,local
+Austral,7,13,1041,local
+Austral,7,14,996,local
+Austral,7,15,1036,local
+Austral,7,16,1090,local
+Austral,7,17,791,local
+Austral,7,18,179,local
+Austral,7,19,42,local
+Austral,7,20,34,local
+Austral,7,21,23,local
+Austral,7,22,26,local
+Austral,7,23,8,local
+Austral,8,0,16,local
+Austral,8,1,18,local
+Austral,8,2,6,local
+Austral,8,3,3,local
+Austral,8,4,11,local
+Austral,8,5,9,local
+Austral,8,6,43,local
+Austral,8,7,373,local
+Austral,8,8,614,local
+Austral,8,9,765,local
+Austral,8,10,926,local
+Austral,8,11,980,local
+Austral,8,12,872,local
+Austral,8,13,907,local
+Austral,8,14,892,local
+Austral,8,15,929,local
+Austral,8,16,984,local
+Austral,8,17,984,local
+Austral,8,18,446,local
+Austral,8,19,79,local
+Austral,8,20,44,local
+Austral,8,21,47,local
+Austral,8,22,22,local
+Austral,8,23,20,local
+Austral,9,0,19,local
+Austral,9,1,14,local
+Austral,9,2,10,local
+Austral,9,3,7,local
+Austral,9,4,6,local
+Austral,9,5,10,local
+Austral,9,6,66,local
+Austral,9,7,397,local
+Austral,9,8,728,local
+Austral,9,9,793,local
+Austral,9,10,926,local
+Austral,9,11,926,local
+Austral,9,12,908,local
+Austral,9,13,820,local
+Austral,9,14,829,local
+Austral,9,15,873,local
+Austral,9,16,937,local
+Austral,9,17,961,local
+Austral,9,18,980,local
+Austral,9,19,467,local
+Austral,9,20,97,local
+Austral,9,21,60,local
+Austral,9,22,36,local
+Austral,9,23,29,local
+Austral,10,0,50,local
+Austral,10,1,23,local
+Austral,10,2,10,local
+Austral,10,3,8,local
+Austral,10,4,16,local
+Austral,10,5,44,local
+Austral,10,6,216,local
+Austral,10,7,820,local
+Austral,10,8,1156,local
+Austral,10,9,1303,local
+Austral,10,10,1358,local
+Austral,10,11,1357,local
+Austral,10,12,1267,local
+Austral,10,13,1138,local
+Austral,10,14,1150,local
+Austral,10,15,1247,local
+Austral,10,16,1193,local
+Austral,10,17,1189,local
+Austral,10,18,1257,local
+Austral,10,19,950,local
+Austral,10,20,455,local
+Austral,10,21,113,local
+Austral,10,22,67,local
+Austral,10,23,57,local
+Austral,11,0,20,local
+Austral,11,1,7,local
+Austral,11,2,7,local
+Austral,11,3,9,local
+Austral,11,4,15,local
+Austral,11,5,126,local
+Austral,11,6,432,local
+Austral,11,7,1005,local
+Austral,11,8,1269,local
+Austral,11,9,1517,local
+Austral,11,10,1551,local
+Austral,11,11,1463,local
+Austral,11,12,1228,local
+Austral,11,13,1361,local
+Austral,11,14,1167,local
+Austral,11,15,1262,local
+Austral,11,16,1263,local
+Austral,11,17,1309,local
+Austral,11,18,1219,local
+Austral,11,19,975,local
+Austral,11,20,645,local
+Austral,11,21,230,local
+Austral,11,22,78,local
+Austral,11,23,45,local
+Austral,12,0,18,local
+Austral,12,1,8,local
+Austral,12,2,8,local
+Austral,12,3,14,local
+Austral,12,4,27,local
+Austral,12,5,119,local
+Austral,12,6,383,local
+Austral,12,7,868,local
+Austral,12,8,1144,local
+Austral,12,9,1342,local
+Austral,12,10,1416,local
+Austral,12,11,1373,local
+Austral,12,12,1205,local
+Austral,12,13,1092,local
+Austral,12,14,1134,local
+Austral,12,15,1168,local
+Austral,12,16,1164,local
+Austral,12,17,1135,local
+Austral,12,18,1085,local
+Austral,12,19,970,local
+Austral,12,20,749,local
+Austral,12,21,428,local
+Austral,12,22,127,local
+Austral,12,23,56,local
+Centro,1,0,63,local
+Centro,1,1,33,local
+Centro,1,2,27,local
+Centro,1,3,25,local
+Centro,1,4,33,local
+Centro,1,5,72,local
+Centro,1,6,413,local
+Centro,1,7,1055,local
+Centro,1,8,1352,local
+Centro,1,9,1681,local
+Centro,1,10,1779,local
+Centro,1,11,1482,local
+Centro,1,12,1275,local
+Centro,1,13,984,local
+Centro,1,14,901,local
+Centro,1,15,840,local
+Centro,1,16,978,local
+Centro,1,17,1107,local
+Centro,1,18,1218,local
+Centro,1,19,1266,local
+Centro,1,20,1024,local
+Centro,1,21,302,local
+Centro,1,22,88,local
+Centro,1,23,80,local
+Centro,2,0,30,local
+Centro,2,1,26,local
+Centro,2,2,10,local
+Centro,2,3,14,local
+Centro,2,4,12,local
+Centro,2,5,51,local
+Centro,2,6,122,local
+Centro,2,7,884,local
+Centro,2,8,1250,local
+Centro,2,9,1517,local
+Centro,2,10,1501,local
+Centro,2,11,1308,local
+Centro,2,12,1063,local
+Centro,2,13,830,local
+Centro,2,14,702,local
+Centro,2,15,763,local
+Centro,2,16,785,local
+Centro,2,17,853,local
+Centro,2,18,963,local
+Centro,2,19,1162,local
+Centro,2,20,713,local
+Centro,2,21,140,local
+Centro,2,22,68,local
+Centro,2,23,74,local
+Centro,3,0,27,local
+Centro,3,1,18,local
+Centro,3,2,14,local
+Centro,3,3,6,local
+Centro,3,4,12,local
+Centro,3,5,23,local
+Centro,3,6,85,local
+Centro,3,7,767,local
+Centro,3,8,1344,local
+Centro,3,9,1573,local
+Centro,3,10,1494,local
+Centro,3,11,1228,local
+Centro,3,12,1027,local
+Centro,3,13,853,local
+Centro,3,14,820,local
+Centro,3,15,776,local
+Centro,3,16,805,local
+Centro,3,17,971,local
+Centro,3,18,1081,local
+Centro,3,19,1144,local
+Centro,3,20,319,local
+Centro,3,21,84,local
+Centro,3,22,55,local
+Centro,3,23,40,local
+Centro,4,0,17,local
+Centro,4,1,11,local
+Centro,4,2,8,local
+Centro,4,3,9,local
+Centro,4,4,10,local
+Centro,4,5,28,local
+Centro,4,6,191,local
+Centro,4,7,901,local
+Centro,4,8,1328,local
+Centro,4,9,1519,local
+Centro,4,10,1391,local
+Centro,4,11,1166,local
+Centro,4,12,1010,local
+Centro,4,13,923,local
+Centro,4,14,836,local
+Centro,4,15,874,local
+Centro,4,16,1114,local
+Centro,4,17,1336,local
+Centro,4,18,787,local
+Centro,4,19,252,local
+Centro,4,20,90,local
+Centro,4,21,44,local
+Centro,4,22,35,local
+Centro,4,23,34,local
+Centro,5,0,38,local
+Centro,5,1,24,local
+Centro,5,2,16,local
+Centro,5,3,5,local
+Centro,5,4,7,local
+Centro,5,5,17,local
+Centro,5,6,143,local
+Centro,5,7,1016,local
+Centro,5,8,1471,local
+Centro,5,9,1699,local
+Centro,5,10,1801,local
+Centro,5,11,1587,local
+Centro,5,12,1392,local
+Centro,5,13,1309,local
+Centro,5,14,1228,local
+Centro,5,15,1217,local
+Centro,5,16,1437,local
+Centro,5,17,1355,local
+Centro,5,18,337,local
+Centro,5,19,89,local
+Centro,5,20,56,local
+Centro,5,21,50,local
+Centro,5,22,46,local
+Centro,5,23,48,local
+Centro,6,0,16,local
+Centro,6,1,15,local
+Centro,6,2,14,local
+Centro,6,3,11,local
+Centro,6,4,11,local
+Centro,6,5,18,local
+Centro,6,6,56,local
+Centro,6,7,561,local
+Centro,6,8,1101,local
+Centro,6,9,1323,local
+Centro,6,10,1466,local
+Centro,6,11,1357,local
+Centro,6,12,1332,local
+Centro,6,13,1193,local
+Centro,6,14,1129,local
+Centro,6,15,1173,local
+Centro,6,16,1292,local
+Centro,6,17,998,local
+Centro,6,18,180,local
+Centro,6,19,40,local
+Centro,6,20,38,local
+Centro,6,21,31,local
+Centro,6,22,20,local
+Centro,6,23,24,local
+Centro,7,0,37,local
+Centro,7,1,19,local
+Centro,7,2,13,local
+Centro,7,3,6,local
+Centro,7,4,13,local
+Centro,7,5,17,local
+Centro,7,6,57,local
+Centro,7,7,624,local
+Centro,7,8,1151,local
+Centro,7,9,1596,local
+Centro,7,10,1785,local
+Centro,7,11,1663,local
+Centro,7,12,1547,local
+Centro,7,13,1312,local
+Centro,7,14,1207,local
+Centro,7,15,1371,local
+Centro,7,16,1432,local
+Centro,7,17,1324,local
+Centro,7,18,299,local
+Centro,7,19,49,local
+Centro,7,20,36,local
+Centro,7,21,46,local
+Centro,7,22,41,local
+Centro,7,23,29,local
+Centro,8,0,35,local
+Centro,8,1,20,local
+Centro,8,2,20,local
+Centro,8,3,23,local
+Centro,8,4,12,local
+Centro,8,5,36,local
+Centro,8,6,192,local
+Centro,8,7,1006,local
+Centro,8,8,1312,local
+Centro,8,9,1651,local
+Centro,8,10,1751,local
+Centro,8,11,1684,local
+Centro,8,12,1540,local
+Centro,8,13,1328,local
+Centro,8,14,1178,local
+Centro,8,15,1276,local
+Centro,8,16,1391,local
+Centro,8,17,1425,local
+Centro,8,18,542,local
+Centro,8,19,100,local
+Centro,8,20,52,local
+Centro,8,21,38,local
+Centro,8,22,48,local
+Centro,8,23,35,local
+Centro,9,0,35,local
+Centro,9,1,17,local
+Centro,9,2,19,local
+Centro,9,3,25,local
+Centro,9,4,31,local
+Centro,9,5,45,local
+Centro,9,6,178,local
+Centro,9,7,764,local
+Centro,9,8,1370,local
+Centro,9,9,1610,local
+Centro,9,10,1776,local
+Centro,9,11,1586,local
+Centro,9,12,1426,local
+Centro,9,13,1328,local
+Centro,9,14,1099,local
+Centro,9,15,1138,local
+Centro,9,16,1316,local
+Centro,9,17,1386,local
+Centro,9,18,1298,local
+Centro,9,19,695,local
+Centro,9,20,122,local
+Centro,9,21,76,local
+Centro,9,22,57,local
+Centro,9,23,59,local
+Centro,10,0,61,local
+Centro,10,1,33,local
+Centro,10,2,24,local
+Centro,10,3,16,local
+Centro,10,4,19,local
+Centro,10,5,64,local
+Centro,10,6,320,local
+Centro,10,7,1117,local
+Centro,10,8,1476,local
+Centro,10,9,1910,local
+Centro,10,10,1954,local
+Centro,10,11,1891,local
+Centro,10,12,1658,local
+Centro,10,13,1374,local
+Centro,10,14,1270,local
+Centro,10,15,1286,local
+Centro,10,16,1334,local
+Centro,10,17,1492,local
+Centro,10,18,1472,local
+Centro,10,19,1120,local
+Centro,10,20,293,local
+Centro,10,21,94,local
+Centro,10,22,80,local
+Centro,10,23,47,local
+Centro,11,0,38,local
+Centro,11,1,26,local
+Centro,11,2,15,local
+Centro,11,3,17,local
+Centro,11,4,22,local
+Centro,11,5,48,local
+Centro,11,6,383,local
+Centro,11,7,1093,local
+Centro,11,8,1391,local
+Centro,11,9,1718,local
+Centro,11,10,1731,local
+Centro,11,11,1512,local
+Centro,11,12,1302,local
+Centro,11,13,1162,local
+Centro,11,14,1029,local
+Centro,11,15,1033,local
+Centro,11,16,1044,local
+Centro,11,17,1134,local
+Centro,11,18,1132,local
+Centro,11,19,1076,local
+Centro,11,20,480,local
+Centro,11,21,85,local
+Centro,11,22,66,local
+Centro,11,23,57,local
+Centro,12,0,50,local
+Centro,12,1,28,local
+Centro,12,2,20,local
+Centro,12,3,19,local
+Centro,12,4,31,local
+Centro,12,5,48,local
+Centro,12,6,347,local
+Centro,12,7,1032,local
+Centro,12,8,1293,local
+Centro,12,9,1511,local
+Centro,12,10,1503,local
+Centro,12,11,1337,local
+Centro,12,12,1168,local
+Centro,12,13,931,local
+Centro,12,14,830,local
+Centro,12,15,864,local
+Centro,12,16,874,local
+Centro,12,17,945,local
+Centro,12,18,1104,local
+Centro,12,19,1194,local
+Centro,12,20,862,local
+Centro,12,21,209,local
+Centro,12,22,68,local
+Centro,12,23,81,local
+Chile,1,0,144,local
+Chile,1,1,84,local
+Chile,1,2,65,local
+Chile,1,3,49,local
+Chile,1,4,68,local
+Chile,1,5,161,local
+Chile,1,6,948,local
+Chile,1,7,2650,local
+Chile,1,8,3746,local
+Chile,1,9,4370,local
+Chile,1,10,4851,local
+Chile,1,11,4417,local
+Chile,1,12,3832,local
+Chile,1,13,3324,local
+Chile,1,14,2959,local
+Chile,1,15,3072,local
+Chile,1,16,3305,local
+Chile,1,17,3568,local
+Chile,1,18,3747,local
+Chile,1,19,3493,local
+Chile,1,20,2756,local
+Chile,1,21,1170,local
+Chile,1,22,329,local
+Chile,1,23,205,local
+Chile,2,0,105,local
+Chile,2,1,76,local
+Chile,2,2,32,local
+Chile,2,3,35,local
+Chile,2,4,36,local
+Chile,2,5,101,local
+Chile,2,6,453,local
+Chile,2,7,2285,local
+Chile,2,8,3476,local
+Chile,2,9,4163,local
+Chile,2,10,4346,local
+Chile,2,11,4114,local
+Chile,2,12,3528,local
+Chile,2,13,2999,local
+Chile,2,14,2744,local
+Chile,2,15,2683,local
+Chile,2,16,2848,local
+Chile,2,17,2961,local
+Chile,2,18,3266,local
+Chile,2,19,3253,local
+Chile,2,20,2184,local
+Chile,2,21,590,local
+Chile,2,22,249,local
+Chile,2,23,190,local
+Chile,3,0,77,local
+Chile,3,1,66,local
+Chile,3,2,38,local
+Chile,3,3,26,local
+Chile,3,4,21,local
+Chile,3,5,47,local
+Chile,3,6,194,local
+Chile,3,7,1660,local
+Chile,3,8,3233,local
+Chile,3,9,3883,local
+Chile,3,10,3994,local
+Chile,3,11,3476,local
+Chile,3,12,2984,local
+Chile,3,13,2658,local
+Chile,3,14,2494,local
+Chile,3,15,2611,local
+Chile,3,16,2613,local
+Chile,3,17,2926,local
+Chile,3,18,3105,local
+Chile,3,19,2820,local
+Chile,3,20,928,local
+Chile,3,21,266,local
+Chile,3,22,185,local
+Chile,3,23,130,local
+Chile,4,0,71,local
+Chile,4,1,43,local
+Chile,4,2,23,local
+Chile,4,3,18,local
+Chile,4,4,19,local
+Chile,4,5,49,local
+Chile,4,6,299,local
+Chile,4,7,1778,local
+Chile,4,8,2889,local
+Chile,4,9,3299,local
+Chile,4,10,3219,local
+Chile,4,11,3016,local
+Chile,4,12,2666,local
+Chile,4,13,2434,local
+Chile,4,14,2313,local
+Chile,4,15,2463,local
+Chile,4,16,2932,local
+Chile,4,17,3255,local
+Chile,4,18,2001,local
+Chile,4,19,595,local
+Chile,4,20,196,local
+Chile,4,21,153,local
+Chile,4,22,132,local
+Chile,4,23,122,local
+Chile,5,0,100,local
+Chile,5,1,55,local
+Chile,5,2,33,local
+Chile,5,3,23,local
+Chile,5,4,21,local
+Chile,5,5,55,local
+Chile,5,6,267,local
+Chile,5,7,1924,local
+Chile,5,8,3268,local
+Chile,5,9,3747,local
+Chile,5,10,4137,local
+Chile,5,11,4027,local
+Chile,5,12,3714,local
+Chile,5,13,3430,local
+Chile,5,14,3292,local
+Chile,5,15,3436,local
+Chile,5,16,3880,local
+Chile,5,17,3506,local
+Chile,5,18,866,local
+Chile,5,19,264,local
+Chile,5,20,187,local
+Chile,5,21,156,local
+Chile,5,22,139,local
+Chile,5,23,109,local
+Chile,6,0,56,local
+Chile,6,1,36,local
+Chile,6,2,25,local
+Chile,6,3,17,local
+Chile,6,4,24,local
+Chile,6,5,31,local
+Chile,6,6,113,local
+Chile,6,7,1044,local
+Chile,6,8,2245,local
+Chile,6,9,2763,local
+Chile,6,10,3184,local
+Chile,6,11,3215,local
+Chile,6,12,3135,local
+Chile,6,13,3027,local
+Chile,6,14,2847,local
+Chile,6,15,3039,local
+Chile,6,16,3236,local
+Chile,6,17,2394,local
+Chile,6,18,458,local
+Chile,6,19,145,local
+Chile,6,20,132,local
+Chile,6,21,103,local
+Chile,6,22,87,local
+Chile,6,23,66,local
+Chile,7,0,65,local
+Chile,7,1,32,local
+Chile,7,2,24,local
+Chile,7,3,23,local
+Chile,7,4,28,local
+Chile,7,5,31,local
+Chile,7,6,95,local
+Chile,7,7,1150,local
+Chile,7,8,2457,local
+Chile,7,9,3434,local
+Chile,7,10,3882,local
+Chile,7,11,3843,local
+Chile,7,12,3715,local
+Chile,7,13,3541,local
+Chile,7,14,3349,local
+Chile,7,15,3557,local
+Chile,7,16,3863,local
+Chile,7,17,3134,local
+Chile,7,18,777,local
+Chile,7,19,170,local
+Chile,7,20,139,local
+Chile,7,21,112,local
+Chile,7,22,115,local
+Chile,7,23,59,local
+Chile,8,0,63,local
+Chile,8,1,48,local
+Chile,8,2,37,local
+Chile,8,3,34,local
+Chile,8,4,30,local
+Chile,8,5,67,local
+Chile,8,6,304,local
+Chile,8,7,1784,local
+Chile,8,8,2809,local
+Chile,8,9,3474,local
+Chile,8,10,3816,local
+Chile,8,11,3870,local
+Chile,8,12,3484,local
+Chile,8,13,3262,local
+Chile,8,14,3013,local
+Chile,8,15,3278,local
+Chile,8,16,3657,local
+Chile,8,17,3561,local
+Chile,8,18,1519,local
+Chile,8,19,290,local
+Chile,8,20,150,local
+Chile,8,21,147,local
+Chile,8,22,112,local
+Chile,8,23,93,local
+Chile,9,0,79,local
+Chile,9,1,40,local
+Chile,9,2,37,local
+Chile,9,3,37,local
+Chile,9,4,50,local
+Chile,9,5,71,local
+Chile,9,6,311,local
+Chile,9,7,1597,local
+Chile,9,8,3090,local
+Chile,9,9,3512,local
+Chile,9,10,3958,local
+Chile,9,11,3764,local
+Chile,9,12,3447,local
+Chile,9,13,3161,local
+Chile,9,14,2842,local
+Chile,9,15,3076,local
+Chile,9,16,3358,local
+Chile,9,17,3603,local
+Chile,9,18,3336,local
+Chile,9,19,1626,local
+Chile,9,20,350,local
+Chile,9,21,215,local
+Chile,9,22,154,local
+Chile,9,23,127,local
+Chile,10,0,163,local
+Chile,10,1,80,local
+Chile,10,2,53,local
+Chile,10,3,34,local
+Chile,10,4,48,local
+Chile,10,5,139,local
+Chile,10,6,720,local
+Chile,10,7,2904,local
+Chile,10,8,4105,local
+Chile,10,9,4846,local
+Chile,10,10,4994,local
+Chile,10,11,4895,local
+Chile,10,12,4317,local
+Chile,10,13,3791,local
+Chile,10,14,3659,local
+Chile,10,15,3781,local
+Chile,10,16,3890,local
+Chile,10,17,4143,local
+Chile,10,18,4167,local
+Chile,10,19,3053,local
+Chile,10,20,1088,local
+Chile,10,21,342,local
+Chile,10,22,258,local
+Chile,10,23,182,local
+Chile,11,0,84,local
+Chile,11,1,48,local
+Chile,11,2,35,local
+Chile,11,3,32,local
+Chile,11,4,48,local
+Chile,11,5,196,local
+Chile,11,6,1010,local
+Chile,11,7,2908,local
+Chile,11,8,3918,local
+Chile,11,9,4560,local
+Chile,11,10,4650,local
+Chile,11,11,4257,local
+Chile,11,12,3574,local
+Chile,11,13,3469,local
+Chile,11,14,3083,local
+Chile,11,15,3220,local
+Chile,11,16,3283,local
+Chile,11,17,3536,local
+Chile,11,18,3398,local
+Chile,11,19,2866,local
+Chile,11,20,1553,local
+Chile,11,21,477,local
+Chile,11,22,206,local
+Chile,11,23,139,local
+Chile,12,0,112,local
+Chile,12,1,51,local
+Chile,12,2,39,local
+Chile,12,3,39,local
+Chile,12,4,67,local
+Chile,12,5,215,local
+Chile,12,6,963,local
+Chile,12,7,2594,local
+Chile,12,8,3620,local
+Chile,12,9,4053,local
+Chile,12,10,4216,local
+Chile,12,11,3992,local
+Chile,12,12,3415,local
+Chile,12,13,2928,local
+Chile,12,14,2758,local
+Chile,12,15,2880,local
+Chile,12,16,2873,local
+Chile,12,17,3026,local
+Chile,12,18,3240,local
+Chile,12,19,3182,local
+Chile,12,20,2266,local
+Chile,12,21,886,local
+Chile,12,22,310,local
+Chile,12,23,205,local
+Norte Chico,1,0,14,local
+Norte Chico,1,1,9,local
+Norte Chico,1,2,6,local
+Norte Chico,1,3,3,local
+Norte Chico,1,4,6,local
+Norte Chico,1,5,7,local
+Norte Chico,1,6,18,local
+Norte Chico,1,7,103,local
+Norte Chico,1,8,187,local
+Norte Chico,1,9,278,local
+Norte Chico,1,10,307,local
+Norte Chico,1,11,276,local
+Norte Chico,1,12,225,local
+Norte Chico,1,13,183,local
+Norte Chico,1,14,181,local
+Norte Chico,1,15,186,local
+Norte Chico,1,16,191,local
+Norte Chico,1,17,233,local
+Norte Chico,1,18,289,local
+Norte Chico,1,19,293,local
+Norte Chico,1,20,183,local
+Norte Chico,1,21,40,local
+Norte Chico,1,22,27,local
+Norte Chico,1,23,15,local
+Norte Chico,2,0,11,local
+Norte Chico,2,1,5,local
+Norte Chico,2,2,1,local
+Norte Chico,2,3,7,local
+Norte Chico,2,4,3,local
+Norte Chico,2,5,1,local
+Norte Chico,2,6,20,local
+Norte Chico,2,7,102,local
+Norte Chico,2,8,204,local
+Norte Chico,2,9,279,local
+Norte Chico,2,10,301,local
+Norte Chico,2,11,256,local
+Norte Chico,2,12,255,local
+Norte Chico,2,13,201,local
+Norte Chico,2,14,133,local
+Norte Chico,2,15,125,local
+Norte Chico,2,16,145,local
+Norte Chico,2,17,178,local
+Norte Chico,2,18,215,local
+Norte Chico,2,19,218,local
+Norte Chico,2,20,114,local
+Norte Chico,2,21,25,local
+Norte Chico,2,22,15,local
+Norte Chico,2,23,5,local
+Norte Chico,3,0,10,local
+Norte Chico,3,1,7,local
+Norte Chico,3,2,3,local
+Norte Chico,3,3,2,local
+Norte Chico,3,4,2,local
+Norte Chico,3,5,2,local
+Norte Chico,3,6,10,local
+Norte Chico,3,7,93,local
+Norte Chico,3,8,171,local
+Norte Chico,3,9,225,local
+Norte Chico,3,10,263,local
+Norte Chico,3,11,234,local
+Norte Chico,3,12,190,local
+Norte Chico,3,13,157,local
+Norte Chico,3,14,161,local
+Norte Chico,3,15,158,local
+Norte Chico,3,16,157,local
+Norte Chico,3,17,220,local
+Norte Chico,3,18,233,local
+Norte Chico,3,19,237,local
+Norte Chico,3,20,62,local
+Norte Chico,3,21,15,local
+Norte Chico,3,22,24,local
+Norte Chico,3,23,19,local
+Norte Chico,4,0,7,local
+Norte Chico,4,1,3,local
+Norte Chico,4,2,1,local
+Norte Chico,4,3,1,local
+Norte Chico,4,4,2,local
+Norte Chico,4,5,2,local
+Norte Chico,4,6,35,local
+Norte Chico,4,7,147,local
+Norte Chico,4,8,186,local
+Norte Chico,4,9,205,local
+Norte Chico,4,10,211,local
+Norte Chico,4,11,191,local
+Norte Chico,4,12,164,local
+Norte Chico,4,13,126,local
+Norte Chico,4,14,126,local
+Norte Chico,4,15,177,local
+Norte Chico,4,16,222,local
+Norte Chico,4,17,212,local
+Norte Chico,4,18,135,local
+Norte Chico,4,19,43,local
+Norte Chico,4,20,7,local
+Norte Chico,4,21,10,local
+Norte Chico,4,22,18,local
+Norte Chico,4,23,15,local
+Norte Chico,5,0,8,local
+Norte Chico,5,1,5,local
+Norte Chico,5,2,6,local
+Norte Chico,5,3,4,local
+Norte Chico,5,4,4,local
+Norte Chico,5,5,9,local
+Norte Chico,5,6,37,local
+Norte Chico,5,7,185,local
+Norte Chico,5,8,278,local
+Norte Chico,5,9,306,local
+Norte Chico,5,10,341,local
+Norte Chico,5,11,336,local
+Norte Chico,5,12,299,local
+Norte Chico,5,13,243,local
+Norte Chico,5,14,241,local
+Norte Chico,5,15,266,local
+Norte Chico,5,16,334,local
+Norte Chico,5,17,312,local
+Norte Chico,5,18,89,local
+Norte Chico,5,19,28,local
+Norte Chico,5,20,19,local
+Norte Chico,5,21,15,local
+Norte Chico,5,22,8,local
+Norte Chico,5,23,8,local
+Norte Chico,6,0,4,local
+Norte Chico,6,1,1,local
+Norte Chico,6,2,1,local
+Norte Chico,6,4,2,local
+Norte Chico,6,5,3,local
+Norte Chico,6,6,23,local
+Norte Chico,6,7,129,local
+Norte Chico,6,8,177,local
+Norte Chico,6,9,224,local
+Norte Chico,6,10,296,local
+Norte Chico,6,11,305,local
+Norte Chico,6,12,256,local
+Norte Chico,6,13,256,local
+Norte Chico,6,14,278,local
+Norte Chico,6,15,271,local
+Norte Chico,6,16,272,local
+Norte Chico,6,17,244,local
+Norte Chico,6,18,56,local
+Norte Chico,6,19,14,local
+Norte Chico,6,20,9,local
+Norte Chico,6,21,15,local
+Norte Chico,6,22,10,local
+Norte Chico,6,23,13,local
+Norte Chico,7,0,2,local
+Norte Chico,7,1,3,local
+Norte Chico,7,2,1,local
+Norte Chico,7,3,3,local
+Norte Chico,7,4,2,local
+Norte Chico,7,5,3,local
+Norte Chico,7,6,18,local
+Norte Chico,7,7,138,local
+Norte Chico,7,8,250,local
+Norte Chico,7,9,330,local
+Norte Chico,7,10,360,local
+Norte Chico,7,11,380,local
+Norte Chico,7,12,322,local
+Norte Chico,7,13,312,local
+Norte Chico,7,14,300,local
+Norte Chico,7,15,299,local
+Norte Chico,7,16,373,local
+Norte Chico,7,17,263,local
+Norte Chico,7,18,91,local
+Norte Chico,7,19,19,local
+Norte Chico,7,20,19,local
+Norte Chico,7,21,14,local
+Norte Chico,7,22,13,local
+Norte Chico,7,23,11,local
+Norte Chico,8,0,1,local
+Norte Chico,8,1,1,local
+Norte Chico,8,2,2,local
+Norte Chico,8,3,3,local
+Norte Chico,8,4,3,local
+Norte Chico,8,5,10,local
+Norte Chico,8,6,46,local
+Norte Chico,8,7,115,local
+Norte Chico,8,8,194,local
+Norte Chico,8,9,256,local
+Norte Chico,8,10,305,local
+Norte Chico,8,11,294,local
+Norte Chico,8,12,247,local
+Norte Chico,8,13,244,local
+Norte Chico,8,14,248,local
+Norte Chico,8,15,270,local
+Norte Chico,8,16,286,local
+Norte Chico,8,17,283,local
+Norte Chico,8,18,122,local
+Norte Chico,8,19,25,local
+Norte Chico,8,20,15,local
+Norte Chico,8,21,14,local
+Norte Chico,8,22,7,local
+Norte Chico,8,23,10,local
+Norte Chico,9,0,5,local
+Norte Chico,9,1,1,local
+Norte Chico,9,2,2,local
+Norte Chico,9,3,1,local
+Norte Chico,9,4,3,local
+Norte Chico,9,5,5,local
+Norte Chico,9,6,34,local
+Norte Chico,9,7,85,local
+Norte Chico,9,8,204,local
+Norte Chico,9,9,267,local
+Norte Chico,9,10,335,local
+Norte Chico,9,11,335,local
+Norte Chico,9,12,319,local
+Norte Chico,9,13,305,local
+Norte Chico,9,14,262,local
+Norte Chico,9,15,272,local
+Norte Chico,9,16,289,local
+Norte Chico,9,17,295,local
+Norte Chico,9,18,312,local
+Norte Chico,9,19,147,local
+Norte Chico,9,20,23,local
+Norte Chico,9,21,22,local
+Norte Chico,9,22,20,local
+Norte Chico,9,23,6,local
+Norte Chico,10,0,11,local
+Norte Chico,10,1,1,local
+Norte Chico,10,2,4,local
+Norte Chico,10,3,2,local
+Norte Chico,10,4,4,local
+Norte Chico,10,5,12,local
+Norte Chico,10,6,44,local
+Norte Chico,10,7,163,local
+Norte Chico,10,8,285,local
+Norte Chico,10,9,369,local
+Norte Chico,10,10,385,local
+Norte Chico,10,11,380,local
+Norte Chico,10,12,325,local
+Norte Chico,10,13,301,local
+Norte Chico,10,14,299,local
+Norte Chico,10,15,319,local
+Norte Chico,10,16,286,local
+Norte Chico,10,17,321,local
+Norte Chico,10,18,314,local
+Norte Chico,10,19,226,local
+Norte Chico,10,20,70,local
+Norte Chico,10,21,16,local
+Norte Chico,10,22,22,local
+Norte Chico,10,23,9,local
+Norte Chico,11,0,5,local
+Norte Chico,11,1,4,local
+Norte Chico,11,2,3,local
+Norte Chico,11,3,3,local
+Norte Chico,11,4,5,local
+Norte Chico,11,5,5,local
+Norte Chico,11,6,35,local
+Norte Chico,11,7,138,local
+Norte Chico,11,8,187,local
+Norte Chico,11,9,237,local
+Norte Chico,11,10,236,local
+Norte Chico,11,11,239,local
+Norte Chico,11,12,185,local
+Norte Chico,11,13,180,local
+Norte Chico,11,14,170,local
+Norte Chico,11,15,178,local
+Norte Chico,11,16,195,local
+Norte Chico,11,17,216,local
+Norte Chico,11,18,227,local
+Norte Chico,11,19,209,local
+Norte Chico,11,20,87,local
+Norte Chico,11,21,21,local
+Norte Chico,11,22,13,local
+Norte Chico,11,23,11,local
+Norte Chico,12,0,9,local
+Norte Chico,12,1,2,local
+Norte Chico,12,2,2,local
+Norte Chico,12,3,3,local
+Norte Chico,12,4,3,local
+Norte Chico,12,5,14,local
+Norte Chico,12,6,60,local
+Norte Chico,12,7,141,local
+Norte Chico,12,8,198,local
+Norte Chico,12,9,257,local
+Norte Chico,12,10,262,local
+Norte Chico,12,11,251,local
+Norte Chico,12,12,183,local
+Norte Chico,12,13,181,local
+Norte Chico,12,14,160,local
+Norte Chico,12,15,153,local
+Norte Chico,12,16,148,local
+Norte Chico,12,17,180,local
+Norte Chico,12,18,229,local
+Norte Chico,12,19,238,local
+Norte Chico,12,20,137,local
+Norte Chico,12,21,36,local
+Norte Chico,12,22,18,local
+Norte Chico,12,23,16,local
+Norte Grande,1,0,5,local
+Norte Grande,1,1,2,local
+Norte Grande,1,2,4,local
+Norte Grande,1,3,2,local
+Norte Grande,1,5,1,local
+Norte Grande,1,6,27,local
+Norte Grande,1,7,190,local
+Norte Grande,1,8,374,local
+Norte Grande,1,9,331,local
+Norte Grande,1,10,350,local
+Norte Grande,1,11,314,local
+Norte Grande,1,12,258,local
+Norte Grande,1,13,208,local
+Norte Grande,1,14,217,local
+Norte Grande,1,15,188,local
+Norte Grande,1,16,224,local
+Norte Grande,1,17,215,local
+Norte Grande,1,18,207,local
+Norte Grande,1,19,170,local
+Norte Grande,1,20,65,local
+Norte Grande,1,21,35,local
+Norte Grande,1,22,17,local
+Norte Grande,1,23,9,local
+Norte Grande,2,0,3,local
+Norte Grande,2,2,2,local
+Norte Grande,2,3,1,local
+Norte Grande,2,5,4,local
+Norte Grande,2,6,14,local
+Norte Grande,2,7,118,local
+Norte Grande,2,8,230,local
+Norte Grande,2,9,255,local
+Norte Grande,2,10,271,local
+Norte Grande,2,11,262,local
+Norte Grande,2,12,231,local
+Norte Grande,2,13,168,local
+Norte Grande,2,14,165,local
+Norte Grande,2,15,143,local
+Norte Grande,2,16,160,local
+Norte Grande,2,17,154,local
+Norte Grande,2,18,189,local
+Norte Grande,2,19,116,local
+Norte Grande,2,20,66,local
+Norte Grande,2,21,18,local
+Norte Grande,2,22,9,local
+Norte Grande,2,23,6,local
+Norte Grande,3,0,7,local
+Norte Grande,3,1,6,local
+Norte Grande,3,2,6,local
+Norte Grande,3,3,8,local
+Norte Grande,3,4,2,local
+Norte Grande,3,5,5,local
+Norte Grande,3,6,12,local
+Norte Grande,3,7,102,local
+Norte Grande,3,8,229,local
+Norte Grande,3,9,295,local
+Norte Grande,3,10,263,local
+Norte Grande,3,11,219,local
+Norte Grande,3,12,199,local
+Norte Grande,3,13,166,local
+Norte Grande,3,14,147,local
+Norte Grande,3,15,150,local
+Norte Grande,3,16,147,local
+Norte Grande,3,17,154,local
+Norte Grande,3,18,148,local
+Norte Grande,3,19,87,local
+Norte Grande,3,20,37,local
+Norte Grande,3,21,16,local
+Norte Grande,3,22,15,local
+Norte Grande,3,23,8,local
+Norte Grande,4,0,8,local
+Norte Grande,4,1,5,local
+Norte Grande,4,2,3,local
+Norte Grande,4,3,2,local
+Norte Grande,4,5,5,local
+Norte Grande,4,6,28,local
+Norte Grande,4,7,103,local
+Norte Grande,4,8,194,local
+Norte Grande,4,9,205,local
+Norte Grande,4,10,193,local
+Norte Grande,4,11,189,local
+Norte Grande,4,12,132,local
+Norte Grande,4,13,147,local
+Norte Grande,4,14,128,local
+Norte Grande,4,15,158,local
+Norte Grande,4,16,145,local
+Norte Grande,4,17,168,local
+Norte Grande,4,18,105,local
+Norte Grande,4,19,35,local
+Norte Grande,4,20,11,local
+Norte Grande,4,21,12,local
+Norte Grande,4,22,9,local
+Norte Grande,4,23,6,local
+Norte Grande,5,0,9,local
+Norte Grande,5,1,2,local
+Norte Grande,5,2,2,local
+Norte Grande,5,4,1,local
+Norte Grande,5,5,4,local
+Norte Grande,5,6,33,local
+Norte Grande,5,7,143,local
+Norte Grande,5,8,277,local
+Norte Grande,5,9,269,local
+Norte Grande,5,10,283,local
+Norte Grande,5,11,265,local
+Norte Grande,5,12,230,local
+Norte Grande,5,13,182,local
+Norte Grande,5,14,184,local
+Norte Grande,5,15,220,local
+Norte Grande,5,16,231,local
+Norte Grande,5,17,215,local
+Norte Grande,5,18,77,local
+Norte Grande,5,19,22,local
+Norte Grande,5,20,10,local
+Norte Grande,5,21,4,local
+Norte Grande,5,22,8,local
+Norte Grande,5,23,4,local
+Norte Grande,6,0,2,local
+Norte Grande,6,1,3,local
+Norte Grande,6,5,1,local
+Norte Grande,6,6,4,local
+Norte Grande,6,7,97,local
+Norte Grande,6,8,210,local
+Norte Grande,6,9,259,local
+Norte Grande,6,10,252,local
+Norte Grande,6,11,239,local
+Norte Grande,6,12,183,local
+Norte Grande,6,13,184,local
+Norte Grande,6,14,145,local
+Norte Grande,6,15,175,local
+Norte Grande,6,16,204,local
+Norte Grande,6,17,172,local
+Norte Grande,6,18,38,local
+Norte Grande,6,19,20,local
+Norte Grande,6,20,15,local
+Norte Grande,6,21,6,local
+Norte Grande,6,22,7,local
+Norte Grande,6,23,2,local
+Norte Grande,7,0,2,local
+Norte Grande,7,3,1,local
+Norte Grande,7,4,1,local
+Norte Grande,7,5,1,local
+Norte Grande,7,6,5,local
+Norte Grande,7,7,86,local
+Norte Grande,7,8,210,local
+Norte Grande,7,9,242,local
+Norte Grande,7,10,273,local
+Norte Grande,7,11,253,local
+Norte Grande,7,12,217,local
+Norte Grande,7,13,172,local
+Norte Grande,7,14,146,local
+Norte Grande,7,15,156,local
+Norte Grande,7,16,192,local
+Norte Grande,7,17,178,local
+Norte Grande,7,18,65,local
+Norte Grande,7,19,25,local
+Norte Grande,7,20,13,local
+Norte Grande,7,21,8,local
+Norte Grande,7,22,4,local
+Norte Grande,7,23,2,local
+Norte Grande,8,0,3,local
+Norte Grande,8,1,1,local
+Norte Grande,8,2,1,local
+Norte Grande,8,4,1,local
+Norte Grande,8,5,3,local
+Norte Grande,8,6,8,local
+Norte Grande,8,7,101,local
+Norte Grande,8,8,217,local
+Norte Grande,8,9,257,local
+Norte Grande,8,10,223,local
+Norte Grande,8,11,205,local
+Norte Grande,8,12,166,local
+Norte Grande,8,13,150,local
+Norte Grande,8,14,131,local
+Norte Grande,8,15,145,local
+Norte Grande,8,16,182,local
+Norte Grande,8,17,143,local
+Norte Grande,8,18,81,local
+Norte Grande,8,19,30,local
+Norte Grande,8,20,9,local
+Norte Grande,8,21,7,local
+Norte Grande,8,22,6,local
+Norte Grande,8,23,4,local
+Norte Grande,9,1,2,local
+Norte Grande,9,2,1,local
+Norte Grande,9,4,5,local
+Norte Grande,9,5,1,local
+Norte Grande,9,6,6,local
+Norte Grande,9,7,169,local
+Norte Grande,9,8,332,local
+Norte Grande,9,9,265,local
+Norte Grande,9,10,261,local
+Norte Grande,9,11,215,local
+Norte Grande,9,12,164,local
+Norte Grande,9,13,129,local
+Norte Grande,9,14,114,local
+Norte Grande,9,15,147,local
+Norte Grande,9,16,168,local
+Norte Grande,9,17,167,local
+Norte Grande,9,18,120,local
+Norte Grande,9,19,53,local
+Norte Grande,9,20,23,local
+Norte Grande,9,21,20,local
+Norte Grande,9,22,10,local
+Norte Grande,9,23,3,local
+Norte Grande,10,0,7,local
+Norte Grande,10,1,6,local
+Norte Grande,10,2,2,local
+Norte Grande,10,3,1,local
+Norte Grande,10,4,3,local
+Norte Grande,10,5,2,local
+Norte Grande,10,6,52,local
+Norte Grande,10,7,377,local
+Norte Grande,10,8,520,local
+Norte Grande,10,9,474,local
+Norte Grande,10,10,479,local
+Norte Grande,10,11,380,local
+Norte Grande,10,12,270,local
+Norte Grande,10,13,268,local
+Norte Grande,10,14,289,local
+Norte Grande,10,15,284,local
+Norte Grande,10,16,307,local
+Norte Grande,10,17,314,local
+Norte Grande,10,18,290,local
+Norte Grande,10,19,127,local
+Norte Grande,10,20,43,local
+Norte Grande,10,21,35,local
+Norte Grande,10,22,19,local
+Norte Grande,10,23,13,local
+Norte Grande,11,1,2,local
+Norte Grande,11,2,2,local
+Norte Grande,11,3,1,local
+Norte Grande,11,4,2,local
+Norte Grande,11,5,5,local
+Norte Grande,11,6,52,local
+Norte Grande,11,7,400,local
+Norte Grande,11,8,559,local
+Norte Grande,11,9,467,local
+Norte Grande,11,10,461,local
+Norte Grande,11,11,384,local
+Norte Grande,11,12,310,local
+Norte Grande,11,13,276,local
+Norte Grande,11,14,277,local
+Norte Grande,11,15,282,local
+Norte Grande,11,16,312,local
+Norte Grande,11,17,297,local
+Norte Grande,11,18,257,local
+Norte Grande,11,19,170,local
+Norte Grande,11,20,51,local
+Norte Grande,11,21,31,local
+Norte Grande,11,22,14,local
+Norte Grande,11,23,3,local
+Norte Grande,12,0,2,local
+Norte Grande,12,1,2,local
+Norte Grande,12,4,2,local
+Norte Grande,12,5,9,local
+Norte Grande,12,6,33,local
+Norte Grande,12,7,254,local
+Norte Grande,12,8,469,local
+Norte Grande,12,9,347,local
+Norte Grande,12,10,294,local
+Norte Grande,12,11,294,local
+Norte Grande,12,12,212,local
+Norte Grande,12,13,182,local
+Norte Grande,12,14,153,local
+Norte Grande,12,15,196,local
+Norte Grande,12,16,172,local
+Norte Grande,12,17,199,local
+Norte Grande,12,18,175,local
+Norte Grande,12,19,106,local
+Norte Grande,12,20,49,local
+Norte Grande,12,21,23,local
+Norte Grande,12,22,17,local
+Norte Grande,12,23,5,local
+Sur,1,0,25,local
+Sur,1,1,20,local
+Sur,1,2,10,local
+Sur,1,3,8,local
+Sur,1,4,4,local
+Sur,1,5,15,local
+Sur,1,6,111,local
+Sur,1,7,432,local
+Sur,1,8,551,local
+Sur,1,9,695,local
+Sur,1,10,812,local
+Sur,1,11,795,local
+Sur,1,12,740,local
+Sur,1,13,611,local
+Sur,1,14,484,local
+Sur,1,15,507,local
+Sur,1,16,535,local
+Sur,1,17,658,local
+Sur,1,18,705,local
+Sur,1,19,704,local
+Sur,1,20,548,local
+Sur,1,21,255,local
+Sur,1,22,67,local
+Sur,1,23,54,local
+Sur,2,0,37,local
+Sur,2,1,24,local
+Sur,2,2,7,local
+Sur,2,3,6,local
+Sur,2,4,10,local
+Sur,2,5,11,local
+Sur,2,6,63,local
+Sur,2,7,360,local
+Sur,2,8,601,local
+Sur,2,9,764,local
+Sur,2,10,798,local
+Sur,2,11,786,local
+Sur,2,12,723,local
+Sur,2,13,637,local
+Sur,2,14,547,local
+Sur,2,15,561,local
+Sur,2,16,582,local
+Sur,2,17,626,local
+Sur,2,18,729,local
+Sur,2,19,743,local
+Sur,2,20,526,local
+Sur,2,21,165,local
+Sur,2,22,67,local
+Sur,2,23,52,local
+Sur,3,0,16,local
+Sur,3,1,13,local
+Sur,3,2,5,local
+Sur,3,3,2,local
+Sur,3,4,3,local
+Sur,3,5,7,local
+Sur,3,6,13,local
+Sur,3,7,148,local
+Sur,3,8,427,local
+Sur,3,9,565,local
+Sur,3,10,612,local
+Sur,3,11,612,local
+Sur,3,12,511,local
+Sur,3,13,440,local
+Sur,3,14,358,local
+Sur,3,15,405,local
+Sur,3,16,439,local
+Sur,3,17,514,local
+Sur,3,18,533,local
+Sur,3,19,510,local
+Sur,3,20,180,local
+Sur,3,21,64,local
+Sur,3,22,36,local
+Sur,3,23,25,local
+Sur,4,0,21,local
+Sur,4,1,13,local
+Sur,4,2,3,local
+Sur,4,3,4,local
+Sur,4,4,2,local
+Sur,4,5,5,local
+Sur,4,6,14,local
+Sur,4,7,249,local
+Sur,4,8,492,local
+Sur,4,9,562,local
+Sur,4,10,544,local
+Sur,4,11,549,local
+Sur,4,12,532,local
+Sur,4,13,436,local
+Sur,4,14,409,local
+Sur,4,15,446,local
+Sur,4,16,509,local
+Sur,4,17,633,local
+Sur,4,18,404,local
+Sur,4,19,124,local
+Sur,4,20,37,local
+Sur,4,21,51,local
+Sur,4,22,36,local
+Sur,4,23,31,local
+Sur,5,0,19,local
+Sur,5,1,9,local
+Sur,5,2,1,local
+Sur,5,3,7,local
+Sur,5,4,4,local
+Sur,5,5,12,local
+Sur,5,6,21,local
+Sur,5,7,239,local
+Sur,5,8,559,local
+Sur,5,9,631,local
+Sur,5,10,731,local
+Sur,5,11,726,local
+Sur,5,12,724,local
+Sur,5,13,631,local
+Sur,5,14,652,local
+Sur,5,15,743,local
+Sur,5,16,777,local
+Sur,5,17,697,local
+Sur,5,18,157,local
+Sur,5,19,65,local
+Sur,5,20,50,local
+Sur,5,21,43,local
+Sur,5,22,26,local
+Sur,5,23,28,local
+Sur,6,0,17,local
+Sur,6,1,7,local
+Sur,6,2,2,local
+Sur,6,3,2,local
+Sur,6,4,7,local
+Sur,6,5,4,local
+Sur,6,6,13,local
+Sur,6,7,68,local
+Sur,6,8,323,local
+Sur,6,9,433,local
+Sur,6,10,484,local
+Sur,6,11,562,local
+Sur,6,12,574,local
+Sur,6,13,558,local
+Sur,6,14,459,local
+Sur,6,15,573,local
+Sur,6,16,610,local
+Sur,6,17,423,local
+Sur,6,18,95,local
+Sur,6,19,36,local
+Sur,6,20,32,local
+Sur,6,21,26,local
+Sur,6,22,26,local
+Sur,6,23,14,local
+Sur,7,0,12,local
+Sur,7,1,4,local
+Sur,7,2,3,local
+Sur,7,3,10,local
+Sur,7,4,6,local
+Sur,7,5,5,local
+Sur,7,6,7,local
+Sur,7,7,86,local
+Sur,7,8,370,local
+Sur,7,9,534,local
+Sur,7,10,612,local
+Sur,7,11,607,local
+Sur,7,12,705,local
+Sur,7,13,704,local
+Sur,7,14,700,local
+Sur,7,15,695,local
+Sur,7,16,776,local
+Sur,7,17,578,local
+Sur,7,18,143,local
+Sur,7,19,35,local
+Sur,7,20,37,local
+Sur,7,21,21,local
+Sur,7,22,31,local
+Sur,7,23,9,local
+Sur,8,0,8,local
+Sur,8,1,8,local
+Sur,8,2,8,local
+Sur,8,3,5,local
+Sur,8,4,3,local
+Sur,8,5,9,local
+Sur,8,6,15,local
+Sur,8,7,189,local
+Sur,8,8,472,local
+Sur,8,9,545,local
+Sur,8,10,611,local
+Sur,8,11,707,local
+Sur,8,12,659,local
+Sur,8,13,633,local
+Sur,8,14,564,local
+Sur,8,15,658,local
+Sur,8,16,814,local
+Sur,8,17,726,local
+Sur,8,18,328,local
+Sur,8,19,56,local
+Sur,8,20,30,local
+Sur,8,21,41,local
+Sur,8,22,29,local
+Sur,8,23,24,local
+Sur,9,0,20,local
+Sur,9,1,6,local
+Sur,9,2,5,local
+Sur,9,3,4,local
+Sur,9,4,5,local
+Sur,9,5,10,local
+Sur,9,6,27,local
+Sur,9,7,182,local
+Sur,9,8,456,local
+Sur,9,9,577,local
+Sur,9,10,660,local
+Sur,9,11,702,local
+Sur,9,12,630,local
+Sur,9,13,579,local
+Sur,9,14,538,local
+Sur,9,15,646,local
+Sur,9,16,648,local
+Sur,9,17,794,local
+Sur,9,18,626,local
+Sur,9,19,264,local
+Sur,9,20,85,local
+Sur,9,21,37,local
+Sur,9,22,31,local
+Sur,9,23,30,local
+Sur,10,0,34,local
+Sur,10,1,17,local
+Sur,10,2,13,local
+Sur,10,3,7,local
+Sur,10,4,6,local
+Sur,10,5,17,local
+Sur,10,6,88,local
+Sur,10,7,427,local
+Sur,10,8,668,local
+Sur,10,9,790,local
+Sur,10,10,818,local
+Sur,10,11,887,local
+Sur,10,12,797,local
+Sur,10,13,710,local
+Sur,10,14,651,local
+Sur,10,15,645,local
+Sur,10,16,770,local
+Sur,10,17,827,local
+Sur,10,18,834,local
+Sur,10,19,630,local
+Sur,10,20,227,local
+Sur,10,21,84,local
+Sur,10,22,70,local
+Sur,10,23,56,local
+Sur,11,0,21,local
+Sur,11,1,9,local
+Sur,11,2,8,local
+Sur,11,3,2,local
+Sur,11,4,4,local
+Sur,11,5,12,local
+Sur,11,6,108,local
+Sur,11,7,272,local
+Sur,11,8,512,local
+Sur,11,9,621,local
+Sur,11,10,671,local
+Sur,11,11,659,local
+Sur,11,12,549,local
+Sur,11,13,490,local
+Sur,11,14,440,local
+Sur,11,15,465,local
+Sur,11,16,469,local
+Sur,11,17,580,local
+Sur,11,18,563,local
+Sur,11,19,436,local
+Sur,11,20,290,local
+Sur,11,21,110,local
+Sur,11,22,35,local
+Sur,11,23,23,local
+Sur,12,0,33,local
+Sur,12,1,11,local
+Sur,12,2,9,local
+Sur,12,3,3,local
+Sur,12,4,4,local
+Sur,12,5,25,local
+Sur,12,6,140,local
+Sur,12,7,299,local
+Sur,12,8,516,local
+Sur,12,9,596,local
+Sur,12,10,741,local
+Sur,12,11,737,local
+Sur,12,12,646,local
+Sur,12,13,542,local
+Sur,12,14,481,local
+Sur,12,15,499,local
+Sur,12,16,514,local
+Sur,12,17,567,local
+Sur,12,18,647,local
+Sur,12,19,674,local
+Sur,12,20,469,local
+Sur,12,21,190,local
+Sur,12,22,80,local
+Sur,12,23,47,local
+Chile,1,0,67,solar
+Chile,1,1,51,solar
+Chile,1,2,58,solar
+Chile,1,3,133,solar
+Chile,1,4,661,solar
+Chile,1,5,2419,solar
+Chile,1,6,3520,solar
+Chile,1,7,4253,solar
+Chile,1,8,4873,solar
+Chile,1,9,4532,solar
+Chile,1,10,3961,solar
+Chile,1,11,3394,solar
+Chile,1,12,3011,solar
+Chile,1,13,3057,solar
+Chile,1,14,3273,solar
+Chile,1,15,3513,solar
+Chile,1,16,3710,solar
+Chile,1,17,3514,solar
+Chile,1,18,2974,solar
+Chile,1,19,1458,solar
+Chile,1,20,430,solar
+Chile,1,21,206,solar
+Chile,1,22,157,solar
+Chile,1,23,88,solar
+Chile,2,0,30,solar
+Chile,2,1,32,solar
+Chile,2,2,37,solar
+Chile,2,3,71,solar
+Chile,2,4,311,solar
+Chile,2,5,1938,solar
+Chile,2,6,3334,solar
+Chile,2,7,4003,solar
+Chile,2,8,4392,solar
+Chile,2,9,4169,solar
+Chile,2,10,3667,solar
+Chile,2,11,3097,solar
+Chile,2,12,2737,solar
+Chile,2,13,2713,solar
+Chile,2,14,2838,solar
+Chile,2,15,2915,solar
+Chile,2,16,3188,solar
+Chile,2,17,3265,solar
+Chile,2,18,2492,solar
+Chile,2,19,805,solar
+Chile,2,20,293,solar
+Chile,2,21,188,solar
+Chile,2,22,116,solar
+Chile,2,23,86,solar
+Chile,3,0,39,solar
+Chile,3,1,33,solar
+Chile,3,2,18,solar
+Chile,3,3,39,solar
+Chile,3,4,144,solar
+Chile,3,5,1145,solar
+Chile,3,6,3083,solar
+Chile,3,7,3781,solar
+Chile,3,8,4099,solar
+Chile,3,9,3543,solar
+Chile,3,10,3143,solar
+Chile,3,11,2677,solar
+Chile,3,12,2507,solar
+Chile,3,13,2567,solar
+Chile,3,14,2667,solar
+Chile,3,15,2820,solar
+Chile,3,16,3015,solar
+Chile,3,17,3020,solar
+Chile,3,18,1287,solar
+Chile,3,19,321,solar
+Chile,3,20,191,solar
+Chile,3,21,136,solar
+Chile,3,22,88,solar
+Chile,3,23,72,solar
+Chile,4,0,34,solar
+Chile,4,1,31,solar
+Chile,4,2,22,solar
+Chile,4,3,18,solar
+Chile,4,4,44,solar
+Chile,4,5,216,solar
+Chile,4,6,1762,solar
+Chile,4,7,2827,solar
+Chile,4,8,3272,solar
+Chile,4,9,3196,solar
+Chile,4,10,3059,solar
+Chile,4,11,2697,solar
+Chile,4,12,2454,solar
+Chile,4,13,2344,solar
+Chile,4,14,2404,solar
+Chile,4,15,2892,solar
+Chile,4,16,3238,solar
+Chile,4,17,2346,solar
+Chile,4,18,462,solar
+Chile,4,19,184,solar
+Chile,4,20,156,solar
+Chile,4,21,141,solar
+Chile,4,22,115,solar
+Chile,4,23,71,solar
+Chile,5,0,62,solar
+Chile,5,1,33,solar
+Chile,5,2,27,solar
+Chile,5,3,21,solar
+Chile,5,4,42,solar
+Chile,5,5,153,solar
+Chile,5,6,1505,solar
+Chile,5,7,3077,solar
+Chile,5,8,3677,solar
+Chile,5,9,4161,solar
+Chile,5,10,4030,solar
+Chile,5,11,3837,solar
+Chile,5,12,3458,solar
+Chile,5,13,3299,solar
+Chile,5,14,3423,solar
+Chile,5,15,3775,solar
+Chile,5,16,3752,solar
+Chile,5,17,1288,solar
+Chile,5,18,296,solar
+Chile,5,19,204,solar
+Chile,5,20,159,solar
+Chile,5,21,137,solar
+Chile,5,22,122,solar
+Chile,5,23,98,solar
+Chile,6,0,37,solar
+Chile,6,1,29,solar
+Chile,6,2,17,solar
+Chile,6,3,26,solar
+Chile,6,4,27,solar
+Chile,6,5,82,solar
+Chile,6,6,711,solar
+Chile,6,7,2098,solar
+Chile,6,8,2714,solar
+Chile,6,9,3181,solar
+Chile,6,10,3188,solar
+Chile,6,11,3151,solar
+Chile,6,12,3071,solar
+Chile,6,13,2846,solar
+Chile,6,14,2987,solar
+Chile,6,15,3227,solar
+Chile,6,16,2686,solar
+Chile,6,17,718,solar
+Chile,6,18,167,solar
+Chile,6,19,129,solar
+Chile,6,20,110,solar
+Chile,6,21,92,solar
+Chile,6,22,65,solar
+Chile,6,23,63,solar
+Chile,7,0,33,solar
+Chile,7,1,28,solar
+Chile,7,2,22,solar
+Chile,7,3,27,solar
+Chile,7,4,28,solar
+Chile,7,5,62,solar
+Chile,7,6,786,solar
+Chile,7,7,2323,solar
+Chile,7,8,3282,solar
+Chile,7,9,3785,solar
+Chile,7,10,3873,solar
+Chile,7,11,3782,solar
+Chile,7,12,3621,solar
+Chile,7,13,3340,solar
+Chile,7,14,3535,solar
+Chile,7,15,3764,solar
+Chile,7,16,3431,solar
+Chile,7,17,1170,solar
+Chile,7,18,206,solar
+Chile,7,19,136,solar
+Chile,7,20,113,solar
+Chile,7,21,113,solar
+Chile,7,22,65,solar
+Chile,7,23,70,solar
+Chile,8,0,59,solar
+Chile,8,1,37,solar
+Chile,8,2,26,solar
+Chile,8,3,31,solar
+Chile,8,4,55,solar
+Chile,8,5,180,solar
+Chile,8,6,1446,solar
+Chile,8,7,2651,solar
+Chile,8,8,3400,solar
+Chile,8,9,3823,solar
+Chile,8,10,3883,solar
+Chile,8,11,3536,solar
+Chile,8,12,3333,solar
+Chile,8,13,3019,solar
+Chile,8,14,3210,solar
+Chile,8,15,3610,solar
+Chile,8,16,3639,solar
+Chile,8,17,1984,solar
+Chile,8,18,395,solar
+Chile,8,19,156,solar
+Chile,8,20,151,solar
+Chile,8,21,121,solar
+Chile,8,22,90,solar
+Chile,8,23,67,solar
+Chile,9,0,34,solar
+Chile,9,1,44,solar
+Chile,9,2,38,solar
+Chile,9,3,59,solar
+Chile,9,4,155,solar
+Chile,9,5,960,solar
+Chile,9,6,2716,solar
+Chile,9,7,3339,solar
+Chile,9,8,3825,solar
+Chile,9,9,3917,solar
+Chile,9,10,3619,solar
+Chile,9,11,3180,solar
+Chile,9,12,2985,solar
+Chile,9,13,2986,solar
+Chile,9,14,3198,solar
+Chile,9,15,3524,solar
+Chile,9,16,3633,solar
+Chile,9,17,2411,solar
+Chile,9,18,544,solar
+Chile,9,19,228,solar
+Chile,9,20,162,solar
+Chile,9,21,133,solar
+Chile,9,22,102,solar
+Chile,9,23,49,solar
+Chile,10,0,58,solar
+Chile,10,1,32,solar
+Chile,10,2,43,solar
+Chile,10,3,104,solar
+Chile,10,4,472,solar
+Chile,10,5,2521,solar
+Chile,10,6,3938,solar
+Chile,10,7,4698,solar
+Chile,10,8,5094,solar
+Chile,10,9,4905,solar
+Chile,10,10,4410,solar
+Chile,10,11,3881,solar
+Chile,10,12,3689,solar
+Chile,10,13,3762,solar
+Chile,10,14,3912,solar
+Chile,10,15,4029,solar
+Chile,10,16,4166,solar
+Chile,10,17,3421,solar
+Chile,10,18,1412,solar
+Chile,10,19,394,solar
+Chile,10,20,241,solar
+Chile,10,21,205,solar
+Chile,10,22,167,solar
+Chile,10,23,98,solar
+Chile,11,0,41,solar
+Chile,11,1,30,solar
+Chile,11,2,39,solar
+Chile,11,3,134,solar
+Chile,11,4,777,solar
+Chile,11,5,2530,solar
+Chile,11,6,3761,solar
+Chile,11,7,4473,solar
+Chile,11,8,4683,solar
+Chile,11,9,4348,solar
+Chile,11,10,3720,solar
+Chile,11,11,3478,solar
+Chile,11,12,3130,solar
+Chile,11,13,3186,solar
+Chile,11,14,3286,solar
+Chile,11,15,3546,solar
+Chile,11,16,3389,solar
+Chile,11,17,2999,solar
+Chile,11,18,1860,solar
+Chile,11,19,620,solar
+Chile,11,20,214,solar
+Chile,11,21,169,solar
+Chile,11,22,94,solar
+Chile,11,23,43,solar
+Chile,12,0,38,solar
+Chile,12,1,43,solar
+Chile,12,2,49,solar
+Chile,12,3,169,solar
+Chile,12,4,754,solar
+Chile,12,5,2279,solar
+Chile,12,6,3432,solar
+Chile,12,7,3985,solar
+Chile,12,8,4246,solar
+Chile,12,9,4033,solar
+Chile,12,10,3523,solar
+Chile,12,11,3043,solar
+Chile,12,12,2796,solar
+Chile,12,13,2831,solar
+Chile,12,14,2907,solar
+Chile,12,15,2954,solar
+Chile,12,16,3227,solar
+Chile,12,17,3224,solar
+Chile,12,18,2476,solar
+Chile,12,19,1150,solar
+Chile,12,20,374,solar
+Chile,12,21,208,solar
+Chile,12,22,133,solar
+Chile,12,23,56,solar

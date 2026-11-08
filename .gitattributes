@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.docx binary
+*.pptx binary
+*.pdf binary
+*.png binary
+*.xlsx binary
+*.parquet binary

@@ -1,0 +1,568 @@
+sci_name,nombre_es,species_code,orden,familia,familia_cientifica,url_ebird
+Turdus falcklandii,Zorzal patagónico,austhr1,Passeriformes,Thrushes and Allies,Turdidae,https://ebird.org/species/austhr1/CL
+Daptrius chimango,Tiuque,chicar1,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/chicar1/CL
+Zonotrichia capensis,Chincol,rucspa1,Passeriformes,New World Sparrows,Passerellidae,https://ebird.org/species/rucspa1/CL
+Vanellus chilensis,Queltehue común,soulap1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/soulap1/CL
+Larus dominicanus,Gaviota dominicana,kelgul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/kelgul/CL
+Troglodytes musculus,Chercán común,houwre4,Passeriformes,Wrens,Troglodytidae,https://ebird.org/species/houwre4/CL
+Tachycineta leucopyga,Golondrina chilena,chiswa1,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/chiswa1/CL
+Passer domesticus,Gorrión,houspa,Passeriformes,Old World Sparrows,Passeridae,https://ebird.org/species/houspa/CL
+Zenaida auriculata,Tórtola,eardov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/eardov1/CL
+Sephanoides sephaniodes,Picaflor chico,grbfir1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/grbfir1/CL
+Columba livia,Paloma doméstica,rocpig,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/rocpig/CL
+Nannopterum brasilianum,Yeco,neocor,Suliformes,Cormorants and Shags,Phalacrocoracidae,https://ebird.org/species/neocor/CL
+Curaeus curaeus,Tordo,ausbla1,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/ausbla1/CL
+Elaenia albiceps,Fío-fío,whcela1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/whcela1/CL
+Anairetes parulus,Cachudito común,tuttyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/tuttyr1/CL
+Cathartes aura,Jote de cabeza colorada,turvul,Cathartiformes,New World Vultures,Cathartidae,https://ebird.org/species/turvul/CL
+Leistes loyca,Loica común,lotmea1,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/lotmea1/CL
+Theristicus melanopis,Bandurria común,bkfibi1,Pelecaniformes,Ibises and Spoonbills,Threskiornithidae,https://ebird.org/species/bkfibi1/CL
+Mimus thenca,Tenca chilena,chimoc1,Passeriformes,Mockingbirds and Thrashers,Mimidae,https://ebird.org/species/chimoc1/CL
+Spinus barbatus,Jilguero austral,blcsis2,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/blcsis2/CL
+Coragyps atratus,Jote de cabeza negra,blkvul,Cathartiformes,New World Vultures,Cathartidae,https://ebird.org/species/blkvul/CL
+Pyrope pyrope,Diucón,fiediu1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/fiediu1/CL
+Chroicocephalus maculipennis,Gaviota cáhuil,brhgul2,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/brhgul2/CL
+Diuca diuca,Diuca común,codfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/codfin1/CL
+Anas georgica,Pato jergón grande,yebpin1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/yebpin1/CL
+Leptasthenura aegithaloides,Tijeral común,pmtspi1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/pmtspi1/CL
+Anas flavirostris,Pato jergón chico,yebtea1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/yebtea1/CL
+Sicalis luteola,Chirihue común,gryfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/gryfin1/CL
+Numenius hudsonicus,Zarapito común,whimbr3,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/whimbr3/CL
+Fulica armillata,Tagua común,regcoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/regcoo1/CL
+Phytotoma rara,Rara,rutpla1,Passeriformes,Cotingas,Cotingidae,https://ebird.org/species/rutpla1/CL
+Egretta thula,Garza chica,snoegr,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/snoegr/CL
+Haematopus palliatus,Pilpilén común,ameoys,Charadriiformes,Oystercatchers,Haematopodidae,https://ebird.org/species/ameoys/CL
+Myiopsitta monachus,Cotorra,monpar,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/monpar/CL
+Aphrastura spinicauda,Rayadito,thtray1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/thtray1/CL
+Molothrus bonariensis,Mirlo común,shicow,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/shicow/CL
+Mareca sibilatrix,Pato real,chiwig1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/chiwig1/CL
+Ardea alba,Garza grande,greegr,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/greegr/CL
+Columbina picui,Tortolita cuyana,pigdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/pigdov1/CL
+Cinclodes patagonicus,Churrete patagónico,dabcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/dabcin1/CL
+Callipepla californica,Codorniz,calqua,Galliformes,New World Quail,Odontophoridae,https://ebird.org/species/calqua/CL
+Falco sparverius,Cernícalo,amekes,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/amekes/CL
+Zenaida meloda,Paloma de alas blancas,wepdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/wepdov1/CL
+Pygochelidon cyanoleuca,Golondrina de dorso negro,bawswa1,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/bawswa1/CL
+Pelecanus thagus,Pelícano de Humboldt,perpel1,Pelecaniformes,Pelicans,Pelecanidae,https://ebird.org/species/perpel1/CL
+Agelasticus thilius,Trile,yewbla2,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/yewbla2/CL
+Lessonia rufa,Colegial austral,ausneg1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/ausneg1/CL
+Geranoaetus polyosoma,Aguilucho común,rebhaw2,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/rebhaw2/CL
+Caracara plancus,Traro,y00678,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/y00678/CL
+Patagioenas araucana,Torcaza,chipig2,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/chipig2/CL
+Cygnus melancoryphus,Cisne de cuello negro,blnswa2,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/blnswa2/CL
+Parabuteo unicinctus,Peuco,hrshaw,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/hrshaw/CL
+Phrygilus patagonicus,Cometocino patagónico,pasfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/pasfin1/CL
+Veniliornis lignarius,Carpinterito,strwoo6,Piciformes,Woodpeckers,Picidae,https://ebird.org/species/strwoo6/CL
+Phrygilus gayi,Cometocino de Gay,gyhsif1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/gyhsif1/CL
+Nycticorax nycticorax,Huairavo común,bcnher,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/bcnher/CL
+Himantopus mexicanus,Perrito,bknsti,Charadriiformes,Stilts and Avocets,Recurvirostridae,https://ebird.org/species/bknsti/CL
+Chloephaga picta,Caiquén,uplgoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/uplgoo1/CL
+Scelorchilus rubecula,Chucao,chutap1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/chutap1/CL
+Podiceps major,Huala,gregre1,Podicipediformes,Grebes,Podicipedidae,https://ebird.org/species/gregre1/CL
+Coscoroba coscoroba,Cisne coscoroba,cosswa1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/cosswa1/CL
+Colaptes pitius,Pitío austral,chifli1,Piciformes,Woodpeckers,Picidae,https://ebird.org/species/chifli1/CL
+Leucocarbo atriceps,Cormorán imperial,impcor6,Suliformes,Cormorants and Shags,Phalacrocoracidae,https://ebird.org/species/impcor6/CL
+Sula variegata,Piquero de Humboldt,perboo1,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/perboo1/CL
+Rollandia rolland,Pimpollo común,whtgre3,Podicipediformes,Grebes,Podicipedidae,https://ebird.org/species/whtgre3/CL
+Spatula cyanoptera,Pato colorado,cintea,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/cintea/CL
+Colorhamphus parvirostris,Viudita,pattyr2,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/pattyr2/CL
+Leucophaeus modestus,Gaviota garuma,grygul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/grygul/CL
+Rhopospina fruticeti,Yal común,mosfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/mosfin1/CL
+Pteroptochos megapodius,Turca,moutur1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/moutur1/CL
+Cinclodes fuscus,Churrete acanelado,buwcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/buwcin1/CL
+Lophonetta specularioides,Pato juarjual,creduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/creduc1/CL
+Leucophaeus pipixcan,Gaviota de Franklin,fragul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/fragul/CL
+Sterna hirundinacea,Gaviotín sudamericano,soater1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/soater1/CL
+Haematopus ater,Pilpilén negro,blaoys1,Charadriiformes,Oystercatchers,Haematopodidae,https://ebird.org/species/blaoys1/CL
+Enicognathus leptorhynchus,Choroy,slbpar1,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/slbpar1/CL
+Vultur gryphus,Cóndor,andcon1,Cathartiformes,New World Vultures,Cathartidae,https://ebird.org/species/andcon1/CL
+Fulica rufifrons,Tagua de frente roja,refcoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/refcoo1/CL
+Geranoaetus melanoleucus,Águila,bcbeag1,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/bcbeag1/CL
+Tringa flavipes,Pitotoy chico,lesyel,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/lesyel/CL
+Ardea cocoi,Garza cuca,cocher1,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/cocher1/CL
+Pardirallus sanguinolentus,Pidén común,plurai1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/plurai1/CL
+Phleocryptes melanops,Trabajador,wrlrus1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/wrlrus1/CL
+Scytalopus magellanicus,Churrín del sur,magtap1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/magtap1/CL
+Tringa melanoleuca,Pitotoy grande,greyel,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/greyel/CL
+Tachuris rubrigastra,Siete colores,mcrtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/mcrtyr1/CL
+Patagona gigas,Picaflor gigante,giahum3,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/giahum3/CL
+Hymenops perspicillatus,Run-run,spetyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/spetyr1/CL
+Anthus correndera,Bailarín chico común,corpip1,Passeriformes,Wagtails and Pipits,Motacillidae,https://ebird.org/species/corpip1/CL
+Spatula platalea,Pato cuchara,redsho1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/redsho1/CL
+Calidris bairdii,Playero de Baird,baisan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/baisan/CL
+Fulica leucoptera,Tagua chica,whwcoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/whwcoo1/CL
+Podilymbus podiceps,Picurio,pibgre,Podicipediformes,Grebes,Podicipedidae,https://ebird.org/species/pibgre/CL
+Enicognathus ferrugineus,Cachaña,auspar1,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/auspar1/CL
+Sylviorthorhynchus desmursii,Colilarga,demwir1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/demwir1/CL
+Thalassarche melanophris,Albatros de ceja negra,bkbalb,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/bkbalb/CL
+Poikilocarbo gaimardi,Lile,relcor1,Suliformes,Cormorants and Shags,Phalacrocoracidae,https://ebird.org/species/relcor1/CL
+Rynchops niger,Rayador,blkski,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/blkski/CL
+Glaucidium nana,Chuncho austral,aupowl1,Strigiformes,Owls,Strigidae,https://ebird.org/species/aupowl1/CL
+Ardea ibis,Garza bueyera,categr1,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/categr1/CL
+Podiceps occipitalis,Blanquillo,silgre1,Podicipediformes,Grebes,Podicipedidae,https://ebird.org/species/silgre1/CL
+Muscisaxicola maclovianus,Dormilona tontita,dafgrt1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/dafgrt1/CL
+Porphyriops melanops,Tagüita común,spfgal1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/spfgal1/CL
+Elanus leucurus,Bailarín,whtkit,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/whtkit/CL
+Cistothorus platensis,Chercán de las vegas,sedwre,Passeriformes,Wrens,Troglodytidae,https://ebird.org/species/sedwre/CL
+Oxyura vittata,Pato rana de pico delgado,lakduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/lakduc1/CL
+Pseudasthenes humicola,Canastero chileno,dutcan1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/dutcan1/CL
+Scytalopus fuscus,Churrín del norte,dustap1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/dustap1/CL
+Rhodopis vesper,Picaflor del norte,oashum1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/oashum1/CL
+Macronectes giganteus,Petrel gigante antártico,angpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/angpet1/CL
+Circus cinereus,Vari ceniciento,cinhar1,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/cinhar1/CL
+Phoenicopterus chilensis,Flamenco chileno,chifla1,Phoenicopteriformes,Flamingos,Phoenicopteridae,https://ebird.org/species/chifla1/CL
+Pygarrhichas albogularis,Comesebo grande,whttre2,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/whttre2/CL
+Nothoprocta perdicaria,Perdiz chilena,chitin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/chitin1/CL
+Megaceryle torquata,Martín pescador,rinkin1,Coraciiformes,Kingfishers,Alcedinidae,https://ebird.org/species/rinkin1/CL
+Gallinago magellanica,Becacina común,soasni3,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/soasni3/CL
+Ardenna grisea,Fardela negra,sooshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/sooshe/CL
+Cinclodes oustaleti,Churrete chico,gyfcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/gyfcin1/CL
+Haematopus leucopodus,Pilpilén austral,magoys1,Charadriiformes,Oystercatchers,Haematopodidae,https://ebird.org/species/magoys1/CL
+Larosterna inca,Gaviotín monja,incter1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/incter1/CL
+Tachyeres pteneres,Quetru no volador,flistd1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/flistd1/CL
+Leucocarbo bougainvilliorum,Guanay,guacor1,Suliformes,Cormorants and Shags,Phalacrocoracidae,https://ebird.org/species/guacor1/CL
+Stercorarius chilensis,Salteador chileno,chisku1,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/chisku1/CL
+Athene cunicularia,Pequén,burowl,Strigiformes,Owls,Strigidae,https://ebird.org/species/burowl/CL
+Chloephaga poliocephala,Canquén común,ashgoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/ashgoo1/CL
+Limosa haemastica,Zarapito de pico recto,hudgod,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/hudgod/CL
+Rhopospina alaudina,Platero,btsfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/btsfin1/CL
+Pteroptochos tarnii,Hued-hued del sur,bthhue1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/bthhue1/CL
+Cinclodes nigrofumosus,Churrete costero,seacin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/seacin1/CL
+Leucophaeus scoresbii,Gaviota austral,dolgul2,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/dolgul2/CL
+Plegadis chihi,Cuervo de pantano común,whfibi,Pelecaniformes,Ibises and Spoonbills,Threskiornithidae,https://ebird.org/species/whfibi/CL
+Zonibyx modestus,Chorlo chileno,rucdot1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/rucdot1/CL
+Thalasseus elegans,Gaviotín elegante,eleter1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/eleter1/CL
+Oressochen melanopterus,Piuquén,andgoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/andgoo1/CL
+Eugralla paradoxa,Churrín de la Mocha,ocftap1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/ocftap1/CL
+Tachyeres patachonicus,Quetru volador,flystd1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/flystd1/CL
+Sterna trudeaui,Gaviotín piquerito,truter,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/truter/CL
+Leucocarbo magellanicus,Cormorán de las rocas,magcor1,Suliformes,Cormorants and Shags,Phalacrocoracidae,https://ebird.org/species/magcor1/CL
+Chroicocephalus serranus,Gaviota andina,andgul1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/andgul1/CL
+Arenaria interpres,Playero vuelvepiedras,rudtur,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/rudtur/CL
+Larus belcheri,Gaviota peruana,belgul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/belgul/CL
+Anarhynchus collaris,Chorlo de collar,colplo1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/colplo1/CL
+Calidris alba,Playero blanco,sander,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/sander/CL
+Geositta rufipennis,Minero cordillerano,rubmin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/rubmin1/CL
+Spheniscus magellanicus,Pingüino de Magallanes,magpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/magpen1/CL
+Geositta cunicularia,Minero común,commin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/commin1/CL
+Falco peregrinus,Halcón peregrino,perfal,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/perfal/CL
+Anas bahamensis,Pato gargantillo,whcpin,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/whcpin/CL
+Scelorchilus albicollis,Tapaculo,whttap1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/whttap1/CL
+Metriopelia melanoptera,Tortolita cordillerana,bwgdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/bwgdov1/CL
+Rhea pennata,Suri/Ñandú,lesrhe2,Rheiformes,Rheas,Rheidae,https://ebird.org/species/lesrhe2/CL
+Agriornis lividus,Mero grande,gresht1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/gresht1/CL
+Falco femoralis,Halcón perdiguero,aplfal,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/aplfal/CL
+Columbina cruziana,Tortolita quiguagua,crgdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/crgdov1/CL
+Procellaria aequinoctialis,Petrel de barba blanca,whcpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/whcpet1/CL
+Cyanoliseus patagonus,Tricahue,burpar,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/burpar/CL
+Tyto furcata,Lechuza,brnowl,Strigiformes,Barn-Owls,Tytonidae,https://ebird.org/species/brnowl/CL
+Upucerthia dumetaria,Bandurrilla común,sctear1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/sctear1/CL
+Anarhynchus falklandicus,Chorlo de doble collar,twbplo1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/twbplo1/CL
+Bubo magellanicus,Tucúquere,grhowl2,Strigiformes,Owls,Strigidae,https://ebird.org/species/grhowl2/CL
+Ardenna creatopus,Fardela blanca,pifshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/pifshe/CL
+Campephilus magellanicus,Carpintero negro,magwoo1,Piciformes,Woodpeckers,Picidae,https://ebird.org/species/magwoo1/CL
+Chloephaga hybrida,Caranca,kelgoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/kelgoo1/CL
+Fulmarus glacialoides,Petrel plateado austral,souful1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/souful1/CL
+Agriornis montanus,Mero gaucho,bkbsht1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/bkbsht1/CL
+Conirostrum cinereum,Comesebo chico,cincon1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/cincon1/CL
+Oceanites oceanicus,Golondrina de mar de Wilson/fueguina,wispet,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/wispet/CL
+Muscisaxicola albilora,Dormilona de ceja blanca,wbgtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/wbgtyr1/CL
+Spheniscus humboldti,Pingüino de Humboldt,humpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/humpen1/CL
+Sicalis auriventris,Chirihue dorado,gryfin2,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/gryfin2/CL
+Speculanas specularis,Pato anteojillo,speduc2,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/speduc2/CL
+Thinocorus rumicivorus,Perdicita chica,leasee1,Charadriiformes,Seedsnipes,Thinocoridae,https://ebird.org/species/leasee1/CL
+Asthenes modesta,Canastero chico,corcan1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/corcan1/CL
+Geospizopsis unicolor,Pájaro plomo,plsfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/plsfin1/CL
+Daptrius megalopterus,Carancho cordillerano,moucar1,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/moucar1/CL
+Xenospingus concolor,Pizarrita,slbfin3,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/slbfin3/CL
+Anarhynchus nivosus,Chorlo nevado,snoplo5,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/snoplo5/CL
+Sicalis olivascens,Chirihue verdoso,gryfin3,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/gryfin3/CL
+Asio flammeus,Nuco,sheowl,Strigiformes,Owls,Strigidae,https://ebird.org/species/sheowl/CL
+Hirundo rustica,Golondrina bermeja,barswa,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/barswa/CL
+Muscisaxicola maculirostris,Dormilona chica,sbgtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/sbgtyr1/CL
+Gallinula galeata,Tagüita del norte,comgal1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/comgal1/CL
+Systellura longirostris,Gallina ciega común,bawnig1,Caprimulgiformes,Nightjars and Allies,Caprimulgidae,https://ebird.org/species/bawnig1/CL
+Phrygilus atriceps,Cometocino del norte,bhsfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/bhsfin1/CL
+Muscisaxicola rufivertex,Dormilona de nuca rojiza,rngtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/rngtyr1/CL
+Calidris fuscicollis,Playero de lomo blanco,whrsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/whrsan/CL
+Spatula versicolor,Pato capuchino,siltea1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/siltea1/CL
+Pluvialis squatarola,Chorlo ártico,bkbplo,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/bkbplo/CL
+Thinocorus orbignyianus,Perdicita cojón,gybsee1,Charadriiformes,Seedsnipes,Thinocoridae,https://ebird.org/species/gybsee1/CL
+Egretta caerulea,Garza azul,libher,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/libher/CL
+Macronectes halli,Petrel gigante subantártico,norgip1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/norgip1/CL
+Chloephaga rubidiceps,Canquén colorado,ruhgoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/ruhgoo1/CL
+Patagioenas maculosa,Paloma manchada,spwpig3,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/spwpig3/CL
+Heteronetta atricapilla,Pato rinconero,blhduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/blhduc1/CL
+Geospizopsis plebejus,Plebeyo,absfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/absfin1/CL
+Botaurus involucris,Huairavillo,stbbit1,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/stbbit1/CL
+Cinclodes albiventris,Churrete de alas cremas,crwcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/crwcin1/CL
+Calidris virgata,Playero de las rompientes,surfbi,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/surfbi/CL
+Pyrocephalus rubinus,Saca-tu-real,verfly,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/verfly/CL
+Leistes bellicosus,Loica peruana,permea1,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/permea1/CL
+Phalaropus tricolor,Pollito de mar tricolor,wilpha,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/wilpha/CL
+Turdus chiguanco,Zorzal negro,chithr1,Passeriformes,Thrushes and Allies,Turdidae,https://ebird.org/species/chithr1/CL
+Pelecanoides garnotii,Yunco de Humboldt,pedpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/pedpet1/CL
+Astur chilensis,Peuquito,bichaw4,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/bichaw4/CL
+Sternula lorata,Gaviotín chico,perter2,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/perter2/CL
+Asthenes anthoides,Canastero del sur,auscan1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/auscan1/CL
+Plegadis ridgwayi,Cuervo de pantano de la puna,punibi1,Pelecaniformes,Ibises and Spoonbills,Threskiornithidae,https://ebird.org/species/punibi1/CL
+Strix rufipes,Concón,rulowl1,Strigiformes,Owls,Strigidae,https://ebird.org/species/rulowl1/CL
+Ochetorhynchus melanurus,Chiricoca,crachi1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/crachi1/CL
+Spatula puna,Pato puna,puntea1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/puntea1/CL
+Sicalis flaveola,Chirihue azafrán,saffin,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/saffin/CL
+Spinus magellanicus,Jilguero peruano,hoosis1,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/hoosis1/CL
+Upucerthia saturatior,Bandurrilla de los bosques,pafear1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/pafear1/CL
+Phoenicoparrus andinus,Parina grande,andfla2,Phoenicopteriformes,Flamingos,Phoenicopteridae,https://ebird.org/species/andfla2/CL
+Fulica gigantea,Tagua gigante,giacoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/giacoo1/CL
+Tringa semipalmata,Playero grande de pico grueso,willet2,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/willet2/CL
+Spinus uropygialis,Jilguero cordillerano,yersis1,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/yersis1/CL
+Pelecanoides magellani,Yunco de Magallanes,madpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/madpet1/CL
+Merganetta armata,Pato cortacorrientes,torduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/torduc1/CL
+Oreotrochilus leucopleurus,Picaflor cordillerano,whshil1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/whshil1/CL
+Anas platyrhynchos,Pato de collar,mallar3,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/mallar3/CL
+Charadrius semipalmatus,Chorlo semipalmado,semplo,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/semplo/CL
+Fulica ardesiaca,Tagua andina,slccoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/slccoo1/CL
+Muscisaxicola flavinucha,Dormilona fraile,ongtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/ongtyr1/CL
+Thalassarche salvini,Albatros de Salvin,salalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/salalb1/CL
+Pteroptochos castaneus,Hued-hued castaño,cthhue1,Passeriformes,Tapaculos,Rhinocryptidae,https://ebird.org/species/cthhue1/CL
+Lessonia oreas,Colegial del norte,andneg1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/andneg1/CL
+Oreopholus ruficollis,Chorlo de campo,tatdot1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/tatdot1/CL
+Sporophila telasco,Corbatita del norte,chtsee1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/chtsee1/CL
+Cinclodes atacamensis,Churrete de alas blancas,whwcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/whwcin1/CL
+Oxyura ferruginea,Pato rana de pico ancho,andduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/andduc1/CL
+Asthenes pyrrholeuca,Canastero de cola larga,shbcan2,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/shbcan2/CL
+Calidris pusilla,Playero semipalmado,semsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/semsan/CL
+Metriopelia ceciliae,Tortolita boliviana,bfgdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/bfgdov1/CL
+Oreotrochilus estella,Picaflor de la puna,andhil3,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/andhil3/CL
+Phoenicoparrus jamesi,Parina chica,jamfla1,Phoenicopteriformes,Flamingos,Phoenicopteridae,https://ebird.org/species/jamfla1/CL
+Recurvirostra andina,Caití,andavo1,Charadriiformes,Stilts and Avocets,Recurvirostridae,https://ebird.org/species/andavo1/CL
+Halobaena caerulea,Petrel azulado,blupet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/blupet1/CL
+Aeronautes andecolus,Vencejo chico,andswi1,Apodiformes,Swifts,Apodidae,https://ebird.org/species/andswi1/CL
+Geositta punensis,Minero de la puna,punmin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/punmin1/CL
+Diomedea epomophora,Albatros real del sur,royalb2,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/royalb2/CL
+Netta peposaca,Pato negro,robpoc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/robpoc1/CL
+Daption capense,Petrel damero,cappet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/cappet/CL
+Asthenes arequipae,Canastero del norte,crbcan4,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/crbcan4/CL
+Muscisaxicola juninensis,Dormilona de la puna,pugtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/pugtyr1/CL
+Charadrius vociferus,Chorlo gritón,killde,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/killde/CL
+Muscisaxicola capistratus,Dormilona rufa,cibgrt1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/cibgrt1/CL
+Laterallus jamaicensis,Pidencito,blkrai,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/blkrai/CL
+Anarhynchus alticola,Chorlo de la puna,punplo1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/punplo1/CL
+Muscisaxicola frontalis,Dormilona de frente negra,bfgtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/bfgtyr1/CL
+Orochelidon andecola,Golondrina de los riscos,andswa2,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/andswa2/CL
+Buteo ventralis,Aguilucho de cola rojiza,ruthaw1,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/ruthaw1/CL
+Diomedea sanfordi,Albatros real del norte,royalb3,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/royalb3/CL
+Pluvialis dominica,Chorlo dorado,amgplo,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/amgplo/CL
+Spinus atratus,Jilguero negro,blasis1,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/blasis1/CL
+Buteo albigula,Aguilucho chico,whthaw1,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/whthaw1/CL
+Thaumastura cora,Picaflor de Cora,pershe2,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/pershe2/CL
+Thalassarche chrysostoma,Albatros de cabeza gris,gyhalb,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/gyhalb/CL
+Procellaria westlandica,Petrel de Westland,wespet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/wespet1/CL
+Geositta antarctica,Minero austral,shbmin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/shbmin1/CL
+Rauenia bonariensis,Naranjero,baytan3,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/baytan3/CL
+Pterodroma defilippiana,Petrel de Masatierra,maspet3,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/maspet3/CL
+Geositta maritima,Minero chico,gramin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/gramin1/CL
+Geositta isabellina,Minero grande,crrmin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/crrmin1/CL
+Muscisaxicola albifrons,Dormilona gigante,wfgtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/wfgtyr1/CL
+Pterodroma externa,Petrel de Juan Fernández,jufpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/jufpet/CL
+Thalassarche bulleri,Albatros de Buller,bulalb2,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/bulalb2/CL
+Hydrobates markhami,Golondrina de mar negra,maspet,Procellariiformes,Northern Storm-Petrels,Hydrobatidae,https://ebird.org/species/maspet/CL
+Catamenia analis,Semillero,batsee1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/batsee1/CL
+Anairetes flavirostris,Cachudito del norte,ybttyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/ybttyr1/CL
+Psilopsiagon aurifrons,Perico cordillerano,moupar2,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/moupar2/CL
+Pluvianellus socialis,Chorlo de Magallanes,magplo1,Charadriiformes,Magellanic Plover,Pluvianellidae,https://ebird.org/species/magplo1/CL
+Calidris canutus,Playero ártico,redkno,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/redkno/CL
+Metriopelia aymara,Tortolita de la puna,gsgdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/gsgdov1/CL
+Calidris minutilla,Playero enano,leasan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/leasan/CL
+Leptasthenura striata,Tijeral listado,sttspi1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/sttspi1/CL
+Melanodera xanthogramma,Yal cordillerano,yebfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/yebfin1/CL
+Phalaropus fulicarius,Pollito de mar rojizo,redpha1,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/redpha1/CL
+Ochetorhynchus ruficaudus,Bandurrilla de pico recto,stbear2,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/stbear2/CL
+Sicalis uropygialis,Chirihue cordillerano,bryfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/bryfin1/CL
+Actitis macularius,Playero manchado,sposan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/sposan/CL
+Sicalis lebruni,Chirihue austral,payfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/payfin1/CL
+Aptenodytes patagonicus,Pingüino rey,kinpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/kinpen1/CL
+Neoxolmis rufiventris,Cazamoscas chocolate,chvtyr2,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/chvtyr2/CL
+Hesperoburhinus superciliaris,Chorlo cabezón,petkne1,Charadriiformes,Thick-knees,Burhinidae,https://ebird.org/species/petkne1/CL
+Colaptes rupicola,Pitío del norte,andfli1,Piciformes,Woodpeckers,Picidae,https://ebird.org/species/andfli1/CL
+Muscisaxicola cinereus,Dormilona cenicienta,cingrt1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/cingrt1/CL
+Idiopsar speculifer,Diuca de alas blancas,wwdfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/wwdfin1/CL
+Phegornis mitchellii,Chorlito cordillerano,diaplo1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/diaplo1/CL
+Fulica cornuta,Tagua cornuda,horcoo1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/horcoo1/CL
+Daptrius albogularis,Carancho de garganta blanca,whtcar1,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/whtcar1/CL
+Ochthoeca leucophrys,Pitajo gris,wbctyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/wbctyr1/CL
+Molothrus rufoaxillaris,Mirlo de pico corto,scrcow1,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/scrcow1/CL
+Diomedea exulans,Albatros errante,wanalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/wanalb1/CL
+Conirostrum tamarugense,Comesebo de los tamarugales,tamcon1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/tamcon1/CL
+Oceanites gracilis,Golondrina de mar chica,wvspet1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/wvspet1/CL
+Vanellus resplendens,Queltehue de la puna,andlap1,Charadriiformes,Plovers and Lapwings,Charadriidae,https://ebird.org/species/andlap1/CL
+Pseudocolopteryx citreola,Pájaro amarillo,ticdor1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/ticdor1/CL
+Stercorarius parasiticus,Salteador chico,parjae,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/parjae/CL
+Sula dactylatra,Piquero blanco,masboo,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/masboo/CL
+Calidris melanotos,Playero pectoral,pecsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/pecsan/CL
+Mimus triurus,Tenca de alas blancas,whbmoc1,Passeriformes,Mockingbirds and Thrashers,Mimidae,https://ebird.org/species/whbmoc1/CL
+Melanodera melanodera,Yal austral,cawfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/cawfin1/CL
+Pachyptila belcheri,Petrel-paloma de pico delgado,slbpri1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/slbpri1/CL
+Idiopsar dorsalis,Cometocino de dorso castaño,rbsfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/rbsfin1/CL
+Riparia riparia,Golondrina barranquera,banswa,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/banswa/CL
+Agriornis micropterus,Mero de Tarapacá,gybsht1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/gybsht1/CL
+Diglossa brunneiventris,Comesebo negro,bktflo1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/bktflo1/CL
+Fregata minor,Ave fragata grande,grefri,Suliformes,Frigatebirds,Fregatidae,https://ebird.org/species/grefri/CL
+Nothoprocta ornata,Perdiz cordillerana,orntin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/orntin1/CL
+Upucerthia albigula,Bandurrilla de Arica,whtear1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/whtear1/CL
+Mimus patagonicus,Tenca patagónica,patmoc1,Passeriformes,Mockingbirds and Thrashers,Mimidae,https://ebird.org/species/patmoc1/CL
+Asthenes pudibunda,Canastero de las quebradas,cancan1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/cancan1/CL
+Upucerthia validirostris,Bandurrilla de la puna,bubear2,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/bubear2/CL
+Volatinia jacarina,Negrillo,blbgra1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/blbgra1/CL
+Phoebetria palpebrata,Albatros de manto claro,limalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/limalb1/CL
+Phasianus colchicus,Faisán de collar,rinphe1,Galliformes,"Pheasants, Grouse, and Allies",Phasianidae,https://ebird.org/species/rinphe1/CL
+Tinamotis pentlandii,Perdiz de la puna,puntin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/puntin1/CL
+Attagis gayi,Perdicita cordillerana,rubsee2,Charadriiformes,Seedsnipes,Thinocoridae,https://ebird.org/species/rubsee2/CL
+Theristicus branickii,Bandurria de la puna,bkfibi2,Pelecaniformes,Ibises and Spoonbills,Threskiornithidae,https://ebird.org/species/bkfibi2/CL
+Glaucidium peruanum,Chuncho del norte,pepowl1,Strigiformes,Owls,Strigidae,https://ebird.org/species/pepowl1/CL
+Ochetorhynchus phoenicurus,Patagón,batear1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/batear1/CL
+Petrochelidon pyrrhonota,Golondrina grande,cliswa,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/cliswa/CL
+Pterodroma mollis,Petrel de collar gris,soppet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/soppet1/CL
+Crotophaga sulcirostris,Matacaballos,grbani,Cuculiformes,Cuckoos,Cuculidae,https://ebird.org/species/grbani/CL
+Eudromia elegans,Perdiz copetona,elctin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/elctin1/CL
+Anairetes reguloides,Cachudito de cresta blanca,pcttyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/pcttyr1/CL
+Cairina moschata,Pato criollo,musduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/musduc/CL
+Myiophobus rufescens,Cazamoscas de pico chato,brcfly3,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/brcfly3/CL
+Fregetta tropica,Golondrina de mar de vientre negro,bbspet1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/bbspet1/CL
+Calidris himantopus,Playero de patas largas,stisan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/stisan/CL
+Ardenna gravis,Fardela capirotada,greshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/greshe/CL
+Colibri coruscans,Picaflor azul,spvear1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/spvear1/CL
+Eudyptes chrysocome,Pingüino de penacho amarillo,rocpen2,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/rocpen2/CL
+Ochthoeca oenanthoides,Pitajo rojizo,dorcht1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/dorcht1/CL
+Sterna hirundo,Gaviotín boreal,comter,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/comter/CL
+Oceanites pincoyae,Golondrina de mar Pincoya,pumstp1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/pumstp1/CL
+Pachyptila desolata,Petrel-paloma antártico,dovpri1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/dovpri1/CL
+Pandion haliaetus,Águila pescadora,osprey,Accipitriformes,Osprey,Pandionidae,https://ebird.org/species/osprey/CL
+Spinus crassirostris,Jilguero grande,thbsis1,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/thbsis1/CL
+Quechuavis decussata,Gallina ciega chica,bawnig3,Caprimulgiformes,Nightjars and Allies,Caprimulgidae,https://ebird.org/species/bawnig3/CL
+Laterallus spiloptera,Burrito negruzco,dowcra1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/dowcra1/CL
+Idiopsar erythronotus,Cometocino de Arica,wtsfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/wtsfin1/CL
+Egretta tricolor,Garza tricolor,triher,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/triher/CL
+Pterodroma longirostris,Petrel de Masafuera,stepet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/stepet/CL
+Hydrobates hornbyi,Golondrina de mar de collar,rispet1,Procellariiformes,Northern Storm-Petrels,Hydrobatidae,https://ebird.org/species/rispet1/CL
+Attagis malouinus,Perdicita austral,whbsee2,Charadriiformes,Seedsnipes,Thinocoridae,https://ebird.org/species/whbsee2/CL
+Tyrannus tyrannus,Suirirí boreal,easkin,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/easkin/CL
+Anthus hellmayri,Bailarín chico pálido,helpip1,Passeriformes,Wagtails and Pipits,Motacillidae,https://ebird.org/species/helpip1/CL
+Pterodroma neglecta,Petrel de Kermadec,kerpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/kerpet/CL
+Rallus antarcticus,Pidén austral,ausrai1,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/ausrai1/CL
+Platalea ajaja,Espátula,rosspo1,Pelecaniformes,Ibises and Spoonbills,Threskiornithidae,https://ebird.org/species/rosspo1/CL
+Daptrius australis,Carancho negro,strcar1,Falconiformes,Falcons and Caracaras,Falconidae,https://ebird.org/species/strcar1/CL
+Phaethon rubricauda,Ave del trópico de cola roja,rettro,Phaethontiformes,Tropicbirds,Phaethontidae,https://ebird.org/species/rettro/CL
+Thalasseus sandvicensis,Gaviotín de Sandwich,santer1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/santer1/CL
+Tyrannus savana,Cazamoscas tijereta,fotfly,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/fotfly/CL
+Thalassarche eremita,Albatros de Chatham,shyalb2,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/shyalb2/CL
+Puffinus puffinus,Fardela atlántica,manshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/manshe/CL
+Diomedea antipodensis,Albatros de las Antípodas/de Gibson,antalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/antalb1/CL
+Quiscalus mexicanus,Zanate mexicano,grtgra,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/grtgra/CL
+Anous stolidus,Gaviotín de San Félix,brnnod,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/brnnod/CL
+Sicalis lutea,Chirihue puneño,puyfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/puyfin1/CL
+Gallinago andina,Becacina de la puna,punsni1,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/punsni1/CL
+Gelochelidon nilotica,Gaviotín de pico negro,gubter2,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/gubter2/CL
+Pitangus sulphuratus,Benteveo,grekis,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/grekis/CL
+Anous albivitta,Gaviotín de San Ambrosio,grynod1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/grynod1/CL
+Ardenna bulleri,Fardela de dorso gris,bulshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/bulshe/CL
+Calidris mauri,Playero occidental,wessan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/wessan/CL
+Hydrobates tethys,Golondrina de mar peruana,wrspet,Procellariiformes,Northern Storm-Petrels,Hydrobatidae,https://ebird.org/species/wrspet/CL
+Tinamotis ingoufi,Perdiz austral,pattin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/pattin1/CL
+Anthus peruvianus,Bailarín chico peruano,yelpip3,Passeriformes,Wagtails and Pipits,Motacillidae,https://ebird.org/species/yelpip3/CL
+Tyrannus melancholicus,Suirirí real,trokin,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/trokin/CL
+Fregetta grallaria,Golondrina de mar de vientre blanco,wbspet1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/wbspet1/CL
+Sephanoides fernandensis,Picaflor de Juan Fernández,juffir1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/juffir1/CL
+Puffinus nativitatis,Fardela de Pascua,chrshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/chrshe/CL
+Sterna paradisaea,Gaviotín ártico,arcter,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/arcter/CL
+Sicalis raimondii,Chirihue de Raimondi,rayfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/rayfin1/CL
+Gallinago stricklandii,Becacina grande,fuesni1,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/fuesni1/CL
+Bartramia longicauda,Batitú,uplsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/uplsan/CL
+Creagrus furcatus,Gaviota de las Galápagos,swtgul1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/swtgul1/CL
+Chionis albus,Paloma antártica,snoshe2,Charadriiformes,Sheathbills,Chionidae,https://ebird.org/species/snoshe2/CL
+Chroicocephalus cirrocephalus,Gaviota de capucho gris,grhgul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/grhgul/CL
+Agriornis albicauda,Mero de la puna,wtstyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/wtstyr1/CL
+Progne murphyi,Golondrina peruana,permar1,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/permar1/CL
+Gallus gallus,Gallo,redjun,Galliformes,"Pheasants, Grouse, and Allies",Phasianidae,https://ebird.org/species/redjun/CL
+Stercorarius longicaudus,Salteador de cola larga,lotjae,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/lotjae/CL
+Anser anser,Ánsar común,gragoo,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/gragoo/CL
+Onychoprion fuscatus,Gaviotín apizarrado,sooter1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/sooter1/CL
+Pelecanoides urinatrix,Yunco de los canales,codpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/codpet1/CL
+Anairetes fernandezianus,Cachudito de Juan Fernández,jfttyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/jfttyr1/CL
+Puffinus elegans,Fardela chica,litshe4,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/litshe4/CL
+Limosa fedoa,Zarapito moteado,margod,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/margod/CL
+Nycticryphes semicollaris,Becacina pintada,soapas1,Charadriiformes,Painted-Snipes,Rostratulidae,https://ebird.org/species/soapas1/CL
+Pterodroma heraldica,Petrel de Herald,herpet2,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/herpet2/CL
+Phaethon lepturus,Ave del trópico de cola blanca,whttro,Phaethontiformes,Tropicbirds,Phaethontidae,https://ebird.org/species/whttro/CL
+Phaethon aethereus,Ave del trópico de pico rojo,rebtro,Phaethontiformes,Tropicbirds,Phaethontidae,https://ebird.org/species/rebtro/CL
+Eudyptes chrysolophus,Pingüino macaroni,macpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/macpen1/CL
+Nothoprocta pentlandii,Perdiz andina,andtin1,Tinamiformes,Tinamous,Tinamidae,https://ebird.org/species/andtin1/CL
+Limnodromus griseus,Becacina chica,shbdow,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/shbdow/CL
+Chaetura pelagica,Vencejo de chimenea,chiswi,Apodiformes,Swifts,Apodidae,https://ebird.org/species/chiswi/CL
+Cinclodes antarcticus,Churrete austral,blacin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/blacin1/CL
+Stercorarius pomarinus,Salteador pomarino,pomjae,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/pomjae/CL
+Pygoscelis papua,Pingüino papúa,genpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/genpen1/CL
+Pterodroma atrata,Petrel de Henderson,henpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/henpet1/CL
+Streptoprocne zonaris,Vencejo de collar,whcswi,Apodiformes,Swifts,Apodidae,https://ebird.org/species/whcswi/CL
+Nyctanassa violacea,Huairavo de corona amarilla,ycnher,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/ycnher/CL
+Pterodroma alba,Petrel de Fénix,phopet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/phopet1/CL
+Eudyptes robustus,Pingüino de Snares,snapen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/snapen1/CL
+Paroaria coronata,Cardenal,reccar,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/reccar/CL
+Tringa incana,Playero gris,wantat1,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/wantat1/CL
+Tringa solitaria,Pitotoy solitario,solsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/solsan/CL
+Nymphicus hollandicus,Cacatúa ninfa,cockat,Psittaciformes,Cockatoos,Cacatuidae,https://ebird.org/species/cockat/CL
+Phytotoma rutila,Cortarramas,whtpla1,Passeriformes,Cotingas,Cotingidae,https://ebird.org/species/whtpla1/CL
+Sula brewsteri,Piquero de Cocos,cocboo1,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/cocboo1/CL
+Phoebastria irrorata,Albatros de las Galápagos,wavalb,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/wavalb/CL
+Conirostrum binghami,Comesebo gigante,giacon1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/giacon1/CL
+Colaptes melanochloros,Carpintero real,grbwoo3,Piciformes,Woodpeckers,Picidae,https://ebird.org/species/grbwoo3/CL
+Pelagodroma marina,Golondrina de mar de cara blanca,wfspet,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/wfspet/CL
+Spatula discors,Pato de alas azules,buwtea,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/buwtea/CL
+Sappho sparganurus,Picaflor cometa,retcom1,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/retcom1/CL
+Branta leucopsis,Barnacla cariblanca,bargoo,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/bargoo/CL
+Phalaropus lobatus,Pollito de mar boreal,renpha,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/renpha/CL
+Patagioenas picazuro,Paloma picazuró,picpig2,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/picpig2/CL
+Progne tapera,Golondrina parda,brcmar1,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/brcmar1/CL
+Megarynchus pitangua,Pintaguá,bobfly1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/bobfly1/CL
+Hirundinea ferruginea,Birro común,clifly1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/clifly1/CL
+Melopsittacus undulatus,Catita australiana,budger,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/budger/CL
+Turdus amaurochalinus,Zorzal chalchalero,crbthr1,Passeriformes,Thrushes and Allies,Turdidae,https://ebird.org/species/crbthr1/CL
+Fregata magnificens,Ave fragata magnífica,magfri,Suliformes,Frigatebirds,Fregatidae,https://ebird.org/species/magfri/CL
+Sula sula,Piquero de patas rojas,refboo,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/refboo/CL
+Oceanites barrosi,,,,,,
+Pterodroma ultima,Petrel de Murphy,murpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/murpet/CL
+Porphyrio martinica,Tagüita purpúrea,purgal2,Gruiformes,"Rails, Gallinules, and Coots",Rallidae,https://ebird.org/species/purgal2/CL
+Cnemarchus rufipennis,Birro gris,rwbtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/rwbtyr1/CL
+Guira guira,Pirincho,guicuc1,Cuculiformes,Cuckoos,Cuculidae,https://ebird.org/species/guicuc1/CL
+Leucophaeus atricilla,Gaviota reidora,laugul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/laugul/CL
+Motacilla alba,Lavandera blanca,whiwag,Passeriformes,Wagtails and Pipits,Motacillidae,https://ebird.org/species/whiwag/CL
+Thalassarche cauta,Albatros de frente blanca,whcalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/whcalb1/CL
+Xema sabini,Gaviota de Sabine,sabgul,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/sabgul/CL
+Eudyptula minor,Pingüino azul,litpen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/litpen1/CL
+Pterodroma nigripennis,Petrel de alas negras,bkwpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/bkwpet/CL
+Chlidonias niger,Gaviotín negro,blkter,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/blkter/CL
+Thraupis sayaca,Celestino,saytan1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/saytan1/CL
+Jabiru mycteria,Jabirú,jabiru,Ciconiiformes,Storks,Ciconiidae,https://ebird.org/species/jabiru/CL
+Sula granti,Piquero de Nazca,nazboo1,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/nazboo1/CL
+Ciconia maguari,Pillo,magsto1,Ciconiiformes,Storks,Ciconiidae,https://ebird.org/species/magsto1/CL
+Anser sp.,,,,,,
+Psittacara erythrogenys,Cotorra de cabeza roja,rempar,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/rempar/CL
+Knipolegus aterrimus,Viudita negra,whwblt1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/whwblt1/CL
+Calidris ferruginea,Playero zarapito,cursan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/cursan/CL
+Podiceps gallardoi,Pimpollo tobiano,hoogre1,Podicipediformes,Grebes,Podicipedidae,https://ebird.org/species/hoogre1/CL
+Sula nebouxii,Piquero de patas azules,bfoboo,Suliformes,Boobies and Gannets,Sulidae,https://ebird.org/species/bfoboo/CL
+Elanoides forficatus,Milano tijereta,swtkit,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/swtkit/CL
+Numida meleagris,Gallineta,helgui,Galliformes,Guineafowl,Numididae,https://ebird.org/species/helgui/CL
+Butorides striata,Garcita azulada,strher2,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/strher2/CL
+Aix galericulata,Pato mandarín,manduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/manduc/CL
+Crotophaga ani,Matacaballos de pico liso,smbani,Cuculiformes,Cuckoos,Cuculidae,https://ebird.org/species/smbani/CL
+Vireo olivaceus,Verderón de ojos rojos,reevir1,Passeriformes,"Vireos, Shrike-Babblers, and Erpornis",Vireonidae,https://ebird.org/species/reevir1/CL
+Mimus dorsalis,Tenca castaña,brbmoc1,Passeriformes,Mockingbirds and Thrashers,Mimidae,https://ebird.org/species/brbmoc1/CL
+Psittacara mitratus,Cotorra mitrata,mitpar,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/mitpar/CL
+Ardenna pacifica,Fardela del Pacífico,wetshe,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/wetshe/CL
+Psittacula krameri,Cotorra de Kramer,rorpar,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/rorpar/CL
+Psephotus haematonotus,Rabadilla roja,rerpar1,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/rerpar1/CL
+Aphrodroma brevirostris,Petrel de Kerguelen,kerpet2,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/kerpet2/CL
+Agapornis fischeri,Agapornis de Fischer,fislov1,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/fislov1/CL
+Platycercus elegans,Rosella elegante,criros2,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/criros2/CL
+Sturnus vulgaris,Estornino pinto,eursta,Passeriformes,Starlings,Sturnidae,https://ebird.org/species/eursta/CL
+Dendrocygna autumnalis,Pato silbón de ala blanca,bbwduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/bbwduc/CL
+Hydrobates melania,Golondrina de mar oscura,bkspet,Procellariiformes,Northern Storm-Petrels,Hydrobatidae,https://ebird.org/species/bkspet/CL
+Aphrastura masafuerae,Rayadito de Masafuera,masray1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/masray1/CL
+Mycteria americana,Cigüeña de cabeza pelada,woosto,Ciconiiformes,Storks,Ciconiidae,https://ebird.org/species/woosto/CL
+Netta rufina,Pato colorado euroasiático,recpoc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/recpoc/CL
+Phoebetria fusca,Albatros oscuro,sooalb1,Procellariiformes,Albatrosses,Diomedeidae,https://ebird.org/species/sooalb1/CL
+Progne elegans,Golondrina negra,soumar,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/soumar/CL
+Muscigralla brevicauda,Cazamoscas de cola corta,stftyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/stftyr1/CL
+Pavo cristatus,Pavo real,compea,Galliformes,"Pheasants, Grouse, and Allies",Phasianidae,https://ebird.org/species/compea/CL
+Leistes superciliaris,Loica argentina,whbbla2,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/whbbla2/CL
+Alopochelidon fucata,Golondrina de cabeza rojiza,tahswa2,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/tahswa2/CL
+Rupornis magnirostris,Aguilucho de ala rojiza,roahaw,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/roahaw/CL
+Dolichonyx oryzivorus,Charlatán,boboli,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/boboli/CL
+Thectocercus acuticaudatus,Calancate cabeza azul,bucpar,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/bucpar/CL
+Neoxolmis coronatus,Monjita coronada,bkcmon1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/bkcmon1/CL
+Sternula antillarum,Gaviotín chico boreal,leater1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/leater1/CL
+Pterodroma cookii,Petrel de Cook,coopet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/coopet/CL
+Sarkidiornis sylvicola,Pato crestudo,comduc3,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/comduc3/CL
+Callonetta leucophrys,Ringed Teal,rintea1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/rintea1/CL
+Myiodynastes luteiventris,Benteveo de vientre azufre,subfly,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/subfly/CL
+Agapornis personatus,Agapornis personata,yeclov,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/yeclov/CL
+Saltator aurantiirostris,Pepitero,gobsal1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/gobsal1/CL
+Serinus canaria,Canario,comcan,Passeriformes,"Finches, Euphonias, and Allies",Fringillidae,https://ebird.org/species/comcan/CL
+Chauna torquata,Chajá,souscr1,Anseriformes,Screamers,Anhimidae,https://ebird.org/species/souscr1/CL
+Stercorarius antarcticus,Salteador pardo,brnsku3,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/brnsku3/CL
+Limosa lapponica,Zarapito de cola barrada,batgod,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/batgod/CL
+Aix sponsa,Pato joyuyo,wooduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/wooduc/CL
+Dendrocygna viduata,Pato silbón pampa,wfwduc1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/wfwduc1/CL
+Vireo chivi,Vireo chiví,chivir1,Passeriformes,"Vireos, Shrike-Babblers, and Erpornis",Vireonidae,https://ebird.org/species/chivir1/CL
+Pelecanoides georgicus,Yunco geórgico,sgdpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/sgdpet1/CL
+Chordeiles nacunda,Ñacundá,nacnig1,Caprimulgiformes,Nightjars and Allies,Caprimulgidae,https://ebird.org/species/nacnig1/CL
+Stercorarius maccormicki,Salteador polar,sopsku1,Charadriiformes,Skuas and Jaegers,Stercorariidae,https://ebird.org/species/sopsku1/CL
+Garrodia nereis,Golondrina de mar subantártica,gybstp1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/gybstp1/CL
+Setophaga ruticilla,Candelita americana,amered,Passeriformes,New World Warblers,Parulidae,https://ebird.org/species/amered/CL
+Chordeiles acutipennis,Gallina ciega peruana,lesnig,Caprimulgiformes,Nightjars and Allies,Caprimulgidae,https://ebird.org/species/lesnig/CL
+Pelecanus occidentalis,Pelícano pardo,brnpel,Pelecaniformes,Pelicans,Pelecanidae,https://ebird.org/species/brnpel/CL
+Thalassoica antarctica,Petrel antártico,antpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/antpet1/CL
+Elaenia spectabilis,Large Elaenia,larela1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/larela1/CL
+Streptopelia roseogrisea,African Collared-Dove,afcdov1,Columbiformes,Pigeons and Doves,Columbidae,https://ebird.org/species/afcdov1/CL
+Thalasseus maximus,Gaviotín real,royter1,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/royter1/CL
+Platycercus eximius,Rosella eximius,easros1,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/easros1/CL
+Oxyura jamaicensis,Malvasía canela,rudduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/rudduc/CL
+Coccyzus melacoryphus,Cuclillo de pico negro,dabcuc1,Cuculiformes,Cuckoos,Cuculidae,https://ebird.org/species/dabcuc1/CL
+Contopus sordidulus,Pibí occidental,wewpew,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/wewpew/CL
+Anser cygnoides,Ánsar cisnal,swagoo1,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/swagoo1/CL
+Numenius tahitiensis,Zarapito polinésico,brtcur,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/brtcur/CL
+Calidris pugnax,Ruff,ruff,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/ruff/CL
+Ara severus,Guacamayo de frente castaña,chfmac1,Psittaciformes,New World and African Parrots,Psittacidae,https://ebird.org/species/chfmac1/CL
+Agapornis roseicollis,Agapornis roseicollis,peflov,Psittaciformes,Old World Parrots,Psittaculidae,https://ebird.org/species/peflov/CL
+Botaurus exilis,Huairavillo de dorso negro,leabit,Pelecaniformes,"Herons, Egrets, and Bitterns",Ardeidae,https://ebird.org/species/leabit/CL
+Taeniopygia guttata,Diamante mandarín,zebfin2,Passeriformes,Waxbills and Allies,Estrildidae,https://ebird.org/species/zebfin2/CL
+Procellaria cinerea,Petrel gris,grapet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/grapet/CL
+Catharus ustulatus,Zorzalito de Swainson,swathr,Passeriformes,Thrushes and Allies,Turdidae,https://ebird.org/species/swathr/CL
+Cinclodes taczanowskii,Surf Cinclodes,surcin1,Passeriformes,Ovenbirds and Woodcreepers,Furnariidae,https://ebird.org/species/surcin1/CL
+Aythya fuligula,Porrón moñudo,tufduc,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/tufduc/CL
+Steatornis caripensis,Guácharo,oilbir1,Steatornithiformes,Oilbird,Steatornithidae,https://ebird.org/species/oilbir1/CL
+Sporophila caerulescens,Corbatita de doble collar,docsee1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/docsee1/CL
+Pheucticus chrysogaster,Picogrueso dorado,gobgro1,Passeriformes,Cardinals and Allies,Cardinalidae,https://ebird.org/species/gobgro1/CL
+Progne chalybea,Golondrina doméstica,gybmar,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/gybmar/CL
+Nesofregetta fuliginosa,Golondrina de mar polinésica,pospet1,Procellariiformes,Southern Storm-Petrels,Oceanitidae,https://ebird.org/species/pospet1/CL
+Pterodroma cervicalis,Petrel de cuello blanco,whnpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/whnpet/CL
+Myiodynastes maculatus,Benteveo rayado,strfly1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/strfly1/CL
+Pterodroma lessonii,Petrel de frente blanca,whhpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/whhpet1/CL
+Mimus saturninus,Tenca calandria,chbmoc1,Passeriformes,Mockingbirds and Thrashers,Mimidae,https://ebird.org/species/chbmoc1/CL
+Spatula clypeata,Pato cuchara boreal,norsho,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/norsho/CL
+Icterus galbula,Bolsero de Baltimore,balori,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/balori/CL
+Anous minutus,Gaviotín de corona blanca,blknod,Charadriiformes,"Gulls, Terns, and Skimmers",Laridae,https://ebird.org/species/blknod/CL
+Pterodroma phaeopygia,Petrel de las Galápagos,galpet,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/galpet/CL
+Pterodroma macroptera,Petrel de alas grandes,grwpet3,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/grwpet3/CL
+Hydrobates leucorhous,Golondrina de mar boreal,lcspet,Procellariiformes,Northern Storm-Petrels,Hydrobatidae,https://ebird.org/species/lcspet/CL
+Empidonax alnorum,Alder Flycatcher,aldfly,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/aldfly/CL
+Fregata ariel,Ave fragata chica,lesfri,Suliformes,Frigatebirds,Fregatidae,https://ebird.org/species/lesfri/CL
+Setophaga striata,Reinita estriada,bkpwar,Passeriformes,New World Warblers,Parulidae,https://ebird.org/species/bkpwar/CL
+Leucochloris albicollis,Picaflor de garganta blanca,whthum2,Apodiformes,Hummingbirds,Trochilidae,https://ebird.org/species/whthum2/CL
+Ictinia mississippiensis,Milano boreal,miskit,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/miskit/CL
+Cyanocorax chrysops,Plush-crested Jay,plcjay1,Passeriformes,"Crows, Jays, and Magpies",Corvidae,https://ebird.org/species/plcjay1/CL
+Calidris subruficollis,Playero canela,bubsan,Charadriiformes,Sandpipers and Allies,Scolopacidae,https://ebird.org/species/bubsan/CL
+Setophaga pitiayumi,Pitiayumí,tropar,Passeriformes,New World Warblers,Parulidae,https://ebird.org/species/tropar/CL
+Chrysomus ruficapillus,Chestnut-capped Blackbird,chcbla2,Passeriformes,Troupials and Allies,Icteridae,https://ebird.org/species/chcbla2/CL
+Tersina viridis,Tersina,swatan1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/swatan1/CL
+Pterodroma incerta,Petrel Atlántico,atlpet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/atlpet1/CL
+Sarcoramphus papa,King Vulture,kinvul1,Cathartiformes,New World Vultures,Cathartidae,https://ebird.org/species/kinvul1/CL
+Spiza americana,Arrocero americano,dickci,Passeriformes,Cardinals and Allies,Cardinalidae,https://ebird.org/species/dickci/CL
+Cygnus atratus,Cisne negro,blkswa,Anseriformes,"Ducks, Geese, and Waterfowl",Anatidae,https://ebird.org/species/blkswa/CL
+Aptenodytes forsteri,Pingüino emperador,emppen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/emppen1/CL
+Buteogallus urubitinga,Águila negra,grbhaw1,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/grbhaw1/CL
+Jacana jacana,Jacana,watjac1,Charadriiformes,Jacanas,Jacanidae,https://ebird.org/species/watjac1/CL
+Pygoscelis antarcticus,Pingüino antártico,chipen2,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/chipen2/CL
+Tachycineta leucorrhoa,White-rumped Swallow,whrswa1,Passeriformes,Swallows,Hirundinidae,https://ebird.org/species/whrswa1/CL
+Piranga ludoviciana,Piranga de cara roja,westan,Passeriformes,Cardinals and Allies,Cardinalidae,https://ebird.org/species/westan/CL
+Pterodroma gouldi,Petrel de cara gris,grwpet2,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/grwpet2/CL
+Setophaga aestiva,Northern Yellow Warbler,yelwar1,Passeriformes,New World Warblers,Parulidae,https://ebird.org/species/yelwar1/CL
+Hydropsalis torquata,Gallina ciega tijereta,sctnig2,Caprimulgiformes,Nightjars and Allies,Caprimulgidae,https://ebird.org/species/sctnig2/CL
+Microspingus torquatus,Monterita de collar,riwfin1,Passeriformes,Tanagers and Allies,Thraupidae,https://ebird.org/species/riwfin1/CL
+Aramus guarauna,Carau,limpki,Gruiformes,Limpkin,Aramidae,https://ebird.org/species/limpki/CL
+Pygoscelis adeliae,Pingüino de Adelia,adepen1,Sphenisciformes,Penguins,Spheniscidae,https://ebird.org/species/adepen1/CL
+Buteo swainsoni,Aguilucho langostero,swahaw,Accipitriformes,"Hawks, Eagles, and Kites",Accipitridae,https://ebird.org/species/swahaw/CL
+Meleagris gallopavo,Pavo,wiltur,Galliformes,"Pheasants, Grouse, and Allies",Phasianidae,https://ebird.org/species/wiltur/CL
+Myiotheretes striaticollis,Birro grande,stbtyr1,Passeriformes,Tyrant Flycatchers,Tyrannidae,https://ebird.org/species/stbtyr1/CL
+Pagodroma nivea,Petrel de las nieves,snopet1,Procellariiformes,Shearwaters and Petrels,Procellariidae,https://ebird.org/species/snopet1/CL

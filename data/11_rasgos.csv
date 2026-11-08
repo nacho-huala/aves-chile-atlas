@@ -1,0 +1,568 @@
+sci_name,nombre,pct_salidas,estatus_final,uicn,masa_g,pico_culmen_mm,pico_alto_mm,ala_mm,tarso_mm,indice_ala_mano,habitat,nicho_trofico,nivel_trofico,estilo_vida,migracion_global
+Turdus falcklandii,Zorzal patagónico,33.84467,nativa residente,LC,93.9,27.1,7.6,134.9,38.9,27.7,Forest,Invertivore,Omnivore,Generalist,parcialmente migratoria
+Daptrius chimango,Tiuque,33.55957,nativa residente,,,,,,,,,,,,
+Zonotrichia capensis,Chincol,31.83678,nativa residente,LC,20.3,13.6,6.5,63.9,23.8,16.8,Shrubland,Omnivore,Herbivore,Generalist,sedentaria
+Vanellus chilensis,Queltehue común,29.75928,nativa residente,LC,327.0,35.1,7.1,226.0,74.6,31.0,Grassland,Omnivore,Carnivore,Terrestrial,sedentaria
+Larus dominicanus,Gaviota dominicana,25.92123,nativa residente,LC,952.4,64.7,19.2,402.0,64.7,55.6,Marine,Omnivore,Carnivore,Generalist,sedentaria
+Troglodytes musculus,Chercán común,25.87622,nativa residente,,,,,,,,,,,,
+Tachycineta leucopyga,Golondrina chilena,21.25477,migratoria / estacional,,14.9,11.5,2.6,109.8,10.7,52.4,Grassland,Invertivore,Carnivore,Aerial,migratoria
+Passer domesticus,Gorrión,20.87871,introducida,LC,26.5,13.5,7.4,74.9,17.9,27.3,Human Modified,Granivore,Herbivore,Terrestrial,sedentaria
+Zenaida auriculata,Tórtola,20.65597,nativa residente,LC,110.2,19.0,4.0,136.2,21.0,32.7,Human Modified,Granivore,Herbivore,Terrestrial,sedentaria
+Sephanoides sephaniodes,Picaflor chico,18.46291,nativa residente,LC,5.2,22.0,2.1,60.0,7.4,63.6,Human Modified,Nectarivore,Herbivore,Aerial,sedentaria
+Columba livia,Paloma doméstica,18.22873,introducida,LC,354.2,23.2,5.0,219.6,26.5,45.1,Human Modified,Granivore,Herbivore,Terrestrial,sedentaria
+Nannopterum brasilianum,Yeco,15.9838,nativa residente,LC,1239.3,62.6,14.9,275.4,48.7,32.4,Wetland,Aquatic predator,Carnivore,Generalist,sedentaria
+Curaeus curaeus,Tordo,14.59263,nativa residente,LC,83.7,31.8,9.7,124.5,33.8,20.8,Forest,Omnivore,Carnivore,Terrestrial,parcialmente migratoria
+Elaenia albiceps,Fío-fío,13.89677,migratoria / estacional,LC,15.5,13.4,3.5,74.5,18.8,20.3,Forest,Invertivore,Omnivore,Insessorial,parcialmente migratoria
+Anairetes parulus,Cachudito común,13.80885,nativa residente,LC,6.2,11.7,2.1,49.1,18.5,14.3,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Cathartes aura,Jote de cabeza colorada,13.5659,nativa residente,LC,1518.2,51.5,17.2,508.5,54.0,26.9,Human Modified,Scavenger,Scavenger,Terrestrial,parcialmente migratoria
+Leistes loyca,Loica común,13.44233,nativa residente,LC,113.0,35.0,9.9,120.7,35.0,22.5,Grassland,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Theristicus melanopis,Bandurria común,13.27699,nativa residente,LC,1250.0,142.8,16.7,382.0,82.0,41.0,Human Modified,Omnivore,Carnivore,Terrestrial,parcialmente migratoria
+Mimus thenca,Tenca chilena,13.20509,endémica,LC,66.0,23.4,5.4,113.2,39.2,24.7,Shrubland,Omnivore,Omnivore,Generalist,parcialmente migratoria
+Spinus barbatus,Jilguero austral,13.10326,nativa residente,LC,15.5,12.6,6.9,72.2,16.3,31.1,Forest,Granivore,Herbivore,Generalist,sedentaria
+Coragyps atratus,Jote de cabeza negra,12.59485,nativa residente,LC,1881.7,60.0,16.1,410.1,76.1,14.3,Human Modified,Scavenger,Omnivore,Terrestrial,parcialmente migratoria
+Pyrope pyrope,Diucón,11.44092,nativa residente,,35.3,23.6,4.5,107.0,27.2,21.5,Forest,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Chroicocephalus maculipennis,Gaviota cáhuil,10.98762,nativa residente,,339.0,41.4,8.9,291.2,43.8,55.1,Wetland,Omnivore,Carnivore,Generalist,sedentaria
+Diuca diuca,Diuca común,10.65714,nativa residente,LC,36.8,17.4,7.8,85.2,21.3,23.5,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Anas georgica,Pato jergón grande,9.18416,nativa residente,LC,623.8,34.3,13.1,205.6,31.3,47.0,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Leptasthenura aegithaloides,Tijeral común,9.07317,nativa residente,LC,10.7,9.9,3.1,61.5,17.0,18.4,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Anas flavirostris,Pato jergón chico,8.92405,nativa residente,LC,434.0,35.3,11.7,191.0,27.8,49.3,Wetland,Herbivore aquatic,Omnivore,Aquatic,parcialmente migratoria
+Sicalis luteola,Chirihue común,8.13798,nativa residente,LC,15.9,9.3,6.2,67.0,14.7,21.1,Grassland,Granivore,Herbivore,Terrestrial,parcialmente migratoria
+Numenius hudsonicus,Zarapito común,7.61469,nativa residente,,,,,,,,,,,,
+Fulica armillata,Tagua común,7.60459,nativa residente,LC,1040.0,38.1,12.2,202.4,65.5,36.1,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Phytotoma rara,Rara,7.58342,nativa residente,LC,47.0,17.6,8.6,88.9,24.4,17.1,Shrubland,Herbivore terrestrial,Herbivore,Insessorial,sedentaria
+Egretta thula,Garza chica,7.4833,nativa residente,LC,371.0,86.3,12.0,252.8,93.3,31.9,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Haematopus palliatus,Pilpilén común,7.3418,nativa residente,LC,601.5,86.0,12.4,246.8,54.0,48.0,Coastal,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Myiopsitta monachus,Cotorra,7.20449,introducida,LC,120.0,22.4,19.5,147.2,15.8,43.8,Human Modified,Omnivore,Herbivore,Insessorial,sedentaria
+Aphrastura spinicauda,Rayadito,7.09904,nativa residente,LC,11.5,13.7,3.0,59.4,20.2,20.5,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Molothrus bonariensis,Mirlo común,6.82252,nativa residente,LC,41.5,19.7,8.3,109.9,25.5,27.3,Woodland,Invertivore,Omnivore,Terrestrial,sedentaria
+Mareca sibilatrix,Pato real,6.73594,nativa residente,LC,923.2,37.6,12.2,245.0,36.3,49.5,Wetland,Omnivore,Herbivore,Terrestrial,parcialmente migratoria
+Ardea alba,Garza grande,6.53532,nativa residente,LC,871.3,126.3,18.1,378.8,141.6,32.1,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Columbina picui,Tortolita cuyana,6.38162,migratoria / estacional,LC,47.0,15.0,4.2,87.9,13.5,20.1,Human Modified,Granivore,Herbivore,Terrestrial,migratoria
+Cinclodes patagonicus,Churrete patagónico,6.17299,migratoria / estacional,LC,30.7,24.5,4.3,99.6,28.5,25.4,Riverine,Invertivore,Carnivore,Terrestrial,migratoria
+Callipepla californica,Codorniz,6.08546,introducida,LC,165.7,14.1,6.8,108.2,28.5,26.2,Shrubland,Omnivore,Herbivore,Terrestrial,sedentaria
+Falco sparverius,Cernícalo,6.06067,migratoria / estacional,LC,114.6,17.1,10.1,182.4,33.7,43.7,Grassland,Omnivore,Carnivore,Insessorial,migratoria
+Zenaida meloda,Paloma de alas blancas,5.99087,nativa residente,LC,209.2,23.1,4.4,158.0,25.0,33.3,Shrubland,Granivore,Herbivore,Generalist,sedentaria
+Pygochelidon cyanoleuca,Golondrina de dorso negro,5.98153,migratoria / estacional,LC,9.7,8.6,2.2,92.3,10.1,47.6,Human Modified,Invertivore,Carnivore,Aerial,parcialmente migratoria
+Pelecanus thagus,Pelícano de Humboldt,5.97485,nativa residente,NT,3427.8,380.4,46.4,615.0,102.5,48.5,Marine,Aquatic predator,Carnivore,Aerial,sedentaria
+Agelasticus thilius,Trile,5.8713,nativa residente,LC,31.5,23.0,7.1,93.4,26.4,18.3,Wetland,Invertivore,Carnivore,Terrestrial,sedentaria
+Lessonia rufa,Colegial austral,5.42525,migratoria / estacional,LC,13.4,13.6,2.4,72.3,21.9,24.7,Wetland,Invertivore,Carnivore,Terrestrial,migratoria
+Geranoaetus polyosoma,Aguilucho común,5.25782,nativa residente,LC,782.6,36.3,18.3,402.0,83.4,38.1,Shrubland,Vertivore,Carnivore,Aerial,parcialmente migratoria
+Caracara plancus,Traro,5.14492,nativa residente,LC,1078.6,44.6,23.7,380.0,81.9,26.7,Shrubland,Omnivore,Omnivore,Terrestrial,sedentaria
+Patagioenas araucana,Torcaza,5.07227,nativa residente,LC,270.0,24.9,5.6,210.2,30.8,37.0,Forest,Frugivore,Herbivore,Insessorial,parcialmente migratoria
+Cygnus melancoryphus,Cisne de cuello negro,5.05472,nativa residente,LC,4711.7,78.2,17.6,411.8,79.3,41.7,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Parabuteo unicinctus,Peuco,4.98283,nativa residente,LC,850.3,34.4,16.6,320.8,81.6,30.8,Shrubland,Vertivore,Carnivore,Insessorial,parcialmente migratoria
+Phrygilus patagonicus,Cometocino patagónico,4.80357,nativa residente,LC,22.6,14.3,6.9,73.8,21.8,20.4,Forest,Granivore,Herbivore,Terrestrial,sedentaria
+Veniliornis lignarius,Carpinterito,4.65844,nativa residente,LC,,,,,,,,,,,
+Phrygilus gayi,Cometocino de Gay,4.47442,nativa residente,LC,25.6,14.1,7.5,82.0,19.8,21.2,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Nycticorax nycticorax,Huairavo común,4.44715,migratoria / estacional,LC,810.0,80.5,18.6,285.7,69.2,33.1,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Himantopus mexicanus,Perrito,4.38975,nativa residente,,176.8,66.6,4.7,223.7,106.7,51.9,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Chloephaga picta,Caiquén,4.29611,nativa residente,LC,2880.4,40.1,14.7,412.2,72.5,44.1,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Scelorchilus rubecula,Chucao,4.26674,nativa residente,LC,56.7,17.7,5.1,70.3,36.2,5.4,Forest,Invertivore,Omnivore,Terrestrial,sedentaria
+Podiceps major,Huala,4.25988,migratoria / estacional,LC,1646.0,82.0,14.4,181.4,67.7,41.7,Wetland,Aquatic predator,Carnivore,Aquatic,migratoria
+Coscoroba coscoroba,Cisne coscoroba,4.14698,nativa residente,LC,4294.8,63.8,19.2,421.2,81.9,42.9,Wetland,Aquatic predator,Omnivore,Terrestrial,parcialmente migratoria
+Colaptes pitius,Pitío austral,4.08424,nativa residente,LC,159.0,42.4,8.3,151.5,28.6,25.0,Woodland,Invertivore,Carnivore,Terrestrial,sedentaria
+Leucocarbo atriceps,Cormorán imperial,4.04954,nativa residente,LC,2000.0,68.6,13.4,283.6,65.0,35.6,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Sula variegata,Piquero de Humboldt,3.7467,nativa residente,LC,1432.5,88.9,29.5,370.4,48.4,54.6,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Rollandia rolland,Pimpollo común,3.69674,nativa residente,LC,324.3,32.8,8.9,134.6,48.9,34.0,Wetland,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Spatula cyanoptera,Pato colorado,3.69426,nativa residente,LC,377.5,50.5,13.9,187.5,30.1,51.0,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Colorhamphus parvirostris,Viudita,3.6607,migratoria / estacional,LC,10.6,11.5,2.8,61.3,17.5,18.2,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Leucophaeus modestus,Gaviota garuma,3.5785,nativa residente,,344.0,50.7,10.4,318.0,46.8,55.5,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Rhopospina fruticeti,Yal común,3.48868,nativa residente,LC,38.8,15.8,6.3,95.6,24.7,21.6,Shrubland,Granivore,Herbivore,Terrestrial,parcialmente migratoria
+Pteroptochos megapodius,Turca,3.18032,endémica,LC,114.0,22.4,7.2,98.0,42.2,4.0,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Cinclodes fuscus,Churrete acanelado,3.10709,migratoria / estacional,LC,30.0,18.5,3.9,97.2,25.0,27.2,Grassland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Lophonetta specularioides,Pato juarjual,3.07696,nativa residente,LC,1019.9,49.3,15.3,269.2,46.2,43.5,Wetland,Aquatic predator,Carnivore,Generalist,sedentaria
+Leucophaeus pipixcan,Gaviota de Franklin,3.06533,migratoria / estacional,,280.0,39.8,8.6,279.4,39.9,55.6,Coastal,Omnivore,Omnivore,Generalist,migratoria
+Sterna hirundinacea,Gaviotín sudamericano,3.05999,migratoria / estacional,LC,188.0,49.9,8.7,296.6,21.5,68.4,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Haematopus ater,Pilpilén negro,3.02261,nativa residente,LC,724.0,76.3,13.7,261.4,52.2,40.8,Coastal,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Enicognathus leptorhynchus,Choroy,3.00354,endémica,LC,193.0,40.6,25.7,215.2,19.3,48.8,Forest,Omnivore,Herbivore,Insessorial,parcialmente migratoria
+Vultur gryphus,Cóndor,2.97131,nativa residente,VU,11236.1,96.8,29.1,789.9,127.4,44.9,Grassland,Scavenger,Scavenger,Terrestrial,parcialmente migratoria
+Fulica rufifrons,Tagua de frente roja,2.92745,nativa residente,LC,644.0,37.5,10.2,168.8,56.8,35.9,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Geranoaetus melanoleucus,Águila,2.92612,nativa residente,LC,2378.6,50.5,23.0,496.2,98.2,36.6,Shrubland,Vertivore,Carnivore,Aerial,sedentaria
+Tringa flavipes,Pitotoy chico,2.91143,migratoria / estacional,VU,77.5,41.4,4.0,152.6,49.6,52.8,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Ardea cocoi,Garza cuca,2.89675,nativa residente,LC,1752.4,146.9,28.2,466.3,186.4,31.8,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Pardirallus sanguinolentus,Pidén común,2.871,nativa residente,LC,232.0,54.1,7.5,126.2,42.1,24.8,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Phleocryptes melanops,Trabajador,2.82905,nativa residente,LC,14.6,18.2,3.2,57.0,20.3,18.7,Wetland,Invertivore,Carnivore,Insessorial,sedentaria
+Scytalopus magellanicus,Churrín del sur,2.79968,nativa residente,LC,13.7,12.8,3.2,48.1,19.3,9.0,Forest,Invertivore,Carnivore,Terrestrial,sedentaria
+Tringa melanoleuca,Pitotoy grande,2.7604,migratoria / estacional,NT,161.7,59.9,6.0,194.5,60.5,50.2,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Tachuris rubrigastra,Siete colores,2.64788,nativa residente,LC,7.8,16.0,2.3,50.5,18.4,18.1,Wetland,Invertivore,Carnivore,Insessorial,sedentaria
+Patagona gigas,Picaflor gigante,2.63091,migratoria / estacional,LC,20.2,45.2,3.5,135.7,8.0,64.5,Shrubland,Nectarivore,Herbivore,Insessorial,parcialmente migratoria
+Hymenops perspicillatus,Run-run,2.60402,migratoria / estacional,LC,22.9,19.3,4.5,88.4,27.1,14.0,Wetland,Invertivore,Carnivore,Terrestrial,migratoria
+Anthus correndera,Bailarín chico común,2.5861,nativa residente,LC,20.9,14.8,3.9,74.3,23.4,21.5,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Spatula platalea,Pato cuchara,2.5779,nativa residente,LC,465.4,65.2,16.9,209.8,31.2,53.3,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Calidris bairdii,Playero de Baird,2.56207,migratoria / estacional,LC,41.0,25.5,3.9,121.8,22.0,55.2,Grassland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Fulica leucoptera,Tagua chica,2.55215,nativa residente,LC,656.0,33.6,9.8,182.2,57.5,36.6,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Podilymbus podiceps,Picurio,2.48216,nativa residente,LC,411.9,28.8,10.6,125.6,37.1,34.0,Wetland,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Enicognathus ferrugineus,Cachaña,2.40283,nativa residente,LC,160.0,22.7,24.2,183.6,18.6,47.0,Forest,Omnivore,Herbivore,Insessorial,sedentaria
+Sylviorthorhynchus desmursii,Colilarga,2.36393,nativa residente,,10.9,17.4,2.6,50.5,22.1,13.5,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Thalassarche melanophris,Albatros de ceja negra,2.33246,migratoria / estacional,LC,3202.9,115.0,34.9,506.9,78.2,64.3,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Poikilocarbo gaimardi,Lile,2.30214,nativa residente,NT,1358.3,65.5,12.5,246.5,54.6,30.0,Marine,Aquatic predator,Carnivore,Aquatic,sedentaria
+Rynchops niger,Rayador,2.29051,nativa residente,LC,297.7,83.7,25.1,365.7,32.3,67.4,Riverine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Glaucidium nana,Chuncho austral,2.2457,nativa residente,LC,73.7,16.5,9.4,95.2,18.3,15.7,Shrubland,Vertivore,Carnivore,Insessorial,parcialmente migratoria
+Ardea ibis,Garza bueyera,2.20222,nativa residente,LC,,,,,,,,,,,
+Podiceps occipitalis,Blanquillo,2.15034,nativa residente,LC,320.7,22.5,5.8,126.4,37.6,35.7,Wetland,Aquatic predator,Carnivore,Aquatic,sedentaria
+Muscisaxicola maclovianus,Dormilona tontita,2.1452,migratoria / estacional,LC,23.8,17.5,3.5,104.1,28.9,33.9,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Porphyriops melanops,Tagüita común,2.0775,nativa residente,LC,191.0,25.2,7.4,125.0,36.4,34.0,Wetland,Herbivore aquatic,Omnivore,Aquatic,sedentaria
+Elanus leucurus,Bailarín,2.06224,nativa residente,LC,346.0,25.3,10.9,294.0,31.8,41.5,Human Modified,Vertivore,Carnivore,Aerial,parcialmente migratoria
+Cistothorus platensis,Chercán de las vegas,2.01209,nativa residente,LC,9.0,14.9,2.9,45.7,20.3,13.4,Grassland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Oxyura vittata,Pato rana de pico delgado,2.00694,nativa residente,LC,642.7,43.4,11.2,137.9,32.1,38.3,Wetland,Herbivore aquatic,Omnivore,Aquatic,parcialmente migratoria
+Pseudasthenes humicola,Canastero chileno,1.96517,endémica,LC,20.8,15.0,3.7,61.4,22.1,11.3,Shrubland,Invertivore,Carnivore,Generalist,sedentaria
+Scytalopus fuscus,Churrín del norte,1.90491,endémica,LC,13.7,12.4,3.3,51.5,19.0,7.7,Forest,Invertivore,Carnivore,Terrestrial,sedentaria
+Rhodopis vesper,Picaflor del norte,1.82272,nativa residente,LC,3.8,34.8,1.7,55.5,5.0,64.8,Shrubland,Nectarivore,Herbivore,Aerial,parcialmente migratoria
+Macronectes giganteus,Petrel gigante antártico,1.8128,nativa residente,LC,3591.7,91.6,27.2,493.6,85.4,44.8,Marine,Omnivore,Omnivore,Generalist,parcialmente migratoria
+Circus cinereus,Vari ceniciento,1.80098,nativa residente,LC,399.7,29.8,12.9,344.5,67.5,44.3,Grassland,Vertivore,Carnivore,Aerial,parcialmente migratoria
+Phoenicopterus chilensis,Flamenco chileno,1.7821,nativa residente,NT,2277.0,106.4,35.0,401.8,245.0,43.5,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Pygarrhichas albogularis,Comesebo grande,1.74301,nativa residente,LC,24.0,21.8,5.1,79.9,19.3,22.2,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Nothoprocta perdicaria,Perdiz chilena,1.71383,endémica,LC,458.0,26.0,5.5,161.5,34.7,26.9,Shrubland,Omnivore,Herbivore,Terrestrial,sedentaria
+Megaceryle torquata,Martín pescador,1.7125,nativa residente,LC,317.0,83.6,21.1,191.3,14.3,24.5,Riverine,Aquatic predator,Carnivore,Insessorial,sedentaria
+Gallinago magellanica,Becacina común,1.70983,nativa residente,LC,109.4,68.6,7.4,116.0,31.2,38.0,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Ardenna grisea,Fardela negra,1.70849,migratoria / estacional,NT,787.0,47.8,10.0,295.6,55.8,61.8,Marine,Aquatic predator,Carnivore,Generalist,migratoria
+Cinclodes oustaleti,Churrete chico,1.65262,nativa residente,LC,30.5,20.3,3.8,92.6,24.7,24.5,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Haematopus leucopodus,Pilpilén austral,1.64422,migratoria / estacional,LC,618.0,78.5,10.2,256.6,45.6,47.9,Coastal,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Larosterna inca,Gaviotín monja,1.60685,nativa residente,NT,219.0,48.8,10.1,277.2,23.4,59.3,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Tachyeres pteneres,Quetru no volador,1.5874,nativa residente,LC,4737.6,60.1,24.6,260.8,62.3,43.0,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Leucocarbo bougainvilliorum,Guanay,1.51436,nativa residente,NT,,,,,,,,,,,
+Stercorarius chilensis,Salteador chileno,1.48537,migratoria / estacional,,1367.8,53.6,17.9,379.6,63.6,49.9,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Athene cunicularia,Pequén,1.46153,nativa residente,LC,150.6,24.1,13.7,180.0,43.4,28.3,Grassland,Vertivore,Carnivore,Generalist,sedentaria
+Chloephaga poliocephala,Canquén común,1.46096,nativa residente,LC,2007.1,30.9,12.0,345.4,55.2,43.5,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Limosa haemastica,Zarapito de pico recto,1.45486,migratoria / estacional,VU,253.3,86.2,8.1,210.2,56.1,57.5,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Rhopospina alaudina,Platero,1.45371,nativa residente,,23.9,14.7,5.7,75.1,21.4,20.4,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Pteroptochos tarnii,Hued-hued del sur,1.42034,nativa residente,LC,147.0,22.4,6.2,103.1,45.4,6.4,Forest,Invertivore,Carnivore,Terrestrial,sedentaria
+Cinclodes nigrofumosus,Churrete costero,1.41996,endémica,LC,65.0,27.5,5.5,114.6,31.5,21.2,Rock,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Leucophaeus scoresbii,Gaviota austral,1.37991,nativa residente,LC,523.5,43.9,15.6,323.0,46.5,52.5,Marine,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Plegadis chihi,Cuervo de pantano común,1.3658,nativa residente,LC,616.9,118.7,14.0,246.5,86.1,38.6,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Zonibyx modestus,Chorlo chileno,1.36561,migratoria / estacional,LC,,,,,,,,,,,
+Thalasseus elegans,Gaviotín elegante,1.36008,migratoria / estacional,NT,260.0,64.4,10.3,296.6,28.2,66.6,Coastal,Aquatic predator,Carnivore,Aerial,migratoria
+Oressochen melanopterus,Piuquén,1.30954,nativa residente,,2037.0,40.7,14.5,431.7,74.4,35.5,Wetland,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Eugralla paradoxa,Churrín de la Mocha,1.28685,nativa residente,LC,44.0,16.4,4.9,58.8,26.0,8.1,Forest,Invertivore,Carnivore,Generalist,sedentaria
+Tachyeres patachonicus,Quetru volador,1.255,nativa residente,LC,2821.6,53.7,20.3,287.0,53.1,44.4,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Sterna trudeaui,Gaviotín piquerito,1.24471,nativa residente,LC,153.0,47.8,8.4,256.2,24.0,70.1,Wetland,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Leucocarbo magellanicus,Cormorán de las rocas,1.23784,nativa residente,LC,1483.4,51.5,10.4,250.4,54.5,34.3,Marine,Aquatic predator,Carnivore,Aquatic,sedentaria
+Chroicocephalus serranus,Gaviota andina,1.2222,nativa residente,,478.0,41.9,9.7,352.8,52.9,53.0,Wetland,Aquatic predator,Carnivore,Generalist,sedentaria
+Arenaria interpres,Playero vuelvepiedras,1.18635,migratoria / estacional,NT,136.0,25.4,5.5,148.8,25.5,55.6,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Larus belcheri,Gaviota peruana,1.1669,nativa residente,LC,638.6,58.7,16.0,365.2,61.2,52.2,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Anarhynchus collaris,Chorlo de collar,1.12475,nativa residente,LC,,,,,,,,,,,
+Calidris alba,Playero blanco,1.11732,migratoria / estacional,LC,51.7,30.0,4.2,119.6,23.1,52.3,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Geositta rufipennis,Minero cordillerano,1.10797,nativa residente,LC,32.4,18.6,4.0,101.2,24.0,23.4,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Spheniscus magellanicus,Pingüino de Magallanes,1.06316,nativa residente,LC,4105.1,60.2,23.4,109.6,35.5,3.8,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Geositta cunicularia,Minero común,0.98097,nativa residente,LC,28.5,20.2,3.7,89.8,21.2,23.6,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Falco peregrinus,Halcón peregrino,0.97505,nativa residente,LC,760.0,31.1,15.4,314.7,45.1,52.2,Grassland,Vertivore,Carnivore,Aerial,parcialmente migratoria
+Anas bahamensis,Pato gargantillo,0.94244,nativa residente,LC,490.0,41.5,12.8,205.5,34.1,44.9,Wetland,Herbivore aquatic,Omnivore,Aquatic,parcialmente migratoria
+Scelorchilus albicollis,Tapaculo,0.93196,endémica,LC,47.3,20.8,5.8,75.0,35.4,5.1,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Metriopelia melanoptera,Tortolita cordillerana,0.92242,migratoria / estacional,LC,100.0,15.0,3.8,130.6,19.6,38.4,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Rhea pennata,Suri/Ñandú,0.9125,nativa residente,LC,23900.0,69.8,16.0,625.0,293.2,0.1,Grassland,Omnivore,Herbivore,Terrestrial,sedentaria
+Agriornis lividus,Mero grande,0.88428,nativa residente,LC,99.1,35.4,7.6,127.7,38.0,21.5,Shrubland,Vertivore,Carnivore,Insessorial,sedentaria
+Falco femoralis,Halcón perdiguero,0.87875,nativa residente,LC,335.8,21.4,13.2,245.1,40.5,44.6,Grassland,Vertivore,Carnivore,Aerial,parcialmente migratoria
+Columbina cruziana,Tortolita quiguagua,0.85415,nativa residente,LC,50.1,15.1,3.4,86.6,16.7,24.0,Human Modified,Granivore,Herbivore,Terrestrial,sedentaria
+Procellaria aequinoctialis,Petrel de barba blanca,0.80647,migratoria / estacional,VU,1213.0,54.4,15.2,382.6,62.3,60.3,Marine,Aquatic predator,Carnivore,Aquatic,migratoria
+Cyanoliseus patagonus,Tricahue,0.78893,nativa residente,LC,277.9,31.1,36.3,237.8,21.1,49.9,Shrubland,Omnivore,Herbivore,Insessorial,parcialmente migratoria
+Tyto furcata,Lechuza,0.77386,nativa residente,,,,,,,,,,,,
+Upucerthia dumetaria,Bandurrilla común,0.7588,nativa residente,LC,48.7,32.7,4.8,100.1,25.4,24.1,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Anarhynchus falklandicus,Chorlo de doble collar,0.75422,nativa residente,LC,,,,,,,,,,,
+Bubo magellanicus,Tucúquere,0.75327,nativa residente,LC,,,,,,,,,,,
+Ardenna creatopus,Fardela blanca,0.74526,migratoria / estacional,VU,744.0,48.4,12.5,324.0,52.5,62.6,Marine,Aquatic predator,Carnivore,Generalist,migratoria
+Campephilus magellanicus,Carpintero negro,0.74507,nativa residente,LC,324.0,55.8,13.3,218.4,35.3,24.1,Woodland,Invertivore,Carnivore,Insessorial,sedentaria
+Chloephaga hybrida,Caranca,0.74164,nativa residente,LC,2281.8,34.2,13.5,358.0,53.5,37.2,Marine,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Fulmarus glacialoides,Petrel plateado austral,0.72123,migratoria / estacional,LC,793.4,45.7,11.9,315.0,47.9,49.5,Marine,Aquatic predator,Carnivore,Aquatic,migratoria
+Agriornis montanus,Mero gaucho,0.69606,nativa residente,LC,63.3,30.4,5.7,131.3,33.1,25.1,Shrubland,Omnivore,Carnivore,Insessorial,sedentaria
+Conirostrum cinereum,Comesebo chico,0.67184,nativa residente,LC,8.8,11.9,3.2,61.8,18.5,20.4,Shrubland,Invertivore,Omnivore,Insessorial,sedentaria
+Oceanites oceanicus,Golondrina de mar de Wilson/fueguina,0.67146,migratoria / estacional,LC,30.4,16.3,3.8,147.2,34.9,58.6,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Muscisaxicola albilora,Dormilona de ceja blanca,0.6644,migratoria / estacional,LC,22.6,19.3,3.8,113.7,30.2,33.0,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Spheniscus humboldti,Pingüino de Humboldt,0.65315,nativa residente,VU,4366.4,63.7,21.1,105.2,39.0,4.4,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Sicalis auriventris,Chirihue dorado,0.64667,migratoria / estacional,LC,55.0,13.6,6.7,87.3,18.5,29.7,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Speculanas specularis,Pato anteojillo,0.64571,nativa residente,NT,1496.1,52.2,15.9,261.8,44.3,42.6,Riverine,Herbivore aquatic,Herbivore,Generalist,sedentaria
+Thinocorus rumicivorus,Perdicita chica,0.63637,nativa residente,LC,53.1,12.7,5.2,110.6,18.0,47.6,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,sedentaria
+Asthenes modesta,Canastero chico,0.63637,nativa residente,LC,16.8,16.0,3.6,68.3,23.0,11.3,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Geospizopsis unicolor,Pájaro plomo,0.63198,nativa residente,LC,21.9,13.7,5.8,87.1,27.2,17.0,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Daptrius megalopterus,Carancho cordillerano,0.6295,nativa residente,,,,,,,,,,,,
+Xenospingus concolor,Pizarrita,0.61158,nativa residente,NT,21.0,15.2,4.1,69.8,23.3,18.3,Shrubland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Anarhynchus nivosus,Chorlo nevado,0.58355,nativa residente,NT,,,,,,,,,,,
+Sicalis olivascens,Chirihue verdoso,0.57573,nativa residente,LC,21.8,13.6,7.0,78.1,19.9,23.3,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Asio flammeus,Nuco,0.57153,migratoria / estacional,LC,322.6,27.3,13.0,297.2,42.5,47.5,Grassland,Vertivore,Carnivore,Aerial,migratoria
+Hirundo rustica,Golondrina bermeja,0.56962,migratoria / estacional,LC,17.9,12.4,2.7,115.8,11.7,52.6,Human Modified,Invertivore,Carnivore,Aerial,migratoria
+Muscisaxicola maculirostris,Dormilona chica,0.56142,nativa residente,LC,14.2,16.5,3.1,85.5,25.5,26.2,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Gallinula galeata,Tagüita del norte,0.55284,nativa residente,LC,339.6,31.4,9.8,176.1,51.1,32.4,Wetland,Omnivore,Omnivore,Terrestrial,sedentaria
+Systellura longirostris,Gallina ciega común,0.5454,nativa residente,LC,45.6,20.9,2.8,158.3,16.2,48.4,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Phrygilus atriceps,Cometocino del norte,0.525,nativa residente,LC,24.3,17.9,7.7,94.4,26.0,21.9,Shrubland,Granivore,Omnivore,Terrestrial,sedentaria
+Muscisaxicola rufivertex,Dormilona de nuca rojiza,0.51013,nativa residente,LC,20.0,19.5,3.6,105.2,28.2,26.9,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Calidris fuscicollis,Playero de lomo blanco,0.50383,migratoria / estacional,VU,43.0,26.5,4.0,118.4,23.6,54.0,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Spatula versicolor,Pato capuchino,0.50193,nativa residente,LC,595.2,41.2,14.3,185.0,28.3,49.9,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Pluvialis squatarola,Chorlo ártico,0.47771,migratoria / estacional,VU,250.0,32.0,7.0,184.4,44.5,60.1,Grassland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Thinocorus orbignyianus,Perdicita cojón,0.47446,migratoria / estacional,LC,115.0,16.4,5.9,138.8,23.7,48.2,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,sedentaria
+Egretta caerulea,Garza azul,0.46951,nativa residente,LC,338.6,78.1,12.6,257.8,92.0,38.0,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Macronectes halli,Petrel gigante subantártico,0.46531,nativa residente,LC,4206.3,101.7,31.0,498.0,88.9,43.7,Marine,Omnivore,Omnivore,Generalist,parcialmente migratoria
+Chloephaga rubidiceps,Canquén colorado,0.45845,nativa residente,LC,2086.0,30.5,11.2,325.6,56.2,44.4,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Patagioenas maculosa,Paloma manchada,0.45311,nativa residente,LC,347.0,23.5,5.9,221.9,29.6,38.8,Woodland,Granivore,Herbivore,Terrestrial,sedentaria
+Heteronetta atricapilla,Pato rinconero,0.44109,nativa residente,LC,538.4,52.2,13.1,173.6,33.5,42.9,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Geospizopsis plebejus,Plebeyo,0.44052,nativa residente,LC,14.7,12.7,4.7,73.8,18.7,21.5,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Botaurus involucris,Huairavillo,0.43442,nativa residente,LC,,,,,,,,,,,
+Cinclodes albiventris,Churrete de alas cremas,0.43213,nativa residente,LC,30.0,17.9,3.9,94.2,26.5,21.3,Grassland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Calidris virgata,Playero de las rompientes,0.42946,migratoria / estacional,LC,201.0,29.0,5.6,173.0,30.9,54.5,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Pyrocephalus rubinus,Saca-tu-real,0.42736,migratoria / estacional,LC,14.4,14.4,4.0,74.3,16.7,22.4,Woodland,Invertivore,Carnivore,Insessorial,migratoria
+Leistes bellicosus,Loica peruana,0.41802,nativa residente,LC,58.0,26.6,9.4,109.8,33.6,19.5,Grassland,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Phalaropus tricolor,Pollito de mar tricolor,0.41191,migratoria / estacional,,59.4,27.3,3.8,127.8,23.2,56.2,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Turdus chiguanco,Zorzal negro,0.40505,nativa residente,LC,93.3,29.4,7.4,136.4,38.8,22.9,Shrubland,Invertivore,Omnivore,Generalist,sedentaria
+Pelecanoides garnotii,Yunco de Humboldt,0.40257,nativa residente,NT,219.7,30.1,7.6,134.2,31.5,50.2,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Astur chilensis,Peuquito,0.39113,nativa residente,,,,,,,,,,,,
+Sternula lorata,Gaviotín chico,0.38693,migratoria / estacional,EN,53.8,34.7,5.1,173.5,13.7,68.4,Coastal,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Asthenes anthoides,Canastero del sur,0.38522,endémica,LC,22.3,15.8,3.4,67.2,21.3,16.0,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Plegadis ridgwayi,Cuervo de pantano de la puna,0.38083,nativa residente,LC,579.4,101.9,14.1,277.8,74.2,35.9,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Strix rufipes,Concón,0.37721,nativa residente,LC,380.0,32.7,14.8,258.5,52.3,30.0,Forest,Vertivore,Carnivore,Insessorial,sedentaria
+Ochetorhynchus melanurus,Chiricoca,0.37473,endémica,LC,40.0,26.1,4.4,80.5,23.8,13.5,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Spatula puna,Pato puna,0.3732,nativa residente,LC,595.2,48.3,16.0,214.0,29.3,44.1,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Sicalis flaveola,Chirihue azafrán,0.37263,nativa residente,LC,16.9,11.2,7.0,69.5,19.5,20.6,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Spinus magellanicus,Jilguero peruano,0.36996,nativa residente,LC,13.6,12.0,6.5,69.5,13.9,27.2,Shrubland,Granivore,Herbivore,Insessorial,sedentaria
+Upucerthia saturatior,Bandurrilla de los bosques,0.36977,migratoria / estacional,LC,48.7,32.2,4.8,96.8,24.0,23.2,Forest,Invertivore,Carnivore,Terrestrial,sedentaria
+Phoenicoparrus andinus,Parina grande,0.36882,nativa residente,VU,4900.0,113.3,43.1,425.0,233.0,45.9,Wetland,Herbivore aquatic,Herbivore,Terrestrial,sedentaria
+Fulica gigantea,Tagua gigante,0.36462,nativa residente,LC,2442.7,51.5,13.0,268.2,97.2,29.0,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Tringa semipalmata,Playero grande de pico grueso,0.36157,migratoria / estacional,LC,245.7,67.4,7.2,203.5,65.4,47.6,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Spinus uropygialis,Jilguero cordillerano,0.35642,migratoria / estacional,LC,14.0,12.0,6.0,80.4,16.2,35.2,Shrubland,Granivore,Herbivore,Generalist,sedentaria
+Pelecanoides magellani,Yunco de Magallanes,0.35413,migratoria / estacional,LC,134.0,26.3,6.0,125.6,26.1,48.6,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Merganetta armata,Pato cortacorrientes,0.34841,nativa residente,LC,398.8,33.5,9.8,163.4,36.2,37.4,Riverine,Aquatic predator,Carnivore,Aquatic,sedentaria
+Oreotrochilus leucopleurus,Picaflor cordillerano,0.3446,migratoria / estacional,LC,8.2,24.3,2.2,68.2,7.8,59.6,Grassland,Nectarivore,Herbivore,Aerial,parcialmente migratoria
+Anas platyrhynchos,Pato de collar,0.34116,introducida,LC,843.4,58.5,17.8,263.4,40.6,50.7,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Charadrius semipalmatus,Chorlo semipalmado,0.33849,migratoria / estacional,LC,46.7,14.5,3.7,118.4,22.9,56.0,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Fulica ardesiaca,Tagua andina,0.33582,nativa residente,LC,988.0,41.6,12.1,218.0,72.1,32.9,Wetland,Herbivore aquatic,Herbivore,Aquatic,sedentaria
+Muscisaxicola flavinucha,Dormilona fraile,0.32839,migratoria / estacional,LC,36.2,19.5,3.7,137.5,31.8,38.9,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Thalassarche salvini,Albatros de Salvin,0.32057,migratoria / estacional,VU,3897.7,127.3,39.4,558.0,79.2,62.1,NA,Aquatic predator,Carnivore,Aquatic,migratoria
+Pteroptochos castaneus,Hued-hued castaño,0.31485,endémica,LC,160.6,22.4,6.8,103.1,44.8,7.2,Forest,Invertivore,Carnivore,Generalist,sedentaria
+Lessonia oreas,Colegial del norte,0.31313,nativa residente,LC,13.8,13.6,2.7,79.3,21.8,22.4,Wetland,Invertivore,Carnivore,Generalist,parcialmente migratoria
+Oreopholus ruficollis,Chorlo de campo,0.31199,migratoria / estacional,LC,131.0,33.2,3.6,162.7,49.3,55.6,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Sporophila telasco,Corbatita del norte,0.30093,nativa residente,LC,9.6,10.1,6.7,54.1,14.8,17.1,Shrubland,Granivore,Herbivore,Generalist,sedentaria
+Cinclodes atacamensis,Churrete de alas blancas,0.29883,nativa residente,LC,53.0,25.8,4.8,110.4,31.3,23.0,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Oxyura ferruginea,Pato rana de pico ancho,0.28872,nativa residente,LC,608.2,50.6,13.1,157.2,36.1,37.7,Wetland,Aquatic predator,Omnivore,Aquatic,sedentaria
+Asthenes pyrrholeuca,Canastero de cola larga,0.28491,migratoria / estacional,LC,13.2,13.8,3.0,59.6,19.6,17.9,Shrubland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Calidris pusilla,Playero semipalmado,0.27919,migratoria / estacional,NT,27.5,22.2,4.2,92.7,20.7,54.2,Grassland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Metriopelia ceciliae,Tortolita boliviana,0.27099,nativa residente,LC,55.1,13.8,3.1,95.0,17.6,25.4,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Oreotrochilus estella,Picaflor de la puna,0.2626,nativa residente,LC,8.1,25.0,2.6,72.2,8.1,59.5,Grassland,Nectarivore,Herbivore,Insessorial,sedentaria
+Phoenicoparrus jamesi,Parina chica,0.25821,nativa residente,NT,2000.0,86.5,35.4,411.7,201.6,37.4,Wetland,Herbivore aquatic,Herbivore,Terrestrial,sedentaria
+Recurvirostra andina,Caití,0.25573,nativa residente,LC,361.0,79.0,4.4,238.8,85.2,38.1,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Halobaena caerulea,Petrel azulado,0.25573,migratoria / estacional,LC,202.0,29.9,7.0,206.2,31.6,62.0,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Aeronautes andecolus,Vencejo chico,0.24696,nativa residente,LC,17.6,7.0,2.1,140.0,8.6,70.3,Shrubland,Invertivore,Carnivore,Aerial,sedentaria
+Geositta punensis,Minero de la puna,0.2338,nativa residente,LC,25.8,16.9,3.7,90.8,21.8,21.0,Grassland,Invertivore,Omnivore,Terrestrial,sedentaria
+Diomedea epomophora,Albatros real del sur,0.22465,migratoria / estacional,VU,8905.6,179.7,50.6,636.6,121.1,59.7,NA,Aquatic predator,Carnivore,Aquatic,migratoria
+Netta peposaca,Pato negro,0.22426,nativa residente,LC,1000.0,61.3,14.3,230.7,37.6,44.5,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Daption capense,Petrel damero,0.22312,migratoria / estacional,LC,429.6,36.6,9.3,249.8,42.6,59.4,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Asthenes arequipae,Canastero del norte,0.22293,nativa residente,LC,,,,,,,,,,,
+Muscisaxicola juninensis,Dormilona de la puna,0.22198,nativa residente,LC,22.2,17.0,3.2,111.4,27.8,28.9,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Charadrius vociferus,Chorlo gritón,0.21873,migratoria / estacional,NT,96.4,21.5,4.2,158.8,34.4,52.6,Wetland,Omnivore,Carnivore,Terrestrial,migratoria
+Muscisaxicola capistratus,Dormilona rufa,0.21072,migratoria / estacional,LC,26.6,19.3,3.8,114.6,28.1,35.3,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Laterallus jamaicensis,Pidencito,0.20424,nativa residente,EN,32.6,15.1,3.5,67.2,21.0,21.2,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Anarhynchus alticola,Chorlo de la puna,0.20272,nativa residente,LC,,,,,,,,,,,
+Muscisaxicola frontalis,Dormilona de frente negra,0.20005,migratoria / estacional,LC,28.9,21.3,3.8,117.3,31.7,31.9,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Orochelidon andecola,Golondrina de los riscos,0.19852,nativa residente,LC,17.0,10.2,2.7,119.9,12.3,49.0,Grassland,Invertivore,Carnivore,Aerial,sedentaria
+Buteo ventralis,Aguilucho de cola rojiza,0.19757,nativa residente,EN,1190.5,37.2,19.0,359.0,76.8,33.0,Forest,Vertivore,Carnivore,Insessorial,parcialmente migratoria
+Diomedea sanfordi,Albatros real del norte,0.19718,migratoria / estacional,EN,,,,,,,,,,,
+Pluvialis dominica,Chorlo dorado,0.19032,migratoria / estacional,LC,151.5,26.3,5.1,181.8,39.9,58.7,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Spinus atratus,Jilguero negro,0.18879,migratoria / estacional,LC,16.0,11.6,6.0,79.6,16.2,29.9,Grassland,Granivore,Herbivore,Generalist,sedentaria
+Buteo albigula,Aguilucho chico,0.18822,migratoria / estacional,LC,525.0,27.9,15.2,291.0,57.9,37.6,Forest,Vertivore,Carnivore,Generalist,migratoria
+Thaumastura cora,Picaflor de Cora,0.18555,nativa residente,LC,1.9,16.0,1.4,40.3,4.0,64.5,Shrubland,Nectarivore,Herbivore,Aerial,parcialmente migratoria
+Thalassarche chrysostoma,Albatros de cabeza gris,0.18517,migratoria / estacional,EN,3499.0,116.0,34.2,518.0,81.4,64.9,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Procellaria westlandica,Petrel de Westland,0.18479,migratoria / estacional,EN,1199.0,52.0,16.3,368.9,56.4,62.0,Marine,Aquatic predator,Carnivore,Aquatic,migratoria
+Geositta antarctica,Minero austral,0.18307,migratoria / estacional,LC,36.9,15.9,3.9,105.5,20.7,35.5,Grassland,Invertivore,Omnivore,Terrestrial,sedentaria
+Rauenia bonariensis,Naranjero,0.18174,nativa residente,,36.0,15.8,7.4,89.0,23.1,21.5,Forest,Frugivore,Omnivore,Insessorial,parcialmente migratoria
+Pterodroma defilippiana,Petrel de Masatierra,0.1804,migratoria / estacional,VU,169.0,27.5,8.5,226.0,27.9,62.8,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Geositta maritima,Minero chico,0.17239,nativa residente,LC,16.5,15.2,3.2,81.8,18.1,26.5,Shrubland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Geositta isabellina,Minero grande,0.16648,migratoria / estacional,LC,42.7,20.7,4.3,115.5,20.6,31.9,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Muscisaxicola albifrons,Dormilona gigante,0.16477,nativa residente,LC,34.0,22.9,4.6,159.8,37.5,37.3,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Pterodroma externa,Petrel de Juan Fernández,0.16171,migratoria / estacional,VU,428.0,37.8,11.7,291.3,36.1,70.2,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Thalassarche bulleri,Albatros de Buller,0.16,migratoria / estacional,NT,2781.5,121.9,32.8,501.2,77.5,66.4,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Hydrobates markhami,Golondrina de mar negra,0.1579,migratoria / estacional,NT,53.1,20.1,4.7,170.8,23.2,61.3,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Catamenia analis,Semillero,0.1558,nativa residente,LC,12.0,10.6,6.0,65.5,17.3,15.5,Shrubland,Granivore,Herbivore,Generalist,sedentaria
+Anairetes flavirostris,Cachudito del norte,0.15561,nativa residente,LC,6.0,10.7,3.1,48.0,18.3,12.9,Shrubland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Psilopsiagon aurifrons,Perico cordillerano,0.15332,nativa residente,LC,33.6,13.5,13.9,92.4,12.4,44.0,Shrubland,Omnivore,Herbivore,Generalist,sedentaria
+Pluvianellus socialis,Chorlo de Magallanes,0.15199,migratoria / estacional,VU,84.1,17.3,3.4,135.7,19.8,51.9,Coastal,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Calidris canutus,Playero ártico,0.14932,migratoria / estacional,NT,141.9,37.5,5.7,164.4,29.9,57.9,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Metriopelia aymara,Tortolita de la puna,0.1476,nativa residente,LC,61.8,12.9,2.9,116.2,18.9,39.2,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Calidris minutilla,Playero enano,0.14741,migratoria / estacional,NT,22.9,20.3,3.2,86.4,18.4,37.7,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Leptasthenura striata,Tijeral listado,0.14722,nativa residente,LC,8.9,10.3,3.0,60.6,17.9,15.5,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Melanodera xanthogramma,Yal cordillerano,0.14684,migratoria / estacional,LC,35.1,14.2,8.2,102.2,22.4,35.2,Grassland,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Phalaropus fulicarius,Pollito de mar rojizo,0.14093,migratoria / estacional,LC,55.6,31.4,3.3,126.3,26.9,52.8,Marine,Aquatic predator,Carnivore,Terrestrial,migratoria
+Ochetorhynchus ruficaudus,Bandurrilla de pico recto,0.14093,nativa residente,LC,36.3,29.9,4.2,79.3,24.3,11.6,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Sicalis uropygialis,Chirihue cordillerano,0.13635,nativa residente,,22.5,12.2,5.7,84.4,17.8,30.0,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Actitis macularius,Playero manchado,0.13368,migratoria / estacional,LC,40.4,25.7,3.3,100.4,24.2,47.5,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Sicalis lebruni,Chirihue austral,0.13292,migratoria / estacional,LC,25.3,12.7,6.7,82.5,16.6,31.5,Grassland,Granivore,Omnivore,Terrestrial,sedentaria
+Aptenodytes patagonicus,Pingüino rey,0.13082,migratoria / estacional,LC,11731.1,105.6,17.8,167.2,52.2,3.7,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Neoxolmis rufiventris,Cazamoscas chocolate,0.12987,migratoria / estacional,LC,77.0,23.6,5.7,151.8,36.2,41.1,Grassland,Invertivore,Carnivore,Insessorial,migratoria
+Hesperoburhinus superciliaris,Chorlo cabezón,0.12872,nativa residente,,,,,,,,,,,,
+Colaptes rupicola,Pitío del norte,0.12872,nativa residente,LC,174.0,50.9,9.6,167.2,30.1,21.7,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Muscisaxicola cinereus,Dormilona cenicienta,0.12663,migratoria / estacional,LC,18.6,16.8,3.4,105.6,28.6,29.6,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Idiopsar speculifer,Diuca de alas blancas,0.12548,nativa residente,,36.8,16.9,7.1,115.8,25.2,26.8,Grassland,Omnivore,Omnivore,Terrestrial,sedentaria
+Phegornis mitchellii,Chorlito cordillerano,0.12186,migratoria / estacional,NT,35.5,29.3,2.9,109.0,22.8,38.3,Grassland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Fulica cornuta,Tagua cornuda,0.12148,nativa residente,NT,2110.4,53.5,14.6,291.0,76.7,32.8,Wetland,Herbivore aquatic,Herbivore,Generalist,sedentaria
+Daptrius albogularis,Carancho de garganta blanca,0.12071,migratoria / estacional,,,,,,,,,,,,
+Ochthoeca leucophrys,Pitajo gris,0.11843,nativa residente,LC,13.1,14.8,3.5,75.7,21.8,17.8,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Molothrus rufoaxillaris,Mirlo de pico corto,0.11728,nativa residente,LC,47.5,18.3,9.1,113.5,25.0,27.6,Human Modified,Invertivore,Omnivore,Terrestrial,sedentaria
+Diomedea exulans,Albatros errante,0.11652,migratoria / estacional,VU,6961.3,157.9,47.0,633.8,111.2,56.4,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Conirostrum tamarugense,Comesebo de los tamarugales,0.11404,nativa residente,LC,10.5,10.4,3.1,63.2,15.7,20.5,Forest,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Oceanites gracilis,Golondrina de mar chica,0.11175,nativa residente,DD,16.7,13.0,2.8,133.4,29.6,59.3,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Vanellus resplendens,Queltehue de la puna,0.10965,nativa residente,LC,214.0,36.9,5.7,217.6,53.8,39.9,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Pseudocolopteryx citreola,Pájaro amarillo,0.10908,migratoria / estacional,LC,7.5,14.8,3.0,49.3,18.8,18.1,Wetland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Stercorarius parasiticus,Salteador chico,0.10698,migratoria / estacional,LC,444.3,36.1,9.0,310.5,41.5,60.2,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Sula dactylatra,Piquero blanco,0.10431,migratoria / estacional,LC,1732.1,96.0,34.2,412.2,54.0,62.4,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Calidris melanotos,Playero pectoral,0.10355,migratoria / estacional,LC,79.7,32.1,4.8,125.2,26.0,53.4,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Mimus triurus,Tenca de alas blancas,0.10355,migratoria / estacional,LC,47.2,20.6,5.4,102.0,32.2,21.4,Shrubland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Melanodera melanodera,Yal austral,0.10222,migratoria / estacional,LC,28.7,13.6,7.0,88.6,22.4,33.2,Grassland,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Pachyptila belcheri,Petrel-paloma de pico delgado,0.10203,migratoria / estacional,LC,145.0,28.5,6.9,175.8,30.2,57.7,Marine,Aquatic predator,Carnivore,Aquatic,sedentaria
+Idiopsar dorsalis,Cometocino de dorso castaño,0.10107,nativa residente,,38.1,14.8,6.7,98.5,23.1,18.4,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Riparia riparia,Golondrina barranquera,0.09955,migratoria / estacional,LC,12.7,9.4,2.5,101.8,10.5,53.0,Riverine,Invertivore,Carnivore,Aerial,migratoria
+Agriornis micropterus,Mero de Tarapacá,0.0984,nativa residente,LC,67.8,32.8,7.1,118.9,33.8,24.5,Shrubland,Vertivore,Carnivore,Insessorial,parcialmente migratoria
+Diglossa brunneiventris,Comesebo negro,0.09382,nativa residente,LC,12.0,13.4,4.0,64.9,21.4,18.3,Shrubland,Nectarivore,Omnivore,Insessorial,sedentaria
+Fregata minor,Ave fragata grande,0.09173,migratoria / estacional,LC,1274.7,116.8,21.8,567.8,19.6,64.2,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Nothoprocta ornata,Perdiz cordillerana,0.09173,nativa residente,LC,619.3,30.9,7.1,185.6,38.3,26.1,Grassland,Omnivore,Herbivore,Terrestrial,sedentaria
+Upucerthia albigula,Bandurrilla de Arica,0.09154,nativa residente,LC,39.9,37.4,5.1,90.8,25.6,18.1,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Mimus patagonicus,Tenca patagónica,0.08944,nativa residente,LC,57.8,19.4,5.0,101.7,34.0,23.0,Shrubland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Asthenes pudibunda,Canastero de las quebradas,0.08849,nativa residente,LC,14.9,17.1,3.3,59.8,21.8,9.6,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Upucerthia validirostris,Bandurrilla de la puna,0.08772,nativa residente,LC,33.6,36.3,4.8,85.4,26.6,14.2,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Volatinia jacarina,Negrillo,0.08353,migratoria / estacional,LC,9.9,10.4,5.6,47.8,16.8,14.1,Human Modified,Granivore,Herbivore,Terrestrial,sedentaria
+Phoebetria palpebrata,Albatros de manto claro,0.08334,migratoria / estacional,NT,3150.0,105.6,28.2,523.8,76.8,69.0,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Phasianus colchicus,Faisán de collar,0.08181,introducida,LC,1120.3,34.9,11.9,231.6,63.4,26.1,Human Modified,Omnivore,Herbivore,Terrestrial,sedentaria
+Tinamotis pentlandii,Perdiz de la puna,0.08143,nativa residente,LC,650.0,31.2,7.5,253.4,47.6,33.0,Grassland,Omnivore,Herbivore,Terrestrial,sedentaria
+Attagis gayi,Perdicita cordillerana,0.07781,nativa residente,LC,311.0,22.7,8.5,190.0,25.8,45.5,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,sedentaria
+Theristicus branickii,Bandurria de la puna,0.07781,nativa residente,NT,1492.0,130.5,15.2,395.5,69.8,33.9,Human Modified,Omnivore,Carnivore,Terrestrial,parcialmente migratoria
+Glaucidium peruanum,Chuncho del norte,0.07514,nativa residente,LC,62.4,15.3,10.3,94.2,21.9,19.9,Shrubland,Omnivore,Carnivore,Insessorial,sedentaria
+Ochetorhynchus phoenicurus,Patagón,0.07514,nativa residente,LC,30.2,22.6,4.2,72.2,22.2,13.9,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Petrochelidon pyrrhonota,Golondrina grande,0.07475,migratoria / estacional,LC,21.6,11.3,3.0,109.3,12.6,49.0,Grassland,Invertivore,Carnivore,Aerial,migratoria
+Pterodroma mollis,Petrel de collar gris,0.07056,migratoria / estacional,LC,312.0,27.1,9.1,243.2,32.3,65.1,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Crotophaga sulcirostris,Matacaballos,0.07037,nativa residente,LC,82.0,26.9,16.5,129.3,33.8,19.3,Human Modified,Invertivore,Carnivore,Terrestrial,sedentaria
+Eudromia elegans,Perdiz copetona,0.06694,nativa residente,LC,702.9,29.1,7.4,215.3,44.0,34.3,Shrubland,Omnivore,Herbivore,Terrestrial,sedentaria
+Anairetes reguloides,Cachudito de cresta blanca,0.06655,nativa residente,LC,5.9,15.0,2.4,52.4,19.8,15.4,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Cairina moschata,Pato criollo,0.06388,introducida,LC,2415.8,65.9,15.7,345.0,56.2,35.2,Wetland,Omnivore,Omnivore,Generalist,sedentaria
+Myiophobus rufescens,Cazamoscas de pico chato,0.0635,nativa residente,LC,,,,,,,,,,,
+Fregetta tropica,Golondrina de mar de vientre negro,0.06217,migratoria / estacional,LC,52.0,20.7,4.4,164.4,39.3,56.5,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Calidris himantopus,Playero de patas largas,0.06122,migratoria / estacional,NT,57.2,43.0,4.8,126.8,40.0,52.2,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Ardenna gravis,Fardela capirotada,0.05988,migratoria / estacional,LC,849.0,54.7,11.3,317.8,58.1,61.9,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Colibri coruscans,Picaflor azul,0.05835,nativa residente,LC,6.7,29.1,2.5,75.4,5.6,62.5,Human Modified,Nectarivore,Herbivore,Aerial,sedentaria
+Eudyptes chrysocome,Pingüino de penacho amarillo,0.05721,migratoria / estacional,VU,2327.9,49.9,21.3,97.9,25.7,6.5,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Ochthoeca oenanthoides,Pitajo rojizo,0.05626,nativa residente,LC,17.7,15.9,3.7,82.1,21.9,19.7,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Sterna hirundo,Gaviotín boreal,0.05607,migratoria / estacional,LC,129.2,44.5,7.0,253.3,19.5,67.3,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Oceanites pincoyae,Golondrina de mar Pincoya,0.05588,endémica,DD,26.0,13.0,2.8,133.4,29.6,59.3,NA,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Pachyptila desolata,Petrel-paloma antártico,0.05359,migratoria / estacional,LC,147.0,29.7,8.9,182.4,31.2,57.1,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Pandion haliaetus,Águila pescadora,0.0492,migratoria / estacional,LC,1483.2,47.0,19.6,468.4,49.8,44.9,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Spinus crassirostris,Jilguero grande,0.04901,nativa residente,LC,19.0,14.3,9.6,79.4,17.6,28.9,Shrubland,Granivore,Herbivore,Insessorial,sedentaria
+Quechuavis decussata,Gallina ciega chica,0.04825,nativa residente,,,,,,,,,,,,
+Laterallus spiloptera,Burrito negruzco,0.04768,nativa residente,,,,,,,,,,,,
+Idiopsar erythronotus,Cometocino de Arica,0.04653,nativa residente,,20.7,14.6,6.7,101.9,24.4,19.9,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Egretta tricolor,Garza tricolor,0.04577,nativa residente,LC,372.3,102.7,13.0,248.8,96.8,35.5,Coastal,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Pterodroma longirostris,Petrel de Masafuera,0.04386,endémica,VU,143.0,23.4,6.9,212.2,27.2,61.1,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Hydrobates hornbyi,Golondrina de mar de collar,0.03967,migratoria / estacional,NT,40.6,20.8,3.8,163.2,25.0,58.3,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Attagis malouinus,Perdicita austral,0.03928,nativa residente,LC,340.0,18.8,8.0,166.8,24.0,49.5,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,sedentaria
+Tyrannus tyrannus,Suirirí boreal,0.0389,migratoria / estacional,LC,39.9,21.5,6.5,116.7,18.5,33.3,Woodland,Invertivore,Carnivore,Insessorial,migratoria
+Anthus hellmayri,Bailarín chico pálido,0.0389,nativa residente,LC,18.6,14.6,3.8,76.2,22.4,18.5,Grassland,Invertivore,Carnivore,Terrestrial,sedentaria
+Pterodroma neglecta,Petrel de Kermadec,0.03833,nativa residente,LC,501.0,30.6,9.8,288.0,36.6,64.0,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Rallus antarcticus,Pidén austral,0.03795,nativa residente,VU,60.4,32.5,5.2,91.4,28.8,29.9,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Platalea ajaja,Espátula,0.03757,nativa residente,LC,1490.0,159.8,17.1,349.0,97.7,33.6,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Daptrius australis,Carancho negro,0.03566,nativa residente,,,,,,,,,,,,
+Phaethon rubricauda,Ave del trópico de cola roja,0.03471,migratoria / estacional,LC,671.9,70.8,21.0,330.5,28.7,68.8,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Thalasseus sandvicensis,Gaviotín de Sandwich,0.03356,migratoria / estacional,LC,199.8,60.5,9.7,288.5,25.5,69.3,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Tyrannus savana,Cazamoscas tijereta,0.03337,migratoria / estacional,LC,31.9,20.1,5.4,105.6,17.9,32.0,Grassland,Invertivore,Carnivore,Insessorial,migratoria
+Thalassarche eremita,Albatros de Chatham,0.03185,migratoria / estacional,VU,3897.7,127.2,39.5,542.0,93.6,47.9,NA,Aquatic predator,Carnivore,Generalist,migratoria
+Puffinus puffinus,Fardela atlántica,0.03108,migratoria / estacional,LC,453.3,34.6,7.9,232.5,41.7,61.6,Marine,Aquatic predator,Carnivore,Generalist,migratoria
+Diomedea antipodensis,Albatros de las Antípodas/de Gibson,0.02918,nativa residente,EN,,,,,,,,,,,
+Quiscalus mexicanus,Zanate mexicano,0.0288,introducida,LC,160.5,43.3,11.5,168.6,47.9,26.8,Human Modified,Omnivore,Omnivore,Terrestrial,sedentaria
+Anous stolidus,Gaviotín de San Félix,0.02822,nativa residente,LC,177.8,45.6,7.6,265.4,25.8,63.0,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Sicalis lutea,Chirihue puneño,0.0267,nativa residente,LC,16.3,14.5,7.4,81.4,17.9,24.7,Grassland,Granivore,Herbivore,Terrestrial,sedentaria
+Gallinago andina,Becacina de la puna,0.02613,nativa residente,LC,109.4,57.3,5.5,113.0,27.3,39.9,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Gelochelidon nilotica,Gaviotín de pico negro,0.02517,migratoria / estacional,LC,218.3,43.9,11.2,307.7,31.9,65.8,Coastal,Omnivore,Carnivore,Aerial,migratoria
+Pitangus sulphuratus,Benteveo,0.02479,nativa residente,LC,62.9,29.3,9.1,111.9,25.8,18.1,Human Modified,Omnivore,Carnivore,Insessorial,sedentaria
+Anous albivitta,Gaviotín de San Ambrosio,0.02422,nativa residente,,72.2,30.0,5.0,201.8,25.2,60.4,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Ardenna bulleri,Fardela de dorso gris,0.02384,migratoria / estacional,VU,407.0,41.0,10.2,276.2,48.6,59.1,Marine,Aquatic predator,Carnivore,Aquatic,migratoria
+Calidris mauri,Playero occidental,0.02269,migratoria / estacional,LC,27.8,21.0,3.5,92.2,21.0,49.0,Shrubland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Hydrobates tethys,Golondrina de mar peruana,0.02231,migratoria / estacional,LC,22.6,13.3,3.5,129.8,21.8,59.4,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Tinamotis ingoufi,Perdiz austral,0.02231,nativa residente,LC,950.0,28.6,6.8,215.2,43.6,36.0,Grassland,Omnivore,Herbivore,Terrestrial,sedentaria
+Anthus peruvianus,Bailarín chico peruano,0.02212,nativa residente,LC,12.6,14.5,3.1,64.0,20.4,22.0,Shrubland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Tyrannus melancholicus,Suirirí real,0.02193,nativa residente,LC,37.4,23.5,7.4,108.8,18.7,23.7,Human Modified,Invertivore,Carnivore,Insessorial,sedentaria
+Fregetta grallaria,Golondrina de mar de vientre blanco,0.02155,migratoria / estacional,LC,50.6,19.3,4.7,168.6,36.9,58.2,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Sephanoides fernandensis,Picaflor de Juan Fernández,0.02136,endémica,CR,8.7,22.6,2.0,75.8,9.3,62.5,Forest,Nectarivore,Herbivore,Insessorial,sedentaria
+Puffinus nativitatis,Fardela de Pascua,0.02117,nativa residente,LC,356.0,29.1,8.1,235.5,40.7,62.6,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Sterna paradisaea,Gaviotín ártico,0.02098,migratoria / estacional,LC,110.0,37.8,7.0,262.7,16.1,69.1,Coastal,Aquatic predator,Carnivore,Aerial,migratoria
+Sicalis raimondii,Chirihue de Raimondi,0.02098,nativa residente,LC,15.8,12.8,7.9,71.8,17.2,29.7,Rock,Granivore,Herbivore,Terrestrial,sedentaria
+Gallinago stricklandii,Becacina grande,0.02002,nativa residente,NT,252.0,91.2,10.3,147.6,36.0,34.1,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Bartramia longicauda,Batitú,0.01983,migratoria / estacional,LC,158.9,32.9,3.8,159.0,48.7,52.9,Grassland,Invertivore,Carnivore,Terrestrial,migratoria
+Creagrus furcatus,Gaviota de las Galápagos,0.01964,nativa residente,LC,687.0,62.2,12.9,409.0,51.5,59.6,Marine,Aquatic predator,Carnivore,Generalist,sedentaria
+Chionis albus,Paloma antártica,0.01926,migratoria / estacional,LC,675.7,32.7,17.2,246.2,46.5,40.1,Marine,Omnivore,Omnivore,Terrestrial,migratoria
+Chroicocephalus cirrocephalus,Gaviota de capucho gris,0.01888,nativa residente,,374.7,47.5,10.2,319.0,49.5,55.6,Wetland,Aquatic predator,Carnivore,Aerial,sedentaria
+Agriornis albicauda,Mero de la puna,0.0185,nativa residente,VU,53.0,32.4,8.6,141.3,39.7,24.9,Shrubland,Vertivore,Carnivore,Insessorial,sedentaria
+Progne murphyi,Golondrina peruana,0.01812,nativa residente,NT,41.4,15.1,3.5,132.0,13.1,55.7,Grassland,Invertivore,Carnivore,Aerial,sedentaria
+Gallus gallus,Gallo,0.01812,introducida,LC,751.7,30.9,8.9,218.2,68.1,22.5,Forest,Omnivore,Herbivore,Terrestrial,sedentaria
+Stercorarius longicaudus,Salteador de cola larga,0.01774,migratoria / estacional,LC,287.9,32.9,9.2,301.7,40.7,60.2,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Anser anser,Ánsar común,0.01774,introducida,LC,3302.4,61.2,21.6,435.7,76.2,47.2,Wetland,Herbivore terrestrial,Herbivore,Terrestrial,migratoria
+Onychoprion fuscatus,Gaviotín apizarrado,0.01697,nativa residente,LC,185.7,47.9,8.1,280.7,21.0,67.5,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Pelecanoides urinatrix,Yunco de los canales,0.01678,nativa residente,LC,152.1,28.1,7.2,121.7,23.9,47.7,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Anairetes fernandezianus,Cachudito de Juan Fernández,0.01659,endémica,EN,6.9,13.3,2.9,55.9,22.0,13.5,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Puffinus elegans,Fardela chica,0.01659,nativa residente,LC,226.0,29.4,6.9,184.1,39.8,53.0,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Limosa fedoa,Zarapito moteado,0.0164,migratoria / estacional,VU,357.0,112.5,9.2,224.8,71.6,52.5,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Nycticryphes semicollaris,Becacina pintada,0.01621,nativa residente,NT,76.6,42.7,5.5,102.9,33.5,31.4,Wetland,Aquatic predator,Omnivore,Terrestrial,parcialmente migratoria
+Pterodroma heraldica,Petrel de Herald,0.01621,nativa residente,LC,394.0,27.0,9.0,281.0,34.1,64.8,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Phaethon lepturus,Ave del trópico de cola blanca,0.01583,migratoria / estacional,LC,328.0,54.7,15.5,269.4,20.6,70.4,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Phaethon aethereus,Ave del trópico de pico rojo,0.01507,migratoria / estacional,LC,750.0,66.4,20.7,309.2,28.9,68.4,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Eudyptes chrysolophus,Pingüino macaroni,0.01373,nativa residente,VU,4485.1,60.8,23.9,116.5,35.1,5.8,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Nothoprocta pentlandii,Perdiz andina,0.01335,nativa residente,LC,300.7,27.9,5.9,148.2,37.0,22.6,Shrubland,Omnivore,Herbivore,Terrestrial,sedentaria
+Limnodromus griseus,Becacina chica,0.01297,migratoria / estacional,VU,110.5,61.0,6.8,143.0,33.6,50.3,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Chaetura pelagica,Vencejo de chimenea,0.01278,migratoria / estacional,VU,23.6,6.3,2.4,124.4,11.6,70.3,Human Modified,Invertivore,Carnivore,Aerial,migratoria
+Cinclodes antarcticus,Churrete austral,0.0124,nativa residente,NT,63.2,23.4,4.7,109.7,26.6,27.1,Coastal,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Stercorarius pomarinus,Salteador pomarino,0.0124,migratoria / estacional,LC,692.5,45.8,12.5,350.8,52.0,55.8,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Pygoscelis papua,Pingüino papúa,0.01201,nativa residente,LC,5933.0,64.8,17.0,126.1,33.0,5.0,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Pterodroma atrata,Petrel de Henderson,0.01163,nativa residente,EN,394.0,30.9,8.7,295.0,37.2,43.4,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Streptoprocne zonaris,Vencejo de collar,0.01144,nativa residente,LC,86.8,14.4,4.0,212.5,22.4,65.7,Forest,Invertivore,Carnivore,Aerial,parcialmente migratoria
+Nyctanassa violacea,Huairavo de corona amarilla,0.01144,nativa residente,LC,681.7,76.5,21.1,283.8,98.5,34.6,Coastal,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Pterodroma alba,Petrel de Fénix,0.01087,nativa residente,VU,259.0,26.3,9.2,266.2,31.2,66.0,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Eudyptes robustus,Pingüino de Snares,0.01011,nativa residente,VU,3038.0,56.1,25.7,97.8,28.0,6.2,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Paroaria coronata,Cardenal,0.00973,introducida,LC,37.8,16.8,8.5,98.6,25.3,17.6,Shrubland,Omnivore,Herbivore,Terrestrial,sedentaria
+Tringa incana,Playero gris,0.00934,migratoria / estacional,LC,108.2,45.1,5.1,164.6,32.9,55.3,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Tringa solitaria,Pitotoy solitario,0.00896,migratoria / estacional,LC,48.4,32.7,3.9,126.6,29.6,49.7,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Nymphicus hollandicus,Cacatúa ninfa,0.00896,introducida,LC,94.6,17.7,15.8,167.3,14.8,50.6,Grassland,Granivore,Herbivore,Terrestrial,parcialmente migratoria
+Phytotoma rutila,Cortarramas,0.0082,nativa residente,LC,40.5,15.5,7.1,86.5,22.2,16.9,Shrubland,Herbivore terrestrial,Herbivore,Insessorial,sedentaria
+Sula brewsteri,Piquero de Cocos,0.0082,nativa residente,,,,,,,,,,,,
+Phoebastria irrorata,Albatros de las Galápagos,0.00763,nativa residente,CR,3376.4,151.1,36.6,534.5,101.2,63.4,Marine,Aquatic predator,Omnivore,Generalist,parcialmente migratoria
+Conirostrum binghami,Comesebo gigante,0.00725,nativa residente,NT,25.0,22.9,4.8,86.0,21.0,23.5,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Colaptes melanochloros,Carpintero real,0.00725,nativa residente,LC,127.3,32.8,8.1,138.3,23.8,15.2,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Pelagodroma marina,Golondrina de mar de cara blanca,0.00706,migratoria / estacional,LC,47.2,21.1,4.0,158.2,40.6,54.1,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Spatula discors,Pato de alas azules,0.00706,migratoria / estacional,LC,359.4,47.3,12.6,178.3,29.1,53.8,Wetland,Herbivore aquatic,Omnivore,Aquatic,migratoria
+Sappho sparganurus,Picaflor cometa,0.00687,nativa residente,LC,5.3,20.1,1.7,63.2,6.0,63.1,Shrubland,Nectarivore,Herbivore,Aerial,sedentaria
+Branta leucopsis,Barnacla cariblanca,0.00687,introducida,LC,1684.0,39.0,11.7,381.8,64.3,50.6,Grassland,Herbivore terrestrial,Herbivore,Terrestrial,migratoria
+Phalaropus lobatus,Pollito de mar boreal,0.00667,migratoria / estacional,LC,36.7,24.4,2.7,109.0,18.8,49.6,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Patagioenas picazuro,Paloma picazuró,0.00648,nativa residente,LC,279.0,25.3,6.7,218.2,30.3,37.6,Forest,Omnivore,Herbivore,Generalist,sedentaria
+Progne tapera,Golondrina parda,0.00648,nativa residente,LC,32.0,15.8,4.5,128.3,13.2,49.3,Grassland,Invertivore,Carnivore,Aerial,sedentaria
+Megarynchus pitangua,Pintaguá,0.00629,nativa residente,LC,69.9,33.7,10.4,113.5,19.2,23.3,Woodland,Invertivore,Carnivore,Insessorial,sedentaria
+Hirundinea ferruginea,Birro común,0.00591,nativa residente,LC,30.6,20.9,5.0,108.6,14.0,31.9,Rock,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Melopsittacus undulatus,Catita australiana,0.00591,introducida,LC,29.0,12.7,11.1,95.4,12.4,50.9,Woodland,Granivore,Herbivore,Generalist,parcialmente migratoria
+Turdus amaurochalinus,Zorzal chalchalero,0.00477,migratoria / estacional,LC,57.9,24.2,6.2,116.1,32.1,23.4,Forest,Invertivore,Omnivore,Insessorial,migratoria
+Fregata magnificens,Ave fragata magnífica,0.00439,migratoria / estacional,LC,1490.5,121.9,22.5,642.0,28.9,64.0,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Sula sula,Piquero de patas rojas,0.00439,nativa residente,LC,1031.1,79.3,25.9,366.8,35.2,62.0,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Oceanites barrosi,Golondrina de mar andina,0.00439,nativa residente,,,,,,,,,,,,
+Pterodroma ultima,Petrel de Murphy,0.0042,nativa residente,LC,360.0,27.0,9.8,260.0,33.5,67.3,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Porphyrio martinica,Tagüita purpúrea,0.0042,nativa residente,,235.1,30.6,12.0,174.4,56.2,26.9,Wetland,Herbivore aquatic,Herbivore,Terrestrial,sedentaria
+Cnemarchus rufipennis,Birro gris,0.004,nativa residente,,34.5,25.0,4.9,127.2,28.1,28.5,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Guira guira,Pirincho,0.004,nativa residente,LC,141.0,30.7,11.5,173.6,36.4,24.9,Human Modified,Invertivore,Carnivore,Terrestrial,sedentaria
+Leucophaeus atricilla,Gaviota reidora,0.004,nativa residente,,307.4,44.1,10.2,298.4,44.8,57.3,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Motacilla alba,Lavandera blanca,0.004,migratoria / estacional,LC,23.9,16.1,3.5,87.0,23.4,31.4,Human Modified,Invertivore,Carnivore,Terrestrial,migratoria
+Thalassarche cauta,Albatros de frente blanca,0.00381,migratoria / estacional,NT,3897.7,129.0,40.8,568.5,85.0,55.2,NA,Aquatic predator,Carnivore,Aquatic,migratoria
+Xema sabini,Gaviota de Sabine,0.00381,nativa residente,LC,198.0,32.1,7.7,265.0,33.3,59.4,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Eudyptula minor,Pingüino azul,0.00343,nativa residente,LC,1107.8,47.5,13.7,67.2,22.1,5.6,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Pterodroma nigripennis,Petrel de alas negras,0.00343,nativa residente,LC,173.7,23.4,7.5,221.6,28.4,63.6,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Chlidonias niger,Gaviotín negro,0.00343,migratoria / estacional,LC,65.3,31.1,5.4,201.7,15.8,62.1,Wetland,Aquatic predator,Carnivore,Aerial,migratoria
+Thraupis sayaca,Celestino,0.00324,nativa residente,,32.5,15.5,7.2,90.3,19.6,23.5,Forest,Omnivore,Herbivore,Insessorial,sedentaria
+Jabiru mycteria,Jabirú,0.00324,nativa residente,LC,5996.3,309.5,68.0,640.8,301.0,40.7,Grassland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Sula granti,Piquero de Nazca,0.00305,nativa residente,LC,1732.1,102.0,34.5,416.8,55.5,56.4,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Ciconia maguari,Pillo,0.00267,nativa residente,LC,3995.0,248.5,35.4,576.5,258.2,43.1,Grassland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Anser sp.,Domestic goose sp.,0.00229,introducida,,,,,,,,,,,,
+Psittacara erythrogenys,Cotorra de cabeza roja,0.00229,introducida,NT,151.0,31.0,33.0,171.8,15.4,41.5,Woodland,Frugivore,Herbivore,Insessorial,sedentaria
+Knipolegus aterrimus,Viudita negra,0.00229,nativa residente,LC,20.2,19.6,4.6,82.9,23.4,16.8,Shrubland,Invertivore,Carnivore,Insessorial,parcialmente migratoria
+Calidris ferruginea,Playero zarapito,0.00229,migratoria / estacional,VU,58.1,38.5,4.3,129.0,29.1,54.9,Coastal,Aquatic predator,Carnivore,Terrestrial,migratoria
+Podiceps gallardoi,Pimpollo tobiano,0.00229,nativa residente,CR,575.0,23.0,6.0,141.4,46.5,36.8,Wetland,Aquatic predator,Carnivore,Aquatic,sedentaria
+Sula nebouxii,Piquero de patas azules,0.0021,nativa residente,LC,1520.1,99.8,29.9,410.4,51.6,57.5,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Elanoides forficatus,Milano tijereta,0.0021,migratoria / estacional,LC,416.2,29.4,12.3,412.8,33.5,46.9,Forest,Invertivore,Carnivore,Generalist,migratoria
+Numida meleagris,Gallineta,0.0021,introducida,LC,1299.0,26.1,13.8,253.8,67.3,20.4,Woodland,Omnivore,Herbivore,Terrestrial,sedentaria
+Butorides striata,Garcita azulada,0.00191,nativa residente,LC,201.5,70.3,11.3,173.9,47.0,28.7,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Aix galericulata,Pato mandarín,0.00191,introducida,LC,567.0,33.0,10.6,222.2,34.8,50.1,Forest,Herbivore aquatic,Herbivore,Generalist,migratoria
+Crotophaga ani,Matacaballos de pico liso,0.00191,nativa residente,LC,110.1,30.6,21.1,144.0,35.8,24.8,Human Modified,Omnivore,Carnivore,Insessorial,sedentaria
+Vireo olivaceus,Verderón de ojos rojos,0.00191,migratoria / estacional,LC,16.1,16.4,4.4,77.5,19.5,29.8,Forest,Invertivore,Omnivore,Insessorial,migratoria
+Mimus dorsalis,Tenca castaña,0.00191,nativa residente,LC,58.7,24.2,5.8,112.0,36.1,18.7,Shrubland,Invertivore,Omnivore,Generalist,sedentaria
+Psittacara mitratus,Cotorra mitrata,0.00191,introducida,LC,249.0,31.9,34.3,194.9,18.4,44.5,Forest,Granivore,Herbivore,Insessorial,sedentaria
+Ardenna pacifica,Fardela del Pacífico,0.00172,migratoria / estacional,LC,388.0,40.9,10.1,296.8,46.9,61.4,Marine,Aquatic predator,Carnivore,Generalist,migratoria
+Psittacula krameri,Cotorra de Kramer,0.00172,introducida,LC,116.1,25.4,20.8,155.8,13.8,47.7,Forest,Omnivore,Herbivore,Insessorial,sedentaria
+Psephotus haematonotus,Rabadilla roja,0.00172,introducida,LC,61.4,15.5,14.0,128.6,15.8,44.5,Woodland,Granivore,Herbivore,Terrestrial,sedentaria
+Aphrodroma brevirostris,Petrel de Kerguelen,0.00172,nativa residente,LC,357.0,28.4,9.6,240.2,36.5,61.5,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Agapornis fischeri,Agapornis de Fischer,0.00172,introducida,NT,48.3,18.8,16.7,93.0,14.4,40.4,Woodland,Granivore,Herbivore,Insessorial,sedentaria
+Platycercus elegans,Rosella elegante,0.00172,introducida,LC,123.9,21.0,23.8,171.0,20.5,42.7,Forest,Omnivore,Herbivore,Insessorial,sedentaria
+Sturnus vulgaris,Estornino pinto,0.00172,introducida,LC,77.1,30.2,6.5,128.3,29.0,38.4,Human Modified,Omnivore,Omnivore,Insessorial,parcialmente migratoria
+Dendrocygna autumnalis,Pato silbón de ala blanca,0.00172,nativa residente,LC,755.3,50.8,16.1,240.8,52.7,32.7,Wetland,Herbivore terrestrial,Herbivore,Terrestrial,parcialmente migratoria
+Hydrobates melania,Golondrina de mar oscura,0.00172,migratoria / estacional,LC,61.5,17.5,4.9,172.2,29.8,61.6,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Aphrastura masafuerae,Rayadito de Masafuera,0.00172,endémica,CR,12.2,16.1,3.3,65.8,22.2,18.9,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Mycteria americana,Cigüeña de cabeza pelada,0.00172,nativa residente,LC,2554.5,224.5,44.7,455.9,191.0,37.0,Wetland,Aquatic predator,Carnivore,Terrestrial,parcialmente migratoria
+Netta rufina,Pato colorado euroasiático,0.00153,introducida,LC,1118.0,49.9,14.9,258.3,37.2,47.5,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Phoebetria fusca,Albatros oscuro,0.00153,nativa residente,EN,2553.7,108.9,29.8,510.2,76.2,68.3,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Progne elegans,Golondrina negra,0.00153,migratoria / estacional,LC,50.6,16.6,4.5,141.9,14.3,50.1,Grassland,Invertivore,Carnivore,Aerial,migratoria
+Muscigralla brevicauda,Cazamoscas de cola corta,0.00153,nativa residente,LC,12.6,14.9,3.1,60.9,25.7,15.5,Shrubland,Invertivore,Carnivore,Terrestrial,sedentaria
+Pavo cristatus,Pavo real,0.00133,introducida,LC,4154.8,49.1,12.2,445.2,130.0,28.7,Forest,Omnivore,Omnivore,Terrestrial,sedentaria
+Leistes superciliaris,Loica argentina,0.00133,nativa residente,LC,45.3,20.5,8.7,94.7,28.9,18.6,Grassland,Invertivore,Carnivore,Terrestrial,parcialmente migratoria
+Alopochelidon fucata,Golondrina de cabeza rojiza,0.00133,migratoria / estacional,LC,14.0,9.2,2.3,99.0,11.0,49.9,Grassland,Invertivore,Carnivore,Aerial,migratoria
+Rupornis magnirostris,Aguilucho de ala rojiza,0.00133,nativa residente,LC,269.0,26.4,13.4,220.9,61.5,28.0,Forest,Vertivore,Carnivore,Insessorial,sedentaria
+Dolichonyx oryzivorus,Charlatán,0.00133,migratoria / estacional,NT,31.5,16.2,7.6,90.2,26.5,35.4,Grassland,Granivore,Omnivore,Generalist,migratoria
+Thectocercus acuticaudatus,Calancate cabeza azul,0.00133,introducida,,171.0,31.9,33.6,187.0,15.5,45.4,Shrubland,Frugivore,Herbivore,Insessorial,sedentaria
+Neoxolmis coronatus,Monjita coronada,0.00133,migratoria / estacional,,46.8,24.8,5.3,126.7,29.0,33.4,Shrubland,Invertivore,Carnivore,Insessorial,migratoria
+Sternula antillarum,Gaviotín chico boreal,0.00133,migratoria / estacional,LC,45.9,29.5,5.6,165.1,14.6,69.1,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Pterodroma cookii,Petrel de Cook,0.00133,nativa residente,VU,177.9,25.5,6.7,213.2,25.8,64.1,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Sarkidiornis sylvicola,Pato crestudo,0.00114,nativa residente,LC,2610.0,52.5,18.3,304.5,54.4,42.8,Wetland,Herbivore aquatic,Herbivore,Generalist,sedentaria
+Callonetta leucophrys,Ringed Teal,0.00114,introducida,LC,362.8,38.8,11.6,169.0,27.8,42.8,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Myiodynastes luteiventris,Benteveo de vientre azufre,0.00114,migratoria / estacional,LC,46.9,25.3,8.1,109.3,19.5,26.0,Woodland,Omnivore,Omnivore,Insessorial,migratoria
+Agapornis personatus,Agapornis personata,0.00114,introducida,LC,52.4,19.1,16.6,95.2,14.7,41.3,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Saltator aurantiirostris,Pepitero,0.00114,nativa residente,LC,41.9,21.9,12.7,100.7,27.0,16.0,Woodland,Granivore,Omnivore,Insessorial,sedentaria
+Serinus canaria,Canario,0.00114,introducida,LC,24.3,12.0,6.6,71.4,16.6,27.7,Woodland,Granivore,Herbivore,Generalist,sedentaria
+Chauna torquata,Chajá,0.00095,nativa residente,LC,4400.0,47.3,15.3,517.0,123.5,35.3,Wetland,Herbivore aquatic,Herbivore,Terrestrial,sedentaria
+Stercorarius antarcticus,Salteador pardo,0.00095,migratoria / estacional,,1650.0,59.2,19.5,401.4,71.7,49.0,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Limosa lapponica,Zarapito de cola barrada,0.00095,migratoria / estacional,NT,291.7,92.5,8.1,210.1,53.2,56.6,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Aix sponsa,Pato joyuyo,0.00095,introducida,LC,657.6,38.6,11.4,220.5,32.9,49.4,Wetland,Omnivore,Herbivore,Generalist,sedentaria
+Dendrocygna viduata,Pato silbón pampa,0.00095,nativa residente,LC,690.0,48.1,14.1,214.3,47.9,28.0,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Vireo chivi,Vireo chiví,0.00095,migratoria / estacional,LC,16.1,14.0,4.3,68.0,18.3,20.9,Forest,Invertivore,Omnivore,Insessorial,migratoria
+Pelecanoides georgicus,Yunco geórgico,0.00095,nativa residente,LC,121.0,21.1,6.0,110.8,22.2,51.1,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Chordeiles nacunda,Ñacundá,0.00095,nativa residente,LC,159.0,19.7,4.0,238.2,23.8,47.9,Grassland,Invertivore,Carnivore,Aerial,sedentaria
+Stercorarius maccormicki,Salteador polar,0.00095,migratoria / estacional,LC,1347.1,52.7,17.6,386.8,56.2,50.0,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Garrodia nereis,Golondrina de mar subantártica,0.00095,nativa residente,LC,38.2,16.4,4.0,125.2,31.6,55.7,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Setophaga ruticilla,Candelita americana,0.00076,migratoria / estacional,LC,8.2,12.3,3.0,62.0,17.0,24.6,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Chordeiles acutipennis,Gallina ciega peruana,0.00076,nativa residente,LC,48.4,8.5,2.4,164.8,11.7,55.1,Shrubland,Invertivore,Carnivore,Aerial,parcialmente migratoria
+Pelecanus occidentalis,Pelícano pardo,0.00076,nativa residente,LC,3427.8,319.5,43.4,494.6,71.7,48.1,Marine,Aquatic predator,Carnivore,Aerial,sedentaria
+Thalassoica antarctica,Petrel antártico,0.00076,nativa residente,LC,708.4,44.8,10.8,296.2,43.5,56.7,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Elaenia spectabilis,Large Elaenia,0.00076,migratoria / estacional,LC,27.3,14.9,4.1,81.7,19.2,18.9,Shrubland,Invertivore,Omnivore,Insessorial,migratoria
+Streptopelia roseogrisea,African Collared-Dove,0.00076,introducida,LC,155.0,19.4,3.8,159.2,21.2,39.2,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Thalasseus maximus,Gaviotín real,0.00076,migratoria / estacional,LC,415.3,73.5,14.9,364.3,32.7,61.4,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Platycercus eximius,Rosella eximius,0.00076,introducida,LC,104.0,18.3,18.3,151.4,17.8,42.2,Woodland,Omnivore,Herbivore,Insessorial,sedentaria
+Oxyura jamaicensis,Malvasía canela,0.00076,introducida,LC,608.2,45.4,10.5,139.6,31.8,41.9,Wetland,Aquatic predator,Omnivore,Aquatic,sedentaria
+Coccyzus melacoryphus,Cuclillo de pico negro,0.00057,nativa residente,LC,49.7,25.0,7.7,116.3,24.5,27.5,Woodland,Invertivore,Carnivore,Insessorial,sedentaria
+Contopus sordidulus,Pibí occidental,0.00057,migratoria / estacional,LC,13.1,16.4,4.1,82.6,13.8,33.5,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Anser cygnoides,Ánsar cisnal,0.00057,introducida,EN,3511.9,92.7,19.9,422.2,76.1,46.1,Wetland,Herbivore terrestrial,Herbivore,Terrestrial,migratoria
+Numenius tahitiensis,Zarapito polinésico,0.00057,migratoria / estacional,NT,400.1,96.7,7.6,244.5,58.3,53.6,Grassland,Omnivore,Omnivore,Terrestrial,migratoria
+Calidris pugnax,Ruff,0.00057,migratoria / estacional,LC,131.7,37.6,5.1,163.7,42.9,51.0,Wetland,Aquatic predator,Carnivore,Terrestrial,migratoria
+Ara severus,Guacamayo de frente castaña,0.00057,introducida,LC,343.0,39.7,36.9,239.4,20.7,35.9,Forest,Omnivore,Herbivore,Insessorial,sedentaria
+Agapornis roseicollis,Agapornis roseicollis,0.00057,introducida,LC,53.8,19.4,17.7,100.8,13.4,40.7,Shrubland,Granivore,Herbivore,Terrestrial,sedentaria
+Botaurus exilis,Huairavillo de dorso negro,0.00057,nativa residente,,,,,,,,,,,,
+Taeniopygia guttata,Diamante mandarín,0.00057,introducida,LC,12.0,10.6,6.5,54.1,13.3,22.2,Grassland,Granivore,Herbivore,Terrestrial,parcialmente migratoria
+Procellaria cinerea,Petrel gris,0.00057,nativa residente,NT,1131.0,49.7,13.4,325.8,56.7,60.5,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Catharus ustulatus,Zorzalito de Swainson,0.00057,migratoria / estacional,LC,30.3,14.3,4.2,96.6,29.6,31.8,Forest,Invertivore,Omnivore,Insessorial,migratoria
+Cinclodes taczanowskii,Surf Cinclodes,0.00038,nativa residente,LC,64.5,26.3,5.3,113.6,30.0,24.0,Rock,Invertivore,Carnivore,Terrestrial,sedentaria
+Aythya fuligula,Porrón moñudo,0.00038,introducida,LC,701.2,43.9,13.2,196.9,31.3,50.1,Wetland,Herbivore aquatic,Omnivore,Aquatic,parcialmente migratoria
+Steatornis caripensis,Guácharo,0.00038,nativa residente,LC,408.0,36.3,14.3,308.3,19.1,38.6,Forest,Frugivore,Herbivore,Insessorial,sedentaria
+Sporophila caerulescens,Corbatita de doble collar,0.00038,nativa residente,LC,9.7,10.3,6.4,55.8,14.5,18.7,Shrubland,Granivore,Herbivore,Generalist,parcialmente migratoria
+Pheucticus chrysogaster,Picogrueso dorado,0.00038,nativa residente,LC,55.8,22.8,15.2,106.5,25.0,21.1,Forest,Omnivore,Omnivore,Insessorial,sedentaria
+Progne chalybea,Golondrina doméstica,0.00038,nativa residente,LC,50.0,15.3,4.5,130.6,13.5,54.8,Shrubland,Invertivore,Carnivore,Aerial,sedentaria
+Nesofregetta fuliginosa,Golondrina de mar polinésica,0.00038,migratoria / estacional,EN,70.0,21.9,5.3,197.6,44.6,55.9,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Pterodroma cervicalis,Petrel de cuello blanco,0.00038,nativa residente,VU,445.0,35.2,11.7,297.5,35.4,66.2,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Myiodynastes maculatus,Benteveo rayado,0.00038,migratoria / estacional,LC,43.2,26.3,8.4,106.9,19.6,21.0,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Pterodroma lessonii,Petrel de frente blanca,0.00038,nativa residente,LC,698.0,38.9,13.5,303.6,42.5,65.6,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Mimus saturninus,Tenca calandria,0.00038,nativa residente,LC,63.7,25.1,6.4,114.7,34.2,19.5,Shrubland,Omnivore,Omnivore,Terrestrial,parcialmente migratoria
+Spatula clypeata,Pato cuchara boreal,0.00038,migratoria / estacional,LC,612.6,68.8,18.7,226.4,33.8,58.0,Wetland,Aquatic predator,Omnivore,Aquatic,migratoria
+Icterus galbula,Bolsero de Baltimore,0.00038,migratoria / estacional,LC,32.8,21.1,6.4,92.1,23.4,27.4,Forest,Invertivore,Omnivore,Insessorial,migratoria
+Anous minutus,Gaviotín de corona blanca,0.00038,nativa residente,LC,112.4,49.5,6.5,222.0,21.9,61.2,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria
+Pterodroma phaeopygia,Petrel de las Galápagos,0.00038,nativa residente,CR,400.8,41.0,10.1,294.7,39.0,68.3,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Pterodroma macroptera,Petrel de alas grandes,0.00019,nativa residente,LC,531.8,36.7,12.4,303.4,40.9,66.3,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Hydrobates leucorhous,Golondrina de mar boreal,0.00019,migratoria / estacional,VU,36.7,17.8,4.5,150.4,23.1,58.8,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Empidonax alnorum,Alder Flycatcher,0.00019,migratoria / estacional,LC,12.7,15.2,4.0,68.4,17.3,19.2,Shrubland,Invertivore,Carnivore,Insessorial,migratoria
+Fregata ariel,Ave fragata chica,0.00019,migratoria / estacional,LC,804.3,91.4,17.2,513.0,14.9,64.6,Marine,Aquatic predator,Carnivore,Aerial,migratoria
+Setophaga striata,Reinita estriada,0.00019,migratoria / estacional,NT,11.8,13.9,3.4,74.3,19.5,31.3,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Leucochloris albicollis,Picaflor de garganta blanca,0.00019,nativa residente,LC,6.3,26.9,2.2,58.8,4.7,62.8,Forest,Nectarivore,Herbivore,Aerial,sedentaria
+Ictinia mississippiensis,Milano boreal,0.00019,migratoria / estacional,LC,276.0,23.0,12.3,291.8,37.0,53.6,Woodland,Invertivore,Carnivore,Generalist,migratoria
+Cyanocorax chrysops,Plush-crested Jay,0.00019,introducida,LC,166.0,36.0,12.7,155.1,47.5,10.1,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Calidris subruficollis,Playero canela,0.00019,migratoria / estacional,VU,62.1,22.6,3.6,128.4,29.2,54.7,Grassland,Omnivore,Carnivore,Terrestrial,migratoria
+Setophaga pitiayumi,Pitiayumí,0.00019,nativa residente,LC,6.8,12.0,3.2,52.7,16.1,20.1,Forest,Invertivore,Carnivore,Insessorial,sedentaria
+Chrysomus ruficapillus,Chestnut-capped Blackbird,0.00019,migratoria / estacional,LC,32.0,19.9,7.4,89.6,25.8,19.7,Wetland,Granivore,Omnivore,Insessorial,migratoria
+Tersina viridis,Tersina,0.00019,nativa residente,LC,29.0,14.5,5.2,85.4,16.1,29.1,Forest,Frugivore,Herbivore,Insessorial,sedentaria
+Pterodroma incerta,Petrel Atlántico,0.00019,nativa residente,EN,520.0,37.0,12.6,318.0,41.6,65.6,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Sarcoramphus papa,King Vulture,0.00019,nativa residente,LC,3400.0,61.9,30.6,508.2,89.9,37.6,Forest,Scavenger,Scavenger,Terrestrial,sedentaria
+Spiza americana,Arrocero americano,0.00019,migratoria / estacional,LC,26.2,15.1,7.5,77.9,22.3,26.4,Grassland,Omnivore,Omnivore,Terrestrial,migratoria
+Cygnus atratus,Cisne negro,0.00019,introducida,LC,5623.2,71.4,20.8,459.2,86.9,44.9,Wetland,Herbivore aquatic,Herbivore,Aquatic,parcialmente migratoria
+Aptenodytes forsteri,Pingüino emperador,0.00019,nativa residente,NT,33569.3,94.2,17.7,179.4,47.2,3.7,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Buteogallus urubitinga,Águila negra,0.00019,nativa residente,LC,1152.9,46.0,21.9,399.7,118.4,22.0,Woodland,Vertivore,Carnivore,Insessorial,sedentaria
+Jacana jacana,Jacana,0.00019,nativa residente,LC,106.2,34.0,6.4,129.0,53.9,20.0,Wetland,Omnivore,Omnivore,Terrestrial,sedentaria
+Pygoscelis antarcticus,Pingüino antártico,0.00019,nativa residente,LC,4146.1,61.8,19.2,100.5,27.0,4.8,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Tachycineta leucorrhoa,White-rumped Swallow,0.00019,migratoria / estacional,LC,15.3,12.0,3.2,112.3,11.5,50.5,Grassland,Invertivore,Carnivore,Aerial,migratoria
+Piranga ludoviciana,Piranga de cara roja,0.00019,migratoria / estacional,LC,28.1,18.5,7.3,94.8,20.1,28.6,Forest,Invertivore,Carnivore,Insessorial,migratoria
+Pterodroma gouldi,Petrel de cara gris,0.00019,nativa residente,LC,531.8,39.7,13.1,313.2,46.5,53.8,Marine,Aquatic predator,Carnivore,Generalist,parcialmente migratoria
+Setophaga aestiva,Northern Yellow Warbler,0.00019,nativa residente,,,,,,,,,,,,
+Hydropsalis torquata,Gallina ciega tijereta,0.00019,nativa residente,LC,58.5,21.0,3.0,183.8,18.1,48.9,Human Modified,Invertivore,Carnivore,Generalist,parcialmente migratoria
+Microspingus torquatus,Monterita de collar,0.00019,nativa residente,LC,11.0,12.0,4.6,62.6,19.8,14.7,Shrubland,Omnivore,Omnivore,Insessorial,parcialmente migratoria
+Aramus guarauna,Carau,0.00019,nativa residente,LC,1080.0,130.4,13.4,241.2,84.6,11.1,Wetland,Aquatic predator,Carnivore,Terrestrial,sedentaria
+Pygoscelis adeliae,Pingüino de Adelia,0.00019,nativa residente,LC,4847.7,59.7,17.2,94.5,32.5,7.4,Marine,Aquatic predator,Carnivore,Aquatic,parcialmente migratoria
+Buteo swainsoni,Aguilucho langostero,0.00019,migratoria / estacional,LC,946.6,35.3,16.6,383.7,60.7,46.6,Grassland,Vertivore,Carnivore,Insessorial,migratoria
+Meleagris gallopavo,Pavo,0.00019,introducida,LC,5791.4,48.6,15.3,448.8,149.2,26.0,Forest,Omnivore,Herbivore,Terrestrial,sedentaria
+Myiotheretes striaticollis,Birro grande,0.00019,nativa residente,LC,61.2,27.4,6.9,140.1,25.3,25.8,Shrubland,Invertivore,Carnivore,Insessorial,sedentaria
+Pagodroma nivea,Petrel de las nieves,0.00019,nativa residente,LC,268.0,23.6,7.0,247.6,32.0,62.8,Marine,Aquatic predator,Carnivore,Aerial,parcialmente migratoria

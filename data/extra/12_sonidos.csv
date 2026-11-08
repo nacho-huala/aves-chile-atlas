@@ -1,0 +1,568 @@
+sci_name,xc_grabaciones_chile,xc_id,xc_tipo,xc_calidad,xc_audio,xc_sonograma,xc_autor,xc_licencia,xc_lugar,xc_url,xc_mes_01,xc_mes_02,xc_mes_03,xc_mes_04,xc_mes_05,xc_mes_06,xc_mes_07,xc_mes_08,xc_mes_09,xc_mes_10,xc_mes_11,xc_mes_12
+Turdus falcklandii,189,1183794,song,A,https://xeno-canto.org/1183794/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1183794/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada del Cepillo,https://xeno-canto.org/1183794,5,16,3,4,0,0,3,3,4,24,21,17
+Daptrius chimango,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Zonotrichia capensis,92,1077893,song,A,https://xeno-canto.org/1077893/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1077893/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Jardín Botánico Nacional, Viña del Mar",https://xeno-canto.org/1077893,4,4,2,3,0,2,8,3,12,22,21,11
+Vanellus chilensis,45,774903,"flight call, song",A,https://xeno-canto.org/774903/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774903/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Casablanca, Valparaiso, Valparaíso",https://xeno-canto.org/774903,4,9,1,3,4,5,5,3,0,4,4,3
+Larus dominicanus,32,1169250,call,A,https://xeno-canto.org/1169250/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1169250/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Santuario de La Naturaleza Humedal de Tunquen,https://xeno-canto.org/1169250,1,8,2,8,0,2,2,2,3,1,0,3
+Troglodytes musculus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tachycineta leucopyga,32,450173,song,A,https://xeno-canto.org/450173/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450173/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"PN Puyehue-Aguas Calientes, X Región",https://xeno-canto.org/450173,1,2,11,5,2,2,0,1,1,0,4,3
+Passer domesticus,6,116041,song,A,https://xeno-canto.org/116041/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/116041/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Puerto Natales, XII Region",https://xeno-canto.org/116041,0,0,0,0,0,0,1,1,1,0,3,0
+Zenaida auriculata,6,17314,song,A,https://xeno-canto.org/17314/download,https://xeno-canto.org/sounds/spectrograms/BHRXQZEQFL/17314/grey-medium.png,Doug Knapp,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Wetland El Yali, Las Salinas Quinta Region",https://xeno-canto.org/17314,0,0,0,0,0,2,0,1,0,0,0,3
+Sephanoides sephaniodes,67,665427,song,A,https://xeno-canto.org/665427/download,https://xeno-canto.org/sounds/spectrograms/AKKRVTGRTW/665427/grey-medium.png,Andre Vielma,https://creativecommons.org/licenses/by-nc-sa/4.0/,El Quisco Norte,https://xeno-canto.org/665427,6,13,7,11,2,2,12,7,1,2,0,4
+Columba livia,2,840017,"",B,https://xeno-canto.org/840017/download,https://xeno-canto.org/sounds/spectrograms/ISVHGXLFPC/840017/grey-medium.png,Felipe N. Moreno-Gómez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Talca, Talca, Maule",https://xeno-canto.org/840017,0,0,0,0,0,0,1,0,0,0,1,0
+Nannopterum brasilianum,4,1169256,call,A,https://xeno-canto.org/1169256/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1169256/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Santuario de La Naturaleza Humedal de Tunquen,https://xeno-canto.org/1169256,0,0,0,0,0,0,0,2,0,0,0,2
+Curaeus curaeus,88,1077896,song,A,https://xeno-canto.org/1077896/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1077896/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Jardín Botánico Nacional, Viña del Mar",https://xeno-canto.org/1077896,7,10,6,7,3,1,9,8,12,8,7,10
+Elaenia albiceps,21,884178,song,A,https://xeno-canto.org/884178/download,https://xeno-canto.org/sounds/spectrograms/NTIWZWKFLE/884178/grey-medium.png,Alex Toledo,https://creativecommons.org/licenses/by-sa/4.0/,"Puerto Montt, Llanquihue, Los Lagos",https://xeno-canto.org/884178,3,6,2,0,0,0,1,0,0,1,5,3
+Anairetes parulus,57,1075697,"call, song",A,https://xeno-canto.org/1075697/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1075697/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1075697,4,14,6,5,3,2,7,3,2,6,2,3
+Cathartes aura,2,520288,"alarm call, call, hatchling or nestling",A,https://xeno-canto.org/520288/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/520288/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Isla Chungungo,https://xeno-canto.org/520288,2,0,0,0,0,0,0,0,0,0,0,0
+Leistes loyca,44,1169312,song,A,https://xeno-canto.org/1169312/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1169312/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Santuario de La Naturaleza Humedal de Tunquen,https://xeno-canto.org/1169312,4,2,2,4,4,0,2,7,10,3,2,4
+Theristicus melanopis,27,59997,song,A,https://xeno-canto.org/59997/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59997/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Torres del Paine, XII Region",https://xeno-canto.org/59997,2,7,3,0,0,0,0,1,0,3,5,6
+Mimus thenca,48,946747,song,A,https://xeno-canto.org/946747/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/946747/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín, Araucanía",https://xeno-canto.org/946747,2,0,3,1,2,9,9,5,5,3,7,2
+Spinus barbatus,55,1169317,song,A,https://xeno-canto.org/1169317/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1169317/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Santuario de La Naturaleza Humedal de Tunquen,https://xeno-canto.org/1169317,1,4,10,0,2,1,8,5,5,6,4,9
+Coragyps atratus,1,428767,call,A,https://xeno-canto.org/428767/download,https://xeno-canto.org/sounds/spectrograms/HFAIUBMLBS/428767/grey-medium.png,Francisco Rivas Fuenzalida,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cañete, Arauco, Región del Bío Bío",https://xeno-canto.org/428767,0,0,0,0,0,0,1,0,0,0,0,0
+Pyrope pyrope,37,727241,"call, song, subsong",A,https://xeno-canto.org/727241/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/727241/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Plaza Panama, Vitacura, Santiago, Región Metropolitana",https://xeno-canto.org/727241,3,1,2,1,4,2,7,1,5,2,3,6
+Chroicocephalus maculipennis,15,59983,song,A,https://xeno-canto.org/59983/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59983/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Porvenir, Magallanes, XII Region",https://xeno-canto.org/59983,1,4,0,1,0,0,0,2,2,2,1,2
+Diuca diuca,42,1183552,song,A,https://xeno-canto.org/1183552/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1183552/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada del tranque,https://xeno-canto.org/1183552,3,4,1,1,1,3,5,1,8,7,2,6
+Anas georgica,8,718708,"call, duet, song",A,https://xeno-canto.org/718708/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/718708/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Pichilemu, Cardenal Caro, O'Higgins",https://xeno-canto.org/718708,0,3,2,0,0,0,1,0,2,0,0,0
+Leptasthenura aegithaloides,69,1032502,song,A,https://xeno-canto.org/1032502/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1032502/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Cordón de la Cuesta Lo Prado,https://xeno-canto.org/1032502,2,4,0,3,1,1,11,10,9,5,15,8
+Anas flavirostris,12,925408,"call, song, courtship calls",A,https://xeno-canto.org/925408/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/925408/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Tranque La Cadellada, Batuco, Región Metropolitana",https://xeno-canto.org/925408,0,3,3,0,0,0,2,3,0,0,0,1
+Sicalis luteola,38,1049263,"flight call, song",A,https://xeno-canto.org/1049263/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/1049263/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Aeródromo Puerto Sur, Concepcion, Bío Bío",https://xeno-canto.org/1049263,0,4,0,0,0,7,0,1,8,9,0,9
+Numenius hudsonicus,17,534294,"call, song",A,https://xeno-canto.org/534294/download,https://xeno-canto.org/sounds/spectrograms/YOXWKYFZAP/534294/grey-medium.png,Dante Buzzetti,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Puerto Montt city, Llanquihue, Los Lagos",https://xeno-canto.org/534294,3,6,0,2,0,0,0,0,0,0,0,6
+Fulica armillata,21,1072175,uncertain,A,https://xeno-canto.org/1072175/download,https://xeno-canto.org/sounds/spectrograms/BFQJIBGISW/1072175/grey-medium.png,Gabriel Morales,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valdivia, Valdivia Province, Los Ríos",https://xeno-canto.org/1072175,2,2,1,0,0,1,4,4,1,1,1,4
+Phytotoma rara,18,1032462,"call, song",A,https://xeno-canto.org/1032462/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1032462/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Parque forestal,https://xeno-canto.org/1032462,0,3,0,0,0,0,0,4,4,2,3,2
+Egretta thula,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Haematopus palliatus,22,60034,song,A,https://xeno-canto.org/60034/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60034/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Rio Maipo, V Region",https://xeno-canto.org/60034,6,1,0,2,0,0,0,2,1,5,0,5
+Myiopsitta monachus,8,551605,"call, song, collective songs",A,https://xeno-canto.org/551605/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/551605/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parque San Borja, Santiago, Región Metropolitana, Chile",https://xeno-canto.org/551605,0,0,0,1,3,2,1,1,0,0,0,0
+Aphrastura spinicauda,105,1077644,song,A,https://xeno-canto.org/1077644/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1077644/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Jardín Botánico Nacional, Viña del Mar",https://xeno-canto.org/1077644,10,25,12,5,3,1,4,8,5,8,11,8
+Molothrus bonariensis,15,1136691,"alarm call, call, flight call, song",A,https://xeno-canto.org/1136691/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1136691/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Parque Brazil - Bosque Adriana Hoffman ,https://xeno-canto.org/1136691,0,0,0,0,3,1,1,7,2,1,0,0
+Mareca sibilatrix,15,859340,"call, song",A,https://xeno-canto.org/859340/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/859340/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"El tranque de Nogales, Quillota, Valparaíso",https://xeno-canto.org/859340,2,0,0,3,0,2,0,1,1,0,1,5
+Ardea alba,2,711449,call,A,https://xeno-canto.org/711449/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/711449/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Laguna Batuco, Región Metropolitana",https://xeno-canto.org/711449,0,1,1,0,0,0,0,0,0,0,0,0
+Columbina picui,7,390472,song,A,https://xeno-canto.org/390472/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/390472/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Plaza Santa Victoria, Santiago, Región Metropolitana",https://xeno-canto.org/390472,0,0,0,0,0,0,0,0,0,3,1,3
+Cinclodes patagonicus,34,884328,"call, song",A,https://xeno-canto.org/884328/download,https://xeno-canto.org/sounds/spectrograms/RQUNJQOLPO/884328/grey-medium.png,Noelia Ludcinda,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lo Barnechea, Santiago, Región Metropolitana",https://xeno-canto.org/884328,5,7,3,1,1,2,1,0,0,0,8,6
+Callipepla californica,23,1169315,"call, song",A,https://xeno-canto.org/1169315/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1169315/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Santuario de La Naturaleza Humedal de Tunquen,https://xeno-canto.org/1169315,2,0,0,3,1,0,3,2,4,2,4,2
+Falco sparverius,5,1103884,call,A,https://xeno-canto.org/1103884/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1103884/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Camino Servidumbre - Desembocadura Rio Maipo,https://xeno-canto.org/1103884,0,1,0,1,0,0,0,0,2,0,0,1
+Zenaida meloda,22,857154,song,A,https://xeno-canto.org/857154/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/857154/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Arica (near  Chaca), Arica, Arica y Parinacota",https://xeno-canto.org/857154,5,4,0,0,1,0,0,2,2,2,5,1
+Pygochelidon cyanoleuca,5,870809,flight call,A,https://xeno-canto.org/870809/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/870809/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lonquimay, Malleco Province, Araucania",https://xeno-canto.org/870809,0,1,0,0,0,0,0,1,1,2,0,0
+Pelecanus thagus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agelasticus thilius,29,845419,"call, song",A,https://xeno-canto.org/845419/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/845419/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Estero San Sebastián, San Antonio, Región de Valparaíso",https://xeno-canto.org/845419,0,1,0,1,1,6,6,3,4,0,2,5
+Lessonia rufa,3,90646,call,A,https://xeno-canto.org/90646/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90646/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Pali Aike entrance road, XII Region",https://xeno-canto.org/90646,1,0,0,0,0,0,0,0,0,2,0,0
+Geranoaetus polyosoma,6,170906,begging call,A,https://xeno-canto.org/170906/download,https://xeno-canto.org/sounds/spectrograms/OLKQJVQFIA/170906/grey-medium.png,Enzo Basso,https://creativecommons.org/licenses/by-nc-sa/3.0/,"San José de Maipo (near  Santiago), Cordillera Province, Santiago Metropolitan Region",https://xeno-canto.org/170906,3,0,1,0,0,0,1,1,0,0,0,0
+Caracara plancus,2,569823,call,A,https://xeno-canto.org/569823/download,https://xeno-canto.org/sounds/spectrograms/FNIJCVBZDP/569823/grey-medium.png,Natacha Francisca,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Centro de Rehabilitación de Aves Rapaces, Talagante, Región Metropolitana",https://xeno-canto.org/569823,0,0,1,0,0,0,0,0,0,1,0,0
+Patagioenas araucana,16,450035,song,A,https://xeno-canto.org/450035/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450035/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"PN Puyehue-Aguas Calientes, X Región",https://xeno-canto.org/450035,1,6,2,0,0,0,0,0,2,0,0,5
+Cygnus melancoryphus,12,845397,"alarm call, call",A,https://xeno-canto.org/845397/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/845397/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada Carrizal - Carrizal Bajo - Región de Atacama - Chile,https://xeno-canto.org/845397,0,1,0,0,0,0,0,3,2,0,0,5
+Parabuteo unicinctus,18,921263,"call, territory call",A,https://xeno-canto.org/921263/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/921263/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Ermitaño Alto - Cerro San Cristobal,https://xeno-canto.org/921263,0,1,5,2,1,3,1,2,2,1,0,0
+Phrygilus patagonicus,51,1077387,song,A,https://xeno-canto.org/1077387/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1077387/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1077387,3,13,4,2,1,0,4,3,1,2,2,16
+Veniliornis lignarius,44,1036287,song,A,https://xeno-canto.org/1036287/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1036287/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Reserva Ecológica El Taique, Los Lagos",https://xeno-canto.org/1036287,5,5,2,4,0,3,3,1,7,4,0,10
+Phrygilus gayi,46,1077897,song,A,https://xeno-canto.org/1077897/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1077897/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Jardín Botánico Nacional, Viña del Mar",https://xeno-canto.org/1077897,2,4,1,1,0,0,1,5,1,11,12,8
+Nycticorax nycticorax,12,602283,"alarm call, begging call, duet",A,https://xeno-canto.org/602283/download,https://xeno-canto.org/sounds/spectrograms/DJNNIGKKYD/602283/grey-medium.png,Milena Maira,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Viña del Mar, Valparaiso, Región de Valparaíso",https://xeno-canto.org/602283,1,1,0,0,0,0,0,0,7,1,2,0
+Himantopus mexicanus,9,1077962,"alarm call, call",A,https://xeno-canto.org/1077962/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1077962/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Humedal de Mantagua, Valparaiso, Región de Valparaíso",https://xeno-canto.org/1077962,0,1,0,3,0,0,0,0,1,2,1,1
+Chloephaga picta,14,295875,call,A,https://xeno-canto.org/295875/download,https://xeno-canto.org/sounds/spectrograms/FNIOJOZADD/295875/grey-medium.png,Ross Gallardy,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Punta Arenas, Región de Magallanes y de la Antártica Chilena, Región de Magallanes y de la Antártica Chilena",https://xeno-canto.org/295875,0,0,0,2,0,0,1,0,0,4,1,6
+Scelorchilus rubecula,93,1075463,song,A,https://xeno-canto.org/1075463/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1075463/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1075463,11,37,14,2,1,0,2,6,1,5,10,3
+Podiceps major,26,894658,begging call,A,https://xeno-canto.org/894658/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/894658/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Humedal Giverny,https://xeno-canto.org/894658,13,3,0,3,0,0,0,1,2,0,0,4
+Coscoroba coscoroba,12,845394,"alarm call, call, song",A,https://xeno-canto.org/845394/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/845394/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada Carrizal - Carrizal Bajo - Región de Atacama - Chile,https://xeno-canto.org/845394,2,0,0,4,0,2,0,1,0,1,0,2
+Colaptes pitius,23,617690,"call, duet, song",A,https://xeno-canto.org/617690/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/617690/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parque Natural Quebrada de Macul (near  Penalolen), Santiago, Región Metropolitana",https://xeno-canto.org/617690,5,0,1,2,0,0,4,4,4,0,0,3
+Leucocarbo atriceps,1,1068082,call,B,https://xeno-canto.org/1068082/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/1068082/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Punta Arenas, Magallanes Province, Magallanes and Chilean Antarctica",https://xeno-canto.org/1068082,0,0,0,0,0,0,0,0,0,0,0,1
+Sula variegata,5,727034,flight call,A,https://xeno-canto.org/727034/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/727034/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"El bajio, Navidad, Chile",https://xeno-canto.org/727034,0,0,3,0,2,0,0,0,0,0,0,0
+Rollandia rolland,2,774900,call,C,https://xeno-canto.org/774900/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774900/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Casablanca, Valparaiso, Valparaíso",https://xeno-canto.org/774900,1,0,0,0,0,0,0,0,0,0,0,1
+Spatula cyanoptera,4,1142644,"alarm call, call",A,https://xeno-canto.org/1142644/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1142644/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Noviciado,https://xeno-canto.org/1142644,0,0,0,0,0,0,1,0,0,2,0,1
+Colorhamphus parvirostris,32,1075449,song,A,https://xeno-canto.org/1075449/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1075449/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1075449,1,11,2,2,2,1,8,1,0,0,1,3
+Leucophaeus modestus,10,871857,call,A,https://xeno-canto.org/871857/download,https://xeno-canto.org/sounds/spectrograms/DABODLPUPA/871857/grey-medium.png,Scott Olmstead,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Playa Mantagua, Valparaíso",https://xeno-canto.org/871857,0,0,0,0,0,0,1,2,2,2,3,0
+Rhopospina fruticeti,38,774838,song,A,https://xeno-canto.org/774838/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774838/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Pedro de Atacama (near  Catarpe), El Loa, Antofagasta",https://xeno-canto.org/774838,1,1,0,5,0,0,3,3,3,3,7,12
+Pteroptochos megapodius,86,698852,"call, duet, song, subsong",A,https://xeno-canto.org/698852/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/698852/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Paso Vergara - Afloramiento Agua - 2000 msnm,https://xeno-canto.org/698852,4,6,5,4,1,2,21,2,18,14,4,5
+Cinclodes fuscus,36,856415,"call, duet, song",A,https://xeno-canto.org/856415/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/856415/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Jose de Maipo, Cordillera Province, Santiago Metropolitan Region",https://xeno-canto.org/856415,1,3,3,0,1,19,0,0,1,1,6,1
+Lophonetta specularioides,9,498316,"alarm call, call",A,https://xeno-canto.org/498316/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498316/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Visviri,https://xeno-canto.org/498316,1,1,0,3,0,0,1,1,0,1,0,1
+Leucophaeus pipixcan,10,783436,"call, collective calls",A,https://xeno-canto.org/783436/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/783436/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Desembocadura del rio Maipo,https://xeno-canto.org/783436,2,4,1,2,0,0,0,0,0,0,0,1
+Sterna hirundinacea,7,450155,call,A,https://xeno-canto.org/450155/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450155/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Porvenir, XII Región",https://xeno-canto.org/450155,1,1,0,0,0,0,0,0,0,0,2,3
+Haematopus ater,13,520159,"call, duet, song, duet calls",A,https://xeno-canto.org/520159/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/520159/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Isla Chungungo,https://xeno-canto.org/520159,6,2,0,0,0,0,0,0,0,0,1,2
+Enicognathus leptorhynchus,35,952344,call,A,https://xeno-canto.org/952344/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/952344/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín, Araucanía",https://xeno-canto.org/952344,2,11,3,3,0,0,0,0,0,2,8,6
+Vultur gryphus,2,53865,call,B,https://xeno-canto.org/53865/download,https://xeno-canto.org/sounds/spectrograms/DISAQFOZJP/53865/grey-medium.png,Guillermo Egli,https://creativecommons.org/licenses/by-nc-nd/2.5/,"CRAR-UNORCH, Santiago",https://xeno-canto.org/53865,1,0,0,0,0,0,0,0,1,0,0,0
+Fulica rufifrons,16,16342,song?,A,https://xeno-canto.org/16342/download,https://xeno-canto.org/sounds/spectrograms/BHRXQZEQFL/16342/grey-medium.png,Doug Knapp,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Wetland Batuco, Batuco, Región Metropolitana",https://xeno-canto.org/16342,4,1,0,1,0,1,0,0,0,2,0,7
+Geranoaetus melanoleucus,7,569827,call,A,https://xeno-canto.org/569827/download,https://xeno-canto.org/sounds/spectrograms/FNIJCVBZDP/569827/grey-medium.png,Natacha Francisca,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Centro de Rehabilitación de Aves Rapaces, Talagante, Región Metropolitana",https://xeno-canto.org/569827,1,1,0,2,1,0,0,0,0,0,1,1
+Tringa flavipes,14,871342,alarm call,A,https://xeno-canto.org/871342/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/871342/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Saavedra (near  Puerto Saavedra), Cautín, Araucanía",https://xeno-canto.org/871342,1,4,4,2,0,0,0,0,1,0,0,2
+Ardea cocoi,3,824588,flight call,A,https://xeno-canto.org/824588/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/824588/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Laguna Batuco, Región Metropolitana",https://xeno-canto.org/824588,0,0,1,1,0,0,0,1,0,0,0,0
+Pardirallus sanguinolentus,45,923641,song,A,https://xeno-canto.org/923641/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/923641/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Puertas Blancas - Melipilla,https://xeno-canto.org/923641,0,4,1,4,3,5,10,2,0,3,6,7
+Phleocryptes melanops,30,824975,"call, song",A,https://xeno-canto.org/824975/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/824975/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Laguna Batuco, Región Metropolitana",https://xeno-canto.org/824975,3,2,2,5,0,2,5,3,0,1,0,7
+Scytalopus magellanicus,77,1075547,song,A,https://xeno-canto.org/1075547/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1075547/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1075547,7,30,15,4,2,1,0,1,0,1,10,6
+Tringa melanoleuca,10,612348,"call, song",A,https://xeno-canto.org/612348/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/612348/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Humedal de Batuco, Chacabuco, Región Metropolitana",https://xeno-canto.org/612348,2,2,3,1,0,0,0,0,0,0,0,2
+Tachuris rubrigastra,18,890090,song,A,https://xeno-canto.org/890090/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/890090/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Puren, Malleco Province, Araucania",https://xeno-canto.org/890090,0,2,2,2,0,3,2,5,0,0,0,2
+Patagona gigas,21,749547,"call, duet, flight call, song",A,https://xeno-canto.org/749547/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/749547/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada del Cepillo,https://xeno-canto.org/749547,6,0,0,0,0,0,1,2,6,1,3,1
+Hymenops perspicillatus,5,176371,call,A,https://xeno-canto.org/176371/download,https://xeno-canto.org/sounds/spectrograms/HFAIUBMLBS/176371/grey-medium.png,Francisco Rivas Fuenzalida,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Contulmo, Arauco Province, Bio-Bio",https://xeno-canto.org/176371,1,1,1,0,0,0,0,0,0,0,2,0
+Anthus correndera,43,1078301,song,A,https://xeno-canto.org/1078301/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1078301/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Natales (near  Puerto Prat), Última Esperanza, Magallanes y la Antártica Chilena",https://xeno-canto.org/1078301,0,0,1,1,0,2,3,1,2,18,3,12
+Spatula platalea,2,60096,song,B,https://xeno-canto.org/60096/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60096/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Lampa, Region Metropolitana",https://xeno-canto.org/60096,0,0,0,0,0,0,0,0,1,0,1,0
+Calidris bairdii,9,474653,call,A,https://xeno-canto.org/474653/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/474653/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Pedro de Atacama, El Loa, Región de Antofagasta",https://xeno-canto.org/474653,3,0,0,1,0,0,0,0,0,2,0,3
+Fulica leucoptera,1,859342,"call, flight call",A,https://xeno-canto.org/859342/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/859342/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"El tranque de Nogales, Quillota, Valparaíso",https://xeno-canto.org/859342,0,0,0,0,0,0,0,0,0,0,0,1
+Podilymbus podiceps,7,1027998,"duet, song",A,https://xeno-canto.org/1027998/download,https://xeno-canto.org/sounds/spectrograms/HFAIUBMLBS/1027998/grey-medium.png,Francisco Rivas Fuenzalida,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cañete, Arauco, Bío Bío",https://xeno-canto.org/1027998,0,3,0,1,0,0,1,0,0,0,1,1
+Enicognathus ferrugineus,30,617460,song,A,https://xeno-canto.org/617460/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/617460/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cunco, Cautín, Araucanía",https://xeno-canto.org/617460,3,10,0,5,0,0,3,0,1,1,7,0
+Sylviorthorhynchus desmursii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalassarche melanophris,1,59837,call,B,https://xeno-canto.org/59837/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59837/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"San Antonio Pelagic, V Region",https://xeno-canto.org/59837,0,0,0,0,0,0,0,0,0,1,0,0
+Poikilocarbo gaimardi,3,775756,"begging call, call, flight call, song, calls-reclaim",B,https://xeno-canto.org/775756/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/775756/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Caleta Chome, Hualpén, Bío Bío",https://xeno-canto.org/775756,2,0,0,0,0,0,0,0,0,0,0,1
+Rynchops niger,11,871341,flight call,A,https://xeno-canto.org/871341/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/871341/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Saavedra (near  Puerto Saavedra), Cautín, Araucanía",https://xeno-canto.org/871341,2,0,1,0,0,1,1,0,0,0,0,6
+Glaucidium nana,56,1154276,song,A,https://xeno-canto.org/1154276/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/1154276/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín Province, Araucania",https://xeno-canto.org/1154276,5,12,3,2,0,3,4,3,6,2,9,6
+Ardea ibis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Podiceps occipitalis,5,774906,"alarm call, call",B,https://xeno-canto.org/774906/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774906/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Pedro de Atacama, El Loa, Antofagasta",https://xeno-canto.org/774906,0,0,0,0,0,0,0,1,0,0,2,2
+Muscisaxicola maclovianus,1,784100,call,C,https://xeno-canto.org/784100/download,https://xeno-canto.org/sounds/spectrograms/YOXWKYFZAP/784100/grey-medium.png,Dante Buzzetti,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Río Maule, San Clemente, Talca",https://xeno-canto.org/784100,0,0,0,0,0,0,1,0,0,0,0,0
+Porphyriops melanops,7,444900,song,A,https://xeno-canto.org/444900/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/444900/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parque Bicentenario de Vitacura, Santiago, Región Metropolitana",https://xeno-canto.org/444900,0,0,1,0,0,0,2,2,1,0,0,1
+Elanus leucurus,5,746110,flight call,A,https://xeno-canto.org/746110/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/746110/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Desembocadura del rio Maipo,https://xeno-canto.org/746110,0,0,3,0,0,1,0,1,0,0,0,0
+Cistothorus platensis,20,1014676,song,A,https://xeno-canto.org/1014676/download,https://xeno-canto.org/sounds/spectrograms/XNCZRQNJCS/1014676/grey-medium.png,Eduardo Quintanilla,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Tortel, Capitán Prat, Aysén",https://xeno-canto.org/1014676,1,3,0,1,0,0,0,1,2,4,1,7
+Oxyura vittata,3,1078060,Squable among the lake ducks.,B,https://xeno-canto.org/1078060/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1078060/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Humedal de Mantagua, Valparaiso, Región de Valparaíso",https://xeno-canto.org/1078060,2,0,0,0,0,0,0,0,0,1,0,0
+Pseudasthenes humicola,68,1156653,"call, song",A,https://xeno-canto.org/1156653/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1156653/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada Honda - Poeta Gonzalez Bastias,https://xeno-canto.org/1156653,10,6,2,12,1,0,10,3,9,5,2,8
+Scytalopus fuscus,53,1175661,song,A,https://xeno-canto.org/1175661/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1175661/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada Los Lucumos,https://xeno-canto.org/1175661,4,6,2,1,1,5,4,7,8,4,6,5
+Rhodopis vesper,2,718696,"call, duet, song",A,https://xeno-canto.org/718696/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/718696/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cerro Lo Aguirre (near  Pudahuel), Santiago, Región Metropolitana",https://xeno-canto.org/718696,0,0,0,2,0,0,0,0,0,0,0,0
+Macronectes giganteus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Circus cinereus,1,36158,"alarm call, alarm call (female)",A,https://xeno-canto.org/36158/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/36158/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-nd/2.5/,Santa Inés,https://xeno-canto.org/36158,0,0,0,0,0,0,0,0,0,0,0,1
+Phoenicopterus chilensis,1,711476,call,B,https://xeno-canto.org/711476/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/711476/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Pedro de Atacama (near  Machuca), El Loa, Antofagasta",https://xeno-canto.org/711476,0,0,0,1,0,0,0,0,0,0,0,0
+Pygarrhichas albogularis,38,60204,song,A,https://xeno-canto.org/60204/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60204/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Termas de Chillan, VIII Region",https://xeno-canto.org/60204,6,5,4,0,0,1,1,3,1,1,10,6
+Nothoprocta perdicaria,14,919539,song,A,https://xeno-canto.org/919539/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/919539/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Estero El Naranjo - Tiltil,https://xeno-canto.org/919539,1,0,0,0,0,0,1,3,4,1,3,1
+Megaceryle torquata,3,740935,song,B,https://xeno-canto.org/740935/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/740935/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Curacautín, Malleco Province, Araucania",https://xeno-canto.org/740935,0,1,0,0,0,0,0,0,0,1,1,0
+Gallinago magellanica,29,449939,song,A,https://xeno-canto.org/449939/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449939/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Sierra Baguales, XII Regiòn",https://xeno-canto.org/449939,0,0,0,0,0,1,2,4,6,6,4,6
+Ardenna grisea,1,263617,call,B,https://xeno-canto.org/263617/download,https://xeno-canto.org/sounds/spectrograms/YHQMLNNOTY/263617/grey-medium.png,Victor Raimilla Almonacid,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Bartolome Island, Diego Ramirez Archipelago",https://xeno-canto.org/263617,0,0,0,0,0,0,0,0,0,1,0,0
+Cinclodes oustaleti,14,718240,song,A,https://xeno-canto.org/718240/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/718240/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/, Estero de ojos de Agua - Vega,https://xeno-canto.org/718240,0,0,0,2,1,1,4,2,0,0,1,2
+Haematopus leucopodus,13,60036,song,A,https://xeno-canto.org/60036/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60036/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"El Porvenir, Tierra del Fuego, XI Region",https://xeno-canto.org/60036,2,0,0,0,0,0,0,0,0,4,2,5
+Larosterna inca,15,879636,song,A,https://xeno-canto.org/879636/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/879636/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Borgoños - Breasillos (near  Concón), Valparaiso, Valparaíso",https://xeno-canto.org/879636,1,5,7,0,0,0,0,0,0,2,0,0
+Tachyeres pteneres,16,1063967,"alarm call, call",A,https://xeno-canto.org/1063967/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/1063967/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Punta Arenas, Magallanes Province, Magallanes and Chilean Antarctica",https://xeno-canto.org/1063967,1,0,0,2,0,0,0,0,10,0,1,2
+Leucocarbo bougainvilliorum,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Stercorarius chilensis,1,1056716,call,A,https://xeno-canto.org/1056716/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/1056716/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,Magdalena Island - MN Los Pingüinos,https://xeno-canto.org/1056716,0,0,0,0,0,0,0,0,0,0,1,0
+Athene cunicularia,12,668537,"",A,https://xeno-canto.org/668537/download,https://xeno-canto.org/sounds/spectrograms/RHDSLPMIBU/668537/grey-medium.png,Claudio Navarrete,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valdivia, Valdivia, Los Ríos",https://xeno-canto.org/668537,0,4,0,0,0,1,0,1,1,4,0,1
+Chloephaga poliocephala,3,940899,flight call,A,https://xeno-canto.org/940899/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/940899/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lonquimay (near  Colluqueo), Malleco, Araucanía",https://xeno-canto.org/940899,0,0,0,0,0,0,0,0,0,2,0,1
+Limosa haemastica,4,856368,call,A,https://xeno-canto.org/856368/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/856368/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Ancud, Chiloé Province, Los Lagos",https://xeno-canto.org/856368,0,1,0,0,0,0,0,0,0,0,1,2
+Rhopospina alaudina,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pteroptochos tarnii,52,1075430,"call, song",A,https://xeno-canto.org/1075430/download,https://xeno-canto.org/sounds/spectrograms/EHGWCIGILC/1075430/grey-medium.png,Marc Anderson,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Parque Tepuhueico, Chiloé, Los Lagos",https://xeno-canto.org/1075430,1,13,3,0,5,1,2,1,2,2,12,9
+Cinclodes nigrofumosus,14,520158,"call, duet, song, duet calls",A,https://xeno-canto.org/520158/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/520158/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Isla Chungungo,https://xeno-canto.org/520158,2,0,0,0,0,0,0,1,0,5,3,3
+Leucophaeus scoresbii,10,1058297,"alarm call, call, flight call, Display",A,https://xeno-canto.org/1058297/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/1058297/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Punta Arenas, Magallanes, Magallanes y la Antártica Chilena",https://xeno-canto.org/1058297,2,0,0,0,0,0,0,0,0,4,2,2
+Plegadis chihi,1,572903,"",no score,https://xeno-canto.org/572903/download,https://xeno-canto.org/sounds/spectrograms/FNIJCVBZDP/572903/grey-medium.png,Natacha Francisca,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Centro de Rehabilitación de Aves Rapaces, Talagante, Región Metropolitana",https://xeno-canto.org/572903,0,0,1,0,0,0,0,0,0,0,0,0
+Zonibyx modestus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalasseus elegans,6,871346,call,A,https://xeno-canto.org/871346/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/871346/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Saavedra (near  Puerto Saavedra), Cautín, Araucanía",https://xeno-canto.org/871346,2,0,0,2,0,0,0,0,0,0,0,2
+Oressochen melanopterus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Eugralla paradoxa,84,949190,song,A,https://xeno-canto.org/949190/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/949190/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín Province, Araucania",https://xeno-canto.org/949190,6,11,8,1,0,1,0,6,6,6,27,12
+Tachyeres patachonicus,10,826383,"song, Courtship.",A,https://xeno-canto.org/826383/download,https://xeno-canto.org/sounds/spectrograms/XNCZRQNJCS/826383/grey-medium.png,Eduardo Quintanilla,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cochamo, Llanquihue, Los Lagos",https://xeno-canto.org/826383,0,0,0,4,0,0,0,2,1,0,0,3
+Sterna trudeaui,4,1078064,"call, Squable among the lake ducks.",A,https://xeno-canto.org/1078064/download,https://xeno-canto.org/sounds/spectrograms/RBYDYNRSJV/1078064/grey-medium.png,Meena Haribal,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Humedal de Mantagua, Valparaiso, Región de Valparaíso",https://xeno-canto.org/1078064,0,0,0,1,0,0,0,1,0,2,0,0
+Leucocarbo magellanicus,2,89428,call,A,https://xeno-canto.org/89428/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/89428/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Punta Delgada, XII Region",https://xeno-canto.org/89428,0,0,0,0,0,0,0,0,0,2,0,0
+Chroicocephalus serranus,10,59981,song,A,https://xeno-canto.org/59981/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59981/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Lagunas de Menique, Antofagasta, II Region",https://xeno-canto.org/59981,0,0,0,2,0,0,2,3,1,1,1,0
+Arenaria interpres,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Larus belcheri,1,59982,song,C,https://xeno-canto.org/59982/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59982/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Rio Lluta, I Region",https://xeno-canto.org/59982,0,0,0,0,0,0,0,0,0,0,1,0
+Anarhynchus collaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris alba,1,19516,wing sound,D,https://xeno-canto.org/19516/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/19516/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-nd/2.5/,desembocadura del rio Maipo,https://xeno-canto.org/19516,0,0,0,1,0,0,0,0,0,0,0,0
+Geositta rufipennis,44,843125,song,A,https://xeno-canto.org/843125/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/843125/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,El Juncal,https://xeno-canto.org/843125,3,1,6,7,0,1,8,1,2,4,6,5
+Spheniscus magellanicus,1,43012,song,B,https://xeno-canto.org/43012/download,https://xeno-canto.org/sounds/spectrograms/OVSRKOPXGK/43012/grey-medium.png,Jacob Socolar,https://creativecommons.org/licenses/by-nc-nd/2.5/,Seno Otway Penguin Colony,https://xeno-canto.org/43012,0,0,0,0,0,0,0,0,0,0,0,1
+Geositta cunicularia,16,449948,song,A,https://xeno-canto.org/449948/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449948/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Pali Aike road, San Gregorio region, XII región",https://xeno-canto.org/449948,0,2,0,2,0,0,0,0,0,4,3,4
+Falco peregrinus,2,688008,"alarm call, flight call",C,https://xeno-canto.org/688008/download,https://xeno-canto.org/sounds/spectrograms/YTBAZYOARF/688008/grey-medium.png,David,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Hijuelas, Quillota, Valparaíso",https://xeno-canto.org/688008,0,0,0,0,0,0,0,0,1,0,1,0
+Anas bahamensis,3,691740,"duet, flight call",A,https://xeno-canto.org/691740/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/691740/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Talcahuano, Concepcion, Bío Bío",https://xeno-canto.org/691740,0,1,0,0,0,0,0,0,0,0,0,2
+Scelorchilus albicollis,66,1028566,song,A,https://xeno-canto.org/1028566/download,https://xeno-canto.org/sounds/spectrograms/HFAIUBMLBS/1028566/grey-medium.png,Francisco Rivas Fuenzalida,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valparaíso, Valparaíso Province, Valparaíso",https://xeno-canto.org/1028566,6,4,0,4,1,1,9,6,8,4,9,14
+Metriopelia melanoptera,7,596950,"song, riachuelo, water stream",A,https://xeno-canto.org/596950/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/596950/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Yerba Loca, Santiago, Region Metropolitana",https://xeno-canto.org/596950,0,0,0,0,0,0,0,0,1,1,3,2
+Rhea pennata,4,939456,uncertain,B,https://xeno-canto.org/939456/download,https://xeno-canto.org/sounds/spectrograms/IKXHMBKUZX/939456/grey-medium.png,Luis F. Huertas,https://creativecommons.org/licenses/by-nc-sa/4.0/,Unknown,https://xeno-canto.org/939456,0,0,0,0,0,0,0,0,0,2,2,0
+Agriornis lividus,9,660101,alarm call,A,https://xeno-canto.org/660101/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/660101/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada Carrizal - Carrizal Bajo - Región de Atacama - Chile,https://xeno-canto.org/660101,2,0,0,0,0,0,0,1,0,0,0,6
+Falco femoralis,1,774881,flight call,B,https://xeno-canto.org/774881/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774881/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Casablanca, Valparaiso, Valparaíso",https://xeno-canto.org/774881,1,0,0,0,0,0,0,0,0,0,0,0
+Columbina cruziana,7,498341,song,A,https://xeno-canto.org/498341/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498341/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Villa Esperanza,https://xeno-canto.org/498341,0,2,0,0,0,0,1,2,0,1,1,0
+Procellaria aequinoctialis,5,502559,"call, collective calls",A,https://xeno-canto.org/502559/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/502559/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"8 km off of Valparaiso, V Region",https://xeno-canto.org/502559,0,1,0,0,0,0,0,0,0,4,0,0
+Cyanoliseus patagonus,14,380836,alarm call,A,https://xeno-canto.org/380836/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/380836/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"La Correana, Termas del Flaco, Colchagua, VI Región",https://xeno-canto.org/380836,2,4,0,2,0,0,2,0,0,2,2,0
+Tyto furcata,6,696742,flight call,A,https://xeno-canto.org/696742/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/696742/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Laguna Batuco, Región Metropolitana",https://xeno-canto.org/696742,2,1,0,0,0,0,0,0,1,0,1,0
+Upucerthia dumetaria,20,856868,song,A,https://xeno-canto.org/856868/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/856868/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,Banos las Colinas,https://xeno-canto.org/856868,1,2,0,0,0,0,0,0,3,1,6,7
+Anarhynchus falklandicus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Bubo magellanicus,16,697959,"duet, song",A,https://xeno-canto.org/697959/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/697959/grey-medium.png,ignacio escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lo Barnechea (near  Farellones), Santiago, Región Metropolitana",https://xeno-canto.org/697959,2,0,2,1,0,0,1,4,1,0,3,2
+Ardenna creatopus,22,691337,"call, flight call",A,https://xeno-canto.org/691337/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/691337/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"8 km off of Valparaiso, V Region",https://xeno-canto.org/691337,1,2,0,0,0,0,0,0,0,8,7,4
+Campephilus magellanicus,23,537072,"begging call, call, song",A,https://xeno-canto.org/537072/download,https://xeno-canto.org/sounds/spectrograms/YOXWKYFZAP/537072/grey-medium.png,Dante Buzzetti,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parque Nacional Vicente Pérez Rosales, Puerto Varas, Llanquihue, Los Lagos",https://xeno-canto.org/537072,5,5,1,1,0,0,0,1,0,2,1,7
+Chloephaga hybrida,3,295905,call,B,https://xeno-canto.org/295905/download,https://xeno-canto.org/sounds/spectrograms/FNIOJOZADD/295905/grey-medium.png,Ross Gallardy,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Porvenir, Tierra del Fuego, XII Region",https://xeno-canto.org/295905,0,1,0,1,0,0,0,0,0,0,1,0
+Fulmarus glacialoides,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agriornis montanus,2,444647,song,A,https://xeno-canto.org/444647/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/444647/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Farellones, Region Metropolitana",https://xeno-canto.org/444647,0,0,0,0,0,0,0,0,0,0,0,2
+Conirostrum cinereum,6,73452,song,A,https://xeno-canto.org/73452/download,https://xeno-canto.org/sounds/spectrograms/IKMWQIXRNV/73452/grey-medium.png,Joseph Tobias and Nathalie Seddon,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Putre, CH",https://xeno-canto.org/73452,0,0,0,0,1,0,1,0,2,0,2,0
+Oceanites oceanicus,1,882200,"alarm call, call",A,https://xeno-canto.org/882200/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/882200/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cabo de Hornos (near  Puerto Williams), Antártica Chilena, Magallanes and Chilean Antarctica",https://xeno-canto.org/882200,0,0,1,0,0,0,0,0,0,0,0,0
+Muscisaxicola albilora,6,393552,call,A,https://xeno-canto.org/393552/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/393552/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San José de Maipo, Cordillera, Región Metropolitana",https://xeno-canto.org/393552,0,0,0,0,0,0,0,0,0,0,4,2
+Spheniscus humboldti,2,520292,"alarm call, begging call, call, hatchling or nestling",A,https://xeno-canto.org/520292/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/520292/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Isla Chungungo,https://xeno-canto.org/520292,2,0,0,0,0,0,0,0,0,0,0,0
+Sicalis auriventris,14,522020,song,A,https://xeno-canto.org/522020/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/522020/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Los Andes, Los Andes, Valparaíso",https://xeno-canto.org/522020,0,2,2,0,0,0,0,0,0,3,3,4
+Speculanas specularis,5,115890,call,A,https://xeno-canto.org/115890/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/115890/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-sa/3.0/,"PN Torres del Paine, XII Region",https://xeno-canto.org/115890,0,0,0,0,0,0,1,0,0,0,4,0
+Thinocorus rumicivorus,5,450186,song,A,https://xeno-canto.org/450186/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450186/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Pali Aike road, San Gregorio region, XII región",https://xeno-canto.org/450186,0,0,0,0,0,0,0,0,0,0,2,3
+Asthenes modesta,25,856869,song,A,https://xeno-canto.org/856869/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/856869/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,Banos las Colinas,https://xeno-canto.org/856869,3,4,2,0,0,0,1,1,0,4,7,3
+Geospizopsis unicolor,8,403518,song,A,https://xeno-canto.org/403518/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/403518/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/," La Gran Vega del Marmolejo, Cordillera, Región Metropolitana",https://xeno-canto.org/403518,0,1,0,0,0,0,4,1,0,1,1,0
+Daptrius megalopterus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Xenospingus concolor,7,90588,song,A,https://xeno-canto.org/90588/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90588/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Valle de Chaca, XV Region",https://xeno-canto.org/90588,0,0,0,1,0,0,0,0,1,0,4,1
+Anarhynchus nivosus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sicalis olivascens,10,498658,song,A,https://xeno-canto.org/498658/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498658/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/498658,0,0,0,1,0,0,0,3,1,0,5,0
+Asio flammeus,1,56291,flight call,C,https://xeno-canto.org/56291/download,https://xeno-canto.org/sounds/spectrograms/HBPPUDOMJI/56291/grey-medium.png,Daniel González Amat,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Wetland Batuco, Batuco, Región Metropolitana",https://xeno-canto.org/56291,0,0,0,0,0,1,0,0,0,0,0,0
+Hirundo rustica,1,1080744,song,C,https://xeno-canto.org/1080744/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/1080744/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Teodoro Schmidt, Cautín, Araucanía",https://xeno-canto.org/1080744,0,1,0,0,0,0,0,0,0,0,0,0
+Muscisaxicola maculirostris,4,696431,song,A,https://xeno-canto.org/696431/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/696431/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Los Andes, Los Andes, Valparaíso",https://xeno-canto.org/696431,1,0,0,0,0,0,0,0,0,0,2,1
+Gallinula galeata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Systellura longirostris,24,946745,song,A,https://xeno-canto.org/946745/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/946745/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín Province, Araucania",https://xeno-canto.org/946745,0,0,2,2,0,0,0,3,1,6,3,7
+Phrygilus atriceps,3,372126,song,A,https://xeno-canto.org/372126/download,https://xeno-canto.org/sounds/spectrograms/UGAYMSJERQ/372126/grey-medium.png,Fernando Medrano,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Putre,  XV Region",https://xeno-canto.org/372126,0,0,0,0,0,0,0,0,0,1,2,0
+Muscisaxicola rufivertex,1,15585,call,D,https://xeno-canto.org/15585/download,https://xeno-canto.org/sounds/spectrograms/HBPPUDOMJI/15585/grey-medium.png,Daniel González Amat,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Farellones, Santiago",https://xeno-canto.org/15585,0,0,0,0,0,0,0,0,0,1,0,0
+Calidris fuscicollis,5,711562,flight call,A,https://xeno-canto.org/711562/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/711562/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Humedal Río Elqui (near  La Serena), Elqui Province, Coquimbo",https://xeno-canto.org/711562,1,1,1,0,0,0,0,0,0,2,0,0
+Spatula versicolor,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pluvialis squatarola,2,614564,"call, song",C,https://xeno-canto.org/614564/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/614564/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Papudo, Petorca, Valparaíso",https://xeno-canto.org/614564,0,1,1,0,0,0,0,0,0,0,0,0
+Thinocorus orbignyianus,9,450183,song,A,https://xeno-canto.org/450183/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450183/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Embalse El Yeso, Región Metropolitana",https://xeno-canto.org/450183,0,1,0,0,0,0,1,1,0,0,5,1
+Egretta caerulea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Macronectes halli,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chloephaga rubidiceps,4,90547,call,A,https://xeno-canto.org/90547/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90547/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Bahia Azul, XII Region",https://xeno-canto.org/90547,0,0,0,0,0,0,0,0,0,2,2,0
+Patagioenas maculosa,1,527986,song,B,https://xeno-canto.org/527986/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/527986/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/527986,0,1,0,0,0,0,0,0,0,0,0,0
+Heteronetta atricapilla,2,492781,call,A,https://xeno-canto.org/492781/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/492781/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Estero San Sebastián, San Antonio, Región de Valparaíso",https://xeno-canto.org/492781,0,0,0,0,0,0,2,0,0,0,0,0
+Geospizopsis plebejus,3,60098,call,B,https://xeno-canto.org/60098/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60098/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre, Parinacota, I Region",https://xeno-canto.org/60098,0,0,0,0,0,0,1,0,0,0,0,2
+Botaurus involucris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cinclodes albiventris,11,838164,song,A,https://xeno-canto.org/838164/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/838164/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/838164,0,1,0,1,0,0,2,1,0,4,2,0
+Calidris virgata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pyrocephalus rubinus,1,59967,song,A,https://xeno-canto.org/59967/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59967/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Valle Chaxa, I Region",https://xeno-canto.org/59967,0,0,0,0,0,0,0,0,0,0,1,0
+Leistes bellicosus,8,336414,song,A,https://xeno-canto.org/336414/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/336414/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valle del rio Lluta, XV Region",https://xeno-canto.org/336414,0,0,0,0,0,0,0,1,4,0,3,0
+Phalaropus tricolor,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Turdus chiguanco,7,774840,call,A,https://xeno-canto.org/774840/download,https://xeno-canto.org/sounds/spectrograms/TGBFXDVERJ/774840/grey-medium.png,GABRIEL LEITE,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Pedro de Atacama (near  Catarpe), El Loa, Antofagasta",https://xeno-canto.org/774840,0,0,0,1,0,0,3,0,0,1,1,1
+Pelecanoides garnotii,2,936987,"call, song",A,https://xeno-canto.org/936987/download,https://xeno-canto.org/sounds/spectrograms/JDHJKCRRMV/936987/grey-medium.png,Romina Triviño,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Chañaral (near  Pan de Azúcar), Chañaral, Atacama",https://xeno-canto.org/936987,0,0,0,0,0,0,0,0,2,0,0,0
+Astur chilensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sternula lorata,5,306286,call,B,https://xeno-canto.org/306286/download,https://xeno-canto.org/sounds/spectrograms/PVDSOTLACL/306286/grey-medium.png,sylvia hernandez,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Mejillones, Antofagasta, Región de Antofagasta",https://xeno-canto.org/306286,0,0,0,0,0,0,0,2,0,0,3,0
+Asthenes anthoides,13,449831,song,A,https://xeno-canto.org/449831/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449831/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Torres del Paine, XII Región",https://xeno-canto.org/449831,1,0,0,2,0,0,1,0,0,3,2,4
+Plegadis ridgwayi,1,59998,song,B,https://xeno-canto.org/59998/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59998/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"PN Lauca, Parinacota, I Region",https://xeno-canto.org/59998,0,0,0,0,0,0,1,0,0,0,0,0
+Strix rufipes,39,1028289,song,A,https://xeno-canto.org/1028289/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/1028289/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Quilaco, Biobio, Bío Bío",https://xeno-canto.org/1028289,3,6,4,4,1,2,2,1,5,3,5,3
+Ochetorhynchus melanurus,34,819156,song,A,https://xeno-canto.org/819156/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/819156/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Rio del Valle (1900 msnm),https://xeno-canto.org/819156,0,3,1,1,2,0,10,0,8,4,5,0
+Spatula puna,4,498666,call,A,https://xeno-canto.org/498666/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498666/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parinacota, XV Region",https://xeno-canto.org/498666,0,0,0,0,0,0,0,2,0,0,1,1
+Sicalis flaveola,3,942584,song,A,https://xeno-canto.org/942584/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/942584/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Temuco, Cautín, Araucanía",https://xeno-canto.org/942584,0,0,0,0,0,0,0,0,0,2,0,1
+Spinus magellanicus,6,581007,song,A,https://xeno-canto.org/581007/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/581007/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/581007,0,1,0,0,0,0,1,1,0,0,1,2
+Upucerthia saturatior,19,1028293,"call, song",A,https://xeno-canto.org/1028293/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/1028293/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lonquimay, Malleco Province, Araucania",https://xeno-canto.org/1028293,4,0,2,1,0,1,0,2,1,5,0,3
+Phoenicoparrus andinus,4,87185,?,B,https://xeno-canto.org/87185/download,https://xeno-canto.org/sounds/spectrograms/QDXWYDUIIS/87185/grey-medium.png,Carlos Silva-Quintas,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Laguna Salada (Peine), Atacama Salt",https://xeno-canto.org/87185,0,0,1,0,0,0,0,0,0,2,0,1
+Fulica gigantea,16,53867,song,A,https://xeno-canto.org/53867/download,https://xeno-canto.org/sounds/spectrograms/DISAQFOZJP/53867/grey-medium.png,Guillermo Egli,https://creativecommons.org/licenses/by-nc-nd/2.5/,"PN Lauca-Lago Chungara, I Region",https://xeno-canto.org/53867,0,0,0,2,0,0,1,7,1,3,2,0
+Tringa semipalmata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Spinus uropygialis,8,1077724,song,A,https://xeno-canto.org/1077724/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1077724/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Quebrada El Chorrillo,https://xeno-canto.org/1077724,1,4,0,0,0,0,0,0,0,0,3,0
+Pelecanoides magellani,2,882093,"alarm call, call",B,https://xeno-canto.org/882093/download,https://xeno-canto.org/sounds/spectrograms/BRAMYBYPHG/882093/grey-medium.png,Santiago Imberti,https://creativecommons.org/licenses/by-nc-sa/4.0/,Magallanes and Chilean Antarctica,https://xeno-canto.org/882093,0,0,2,0,0,0,0,0,0,0,0,0
+Merganetta armata,1,581872,alarm call,A,https://xeno-canto.org/581872/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/581872/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Baños San Pedro (Paso Fronterizo Vergara),https://xeno-canto.org/581872,0,0,0,0,0,0,0,1,0,0,0,0
+Oreotrochilus leucopleurus,4,625729,"flight call, song",A,https://xeno-canto.org/625729/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/625729/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Laguna El Yeso ,https://xeno-canto.org/625729,0,3,0,0,0,0,0,0,0,1,0,0
+Anas platyrhynchos,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Charadrius semipalmatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Fulica ardesiaca,1,102653,alarm call,A,https://xeno-canto.org/102653/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/102653/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-nd/2.5/,Coya Sur,https://xeno-canto.org/102653,0,0,0,0,0,0,0,0,0,0,0,0
+Muscisaxicola flavinucha,2,403519,"",A,https://xeno-canto.org/403519/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/403519/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/," La Gran Vega del Marmolejo, Cordillera, Región Metropolitana",https://xeno-canto.org/403519,0,1,0,0,0,0,0,0,0,1,0,0
+Thalassarche salvini,2,502551,call,A,https://xeno-canto.org/502551/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/502551/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"8 km off of Valparaiso, V Region",https://xeno-canto.org/502551,0,0,0,0,1,0,0,0,0,1,0,0
+Pteroptochos castaneus,41,545560,song,A,https://xeno-canto.org/545560/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/545560/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Reserva Nacional Altos de Lircay, VII Región",https://xeno-canto.org/545560,1,5,0,4,0,0,1,2,0,3,18,6
+Lessonia oreas,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Oreopholus ruficollis,7,115831,call,A,https://xeno-canto.org/115831/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/115831/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Pali Aike entrance road, XII Region",https://xeno-canto.org/115831,1,0,0,1,0,0,0,0,0,2,1,2
+Sporophila telasco,4,336410,song,A,https://xeno-canto.org/336410/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/336410/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valle del rio Lluta, XV Region",https://xeno-canto.org/336410,0,0,0,0,0,0,0,1,1,0,2,0
+Cinclodes atacamensis,3,59893,song,B,https://xeno-canto.org/59893/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59893/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"PN Lauca, XV Region",https://xeno-canto.org/59893,0,0,0,0,0,0,2,0,0,1,0,0
+Oxyura ferruginea,4,522022,song,A,https://xeno-canto.org/522022/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/522022/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Tranque La Cadellada, Batuco, Región Metropolitana",https://xeno-canto.org/522022,0,0,0,0,0,0,0,2,1,0,1,0
+Asthenes pyrrholeuca,22,987975,song,A,https://xeno-canto.org/987975/download,https://xeno-canto.org/sounds/spectrograms/IHJAQKCKWM/987975/grey-medium.png,José Dellacasa Bravo,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Lonquimay, Malleco Province, Araucania",https://xeno-canto.org/987975,1,1,0,0,0,0,0,0,0,2,12,6
+Calidris pusilla,1,60081,song,B,https://xeno-canto.org/60081/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60081/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Rio Maipo, V Region",https://xeno-canto.org/60081,0,0,0,0,0,0,0,0,0,1,0,0
+Metriopelia ceciliae,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Oreotrochilus estella,8,492182,flight call,A,https://xeno-canto.org/492182/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/492182/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/492182,0,1,0,0,0,0,1,5,0,0,1,0
+Phoenicoparrus jamesi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Recurvirostra andina,6,59841,song,B,https://xeno-canto.org/59841/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59841/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Laguna Chaxa, Socaire, Antofogasta, II Region",https://xeno-canto.org/59841,0,0,0,0,0,0,4,0,0,1,0,1
+Halobaena caerulea,1,433198,song,B,https://xeno-canto.org/433198/download,https://xeno-canto.org/sounds/spectrograms/TQMWTAHPIN/433198/grey-medium.png,Omar Barroso,https://creativecommons.org/licenses/by-nc-sa/4.0/,Archipielago Diego Ramirez,https://xeno-canto.org/433198,0,0,0,1,0,0,0,0,0,0,0,0
+Aeronautes andecolus,4,60141,song,A,https://xeno-canto.org/60141/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60141/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre, I Region",https://xeno-canto.org/60141,0,0,0,0,1,0,1,0,2,0,0,0
+Geositta punensis,5,498662,call,A,https://xeno-canto.org/498662/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498662/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Andes, Parinacota, Región de Arica y Parinacota",https://xeno-canto.org/498662,0,1,0,1,0,0,0,1,0,0,1,1
+Diomedea epomophora,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Netta peposaca,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Daption capense,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Asthenes arequipae,4,73106,song,B,https://xeno-canto.org/73106/download,https://xeno-canto.org/sounds/spectrograms/IKMWQIXRNV/73106/grey-medium.png,Joseph Tobias and Nathalie Seddon,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Putre, CH",https://xeno-canto.org/73106,0,1,0,0,0,0,1,0,0,0,0,2
+Muscisaxicola juninensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Charadrius vociferus,1,844859,"alarm call, call",A,https://xeno-canto.org/844859/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/844859/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Humedal Rio Lluta,https://xeno-canto.org/844859,0,0,0,0,0,0,0,0,0,0,1,0
+Muscisaxicola capistratus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Laterallus jamaicensis,34,783433,song,A,https://xeno-canto.org/783433/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/783433/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Desembocadura del rio Maipo,https://xeno-canto.org/783433,1,1,11,5,1,0,5,4,1,0,1,4
+Anarhynchus alticola,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Muscisaxicola frontalis,1,36002,call,C,https://xeno-canto.org/36002/download,https://xeno-canto.org/sounds/spectrograms/HBPPUDOMJI/36002/grey-medium.png,Daniel González Amat,https://creativecommons.org/licenses/by-nc-nd/2.5/,Below Valle Nevado ,https://xeno-canto.org/36002,1,0,0,0,0,0,0,0,0,0,0,0
+Orochelidon andecola,3,498663,flight call,A,https://xeno-canto.org/498663/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498663/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parinacota, XV Region",https://xeno-canto.org/498663,0,0,0,0,0,0,1,0,1,0,0,1
+Buteo ventralis,10,1103129,"call, flight call",A,https://xeno-canto.org/1103129/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/1103129/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Punta Arenas, Magallanes Province, Magallanes and Chilean Antarctica",https://xeno-canto.org/1103129,0,0,1,1,0,0,0,1,1,2,0,4
+Diomedea sanfordi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pluvialis dominica,1,59969,song,B,https://xeno-canto.org/59969/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59969/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Rio Lluta, Arica, I Region",https://xeno-canto.org/59969,0,1,0,0,0,0,0,0,0,0,0,0
+Spinus atratus,1,498660,"begging call, call, foraging calls",B,https://xeno-canto.org/498660/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498660/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"PN Lauca-Las Cuevas, XV Region",https://xeno-canto.org/498660,0,0,0,0,0,0,0,1,0,0,0,0
+Buteo albigula,2,500696,alarm call,A,https://xeno-canto.org/500696/download,https://xeno-canto.org/sounds/spectrograms/UYRRZECOBB/500696/grey-medium.png,Gonzalo Labarrera Valdivieso,https://creativecommons.org/licenses/by-nc-sa/4.0/,PN La Campana,https://xeno-canto.org/500696,0,0,0,0,0,0,0,0,0,1,1,0
+Thaumastura cora,5,719866,call,A,https://xeno-canto.org/719866/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/719866/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Valle de Chaca, XV Region",https://xeno-canto.org/719866,0,1,0,3,0,0,0,0,0,0,0,1
+Thalassarche chrysostoma,1,1078862,"call, song",A,https://xeno-canto.org/1078862/download,https://xeno-canto.org/sounds/spectrograms/BRAMYBYPHG/1078862/grey-medium.png,Santiago Imberti,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Bartolome Island, Diego Ramirez Archipelago",https://xeno-canto.org/1078862,1,0,0,0,0,0,0,0,0,0,0,0
+Procellaria westlandica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Geositta antarctica,12,449944,"call, song, song and call",A,https://xeno-canto.org/449944/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449944/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Northern Tierra del Fuego, XII Región",https://xeno-canto.org/449944,2,0,0,0,0,2,0,0,0,2,3,3
+Rauenia bonariensis,4,580985,"duet, song",A,https://xeno-canto.org/580985/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/580985/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/580985,0,2,0,0,0,0,0,0,0,0,2,0
+Pterodroma defilippiana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Geositta maritima,2,90527,call,A,https://xeno-canto.org/90527/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90527/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Upper Lluta Valley, XV Region",https://xeno-canto.org/90527,0,0,0,0,0,0,0,0,0,0,2,0
+Geositta isabellina,9,449950,"call, song, song and call",A,https://xeno-canto.org/449950/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449950/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Embalse El Yeso, Región Metropolitana",https://xeno-canto.org/449950,0,0,1,0,0,0,0,0,0,3,4,1
+Muscisaxicola albifrons,1,59979,song,B,https://xeno-canto.org/59979/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59979/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"PN Lauca, Parinacota, I Region",https://xeno-canto.org/59979,0,0,0,0,0,0,0,0,0,0,1,0
+Pterodroma externa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalassarche bulleri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrobates markhami,6,650693,"begging call, call, duet, nocturnal flight call, song, sub",A,https://xeno-canto.org/650693/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/650693/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Pampa Chaca,https://xeno-canto.org/650693,0,1,0,1,2,0,2,0,0,0,0,0
+Catamenia analis,1,90508,song,A,https://xeno-canto.org/90508/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90508/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre,  XV Region",https://xeno-canto.org/90508,0,0,0,0,0,0,0,0,0,0,1,0
+Anairetes flavirostris,2,60203,song,B,https://xeno-canto.org/60203/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60203/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre, I Region",https://xeno-canto.org/60203,0,0,0,0,0,0,0,1,0,0,1,0
+Psilopsiagon aurifrons,9,1082726,call,A,https://xeno-canto.org/1082726/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1082726/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Cuesta Caracoles (Descanso),https://xeno-canto.org/1082726,0,1,0,0,0,0,0,6,0,1,1,0
+Pluvianellus socialis,2,89243,call,A,https://xeno-canto.org/89243/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/89243/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Laguna Verde, Porvenir, XII Region",https://xeno-canto.org/89243,0,0,0,0,0,0,0,0,0,1,0,1
+Calidris canutus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Metriopelia aymara,1,498319,"flight call, mechanical sound",A,https://xeno-canto.org/498319/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498319/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Visviri,https://xeno-canto.org/498319,0,0,0,0,0,0,0,1,0,0,0,0
+Calidris minutilla,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Leptasthenura striata,3,90516,call,A,https://xeno-canto.org/90516/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90516/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Polylepis grove near Pachama, XV Region",https://xeno-canto.org/90516,0,0,0,0,0,0,1,0,0,1,1,0
+Melanodera xanthogramma,17,540234,song,A,https://xeno-canto.org/540234/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/540234/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Piedra Numerada, Santiago, Región Metropolitana",https://xeno-canto.org/540234,5,6,0,1,0,0,0,0,0,0,1,4
+Phalaropus fulicarius,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ochetorhynchus ruficaudus,2,90531,call,A,https://xeno-canto.org/90531/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90531/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre,  XV Region",https://xeno-canto.org/90531,0,0,1,0,0,0,0,0,0,0,1,0
+Sicalis uropygialis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Actitis macularius,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sicalis lebruni,10,295908,"call, flight call",A,https://xeno-canto.org/295908/download,https://xeno-canto.org/sounds/spectrograms/FNIOJOZADD/295908/grey-medium.png,Ross Gallardy,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Laguna Verde, Porvenir, XII Region",https://xeno-canto.org/295908,2,0,0,4,0,0,0,0,0,0,4,0
+Aptenodytes patagonicus,14,449827,call,A,https://xeno-canto.org/449827/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/449827/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Bahía Inutil, XII Región",https://xeno-canto.org/449827,0,0,0,6,0,0,0,0,0,2,1,4
+Neoxolmis rufiventris,4,115764,"call, song",A,https://xeno-canto.org/115764/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/115764/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Pali Aike entrance road, XII Region",https://xeno-canto.org/115764,0,0,0,0,0,0,0,0,0,2,1,1
+Hesperoburhinus superciliaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Colaptes rupicola,11,498675,call,A,https://xeno-canto.org/498675/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498675/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parinacota, XV Region",https://xeno-canto.org/498675,0,0,0,0,0,0,1,9,1,0,0,0
+Muscisaxicola cinereus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Idiopsar speculifer,10,498325,"call, contact call",A,https://xeno-canto.org/498325/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498325/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Parinacota, XV Region",https://xeno-canto.org/498325,0,1,0,1,0,0,3,2,1,0,2,0
+Phegornis mitchellii,10,115884,song?,A,https://xeno-canto.org/115884/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/115884/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-sa/3.0/,Embalse El Yeso,https://xeno-canto.org/115884,1,0,0,2,0,0,0,3,0,0,2,2
+Fulica cornuta,3,3033,call,A,https://xeno-canto.org/3033/download,https://xeno-canto.org/sounds/spectrograms/GPVWJPVGVN/3033/grey-medium.png,A. Bennett Hennessey,https://creativecommons.org/licenses/by-nc-nd/2.5/,Calama,https://xeno-canto.org/3033,0,0,1,0,0,0,0,0,0,0,2,0
+Daptrius albogularis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ochthoeca leucophrys,1,90510,call,A,https://xeno-canto.org/90510/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/90510/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre,  XV Region",https://xeno-canto.org/90510,0,0,0,0,0,0,0,0,0,0,1,0
+Molothrus rufoaxillaris,6,876453,"call, flight call, song",A,https://xeno-canto.org/876453/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/876453/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Santo Domingo (near  San Antonio), San Antonio, Valparaíso",https://xeno-canto.org/876453,1,0,0,0,2,0,0,0,1,1,0,1
+Diomedea exulans,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Conirostrum tamarugense,22,857153,song,A,https://xeno-canto.org/857153/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/857153/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Arica (near  Chaca), Arica, Arica y Parinacota",https://xeno-canto.org/857153,0,4,0,0,0,0,0,0,0,2,8,8
+Oceanites gracilis,15,573893,song,A,https://xeno-canto.org/573893/download,https://xeno-canto.org/sounds/spectrograms/NUAKEJSUBC/573893/grey-medium.png,Rodrigo Silva,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Pampa Hermosa, Tarapacá",https://xeno-canto.org/573893,15,0,0,0,0,0,0,0,0,0,0,0
+Vanellus resplendens,6,498314,"alarm call, call",A,https://xeno-canto.org/498314/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498314/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Visviri,https://xeno-canto.org/498314,0,1,0,0,0,0,0,5,0,0,0,0
+Pseudocolopteryx citreola,8,521296,song,A,https://xeno-canto.org/521296/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/521296/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Desembocadura del rio Maipo,https://xeno-canto.org/521296,3,0,0,0,0,0,0,0,0,0,3,2
+Stercorarius parasiticus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sula dactylatra,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris melanotos,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Mimus triurus,1,330975,"call, song",B,https://xeno-canto.org/330975/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/330975/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Tobalaba con La Cañada ,https://xeno-canto.org/330975,0,0,0,0,0,0,0,1,0,0,0,0
+Melanodera melanodera,8,855188,song,A,https://xeno-canto.org/855188/download,https://xeno-canto.org/sounds/spectrograms/FHQVLXJQKW/855188/grey-medium.png,Barry Edmonston,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Gregorio (near  Tanelaike), Magallanes, Magallanes y la Antártica Chilena",https://xeno-canto.org/855188,0,0,0,0,0,0,0,0,0,3,4,1
+Pachyptila belcheri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Idiopsar dorsalis,2,711473,call,A,https://xeno-canto.org/711473/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/711473/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Vado del rio Putana - Región de Antofagasta,https://xeno-canto.org/711473,0,0,0,2,0,0,0,0,0,0,0,0
+Riparia riparia,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agriornis micropterus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Diglossa brunneiventris,3,372129,song,B,https://xeno-canto.org/372129/download,https://xeno-canto.org/sounds/spectrograms/UGAYMSJERQ/372129/grey-medium.png,Fernando Medrano,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Putre,  XV Region",https://xeno-canto.org/372129,0,0,0,0,0,0,0,0,0,0,3,0
+Fregata minor,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nothoprocta ornata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Upucerthia albigula,4,59926,song,A,https://xeno-canto.org/59926/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59926/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre,  XV Region",https://xeno-canto.org/59926,0,0,0,0,0,0,0,0,0,0,4,0
+Mimus patagonicus,9,450000,song,A,https://xeno-canto.org/450000/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450000/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Sierra Baguales, XII Regiòn",https://xeno-canto.org/450000,0,0,0,0,0,0,0,0,0,1,4,4
+Asthenes pudibunda,5,740372,song,A,https://xeno-canto.org/740372/download,https://xeno-canto.org/sounds/spectrograms/AYMBPYCGJV/740372/grey-medium.png,Heraldo V. Norambuena,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Putre, Parinacota Province, Arica y Parinacota",https://xeno-canto.org/740372,0,1,0,0,0,0,0,0,0,0,4,0
+Upucerthia validirostris,11,580920,song,A,https://xeno-canto.org/580920/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/580920/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/580920,0,5,0,0,0,0,0,0,0,1,4,1
+Volatinia jacarina,2,288278,song,A,https://xeno-canto.org/288278/download,https://xeno-canto.org/sounds/spectrograms/UGAYMSJERQ/288278/grey-medium.png,Fernando Medrano,https://creativecommons.org/licenses/by-nc-sa/4.0/,"San Miguel de Azapa, XV Region",https://xeno-canto.org/288278,0,0,0,0,0,0,0,0,0,1,1,0
+Phoebetria palpebrata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phasianus colchicus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tinamotis pentlandii,7,492761,"alarm call, call",A,https://xeno-canto.org/492761/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/492761/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Guacoyo,  Parinacota, Región de Arica y Parinacota",https://xeno-canto.org/492761,0,1,0,0,0,0,0,2,0,0,3,1
+Attagis gayi,9,405692,"begging call, call",A,https://xeno-canto.org/405692/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/405692/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Piedra Numerada, Santiago, Región Metropolitana",https://xeno-canto.org/405692,0,0,2,0,0,0,1,0,1,1,0,4
+Theristicus branickii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Glaucidium peruanum,4,156029,song,A,https://xeno-canto.org/156029/download,https://xeno-canto.org/sounds/spectrograms/UGAYMSJERQ/156029/grey-medium.png,Fernando Medrano,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Camarones, Arica Province, Arica and Parinacota Region",https://xeno-canto.org/156029,0,1,0,0,0,0,1,0,0,0,2,0
+Ochetorhynchus phoenicurus,9,450024,song,A,https://xeno-canto.org/450024/download,https://xeno-canto.org/sounds/spectrograms/OOECIWCSWV/450024/grey-medium.png,Peter Boesman,https://creativecommons.org/licenses/by-nc-nd/4.0/,"Sierra Baguales, XII Regiòn",https://xeno-canto.org/450024,0,0,0,0,0,0,0,0,0,5,1,3
+Petrochelidon pyrrhonota,4,613125,"call, flight call",A,https://xeno-canto.org/613125/download,https://xeno-canto.org/sounds/spectrograms/UIQWJTARNH/613125/grey-medium.png,Ignacio Escobar,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Quilicura, Santiago Province, Santiago Metropolitan Region",https://xeno-canto.org/613125,4,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma mollis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Crotophaga sulcirostris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Eudromia elegans,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anairetes reguloides,4,346420,call,B,https://xeno-canto.org/346420/download,https://xeno-canto.org/sounds/spectrograms/UGAYMSJERQ/346420/grey-medium.png,Fernando Medrano,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Cuya, Arica, Región de Tarapacá",https://xeno-canto.org/346420,0,0,0,0,0,0,0,0,1,0,0,3
+Cairina moschata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Myiophobus rufescens,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Fregetta tropica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris himantopus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ardenna gravis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Colibri coruscans,4,498656,"call, territory call",A,https://xeno-canto.org/498656/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/498656/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Putre,https://xeno-canto.org/498656,0,2,0,0,0,0,0,2,0,0,0,0
+Eudyptes chrysocome,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ochthoeca oenanthoides,4,59862,song,A,https://xeno-canto.org/59862/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/59862/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre,  XV Region",https://xeno-canto.org/59862,0,0,0,0,0,0,1,0,0,0,3,0
+Sterna hirundo,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Oceanites pincoyae,1,927662,alarm call,C,https://xeno-canto.org/927662/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/927662/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Calbuco, Llanquihue Province, Los Lagos",https://xeno-canto.org/927662,0,1,0,0,0,0,0,0,0,0,0,0
+Pachyptila desolata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pandion haliaetus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Spinus crassirostris,5,336427,song,A,https://xeno-canto.org/336427/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/336427/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Polylepis grove near Pachama, XV Region",https://xeno-canto.org/336427,0,0,0,0,0,0,0,0,0,3,2,0
+Quechuavis decussata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Laterallus spiloptera,6,696732,song,A,https://xeno-canto.org/696732/download,https://xeno-canto.org/sounds/spectrograms/BFQJIBGISW/696732/grey-medium.png,Gabriel Morales,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Bioacoustic monitoring station. Urban Wetland: Miraflores. Valdivia, Los Rios.",https://xeno-canto.org/696732,1,0,0,0,2,0,1,0,0,0,0,2
+Idiopsar erythronotus,3,60113,call,B,https://xeno-canto.org/60113/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60113/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre, Parinacota, I Region",https://xeno-canto.org/60113,0,0,0,0,1,0,1,0,0,0,1,0
+Egretta tricolor,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma longirostris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrobates hornbyi,3,520681,"alarm call, call",A,https://xeno-canto.org/520681/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/520681/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Pampa del Indio Muerto, Diego de Almagro, Atacama",https://xeno-canto.org/520681,2,0,0,0,0,1,0,0,0,0,0,0
+Attagis malouinus,6,812177,"alarm call, call, flight call",A,https://xeno-canto.org/812177/download,https://xeno-canto.org/sounds/spectrograms/ONPGIPGSDP/812177/grey-medium.png,Sebastián Saiter V.,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Primavera (near  Agua Santa), Tierra del Fuego, Magallanes y la Antártica Chilena",https://xeno-canto.org/812177,0,0,0,2,0,3,0,0,0,0,1,0
+Tyrannus tyrannus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anthus hellmayri,6,7692,"song, ground song",A,https://xeno-canto.org/7692/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/7692/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Victoria, IX Region",https://xeno-canto.org/7692,0,0,0,0,0,0,0,0,0,4,2,0
+Pterodroma neglecta,1,60049,call,C,https://xeno-canto.org/60049/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60049/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Motu, Isla de Pascua-Easter Island",https://xeno-canto.org/60049,0,0,1,0,0,0,0,0,0,0,0,0
+Rallus antarcticus,16,89443,song,A,https://xeno-canto.org/89443/download,https://xeno-canto.org/sounds/spectrograms/CDTGHVBGZP/89443/grey-medium.png,Andrew Spencer,https://creativecommons.org/licenses/by-nc-nd/2.5/,"PN Torres del Paine, XII Region",https://xeno-canto.org/89443,0,0,0,0,0,0,0,0,0,5,7,4
+Platalea ajaja,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Daptrius australis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phaethon rubricauda,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalasseus sandvicensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tyrannus savana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalassarche eremita,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Puffinus puffinus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Diomedea antipodensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Quiscalus mexicanus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anous stolidus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sicalis lutea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Gallinago andina,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Gelochelidon nilotica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pitangus sulphuratus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anous albivitta,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ardenna bulleri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris mauri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrobates tethys,19,871500,"call, song",A,https://xeno-canto.org/871500/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/871500/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Tocopilla (near  El Loa), Tocopilla, Antofagasta",https://xeno-canto.org/871500,12,7,0,0,0,0,0,0,0,0,0,0
+Tinamotis ingoufi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anthus peruvianus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tyrannus melancholicus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Fregetta grallaria,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sephanoides fernandensis,12,380097,call,A,https://xeno-canto.org/380097/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/380097/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Juan Fernández, Valparaiso, Región de Valparaíso",https://xeno-canto.org/380097,0,1,0,0,0,0,0,0,0,0,11,0
+Puffinus nativitatis,4,60091,call,A,https://xeno-canto.org/60091/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60091/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Motu, Isla de Pascua-Easter Island",https://xeno-canto.org/60091,0,0,4,0,0,0,0,0,0,0,0,0
+Sterna paradisaea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sicalis raimondii,4,348845,song,A,https://xeno-canto.org/348845/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/348845/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Valle de Camarones - Campos de Alfalfa,https://xeno-canto.org/348845,0,0,0,0,0,0,0,0,0,1,0,3
+Gallinago stricklandii,12,1014677,"call, dawn song, duet",A,https://xeno-canto.org/1014677/download,https://xeno-canto.org/sounds/spectrograms/XNCZRQNJCS/1014677/grey-medium.png,Eduardo Quintanilla,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Tortel, Capitán Prat, Aysén",https://xeno-canto.org/1014677,0,0,0,0,0,0,0,0,0,4,7,1
+Bartramia longicauda,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Creagrus furcatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chionis albus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chroicocephalus cirrocephalus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agriornis albicauda,2,115174,call,B,https://xeno-canto.org/115174/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/115174/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-sa/3.0/,"Parinacota, Parque Nacional Lauca, XV Region",https://xeno-canto.org/115174,0,0,0,0,0,0,0,0,0,0,2,0
+Progne murphyi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Gallus gallus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Stercorarius longicaudus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anser anser,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Onychoprion fuscatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pelecanoides urinatrix,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anairetes fernandezianus,8,380101,call,A,https://xeno-canto.org/380101/download,https://xeno-canto.org/sounds/spectrograms/FPAGKPAQYO/380101/grey-medium.png,Fabrice Schmitt,https://creativecommons.org/licenses/by-nc-sa/4.0/,"Juan Fernández, Valparaiso, Región de Valparaíso",https://xeno-canto.org/380101,0,0,0,0,0,0,0,0,0,0,8,0
+Puffinus elegans,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Limosa fedoa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nycticryphes semicollaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma heraldica,5,60048,call,B,https://xeno-canto.org/60048/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60048/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Motu, Isla de Pascua-Easter Island",https://xeno-canto.org/60048,0,0,5,0,0,0,0,0,0,0,0,0
+Phaethon lepturus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phaethon aethereus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Eudyptes chrysolophus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nothoprocta pentlandii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Limnodromus griseus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chaetura pelagica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cinclodes antarcticus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Stercorarius pomarinus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pygoscelis papua,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma atrata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Streptoprocne zonaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nyctanassa violacea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma alba,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Eudyptes robustus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Paroaria coronata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tringa incana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tringa solitaria,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nymphicus hollandicus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phytotoma rutila,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sula brewsteri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phoebastria irrorata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Conirostrum binghami,1,581532,song,A,https://xeno-canto.org/581532/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/581532/grey-medium.png,Cristian Pinto,https://creativecommons.org/licenses/by-nc-sa/4.0/,Belén (Polylepys sp Forest),https://xeno-canto.org/581532,0,1,0,0,0,0,0,0,0,0,0,0
+Colaptes melanochloros,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pelagodroma marina,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Spatula discors,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sappho sparganurus,2,1005099,call,A,https://xeno-canto.org/1005099/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/1005099/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Navidad,https://xeno-canto.org/1005099,0,0,0,0,0,2,0,0,0,0,0,0
+Branta leucopsis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phalaropus lobatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Patagioenas picazuro,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Progne tapera,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Megarynchus pitangua,1,937629,call,A,https://xeno-canto.org/937629/download,https://xeno-canto.org/sounds/spectrograms/SEVIQQAKWM/937629/grey-medium.png,Cristian Pinto Fernandez,https://creativecommons.org/licenses/by-nc-sa/4.0/,Estero Quilpue,https://xeno-canto.org/937629,0,0,0,0,0,0,0,0,0,1,0,0
+Hirundinea ferruginea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Melopsittacus undulatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Turdus amaurochalinus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Fregata magnificens,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sula sula,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Oceanites barrosi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma ultima,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Porphyrio martinica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cnemarchus rufipennis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Guira guira,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Leucophaeus atricilla,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Motacilla alba,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalassarche cauta,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Xema sabini,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Eudyptula minor,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma nigripennis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chlidonias niger,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thraupis sayaca,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Jabiru mycteria,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sula granti,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ciconia maguari,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anser sp.,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Psittacara erythrogenys,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Knipolegus aterrimus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris ferruginea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Podiceps gallardoi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sula nebouxii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Elanoides forficatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Numida meleagris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Butorides striata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aix galericulata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Crotophaga ani,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Vireo olivaceus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Mimus dorsalis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Psittacara mitratus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ardenna pacifica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Psittacula krameri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Psephotus haematonotus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aphrodroma brevirostris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agapornis fischeri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Platycercus elegans,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sturnus vulgaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Dendrocygna autumnalis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrobates melania,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aphrastura masafuerae,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Mycteria americana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Netta rufina,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Phoebetria fusca,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Progne elegans,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Muscigralla brevicauda,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pavo cristatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Leistes superciliaris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Alopochelidon fucata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Rupornis magnirostris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Dolichonyx oryzivorus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thectocercus acuticaudatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Neoxolmis coronatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sternula antillarum,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma cookii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sarkidiornis sylvicola,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Callonetta leucophrys,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Myiodynastes luteiventris,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agapornis personatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Saltator aurantiirostris,1,60080,song,B,https://xeno-canto.org/60080/download,https://xeno-canto.org/sounds/spectrograms/XQEVNREHJY/60080/grey-medium.png,Alvaro Jaramillo,https://creativecommons.org/licenses/by-nc-nd/2.5/,"Putre, I Region",https://xeno-canto.org/60080,0,0,0,0,0,0,0,0,0,0,1,0
+Serinus canaria,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chauna torquata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Stercorarius antarcticus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Limosa lapponica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aix sponsa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Dendrocygna viduata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Vireo chivi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pelecanoides georgicus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chordeiles nacunda,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Stercorarius maccormicki,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Garrodia nereis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Setophaga ruticilla,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chordeiles acutipennis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pelecanus occidentalis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalassoica antarctica,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Elaenia spectabilis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Streptopelia roseogrisea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Thalasseus maximus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Platycercus eximius,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Oxyura jamaicensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Coccyzus melacoryphus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Contopus sordidulus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anser cygnoides,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Numenius tahitiensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris pugnax,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ara severus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Agapornis roseicollis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Botaurus exilis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Taeniopygia guttata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Procellaria cinerea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Catharus ustulatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cinclodes taczanowskii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aythya fuligula,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Steatornis caripensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sporophila caerulescens,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pheucticus chrysogaster,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Progne chalybea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Nesofregetta fuliginosa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma cervicalis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Myiodynastes maculatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma lessonii,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Mimus saturninus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Spatula clypeata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Icterus galbula,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Anous minutus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma phaeopygia,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma macroptera,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydrobates leucorhous,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Empidonax alnorum,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Fregata ariel,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Setophaga striata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Leucochloris albicollis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Ictinia mississippiensis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cyanocorax chrysops,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Calidris subruficollis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Setophaga pitiayumi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Chrysomus ruficapillus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tersina viridis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma incerta,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Sarcoramphus papa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Spiza americana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Cygnus atratus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aptenodytes forsteri,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Buteogallus urubitinga,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Jacana jacana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pygoscelis antarcticus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Tachycineta leucorrhoa,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Piranga ludoviciana,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pterodroma gouldi,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Setophaga aestiva,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Hydropsalis torquata,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Microspingus torquatus,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Aramus guarauna,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pygoscelis adeliae,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Buteo swainsoni,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Meleagris gallopavo,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Myiotheretes striaticollis,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0
+Pagodroma nivea,0,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,61 @@
+sci_name,nombre,month,pct_nacional,pct_estandarizado,dif_pp
+Elaenia albiceps,Fío-fío,1,33.412,34.963,1.551
+Elaenia albiceps,Fío-fío,2,32.196,32.965,0.769
+Elaenia albiceps,Fío-fío,3,16.371,16.989,0.618
+Elaenia albiceps,Fío-fío,4,2.008,2.041,0.033
+Elaenia albiceps,Fío-fío,5,0.351,0.278,-0.073
+Elaenia albiceps,Fío-fío,6,0.237,0.194,-0.043
+Elaenia albiceps,Fío-fío,7,0.214,0.204,-0.01
+Elaenia albiceps,Fío-fío,8,0.377,0.347,-0.03
+Elaenia albiceps,Fío-fío,9,8.182,7.892,-0.29
+Elaenia albiceps,Fío-fío,10,22.808,23.841,1.033
+Elaenia albiceps,Fío-fío,11,29.24,32.096,2.856
+Elaenia albiceps,Fío-fío,12,32.875,34.726,1.851
+Colorhamphus parvirostris,Viudita,1,0.44,0.423,-0.017
+Colorhamphus parvirostris,Viudita,2,0.654,0.531,-0.123
+Colorhamphus parvirostris,Viudita,3,1.152,1.105,-0.047
+Colorhamphus parvirostris,Viudita,4,4.058,4.248,0.19
+Colorhamphus parvirostris,Viudita,5,10.97,11.019,0.049
+Colorhamphus parvirostris,Viudita,6,12.32,12.006,-0.314
+Colorhamphus parvirostris,Viudita,7,12.429,12.104,-0.325
+Colorhamphus parvirostris,Viudita,8,12.164,11.731,-0.433
+Colorhamphus parvirostris,Viudita,9,4.196,4.197,0.001
+Colorhamphus parvirostris,Viudita,10,0.742,0.757,0.015
+Colorhamphus parvirostris,Viudita,11,0.543,0.566,0.023
+Colorhamphus parvirostris,Viudita,12,0.448,0.438,-0.01
+Numenius hudsonicus,Zarapito común,1,12.437,12.324,-0.113
+Numenius hudsonicus,Zarapito común,2,13.467,13.658,0.191
+Numenius hudsonicus,Zarapito común,3,8.892,9.663,0.771
+Numenius hudsonicus,Zarapito común,4,5.328,5.84,0.512
+Numenius hudsonicus,Zarapito común,5,6.437,6.375,-0.062
+Numenius hudsonicus,Zarapito común,6,5.82,5.922,0.102
+Numenius hudsonicus,Zarapito común,7,7.763,7.308,-0.455
+Numenius hudsonicus,Zarapito común,8,6.259,6.837,0.578
+Numenius hudsonicus,Zarapito común,9,9.436,9.633,0.197
+Numenius hudsonicus,Zarapito común,10,10.762,10.869,0.107
+Numenius hudsonicus,Zarapito común,11,9.499,10.685,1.186
+Numenius hudsonicus,Zarapito común,12,9.358,10.235,0.877
+Sephanoides sephaniodes,Picaflor chico,1,7.374,7.418,0.044
+Sephanoides sephaniodes,Picaflor chico,2,15.037,15.075,0.038
+Sephanoides sephaniodes,Picaflor chico,3,27.015,28.615,1.6
+Sephanoides sephaniodes,Picaflor chico,4,40.937,41.1,0.163
+Sephanoides sephaniodes,Picaflor chico,5,39.657,38.626,-1.031
+Sephanoides sephaniodes,Picaflor chico,6,38.756,36.663,-2.093
+Sephanoides sephaniodes,Picaflor chico,7,36.117,34.303,-1.814
+Sephanoides sephaniodes,Picaflor chico,8,35.145,33.315,-1.83
+Sephanoides sephaniodes,Picaflor chico,9,23.984,23.601,-0.383
+Sephanoides sephaniodes,Picaflor chico,10,11.864,12.328,0.464
+Sephanoides sephaniodes,Picaflor chico,11,7.38,8.335,0.955
+Sephanoides sephaniodes,Picaflor chico,12,7.557,7.859,0.302
+Zonotrichia capensis,Chincol,1,31.665,32.615,0.95
+Zonotrichia capensis,Chincol,2,24.585,26.225,1.64
+Zonotrichia capensis,Chincol,3,26.936,27.696,0.76
+Zonotrichia capensis,Chincol,4,30.59,30.332,-0.258
+Zonotrichia capensis,Chincol,5,32.955,31.683,-1.272
+Zonotrichia capensis,Chincol,6,36.231,33.718,-2.513
+Zonotrichia capensis,Chincol,7,38.857,36.991,-1.866
+Zonotrichia capensis,Chincol,8,44.317,42.831,-1.486
+Zonotrichia capensis,Chincol,9,50.1,49.677,-0.423
+Zonotrichia capensis,Chincol,10,48.457,49.494,1.037
+Zonotrichia capensis,Chincol,11,47.071,48.066,0.995
+Zonotrichia capensis,Chincol,12,41.194,42.591,1.397

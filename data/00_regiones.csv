@@ -1,0 +1,18 @@
+region_code,region,macrozona,salidas,salidas_completas,especies_por_salida,avistamientos,especies,observadores
+CL-RM,Región Metropolitana de Santiago,Centro,109994,85729,8.09,889524,226,5921
+CL-LL,Los Lagos,Austral,91220,75247,8.98,819150,267,3278
+CL-VS,Valparaíso,Centro,74036,58614,12.02,890255,328,4879
+CL-MA,Magallanes,Austral,58448,42321,7.48,437117,250,4292
+CL-CO,Coquimbo,Norte Chico,26808,20939,10.48,280980,288,1567
+CL-LR,Los Ríos,Sur,26115,21005,10.19,266192,230,1690
+CL-BI,Bío-Bío,Sur,21130,16921,10.64,224910,267,1640
+CL-AR,Araucanía,Sur,20816,14248,9.76,203138,233,1861
+CL-ML,Maule,Sur,18958,14055,9.49,179880,252,1588
+CL-AP,Arica y Parinacota,Norte Grande,18001,14300,9.93,178725,322,893
+CL-AN,Antofagasta,Norte Grande,13454,10719,6.67,89721,298,1305
+CL-AI,Aisén del General Carlos Ibáñez del Campo,Austral,12673,9319,6.3,79858,221,1118
+CL-LI,Libertador General Bernardo O'Higgins,Centro,12574,9297,12.13,152506,237,1483
+CL-AT,Atacama,Norte Chico,10578,7755,8.16,86326,273,720
+CL-NB,Ñuble,Sur,5753,4145,8.08,46512,214,737
+CL-TA,Tarapacá,Norte Grande,3821,2782,6.87,26249,263,504
+CL-,Chile,,2,1,8.0,16,12,1

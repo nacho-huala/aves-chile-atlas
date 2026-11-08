@@ -1,0 +1,17 @@
+# Pipeline (pasos 1 y 2)
+polars>=1.0
+pyarrow
+numpy
+scipy
+requests
+python-dotenv
+fastexcel
+openpyxl
+# opcionales: hexágonos H3 y comunidades Louvain
+h3
+networkx
+# análisis E2 y EDA
+pandas
+matplotlib
+marimo
+altair

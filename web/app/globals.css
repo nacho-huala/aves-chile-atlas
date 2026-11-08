@@ -1,0 +1,70 @@
+/* Sistema visual L2 — «Día de campo» (claro) y «Noche de campo» (oscuro).
+   Fuente única de los tokens: README.md §11. Si cambias un color aquí, cámbialo allá. */
+:root {
+  --fondo: #E9E7DC; --lamina: #F3F1E9; --texto: #22261C; --apoyo: #62655A; --linea: #D6D3C2;
+  --foco: #7A2638; --sol: #8C6418;
+  --musgo-1: #E4E3CF; --musgo-2: #A8AF78; --musgo-3: #667B26; --musgo-4: #4A5A1B; --musgo-5: #323A12;
+  --bosque: #667B26; --costa: #00789E; --ciudad: #93303F; --matorral: #A9781E; --humedal: #6E4A86;
+  --serif: "Young Serif", Georgia, serif;
+  --sans: "Instrument Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #161913; --lamina: #1E221A; --texto: #E7E4D4; --apoyo: #94968A; --linea: #33382B;
+    --foco: #D46A79; --sol: #E2AE45;
+    --musgo-1: #262B1E; --musgo-2: #4E5A2C; --musgo-3: #86993C; --musgo-4: #AFC160; --musgo-5: #C9D97F;
+    --bosque: #86993C; --costa: #1A99AA; --ciudad: #C85A6B; --matorral: #BD8726; --humedal: #9A6FBF;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--fondo); color: var(--texto); font: 16px/1.55 var(--sans); }
+a { color: var(--foco); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; margin: 0 0 .4em; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: 1.6rem; }
+.mono { font-family: var(--mono); }
+.apoyo { color: var(--apoyo); }
+.pequeno { font-size: .82rem; }
+
+.cabecera { display: flex; gap: 1.5rem; align-items: baseline; flex-wrap: wrap; padding: 1rem clamp(16px, 4vw, 48px);
+  border-bottom: 1px solid var(--linea); }
+.cabecera .marca { font-family: var(--serif); font-size: 1.25rem; color: var(--texto); text-decoration: none; }
+.cabecera nav { display: flex; gap: 1.2rem; }
+.cabecera nav a { color: var(--apoyo); text-decoration: none; }
+.cabecera nav a:hover { color: var(--foco); }
+
+main { max-width: 1080px; margin: 0 auto; padding: 2rem clamp(16px, 4vw, 48px) 4rem; }
+.lamina { background: var(--lamina); border: 1px solid var(--linea); border-radius: 10px; padding: clamp(16px, 3vw, 32px); margin: 1.5rem 0; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+.kpi .valor { font-family: var(--mono); font-size: 1.7rem; }
+.kpi .etiqueta { color: var(--apoyo); font-size: .85rem; }
+.pie { font-family: var(--mono); font-size: .75rem; color: var(--apoyo); margin-top: .8rem; }
+
+.controles { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: end; margin-bottom: 1rem; }
+.controles label { display: grid; gap: .3rem; font-size: .85rem; color: var(--apoyo); }
+select, input[type="search"] { font: inherit; padding: .45rem .6rem; border: 1px solid var(--linea); border-radius: 6px;
+  background: var(--fondo); color: var(--texto); }
+input[type="range"] { accent-color: var(--foco); width: min(320px, 70vw); }
+.dos-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+.grilla-especies { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .8rem; }
+.tarjeta { display: flex; gap: .7rem; align-items: center; padding: .55rem; background: var(--lamina); border: 1px solid var(--linea);
+  border-radius: 8px; text-decoration: none; color: var(--texto); }
+.tarjeta:hover { border-color: var(--foco); }
+.tarjeta img, .tarjeta .sin-foto { width: 52px; height: 52px; border-radius: 6px; object-fit: cover; background: var(--musgo-1); flex: none; }
+.tarjeta .n { font-weight: 600; line-height: 1.2; }
+
+.etiqueta-estatus { display: inline-block; font-size: .75rem; padding: .1rem .5rem; border-radius: 99px; border: 1px solid var(--linea); color: var(--apoyo); }
+.ficha-cabecera { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 2rem; align-items: start; }
+@media (max-width: 720px) { .ficha-cabecera { grid-template-columns: 1fr; } }
+.ficha-cabecera img { width: 100%; border-radius: 10px; display: block; }
+dl.datos { display: grid; grid-template-columns: auto 1fr; gap: .3rem 1rem; margin: 0; }
+dl.datos dt { color: var(--apoyo); }
+dl.datos dd { margin: 0; }
+audio { width: 100%; margin-top: .5rem; }
+svg text { font-family: var(--mono); fill: var(--apoyo); }
