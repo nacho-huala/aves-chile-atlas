@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function FichaEspecie({ params }: Props) {
   const f = await getFicha((await params).slug);
   return (
-    <main>
+    <main className="pagina" id="contenido">
       <p className="pequeno"><Link href="/especies/">← Especies</Link></p>
       <div className="ficha-cabecera">
         <figure style={{ margin: 0 }}>

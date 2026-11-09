@@ -1,18 +1,20 @@
 import { getCalculadora } from "@/lib/data";
+import { getZonas } from "@/lib/zonas";
 import Calculadora from "@/components/Calculadora";
 
-export const metadata = { title: "Tu salida · Aves en Chile" };
+export const metadata = { title: "Tu salida · Atlas de aves en Chile" };
 
 export default async function PaginaCalculadora() {
-  const datos = await getCalculadora(); // se lee al compilar y viaja como props al componente interactivo
+  const [datos, zonas] = await Promise.all([getCalculadora(), getZonas()]); // se leen al compilar y viajan como props
   return (
-    <main>
+    <main className="pagina" id="contenido">
+      <p className="etiqueta etiqueta--sol" style={{ margin: "0 0 12px" }}>02 · Lugar</p>
       <h1>Si salgo a observar, ¿cuántas especies veré?</h1>
       <p className="apoyo" style={{ maxWidth: "62ch" }}>
-        Con salidas reales de eBird de la misma zona y duración: cuántas especies se registran (mediana y rango
-        de la mitad central) y qué especies aparecen en más salidas.
+        Elige la zona en el mapa y la duración: con salidas reales de eBird de esa zona y duración, cuántas especies se
+        registran (mediana y rango de la mitad central) y qué especies aparecen en más salidas.
       </p>
-      <Calculadora datos={datos} />
+      <Calculadora datos={datos} zonas={zonas} />
     </main>
   );
 }

@@ -1,0 +1,82 @@
+/* Atlas de aves en Chile — tokens generados desde el sistema de diseño (tokens.json). */
+:root, [data-theme="dia"] {
+  --fondo: #e9e7dc;
+  --superficie: #f4f2ea;
+  --superficie-hundida: #dfddd0;
+  --texto: #22261c;
+  --texto-suave: #595d4e;
+  --foco: #7a2638;
+  --sobre-foco: #f4f2ea;
+  --sol: #8c6418;
+  --linea: #bdbaa9;
+  --anillo-foco: #7a2638;
+  --cat-musgo: #667b26;
+  --cat-mar: #00789e;
+  --cat-vino: #93303f;
+  --cat-ocre: #a9781e;
+  --cat-ciruela: #6e4a86;
+  --musgo-1: #e4e3cf;
+  --musgo-2: #c8cb9f;
+  --musgo-3: #a2aa6e;
+  --musgo-4: #788445;
+  --musgo-5: #525d27;
+  --musgo-6: #323a12;
+  --conchovino-1: #ebddd8;
+  --conchovino-2: #d7afaf;
+  --conchovino-3: #bb7a82;
+  --conchovino-4: #9a4756;
+  --conchovino-5: #73283b;
+  --conchovino-6: #4a1426;
+  --sombra-alzada: 0 1px 0 #bdbaa9, 0 10px 24px -12px #22261c33;
+}
+[data-theme="noche"] {
+  --fondo: #161913;
+  --superficie: #1f231b;
+  --superficie-hundida: #10130d;
+  --texto: #e7e4d4;
+  --texto-suave: #a9aa99;
+  --foco: #d46a79;
+  --sobre-foco: #161913;
+  --sol: #e2ae45;
+  --linea: #3a4030;
+  --anillo-foco: #e2ae45;
+  --cat-musgo: #86993c;
+  --cat-mar: #1a99aa;
+  --cat-vino: #c85a6b;
+  --cat-ocre: #bd8726;
+  --cat-ciruela: #9a6fbf;
+  --musgo-1: #262b1e;
+  --musgo-2: #3b4524;
+  --musgo-3: #56662c;
+  --musgo-4: #768a37;
+  --musgo-5: #9bb04c;
+  --musgo-6: #c9d97f;
+  --conchovino-1: #2b1e1e;
+  --conchovino-2: #4d2630;
+  --conchovino-3: #73323f;
+  --conchovino-4: #9e4556;
+  --conchovino-5: #c9606f;
+  --conchovino-6: #ee9aa5;
+  --sombra-alzada: 0 1px 0 #3a4030, 0 12px 28px -12px #00000099;
+}
+:root {
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --esp-7: 48px;
+  --esp-8: 64px;
+  --esp-9: 96px;
+  --radio-celda: 2px;
+  --radio-control: 6px;
+  --radio-tarjeta: 12px;
+  --radio-pildora: 999px;
+  --dur-rapida: 140ms;
+  --dur-media: 320ms;
+  --dur-lenta: 900ms;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", monospace;
+}
