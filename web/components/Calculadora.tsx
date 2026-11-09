@@ -1,11 +1,22 @@
 "use client";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Calculadora as Datos } from "@/lib/data";
 import { entero } from "@/lib/formato";
+import type { ZonaResumen } from "@/lib/zonas";
+import { MapaMacrozonas } from "./MapaMacrozonas";
 
-export default function Calculadora({ datos }: { datos: Datos }) {
+export default function Calculadora({ datos, zonas }: { datos: Datos; zonas: ZonaResumen[] }) {
   const [zona, setZona] = useState(datos.zonas.includes("Sur") ? "Sur" : datos.zonas[0]);
+  // La zona puede venir del mapa de la portada: /calculadora/?zona=Centro
+  useEffect(() => {
+    const z = new URLSearchParams(window.location.search).get("zona");
+    if (z && datos.zonas.includes(z)) setZona(z);
+  }, [datos.zonas]);
+  const elegirZona = (z: string) => {
+    setZona(z);
+    const u = new URL(window.location.href); u.searchParams.set("zona", z); window.history.replaceState(null, "", u);
+  };
   const curva = useMemo(
     () => Object.entries(datos.acumulacion[zona]).map(([m, v]) => ({ min: Number(m), ...v })).sort((a, b) => a.min - b.min),
     [datos, zona],
@@ -25,10 +36,14 @@ export default function Calculadora({ datos }: { datos: Datos }) {
   const linea = curva.map((c) => `${x(c.min)},${y(c.mediana)}`).join(" ");
 
   return (
+    <>
+    <div className="calc-mapa">
+      <MapaMacrozonas zonas={zonas} modo="selector" marcada={zonas.find((x) => x.nombre === zona)?.id ?? null} onElegir={elegirZona} />
+    </div>
     <section className="lamina">
       <div className="controles">
         <label>Zona
-          <select value={zona} onChange={(e) => setZona(e.target.value)}>
+          <select value={zona} onChange={(e) => elegirZona(e.target.value)}>
             {datos.zonas.map((z) => <option key={z}>{z}</option>)}
           </select>
         </label>
@@ -80,5 +95,6 @@ export default function Calculadora({ datos }: { datos: Datos }) {
       </div>
       <p className="pie">{datos.nota} Fuente: eBird Basic Dataset relSep-2026 (06_acumulacion, 06_probabilidad). Es frecuencia de reporte, no garantía de avistamiento.</p>
     </section>
+    </>
   );
 }

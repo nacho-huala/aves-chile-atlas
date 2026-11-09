@@ -51,8 +51,9 @@ aves-chile-atlas/
 ├── web/                            # Next.js (App Router, export estático)
 │   ├── public/data/                # JSON generados por export_web.py (versionados, ~2,6 MB)
 │   ├── lib/data.ts                 # ÚNICO lugar que lee y tipa los datos
-│   ├── app/                        # páginas: / · /calculadora · /especies · /especies/[slug]
-│   └── components/                 # Calculadora, BuscadorEspecies, Fenologia, BarrasAnuales
+│   ├── app/                        # páginas: / · /estadisticas · /especies · /especies/[slug] · /calculadora
+│   ├── components/                 # Hero, MapaMacrozonas, Calculadora… y laminas/ (una por lámina)
+│   └── scripts/build-chile.mjs     # mapa de macrozonas (BCN) → lib/chile-geo.json
 │
 └── docs/
     ├── README_tecnico.md           # diccionario de campos y reglas detalladas
@@ -228,16 +229,22 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 ## 10. Sitio web: páginas y láminas
 
-**Implementado (v0.1):**
+**Implementado (v0.3):** tres pestañas, cada lámina de L2 en la que mejor responde a su pregunta.
 
-| Ruta | Qué hace | Datos |
-|---|---|---|
-| `/` | Cifras clave y salidas por año | `resumen.json` |
-| `/calculadora` | Zona + duración → especies esperadas (mediana, Q1–Q3, n) y las 10 más probables | `calculadora.json` |
-| `/especies` | Buscador por nombre y estatus (566 especies) | `especies.json` |
-| `/especies/[slug]` | Ficha: foto con crédito, canto, «1 de cada N salidas», fenología mensual, rasgos | `especies/<slug>.json` |
+| Ruta | Pestaña | Láminas (interactivas) | Datos |
+|---|---|---|---|
+| `/` | Portada | «¿Qué buscas hoy?» (Especie · Lugar · Estadísticas), cifras, salidas por año, mapa de macrozonas | `resumen`, `calculadora`, `marea` |
+| `/estadisticas` | **Estadísticas**: el país en conjunto | 7 Marea (streamgraph) · 1 Mapa bivariado · 8 Red de co-ocurrencia · 11 Espacio de rasgos | `marea`, `laminas/mapa`, `laminas/red`, `laminas/rasgos` |
+| `/especies` | **Especies**: una por una | Catálogo · 5 Enjambre de rareza · 9 Riesgo vs. visibilidad · 10 Oído vs. vista (con audio) · 2 La ola | `especies`, `laminas/especies`, `laminas/oido`, `laminas/ola` |
+| `/especies/[slug]` | Ficha | Foto, canto, fenología mensual, **su propia ola** (lámina 2), rasgos | `especies/<slug>.json` |
+| `/calculadora` | **Tu salida**: planear una salida | 6 Calculadora (con mapa de macrozonas, acepta `?zona=`) · 3 Rueda «qué buscar este mes» · 4 Reloj «a qué hora» | `calculadora`, `laminas/rueda`, `laminas/reloj` |
 
-**Por construir (láminas de L2):** 1 mapa bivariado (deck.gl) · 2 ridgeline latitudinal · 3 rueda fenológica · 4 reloj polar · 5 enjambre de rareza · 7 marea (streamgraph) · 8 red de co-ocurrencia · 9 riesgo vs. visibilidad · 10 oído vs. vista · 11 espacio de rasgos. Para cada una: agregar su salida a `export_web.py`, su tipo a `lib/data.ts` y un componente en `components/`.
+- Cada lámina lleva sus tres notas (Cómo leer · Hallazgo · Limitación); las cifras de los hallazgos se calculan desde los JSON al compilar.
+- Librerías: **d3** (escalas, `d3-shape`, `d3-force`, `d3.stack`) dentro de componentes React, y **motion** para la UI. Respecto del plan de L2: el mapa bivariado se dibuja en SVG sobre el contorno de la BCN (sin deck.gl ni teselas), la red usa d3-force (no sigma.js) y los rasgos van en SVG (no Observable Plot), para no sumar dependencias pesadas a un sitio estático.
+- `export_web.py` escribe `web/public/data/laminas/*.json` (función `exportar_laminas`) y agrega `ola` a cada ficha. Los tipos están en `web/lib/laminas-datos.ts`.
+- El mapa de macrozonas (`lib/chile-geo.json`) une las regiones de la BCN según `MACRO` de `build_atlas_data.py`; se regenera con `npm run geo`.
+
+**Pendiente:** hexágonos H3 para el mapa, tendencia UICN (token), validar el denominador de salidas completas (C07).
 
 Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6 (tu salida).
 
@@ -245,17 +252,19 @@ Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6
 
 ## 11. Sistema visual
 
-Los tokens están en `web/app/globals.css`. Los dos temas se aplican según la preferencia del sistema (claro u oscuro).
+Fuente: el sistema de diseño «Atlas de aves en Chile» (artifact en claude.ai). Los tokens viven en `web/app/tokens.css` (generado desde su `tokens.json`) y los estilos en `web/app/globals.css`. El tema se elige con el selector Día/Noche de la cabecera (se guarda en el navegador); por defecto sigue al sistema.
 
-| Token | Día de campo (claro) | Noche de campo (oscuro) |
+| Token | Día de campo | Noche de campo |
 |---|---|---|
-| Fondo / lámina | `#E9E7DC` / `#F3F1E9` | `#161913` / `#1E221A` |
-| Texto / apoyo | `#22261C` / `#62655A` | `#E7E4D4` / `#94968A` |
-| Foco (conchovino) | `#7A2638` | `#D46A79` |
-| Categórica (bosque, costa, ciudad, matorral, humedal) | `#667B26 #00789E #93303F #A9781E #6E4A86` | `#86993C #1A99AA #C85A6B #BD8726 #9A6FBF` |
+| `fondo` / `superficie` | `#E9E7DC` / `#F4F2EA` | `#161913` / `#1F231B` |
+| `texto` / `texto-suave` | `#22261C` / `#595D4E` | `#E7E4D4` / `#A9AA99` |
+| `foco` (conchovino) · `sol` (barro) | `#7A2638` · `#8C6418` | `#D46A79` · `#E2AE45` |
+| Categórica `cat-musgo … cat-ciruela` | `#667B26 #00789E #93303F #A9781E #6E4A86` | `#86993C #1A99AA #C85A6B #BD8726 #9A6FBF` |
+| Secuenciales | `musgo-1…6` (cantidad), `conchovino-1…6` (intensidad) | ídem, más valor = más claro |
 
-- Tipografía: **Young Serif** (títulos), **Instrument Sans** (texto) e **IBM Plex Mono** (datos), cargadas desde Google Fonts.
-- Reglas: barras desde cero, un solo foco por vista, la categórica siempre en el mismo orden (es la del hábitat; las macrozonas usan la escala musgo) y cada vista con fuente, unidad y n.
+- Tipografía (Google Fonts, servidas localmente con Fontsource): **Fraunces** con `SOFT 100, WONK 1` (títulos y nombres de especie), **Hanken Grotesk** (texto) y **DM Mono** (cifras y etiquetas).
+- Logo: la «pluma de datos» (`web/public/brand/`), una pluma cuyas barbas son celdas de 0,25°.
+- Reglas: barras desde cero, un solo foco por vista, la categórica siempre en el mismo orden y **una sola dimensión por vista** (hábitat **o** macrozona), y cada vista con fuente, unidad y n. Todo gráfico lleva tres notas: Cómo leer, Hallazgo, Limitación.
 
 ---
 
@@ -290,5 +299,6 @@ El brief E2 entregado (`docs/entregas/Brief_E2_…docx`) refleja el estado **ant
 
 - **eBird Basic Dataset** EBD_relSep-2026. Cornell Lab of Ornithology. Términos de uso de eBird.
 - **AVONET** — Tobias, J. A. et al. (2022). *Ecology Letters*, 25, 581–597. CC BY 4.0.
+- **Cartografía:** Biblioteca del Congreso Nacional (BCN), mapas vectoriales, vía el paquete `react-chile-map` (MIT). Referencial.
 - **Wikidata** (CC0) · **iNaturalist** y **xeno-canto** (cada foto y grabación con su autor y licencia) · **UICN**.
 - **Uso de IA:** Claude (Anthropic) reordenó el repositorio y escribió `export_web.py`, `analisis_e2.py`, el sitio Next.js inicial y esta documentación; también corrigió C09 y C10 en `enrich_species.py`. La revisión final es del equipo.

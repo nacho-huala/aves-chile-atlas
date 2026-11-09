@@ -36,6 +36,7 @@ export interface Ficha extends EspecieIndice {
   primerAvistamiento: string | null;
   ultimoAvistamiento: string | null;
   fenologia: (number | null)[] | null; // % de salidas COMPLETAS por mes, ene → dic
+  ola: { bandas: number[]; pct: (number | null)[][] } | null; // lámina 2: mes × franja de 0,5° (norte → sur)
   imagen: { url: string | null; credito: string | null; licencia: string | null };
   canto: {
     audio: string; tipo: string | null; calidad: string | null; autor: string | null;

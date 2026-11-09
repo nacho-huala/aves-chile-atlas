@@ -7,17 +7,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve out",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "geo": "node scripts/build-chile.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/fraunces": "5.2.8",
+    "@fontsource-variable/hanken-grotesk": "5.2.6",
+    "@fontsource/dm-mono": "5.2.6",
+    "d3": "7.9.0",
+    "motion": "12.23.12",
     "next": "16.4.5",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@types/d3": "7.4.3",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "d3-geo": "3.1.1",
+    "react-chile-map": "0.2.1",
+    "topojson-client": "3.1.0",
+    "topojson-simplify": "3.0.3",
     "typescript": "^5"
   }
 }
