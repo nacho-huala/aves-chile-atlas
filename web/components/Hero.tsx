@@ -23,7 +23,7 @@ export function Hero({ especies, salidas, desde, hasta, destacada }: HeroProps) 
   const OPCIONES = [
     { tecla: "1", num: "01 · Especie", titulo: "Una especie", texto: `Busca entre ${es(especies)} especies por nombre o estatus.`, href: "/especies/", Glifo: GlifoEspecie },
     { tecla: "2", num: "02 · Lugar", titulo: "Un lugar", texto: "Elige una macrozona en el mapa y te decimos qué aves esperar.", href: "/calculadora/", Glifo: GlifoLugar },
-    { tecla: "3", num: "03 · Datos", titulo: "Los datos", texto: "Rareza, temporadas y qué especies se ven juntas.", href: "/datos/", Glifo: GlifoDatos },
+    { tecla: "3", num: "03 · Datos", titulo: "Los datos", texto: "La marea de salidas, dónde hay más especies y quién aparece con quién.", href: "/estadisticas/", Glifo: GlifoDatos },
   ];
 
   // Atajo: 1, 2 o 3 abre la vía correspondiente.

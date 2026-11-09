@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getEspecies, getFicha } from "@/lib/data";
 import { entero, MESES_LARGOS, pct, UICN, unoDeCada } from "@/lib/formato";
 import Fenologia from "@/components/Fenologia";
+import { OlaGrafico } from "@/components/laminas/Ola";
 
 // Una página HTML por especie, generada al compilar.
 export async function generateStaticParams() {
@@ -54,6 +55,14 @@ export default async function FichaEspecie({ params }: Props) {
           <h2>¿Cuándo buscarla?</h2>
           <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} />
           <p className="pie">% de salidas completas de cada mes en que se registró · eBird Chile 2019–2025</p>
+        </section>
+      )}
+
+      {f.ola && f.ola.bandas.length > 2 && (
+        <section className="lamina">
+          <h2>¿Dónde, mes a mes?</h2>
+          <OlaGrafico ola={f.ola} nombre={f.nombre} />
+          <p className="pie">% de salidas completas por franja de 0,5° de latitud (mín. 40 salidas) · eBird Chile 2019–2025 · <a href="/especies/#ola">Más sobre la ola</a></p>
         </section>
       )}
 

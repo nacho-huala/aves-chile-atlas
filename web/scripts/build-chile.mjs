@@ -42,6 +42,8 @@ function build(rotar, W) {
   path.digits?.(1);
   return {
     width: W, height: +((y1 - y0) * k).toFixed(1),
+    // para proyectar lon/lat en el cliente: Mercator escala 1000, luego (rotar ? [y, -x] : [x, y]), restar x0/y0 y multiplicar por k
+    proj: { rotar, x0: +x0.toFixed(4), y0: +y0.toFixed(4), k: +k.toFixed(6) },
     zonas: Object.fromEntries(zonas.map((z) => [z.id, path(z.f)])),
     bordes: path(bordes),
     ciudades: Object.fromEntries(CIUDADES.map(([n, lon, lat]) => [n, p(lon, lat)])),

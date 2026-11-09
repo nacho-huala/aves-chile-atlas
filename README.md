@@ -51,8 +51,8 @@ aves-chile-atlas/
 ├── web/                            # Next.js (App Router, export estático)
 │   ├── public/data/                # JSON generados por export_web.py (versionados, ~2,6 MB)
 │   ├── lib/data.ts                 # ÚNICO lugar que lee y tipa los datos
-│   ├── app/                        # páginas: / · /calculadora · /especies · /especies/[slug] · /datos
-│   ├── components/                 # Hero, MapaMacrozonas, Calculadora, BuscadorEspecies, Fenologia…
+│   ├── app/                        # páginas: / · /estadisticas · /especies · /especies/[slug] · /calculadora
+│   ├── components/                 # Hero, MapaMacrozonas, Calculadora… y laminas/ (una por lámina)
 │   └── scripts/build-chile.mjs     # mapa de macrozonas (BCN) → lib/chile-geo.json
 │
 └── docs/
@@ -229,20 +229,22 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 ## 10. Sitio web: páginas y láminas
 
-**Implementado (v0.2):**
+**Implementado (v0.3):** tres pestañas, cada lámina de L2 en la que mejor responde a su pregunta.
 
-| Ruta | Qué hace | Datos |
-|---|---|---|
-| `/` | Portada: «¿Qué buscas hoy?» (Especie · Lugar · Datos), cifras clave, salidas por año, mapa de macrozonas y láminas | `resumen.json`, `especies.json`, `calculadora.json`, `marea.json` |
-| `/calculadora` | **Lugar**: mapa de macrozonas + duración → especies esperadas (mediana, Q1–Q3, n) y las 10 más probables. Acepta `?zona=Centro` | `calculadora.json`, `marea.json` |
-| `/especies` | **Especie**: buscador por nombre y estatus (566 especies) | `especies.json` |
-| `/especies/[slug]` | Ficha: foto con crédito, canto, «1 de cada N salidas», fenología mensual, rasgos | `especies/<slug>.json` |
-| `/datos` | **Datos**: las cinco láminas de L2 con su lectura, hallazgo y limitación (imágenes, por ahora) | `lib/laminas.ts` |
+| Ruta | Pestaña | Láminas (interactivas) | Datos |
+|---|---|---|---|
+| `/` | Portada | «¿Qué buscas hoy?» (Especie · Lugar · Estadísticas), cifras, salidas por año, mapa de macrozonas | `resumen`, `calculadora`, `marea` |
+| `/estadisticas` | **Estadísticas**: el país en conjunto | 7 Marea (streamgraph) · 1 Mapa bivariado · 8 Red de co-ocurrencia · 11 Espacio de rasgos | `marea`, `laminas/mapa`, `laminas/red`, `laminas/rasgos` |
+| `/especies` | **Especies**: una por una | Catálogo · 5 Enjambre de rareza · 9 Riesgo vs. visibilidad · 10 Oído vs. vista (con audio) · 2 La ola | `especies`, `laminas/especies`, `laminas/oido`, `laminas/ola` |
+| `/especies/[slug]` | Ficha | Foto, canto, fenología mensual, **su propia ola** (lámina 2), rasgos | `especies/<slug>.json` |
+| `/calculadora` | **Tu salida**: planear una salida | 6 Calculadora (con mapa de macrozonas, acepta `?zona=`) · 3 Rueda «qué buscar este mes» · 4 Reloj «a qué hora» | `calculadora`, `laminas/rueda`, `laminas/reloj` |
 
-- El mapa (`lib/chile-geo.json`) une las regiones de la BCN según la misma tabla `MACRO` de `build_atlas_data.py` (copiada en `lib/macrozonas.mjs`). Se regenera con `npm run geo`.
-- Animaciones con `motion` (motion/react): entrada del hero, barras y conteos una vez al entrar en pantalla, hover. Todo se detiene con `prefers-reduced-motion`.
+- Cada lámina lleva sus tres notas (Cómo leer · Hallazgo · Limitación); las cifras de los hallazgos se calculan desde los JSON al compilar.
+- Librerías: **d3** (escalas, `d3-shape`, `d3-force`, `d3.stack`) dentro de componentes React, y **motion** para la UI. Respecto del plan de L2: el mapa bivariado se dibuja en SVG sobre el contorno de la BCN (sin deck.gl ni teselas), la red usa d3-force (no sigma.js) y los rasgos van en SVG (no Observable Plot), para no sumar dependencias pesadas a un sitio estático.
+- `export_web.py` escribe `web/public/data/laminas/*.json` (función `exportar_laminas`) y agrega `ola` a cada ficha. Los tipos están en `web/lib/laminas-datos.ts`.
+- El mapa de macrozonas (`lib/chile-geo.json`) une las regiones de la BCN según `MACRO` de `build_atlas_data.py`; se regenera con `npm run geo`.
 
-**Por construir (láminas de L2):** 1 mapa bivariado (deck.gl) · 2 ridgeline latitudinal · 3 rueda fenológica · 4 reloj polar · 5 enjambre de rareza · 7 marea (streamgraph) · 8 red de co-ocurrencia · 9 riesgo vs. visibilidad · 10 oído vs. vista · 11 espacio de rasgos. Para cada una: agregar su salida a `export_web.py`, su tipo a `lib/data.ts` y un componente en `components/`.
+**Pendiente:** hexágonos H3 para el mapa, tendencia UICN (token), validar el denominador de salidas completas (C07).
 
 Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6 (tu salida).
 

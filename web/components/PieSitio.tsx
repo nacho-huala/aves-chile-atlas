@@ -14,7 +14,7 @@ export function PieSitio() {
             </Link>
             <p className="cuerpo-s" style={{ maxWidth: 380, marginTop: 16 }}>Grupo 05 · Visualización de Datos y Storytelling, Magíster en Data Science, Universidad del Desarrollo.</p>
           </div>
-          <div><h2 className="etiqueta etiqueta--sol">Guía</h2><ul><li><Link href="/especies/">Especies</Link></li><li><Link href="/calculadora/">Tu salida</Link></li><li><Link href="/datos/">Datos</Link></li></ul></div>
+          <div><h2 className="etiqueta etiqueta--sol">Guía</h2><ul><li><Link href="/especies/">Especies</Link></li><li><Link href="/calculadora/">Tu salida</Link></li><li><Link href="/estadisticas/">Estadísticas</Link></li></ul></div>
           <div><h2 className="etiqueta etiqueta--sol">Fuentes</h2><ul><li><a href="https://ebird.org/data/download">eBird (EBD)</a></li><li><a href="https://www.wikidata.org">Wikidata</a></li><li><a href="https://www.inaturalist.org">iNaturalist</a></li><li><a href="https://xeno-canto.org">xeno-canto</a></li></ul></div>
           <div><h2 className="etiqueta etiqueta--sol">Equipo</h2><ul className="cuerpo-s"><li>Victoria Albornoz</li><li>Matías Gebauer</li><li>Luciano Hernández</li><li>Manuel Huala</li><li>Betzabeth Torres</li></ul></div>
         </div>

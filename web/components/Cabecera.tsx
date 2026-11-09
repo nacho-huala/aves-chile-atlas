@@ -21,9 +21,9 @@ export function Cabecera() {
           <img className="logo-noche" src="/brand/logo-noche.svg" alt="" width={316} height={96} />
         </Link>
         <nav className="cabecera__nav" aria-label="Principal">
+          <Link href="/estadisticas/">Estadísticas</Link>
           <Link href="/especies/">Especies</Link>
           <Link href="/calculadora/">Tu salida</Link>
-          <Link href="/datos/">Datos</Link>
           <TemaToggle />
         </nav>
       </div>

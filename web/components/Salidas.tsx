@@ -54,7 +54,7 @@ export function Salidas({ anual, fuente }: { anual: Anio[]; fuente: string }) {
             <div className="nota"><span className="nota__tipo">Limitación</span><p>Las especies por salida se mantienen cerca de 9: más salidas reflejan más observación, no más aves.</p></div>
           </div>
         </div>
-        <p className="cuerpo-s fuente">Fuente: {fuente}. <Link className="enlace" href="/datos/">Por mes y macrozona en el streamgraph</Link>.</p>
+        <p className="cuerpo-s fuente">Fuente: {fuente}. <Link className="enlace" href="/estadisticas/#marea">Por mes y macrozona en el streamgraph</Link>.</p>
       </div>
     </section>
   );
