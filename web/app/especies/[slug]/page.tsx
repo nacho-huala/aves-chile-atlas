@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getEspecies, getFicha } from "@/lib/data";
 import { entero, MESES_LARGOS, pct, UICN, unoDeCada } from "@/lib/formato";
 import Fenologia from "@/components/Fenologia";
+import PerfilAltitud from "@/components/PerfilAltitud";
 import { OlaGrafico } from "@/components/laminas/Ola";
 
 // Una página HTML por especie, generada al compilar.
@@ -62,10 +63,44 @@ export default async function FichaEspecie({ params }: Props) {
       {f.nidificacion?.resumen && (
         <section className="lamina">
           <h2>Nidificación en Chile</h2>
-          <p>{f.nidificacion.resumen}</p>
-          {f.nidificacion.altitud && <p className="apoyo">Altitud de nidificación: {entero(f.nidificacion.altitud[0])} a {entero(f.nidificacion.altitud[1])} m s. n. m.</p>}
-          {f.nidificacion.revisar && <p className="pie">Información reproductiva incompleta o por confirmar en el atlas.</p>}
-          <p className="pie">Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, Red de Observadores de Aves y Vida Silvestre de Chile (ROC). Datos de 2011–2016, distintos del período de eBird (2019–2025).</p>
+          <div className={f.nidificacion.altitud ? "nido-grid" : undefined}>
+            <div>
+              <p className="cuerpo-l" style={{ marginTop: 0 }}>{f.nidificacion.resumen}</p>
+              {f.nidificacion.meses.length > 0 && (
+                <>
+                  <p className="apoyo pequeno" style={{ marginBottom: 6 }}>Meses de nidificación</p>
+                  <ol className="meses-nido" aria-label="Meses de nidificación">
+                    {MESES_LARGOS.map((m, i) => <li key={m} data-on={f.nidificacion!.meses.includes(i + 1)} title={m}>{m.slice(0, 3)}</li>)}
+                  </ol>
+                </>
+              )}
+              {f.nidificacion.revisar && <p className="pie">Información reproductiva incompleta o por confirmar en el atlas.</p>}
+            </div>
+            {f.nidificacion.altitud && (
+              <figure style={{ margin: 0 }}>
+                <PerfilAltitud min={f.nidificacion.altitud[0]} max={f.nidificacion.altitud[1]} />
+                <figcaption className="pie">Altitud de nidificación (franja dorada) sobre un perfil esquemático costa–Andes.</figcaption>
+              </figure>
+            )}
+          </div>
+          <p className="pie">Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, ROC. Datos de 2011–2016, distintos del período de eBird (2019–2025).</p>
+        </section>
+      )}
+
+      {f.kba.length > 0 && (
+        <section className="lamina">
+          <h2>¿Dónde verla? Sitios clave</h2>
+          <p className="apoyo" style={{ marginTop: 0 }}>Áreas Clave para la Biodiversidad donde aparece en más salidas completas (mínimo 10 salidas con la especie).</p>
+          <ul className="kba-aves">
+            {f.kba.map((k) => (
+              <li key={k.id}>
+                <Link href="/lugares/">{k.nombre}{k.region ? <span className="apoyo"> · {k.region}</span> : null}</Link>
+                <span className="kba-aves__barra" aria-hidden="true"><i style={{ width: `${k.p}%` }} /></span>
+                <span className="mono pequeno">{Math.round(k.p)} %</span>
+              </li>
+            ))}
+          </ul>
+          <p className="pie">% de salidas completas del sitio con la especie · eBird 2019–2025 · KBA World Database sep-2026 · <Link href="/lugares/">Ver el mapa de sitios</Link></p>
         </section>
       )}
 

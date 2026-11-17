@@ -25,6 +25,7 @@ export interface EspecieIndice {
   uicn: string | null; // LC, NT, VU, EN, CR, DD
   foto: string | null;
   mejorMes: number | null; // 1–12
+  nidifica?: boolean; // figura como nidificante en el atlas (Medrano et al. 2018)
 }
 
 export interface Ficha extends EspecieIndice {
@@ -37,6 +38,7 @@ export interface Ficha extends EspecieIndice {
   ultimoAvistamiento: string | null;
   fenologia: (number | null)[] | null; // % de salidas COMPLETAS por mes, ene → dic
   nidificacion: { resumen: string | null; revisar: boolean; meses: number[]; altitud: [number, number] | null } | null; // Medrano et al. 2018
+  kba: { id: number; nombre: string; region: string | null; p: number; salidas: number }[]; // sitios KBA donde más se registra
   ola: { bandas: number[]; pct: (number | null)[][] } | null; // lámina 2: mes × franja de 0,5° (norte → sur)
   imagen: { url: string | null; credito: string | null; licencia: string | null };
   canto: {

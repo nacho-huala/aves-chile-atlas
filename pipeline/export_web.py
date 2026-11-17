@@ -64,6 +64,9 @@ def escribir(obj, p: Path):
     p.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
+MIN_SALIDAS_SITIO = 20     # un sitio KBA se recomienda solo si tiene al menos 20 salidas dentro
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--data", type=Path, default=Path("data"))
@@ -89,6 +92,18 @@ def main():
 
     ola = leer_ola(d, validas)
 
+    # sitios KBA donde más se ve cada especie (solo sitios con ≥ MIN_SALIDAS_SITIO salidas y % calculable)
+    kba_esp: dict[str, list] = {}
+    if (d / "13_kba_sitios.csv").exists():
+        sit = {r["kba_id"]: r for r in leer(d / "13_kba_sitios.csv") if (num(r["salidas_dentro"], 0) or 0) >= MIN_SALIDAS_SITIO}
+        for r in leer(d / "13_kba_especies.csv"):
+            s = sit.get(r["kba_id"])
+            if s and txt(r["pct_completas"]) and (num(r["salidas_con"], 0) or 0) >= 10:
+                kba_esp.setdefault(r["sci_name"], []).append({"id": num(r["kba_id"], 0), "nombre": s["nombre"], "region": txt(s["region"]),
+                                                              "p": num(r["pct_completas"], 1), "salidas": num(r["salidas_con"], 0)})
+        for k in kba_esp:
+            kba_esp[k] = sorted(kba_esp[k], key=lambda x: (-x["p"], -x["salidas"]))[:5]
+
     indice, fichas = [], 0
     for r in sorted(enr, key=lambda r: -float(r["salidas_con"])):
         s = slug(r["sci_name"])
@@ -97,6 +112,7 @@ def main():
             "familia": txt(r["familia"]), "pct": num(r["pct_salidas"], 4), "salidas": num(r["salidas_con"], 0),
             "estatus": txt(r["estatus_final"]), "uicn": txt(r["uicn"]), "foto": txt(r["foto_cuadrada"]),
             "mejorMes": num(r["mejor_mes"], 0),
+            "nidifica": r["sci_name"] in nid,  # registrada como nidificante en el atlas (Medrano et al. 2018)
         }
         indice.append(base)
         ficha = {
@@ -108,7 +124,8 @@ def main():
             "endemica": r["endemica"] == "true",
             "primerAvistamiento": txt(r["primer_avistamiento"]), "ultimoAvistamiento": txt(r["ultimo_avistamiento"]),
             "fenologia": fen.get(r["sci_name"]),  # % de salidas completas por mes (ene → dic); null si no hay
-            "nidificacion": nid.get(r["sci_name"]),  # null si el atlas no la registra como nidificante
+            "nidificacion": nid.get(r["sci_name"]),
+            "kba": kba_esp.get(r["sci_name"], []),  # sitios KBA donde más se registra  # null si el atlas no la registra como nidificante
             "ola": ola.get(r["sci_name"]),  # lámina 2: % de salidas completas por mes × franja de 0,5°
             "imagen": {"url": txt(r["foto_url"]), "credito": txt(r["foto_credito"]), "licencia": txt(r["foto_licencia"])},
             "canto": None if not txt(r["xc_audio"]) else {
@@ -164,6 +181,8 @@ def main():
                       "Norte Grande ≥ 180 min excluido."}, out / "calculadora.json")
 
     exportar_laminas(d, out, enr, nombre, fen, ola)
+    if nid:
+        exportar_nidificacion(d, out, enr, nid, fen)
     if (d / "14_uicn_agregado.csv").exists():  # tendencia UICN: solo agregado por categoría (términos UICN)
         escribir({"categorias": [{"cat": r["categoria"], "especies": num(r["especies"], 0), "decreciente": num(r["decreciente"], 0),
                                   "estable": num(r["estable"], 0), "creciente": num(r["creciente"], 0),
@@ -175,9 +194,37 @@ def main():
     print(f"✓ {fichas} fichas · especies.json · resumen.json · marea.json · calculadora.json · laminas/ → {out}")
 
 
+# ═══════════════ nidificación (contrato con web/lib/laminas-datos.ts → getNidificacion)
+
+def exportar_nidificacion(d: Path, out: Path, enr: list, nid: dict, fen: dict):
+    """Láminas 13 y 14: calendario de nidificación frente a eBird, y rangos de altitud de nidificación."""
+    especies = []
+    for r in enr:
+        n = nid.get(r["sci_name"])
+        if not n:
+            continue
+        f = fen.get(r["sci_name"])
+        mx = max([v or 0 for v in f]) if f else 0
+        especies.append({"slug": slug(r["sci_name"]), "nombre": txt(r["nombre"]) or r["common_name"],
+                         "estatus": txt(r["estatus_final"]), "pct": num(r["pct_salidas"], 4),
+                         "meses": n["meses"], "alt": n["altitud"], "revisar": n["revisar"],
+                         # fenología relativa al máximo de la especie (0–1), para comparar especies de distinta frecuencia
+                         "fen": [round((v or 0) / mx, 2) for v in f] if f and mx > 0 else None})
+    especies.sort(key=lambda e: -(e["pct"] or 0))
+    filas = leer(d / "15_nidificacion.csv")
+    cruce = [r for r in filas if r["coincide_pico"] in ("True", "False")]
+    coincide = sum(r["coincide_pico"] == "True" for r in cruce)
+    azar = sum(int(r["n_meses"]) / 12 for r in cruce) / len(cruce) if cruce else None
+    por_mes = [sum(1 for e in especies if m in e["meses"]) for m in range(1, 13)]
+    escribir({"especies": especies, "porMes": por_mes,
+              "cruce": {"n": len(cruce), "coincide": coincide, "azar": round(100 * azar, 1) if azar else None},
+              "cita": "Medrano F, Barros R, Norambuena H V, Matus R y Schmitt F. 2018. Atlas de las aves nidificantes de Chile. "
+                      "Red de Observadores de Aves y Vida Silvestre de Chile. Santiago, Chile."},
+             out / "laminas" / "nidificacion.json")
+
+
 # ═══════════════ sitios KBA (contrato con web/lib/data.ts → getKba)
 
-MIN_SALIDAS_SITIO = 20     # un sitio se recomienda solo si tiene al menos 20 salidas dentro
 MAX_ESPECIES_SITIO = 20    # especies que se listan por sitio (las más frecuentes)
 CITA_KBA = ("BirdLife International (2026). Digital boundaries of Key Biodiversity Areas from the World Database of Key "
             "Biodiversity Areas. Developed by the KBA Partnership: BirdLife International, International Union for the "

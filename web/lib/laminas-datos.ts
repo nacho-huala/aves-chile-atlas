@@ -43,3 +43,8 @@ export const getEspeciesLamina = () => leer<EspecieLamina[]>("especies.json");
 export const getOido = () => leer<DatosOido>("oido.json");
 export const getRasgos = () => leer<RasgoEspecie[]>("rasgos.json");
 export const getRed = () => leer<DatosRed>("red.json");
+
+/** 13–14 · nidificación (Medrano et al. 2018) frente a eBird. fen = % de salidas por mes relativo al máximo de la especie (0–1). */
+export interface NidEspecie extends Ref { estatus: string | null; pct: number; meses: number[]; alt: [number, number] | null; revisar: boolean; fen: number[] | null }
+export interface DatosNidificacion { especies: NidEspecie[]; porMes: number[]; cruce: { n: number; coincide: number; azar: number | null }; cita: string }
+export const getNidificacion = () => leer<DatosNidificacion>("nidificacion.json");
