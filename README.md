@@ -21,6 +21,7 @@ El proyecto toma **7,3 millones de registros de ciencia ciudadana de eBird (Chil
 8. [Cifras de control](#8-cifras-de-control)
 9. [Tablas y relaciones](#9-tablas-y-relaciones)
 10. [Sitio web: páginas y láminas](#10-sitio-web-páginas-y-láminas)
+    - [10b. Sitios KBA y rangos BirdLife](#10b-sitios-kba-y-rangos-birdlife-pestaña-lugares)
 11. [Sistema visual](#11-sistema-visual)
 12. [Calidad: controles y problemas abiertos](#12-calidad-controles-y-problemas-abiertos)
 13. [Limitaciones](#13-limitaciones)
@@ -38,7 +39,7 @@ aves-chile-atlas/
 │   ├── export_web.py               # paso 3 · CSV → JSON para el sitio (solo biblioteca estándar)
 │   ├── aves_sonidos.py             # utilidad: descarga de grabaciones de xeno-canto
 │   ├── analisis/
-│   │   ├── analisis_e2.py          # controles C01–C15, exploración y prueba de concepto (E2)
+│   │   ├── analisis_e2.py          # controles C01–C21, exploración y prueba de concepto (E2)
 │   │   └── eda_ebird.py            # EDA inicial (marimo)
 │   ├── legacy/export_viz_data.py   # versión anterior del export, solo referencia
 │   └── requirements.txt
@@ -110,9 +111,13 @@ python pipeline/build_atlas_data.py --tsv data/raw/chile_ebd_relSep-2026.txt --o
 # 2. cruces externos (claves en .env; caché en data/extra/cache)
 python pipeline/enrich_species.py --data data --tmp data/raw/_atlas_2019_2025 \
        --avonet "data/raw/AVONET Supplementary dataset 1.xlsx"
-#    solo recombinar, sin consultar APIs:  python pipeline/enrich_species.py --data data --solo
+#    solo recombinar, sin consultar APIs:  python pipeline/build_uicn.py                                      # UICN → data/extra/e04_iucn.csv (descarga manual en data/UICN)
+python pipeline/enrich_species.py --data data --solo
 # 3. JSON para el sitio
 python pipeline/export_web.py
+# 3b. sitios KBA (opcional; necesita data/KBA_Data y data/raw/_atlas_2019_2025/*.parquet, ver §10b)
+python pipeline/build_kba.py
+python pipeline/export_web.py      # vuelve a correr para generar web/public/data/kba.json
 # 4. controles y figuras E2 (necesita data/raw/_atlas_2019_2025/salidas.parquet)
 python pipeline/analisis/analisis_e2.py
 ```
@@ -144,7 +149,7 @@ flowchart LR
 ```mermaid
 flowchart TD
     P0["Pregunta E1/L2<br/>¿Qué especies veré según zona, mes y hora?<br/>Duda de E1: ¿es comparable el esfuerzo?"] --> C0
-    C0["Controles de las tablas (C01–C15)"] -->|"hallazgos: 2 denominadores,<br/>UICN vacía, introducidas mal marcadas"| Q1
+    C0["Controles de las tablas (C01–C21)"] -->|"hallazgos: 2 denominadores,<br/>UICN vacía, introducidas mal marcadas"| Q1
     Q1["Q1 · ¿Cómo cambió el esfuerzo 2019–2025?"] --> O1
     O1["Salidas ×2,7; especies por salida ≈ 9;<br/>la mezcla de macrozonas cambia por año y mes"] --> Q2a
     Q2a["Q2a · ¿Difieren las zonas si se iguala la duración?"] --> O2a
@@ -221,6 +226,8 @@ Las tablas de hechos agregados **no se unen entre sí**: comparten columnas de a
 | `06_acumulacion` · `06_probabilidad` | macrozona × duración (× especie) | `macrozona`, `minutos`, `sci_name` |
 | `07_marea` | año × mes × macrozona | `year`, `month`, `macrozona` |
 | `08_nodos` · `08_aristas` | especie (top 40) · par | `sci_name` · `source`, `target` |
+| `13_kba_sitios` · `13_kba_proteccion` | sitio KBA (≥ 1 salida) · tramo de protección | `kba_id` · `tramo` |
+| `13_kba_especies` | sitio KBA × especie | `kba_id`, `sci_name` |
 | `10_riesgo` · `11_rasgos` · `extra/12_sonidos` · `extra/e0X` | una especie | `sci_name` |
 
 Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) §8.
@@ -246,7 +253,63 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 **Pendiente:** hexágonos H3 para el mapa, tendencia UICN (token), validar el denominador de salidas completas (C07).
 
+| `/lugares` | **Lugares**: dónde ir | Sitios KBA cerca de ti (geolocalización solo en el navegador o por macrozona), qué aves esperar, mejor mes; tabla de protección | `kba` |
+
 Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6 (tu salida).
+
+---
+
+## 10b. Sitios KBA y rangos BirdLife (pestaña «Lugares»)
+
+Cruza las salidas de eBird con las **Áreas Clave para la Biodiversidad (KBA)** de Chile (188 sitios) para recomendar lugares y decir qué aves esperar en ellos.
+
+```bash
+python pipeline/build_kba.py                  # KBA × eBird → data/13_kba_*.csv (+ data/kba_privado/, no se versiona)
+python pipeline/extraer_rangos_chile.py       # (una vez) recorta los rangos BirdLife del GeoPackage mundial a Chile
+python pipeline/build_rangos.py               # rango BirdLife por especie → data/extra/e06_birdlife.csv
+python pipeline/fuera_de_rango.py             # % de salidas fuera del rango → data/extra/e07_fuera_rango.csv
+python pipeline/export_web.py                 # → web/public/data/kba.json
+```
+
+Entradas (no se versionan; ver `.gitignore`): `data/KBA_Data/` (shapefiles, `KBA-Sites.csv`, especies gatillo) y `data/species_data/` (BOTW 2025 GeoPackage, checklist HBW/BirdLife v10). Dependencias: `geopandas`, `pyogrio`, `shapely`, `pyarrow`.
+
+**Cómo se relaciona una salida con un sitio:** `dentro` si la localidad cae estrictamente en el polígono; `cerca` si está a ≤ 0,02° (~2 km). Los indicadores públicos usan solo `dentro`. Los sitios puntuales se amplían con un buffer según su superficie reportada.
+
+| Tabla | Una fila es… | Campos principales |
+|---|---|---|
+| `13_kba_sitios` | un sitio KBA | `kba_id`, `nombre`, `salidas_dentro/cerca`, `localidades`, `salidas_completas`, `riqueza_mediana/p90` (solo con ≥ 20 salidas completas), `salidas_2019..2025`, `mes_01..12`, `punto_lat/lon/salidas/publicable`, `especies`, `n_gatillo_aves`, `gatillo_vistas`, `pct_gatillo_vistas` |
+| `15_nidificacion` | una especie nidificante (atlas) | `sci_name` |
+| `13_kba_especies` | sitio × especie | `kba_id`, `sci_name`, `salidas_con`, `pct_completas` (salidas completas con la especie ÷ salidas completas del sitio), `mes_pico` |
+| `13_kba_proteccion` | tramo de superficie protegida | `tramo` (0 %, 1–50 %, 51–99 %, 100 %), `sitios`, `salidas_dentro`, `pct_salidas_en_kba` |
+| `e06_birdlife` | una especie | presencia en rango BirdLife, estatus de rango en Chile, categoría UICN 2025 (privada) |
+| `e07_fuera_rango` | una especie | % de salidas a > 10/25/50 km de su rango (privada) |
+
+**Punto de cada sitio:** nunca sale de la capa KBA. Es la celda de 0,01° con más salidas dentro del sitio y se publica (redondeada a 2 decimales) solo si hay ≥ 2 localidades y ≥ 20 salidas en la celda: 100 de 127 sitios con datos. Los demás se muestran por macrozona.
+
+**Hallazgos de control:** 16,9 % de las salidas caen dentro de algún KBA; los 91 sitios sin protección (0 %) reciben 23,4 % de las salidas en KBA; las aves gatillo se ven en ~80 % de los casos; 18 sitios no tienen ninguna salida.
+
+**Términos de uso (importante):**
+- La capa KBA no se redistribuye: el repositorio y el sitio solo contienen indicadores derivados de eBird y la cita obligatoria (pie del sitio y `kba.json`). Se pidió el acceso a KBA con ese propósito; **la consulta al Secretariado KBA sobre publicar puntos y derivados está pendiente**.
+- Los rangos BirdLife se solicitaron para «mapas de 1–10 especies» y «análisis académico»: `e06`/`e07` están en `.gitignore` y **no se usan en el sitio** hasta tener respuesta de BirdLife.
+- Cita KBA: BirdLife International (2026). *Digital boundaries of Key Biodiversity Areas from the World Database of KBAs*. KBA Partnership. https://www.keybiodiversityareas.org (descargado el 14/11/2026).
+
+**Limitaciones:** los rangos BirdLife tienen bordes gruesos (p. ej. ~30 km tierra adentro), por eso «fuera de rango» solo es fiable en umbrales altos (≥ 90 %: 36 especies); 3 nombres sin correspondencia (*Eulidia yarrellii*, *Ochetorhynchus andaecola*, *Procelsterna cerulea*) y algunos cruces por sinónimo marcados «revisar» en `data/extra/overrides_birdlife.csv`; una salida en dos KBA superpuestos cuenta en ambos; no se encontró el archivo de series de índices de riesgo por especie en `KBA_Data`.
+
+### Atlas de nidificación (Medrano et al. 2018)
+
+`python pipeline/build_nidificacion.py` cruza `data/extra/atlas_nidificacion_v3.csv` con `03_fenologia` y escribe `data/15_nidificacion.csv` (316 especies, todas con `sci_name` ya en la taxonomía de eBird; `sci_atlas` guarda el nombre del atlas).
+
+| Campo | Significado |
+|---|---|
+| `resumen` | resumen propio (no copia el atlas) de 2–3 líneas |
+| `altitud_min/max` | rango de altitud de nidificación (m s. n. m.) |
+| `meses_nidificacion` | meses (1–12) con nidificación; vacío si la ficha requiere revisión |
+| `pico_ebird`, `coincide_pico`, `razon_temporada` | mes de máximo en eBird; si cae dentro de la temporada; % medio dentro ÷ fuera |
+| `revisar`, `nota` | 60 fichas con datos incompletos o por confirmar |
+
+**Resultado:** el mes de mayor registro en eBird cae dentro de la temporada de nidificación en 99 de 242 especies (41 %), poco más que lo esperable por azar (34 %): lo más visible no coincide, en general, con el período reproductivo. Se muestra en cada ficha (franja dorada bajo la fenología y un bloque «Nidificación en Chile»).
+
+**Límites:** el atlas es de 2011–2016 y eBird de 2019–2025, y se muestran como fuentes separadas; los meses salen de frases del texto y pueden incluir cuidado de polluelos; solo se publica el resumen propio con la cita de Medrano et al. (2018), *Atlas de las aves nidificantes de Chile*, ROC. El PDF está en `raw_data/07_referencias/`.
 
 ---
 
@@ -270,16 +333,17 @@ Fuente: el sistema de diseño «Atlas de aves en Chile» (artifact en claude.ai)
 
 ## 12. Calidad: controles y problemas abiertos
 
-`pipeline/analisis/analisis_e2.py` ejecuta 15 controles (esperado vs. observado) → `docs/e2/tablas/controles.csv`.
+`pipeline/analisis/analisis_e2.py` ejecuta 21 controles (esperado vs. observado) → `docs/e2/tablas/controles.csv`.
 
 | ID | Estado | Detalle |
 |---|---|---|
-| C09 | ✅ corregido (nov-2026) | `uicn` estaba vacía: Wikidata entrega etiquetas en español («especie vulnerable»). Se amplió `WD_IUCN` en `enrich_species.py` → 525 especies con categoría. |
+| C09 | ✅ corregido (nov-2026) | `uicn` estaba vacía: Wikidata entrega etiquetas en español («especie vulnerable»). Se amplió `WD_IUCN` en `enrich_species.py` → 525 especies con categoría; con la descarga UICN (`build_uicn.py`) sube a 556. |
 | C10 | ✅ corregido (nov-2026) | La regla de introducidas era «exótico **o** iNat introducida»; ahora es la documentada: «código exótico **y** iNaturalist no la considera nativa ni endémica». Tiuque, Diuca y Cachaña vuelven a nativas → 41 introducidas. |
 | C11 | ✅ resuelto | Cifra pública: 566 especies (`export_web.py` excluye el nombre «sp.»). |
+| C16–C21 | ✅ OK (nov-2026) | Suma mensual por sitio KBA, puntos con ≥ 20 salidas, sin geometría en `kba.json`, 3 aves gatillo sin equivalente en eBird (*Eulidia yarrellii* es especie sensible, excluida del EBD; *Ochetorhynchus andaecola* y *Procelsterna cerulea* sin registros), UICN descargada = Wikidata (0 discrepancias), atlas sin meses en fichas por revisar. |
 | C07 | ⏳ pendiente | `pct_salidas` con dos denominadores; renombrar a `pct_salidas_completas` en 02, 03, 06 y 08. |
 
-El brief E2 entregado (`docs/entregas/Brief_E2_…docx`) refleja el estado **antes** de estas correcciones.
+C16–C21 (KBA, UICN y atlas de nidificación) dan OK. El brief E2 (`docs/entregas/Brief_E2_…docx`) ya refleja estos controles y las figuras regeneradas.
 
 ---
 
@@ -291,6 +355,7 @@ El brief E2 entregado (`docs/entregas/Brief_E2_…docx`) refleja el estado **ant
 - **Calculadora:** excluye Norte Grande ≥ 180 min (1.655 salidas con una sola especie, probable monitoreo de una especie).
 - **UICN** global vía Wikidata (sin tendencia ni RCE nacional).
 - **Fotos de iNaturalist:** muchas son CC BY-NC; el sitio es académico y no comercial, y muestra siempre el crédito.
+- **KBA/BirdLife:** ver §10b (términos, puntos derivados de eBird, rangos solo para análisis interno).
 - **Privacidad:** el repositorio es privado. `salidas.parquet` no se versiona.
 
 ---
@@ -300,5 +365,8 @@ El brief E2 entregado (`docs/entregas/Brief_E2_…docx`) refleja el estado **ant
 - **eBird Basic Dataset** EBD_relSep-2026. Cornell Lab of Ornithology. Términos de uso de eBird.
 - **AVONET** — Tobias, J. A. et al. (2022). *Ecology Letters*, 25, 581–597. CC BY 4.0.
 - **Cartografía:** Biblioteca del Congreso Nacional (BCN), mapas vectoriales, vía el paquete `react-chile-map` (MIT). Referencial.
+- **KBA World Database** (sep-2026) — BirdLife International y KBA Partnership, uso bajo los términos del Secretariado KBA (ver §10b). **BirdLife/HBW** (BOTW 2025, checklist v10) — uso interno de análisis; sin redistribución.
+- **UICN Red List** (descarga CSV, evaluaciones globales hasta 2026; `pipeline/build_uicn.py` → `data/extra/e04_iucn.csv`). Términos v3: la categoría es de uso libre; el resto de los datos no se redistribuye, por eso `data/UICN/` y `e04` no se versionan y el sitio publica solo la categoría. La tendencia solo se muestra como total por categoría (Especies, lámina 9). Citar con la versión descargada: IUCN (año y versión: copiar la cita exacta que entrega la descarga). *The IUCN Red List of Threatened Species*. https://www.iucnredlist.org (descargado el 14/11/2026).
+- **Atlas de las aves nidificantes de Chile** — Medrano, F. et al. (2018). Red de Observadores de Aves y Vida Silvestre de Chile, Santiago. Solo resúmenes propios, con cita (ver §10b).
 - **Wikidata** (CC0) · **iNaturalist** y **xeno-canto** (cada foto y grabación con su autor y licencia) · **UICN**.
-- **Uso de IA:** Claude (Anthropic) reordenó el repositorio y escribió `export_web.py`, `analisis_e2.py`, el sitio Next.js inicial y esta documentación; también corrigió C09 y C10 en `enrich_species.py`. La revisión final es del equipo.
+- **Uso de IA:** Claude (Anthropic) reordenó el repositorio y escribió `export_web.py`, el módulo KBA/BirdLife (`build_kba.py`, `build_rangos.py`, `fuera_de_rango.py`, pestaña «Lugares»), `analisis_e2.py`, el sitio Next.js inicial y esta documentación; también corrigió C09 y C10 en `enrich_species.py`. La revisión final es del equipo.

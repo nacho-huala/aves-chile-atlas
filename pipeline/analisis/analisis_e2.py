@@ -69,6 +69,7 @@ def cargar(raiz: Path, parquet: Path | None = None):
              enr=rd("05b_especies_enriquecidas.csv"), acc=rd("06_acumulacion.csv"), prob=rd("06_probabilidad.csv"),
              mar=rd("07_marea.csv"), nod=rd("08_nodos.csv"), ari=rd("08_aristas.csv"), rie=rd("10_riesgo.csv"),
              ras=rd("11_rasgos.csv"), son=rd("extra/12_sonidos.csv"))
+    T["raiz"] = raiz
     T["S"] = pd.read_parquet(parquet or raiz / "data" / "raw" / "_atlas_2019_2025" / "salidas.parquet")
     return T
 
@@ -112,9 +113,9 @@ def controles(T) -> pd.DataFrame:
         f"{int((m.salidas != m.salidas_a).sum())} diferencias; máx = {p.probabilidad.max():.3f}",
         bool((m.salidas == m.salidas_a).all() and p.probabilidad.between(0, 1).all()), "—")
     nu = int(T["rie"].uicn.notna().sum())
-    add("C09", "10_riesgo.uicn trae la categoría (Wikidata cubre 525 de 567)", "525 con categoría",
-        f"{nu} con categoría", nu == 525,
-        "Corregido (nov-2026): WD_IUCN de enrich_species.py incluye las etiquetas en español de Wikidata")
+    add("C09", "10_riesgo.uicn trae la categoría (Wikidata 525 + descarga UICN 31 más = 556 de 567)", "556 con categoría",
+        f"{nu} con categoría", nu == 556,
+        "Corregido (nov-2026): etiquetas en español de Wikidata y descarga UICN (build_uicn.py); 11 especies sin evaluación")
     sp_ = T["enr"].sci_name.str.endswith(" sp.")
     ef = T["enr"][~sp_].estatus_final.value_counts()
     add("C10", "Introducidas (sin 'sp.') = 41, cifra de L2 tras corregir Tiuque y Diuca", "41",
@@ -129,7 +130,57 @@ def controles(T) -> pd.DataFrame:
     add("C12", "Duración vacía casi solo en protocolo Incidental (ausencia estructural, no cero)", "≈ 100 % en Incidental",
         f"{dn.get(True, np.nan) * 100:.1f} % en Incidental · {dn.get(False, np.nan) * 100:.1f} % en el resto",
         dn.get(True, 0) > 0.99, "Se excluye de calculadora; no se imputa")
+    rows += controles_ampliacion(T, add)
     return pd.DataFrame(rows)
+
+
+def controles_ampliacion(T, add):
+    """C16–C21: sitios KBA, UICN y atlas de nidificación. Se omiten (con aviso) si faltan las tablas."""
+    import json
+    d = T["raiz"] / "data"
+    if not (d / "13_kba_sitios.csv").exists():
+        print("· sin 13_kba_sitios.csv: se omiten C16–C21"); return []
+    ks = pd.read_csv(d / "13_kba_sitios.csv")
+    mes = ks[[f"mes_{m:02d}" for m in range(1, 13)]].sum(axis=1)
+    add("C16", "KBA: la suma de salidas por mes de cada sitio = salidas_dentro", "0 diferencias",
+        f"{int((mes != ks.salidas_dentro).sum())} diferencias en {len(ks)} sitios", bool((mes == ks.salidas_dentro).all()), "—")
+    loc = pd.read_csv(d / "kba_privado" / "kba_localidades.csv") if (d / "kba_privado" / "kba_localidades.csv").exists() else None
+    pub = ks[ks.punto_publicable == True]  # noqa: E712
+    ok17 = bool((pub.punto_salidas >= 20).all())
+    add("C17", "KBA: todo punto publicable tiene ≥ 20 salidas en su celda (y ≥ 2 localidades por construcción)",
+        "0 puntos con < 20 salidas", f"{int((pub.punto_salidas < 20).sum())} de {len(pub)} puntos publicables", ok17, "—")
+    kj = json.loads((T["raiz"] / "web" / "public" / "data" / "kba.json").read_text(encoding="utf8")) if (T["raiz"] / "web" / "public" / "data" / "kba.json").exists() else None
+    if kj:
+        claves = {k for s in kj["sitios"] for k in s}; sospechosas = claves & {"geometry", "wkt", "poligono", "lat", "lon", "punto_lat", "punto_lon", "centroid"}
+        n_pt = sum(1 for s in kj["sitios"] if s["punto"]); coincide = n_pt == len(pub[pub.salidas_dentro >= 20])
+        add("C18", "kba.json no trae polígonos ni centros KBA; los puntos publicados son los de eBird (2 decimales) y solo de sitios con ≥ 20 salidas",
+            "sin geometría · puntos = publicables", f"campos sospechosos: {sorted(sospechosas) or 'ninguno'} · {n_pt} puntos",
+            not sospechosas and coincide, "—")
+    gv = pd.read_csv(d / "kba_privado" / "kba_gatillo_vistas.csv") if (d / "kba_privado" / "kba_gatillo_vistas.csv").exists() else None
+    if gv is not None:
+        sin = gv[gv.sci_ebird.isna()]["Scientific Name"].nunique(); tot = gv["Scientific Name"].nunique()
+        add("C19", "KBA: nombres de aves gatillo sin equivalente en eBird (no hay registro en el EBD de Chile 2019–2025)",
+            "3 sin equivalente", f"{sin} de {tot}", sin == 3,
+            "Eulidia yarrellii (sensible: excluida del EBD), Ochetorhynchus andaecola y Procelsterna cerulea sin registros; se cuentan como no vistas")
+    e = T["enr"]; u = pd.read_csv(d / "extra" / "e04_iucn.csv") if (d / "extra" / "e04_iucn.csv").exists() else None
+    if u is not None:
+        wd = {"especie bajo preocupación menor": "LC", "especie casi amenazada": "NT", "especie vulnerable": "VU",
+              "especies en peligro de extinción": "EN", "especie en peligro crítico de extinción": "CR", "especie con datos insuficientes": "DD"}
+        m = u.merge(e[["sci_name", "wd_iucn"]], on="sci_name"); m["wd"] = m.wd_iucn.map(wd)
+        comp = m.dropna(subset=["wd"]); dif = int((comp.wd != comp.iucn_categoria).sum())
+        add("C20", "UICN: la categoría de la descarga coincide con la de Wikidata donde ambas existen", "0 discrepancias",
+            f"{dif} discrepancias en {len(comp)} especies comparables", dif == 0,
+            "La descarga se prefiere a Wikidata; tendencia y año solo como agregado (términos UICN)")
+    nid = pd.read_csv(d / "15_nidificacion.csv") if (d / "15_nidificacion.csv").exists() else None
+    if nid is not None:
+        con_meses = nid.meses_nidificacion.notna()
+        mal = int((con_meses & nid.revisar).sum()); sin_fecha = int((~con_meses & ~nid.revisar).sum())
+        add("C21", "Atlas de nidificación: todas las especies están en 05_especies y ninguna ficha por revisar publica meses",
+            "316 en 05 · 0 fichas por revisar con meses",
+            f"{int(nid.sci_name.isin(T['esp'].sci_name).sum())} en 05 · {mal} por revisar con meses · {sin_fecha} confirmadas sin fechas en el atlas",
+            bool(nid.sci_name.isin(T["esp"].sci_name).all() and mal == 0),
+            "Las especies sin fechas precisas en el atlas muestran el resumen pero no la franja de meses")
+    return []
 
 
 # ───────────────────────── exploración
@@ -187,7 +238,7 @@ def explorar(T, out_t: Path):
 
 # ───────────────────────── figuras
 def fig_pipeline(path):
-    fig, ax = plt.subplots(figsize=(W, 3.1)); ax.set_xlim(0, 100); ax.set_ylim(0, 48); ax.axis("off"); ax.grid(False)
+    fig, ax = plt.subplots(figsize=(W, 3.9)); ax.set_xlim(0, 100); ax.set_ylim(-16, 48); ax.axis("off"); ax.grid(False)
     ax.set_facecolor(BG)
     def caja(x, y, w, h, t, s="", fc=LAM, ec=APOYO, tc=TXT, bold=False):
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.25,rounding_size=1", fc=fc, ec=ec, lw=0.9))
@@ -213,12 +264,18 @@ def fig_pipeline(path):
     flecha(62.3, 38, 67.7, 38); flecha(17.3, 11, 22.7, 11); flecha(40.3, 11, 45.7, 9)
     flecha(75.5, 32, 75.5, 29.4); flecha(62.3, 8, 67.7, 21); flecha(83.3, 23, 85.7, 23)
     flecha(83.3, 38, 85.7, 38)
+    # ampliación: fuentes con términos propios → cruces con eBird → tablas 13–15
+    caja(1, -13, 16, 11, "Fuentes extra", "KBA · UICN · Atlas\n(no se versionan)", fc="#D6D3C2")
+    caja(23, -13, 17, 11, "5 · Cruzar", "build_kba · build_uicn\nbuild_nidificacion", bold=True)
+    caja(46, -13, 16, 11, "13 · 14 · 15", "sitios · UICN\nagregado · atlas")
+    flecha(17.3, -7.5, 22.7, -7.5); flecha(40.3, -7.5, 45.7, -7.5); flecha(54, -2, 54, 1.7)
+    flecha(62.3, -7.5, 75.5, 16.4)
     fig.savefig(path, dpi=200, bbox_inches="tight"); plt.close(fig)
 
 
 def fig_esquema(path):
     """Matriz tablas × columnas-clave: PK = clave de la fila · c = parte de clave compuesta · FK = referencia · 1:1 / N:1 = cardinalidad."""
-    cols = ["salida_id", "sci_name", "region_code", "macrozona", "year", "month", "minutos / hora", "celda"]
+    cols = ["salida_id", "sci_name", "region_code", "macrozona", "year", "month", "minutos / hora", "celda", "kba_id"]
     filas = [
         ("salidas.parquet", "1 salida", {"salida_id": "PK", "region_code": "N:1", "macrozona": "N:1", "year": "·", "month": "·"}),
         ("00_regiones", "1 región", {"region_code": "PK", "macrozona": "N:1"}),
@@ -233,9 +290,12 @@ def fig_esquema(path):
         ("03_fenologia", "especie×mes", {"sci_name": "N:1", "month": "c"}),
         ("02_ridge", "especie×mes×franja", {"sci_name": "N:1", "month": "c"}),
         ("08_nodos · 08_aristas", "40 especies · pares", {"sci_name": "N:M"}),
+        ("13_kba_sitios", "1 sitio KBA", {"kba_id": "PK"}),
+        ("13_kba_especies", "sitio×especie", {"kba_id": "c", "sci_name": "N:1"}),
+        ("15_nidificacion", "1 especie (atlas)", {"sci_name": "1:1"}),
     ]
-    fig, ax = plt.subplots(figsize=(W, 4.9)); ax.set_xlim(0, 100); ax.set_ylim(0, len(filas) + 2.2); ax.axis("off"); ax.grid(False)
-    LBL = {"salida_id": "salida\n_id", "sci_name": "sci_\nname", "region_code": "region\n_code", "macrozona": "macro\nzona", "year": "year", "month": "month", "minutos / hora": "min /\nhora", "celda": "celda"}
+    fig, ax = plt.subplots(figsize=(W, 5.7)); ax.set_xlim(0, 100); ax.set_ylim(0, len(filas) + 2.2); ax.axis("off"); ax.grid(False)
+    LBL = {"salida_id": "salida\n_id", "sci_name": "sci_\nname", "region_code": "region\n_code", "macrozona": "macro\nzona", "year": "year", "month": "month", "minutos / hora": "min /\nhora", "celda": "celda", "kba_id": "kba\n_id"}
     x0, cw = 36, (100 - 36) / len(cols)
     for j, c in enumerate(cols):
         ax.text(x0 + cw * (j + .5), len(filas) + 1.2, LBL[c], ha="center", va="center", fontsize=6.8, family=MONO, color=TXT, fontweight="bold")
@@ -250,7 +310,7 @@ def fig_esquema(path):
             if v:
                 ax.add_patch(FancyBboxPatch((x0 + cw * j + 1.2, y - .27), cw - 2.4, .54, boxstyle="round,pad=0.02,rounding_size=.2", fc=col_f[v], ec="none"))
                 ax.text(x0 + cw * (j + .5), y, v, ha="center", va="center", fontsize=7.2, color="#F3F1E9", family=MONO, fontweight="bold")
-    ax.text(0, -.55, "PK = clave de la fila · c = parte de clave compuesta · N:1 = muchas filas → una · 1:1 = una a una · N:M = muchos a muchos · · = columna de agrupación sin unión",
+    ax.text(0, -.55, "PK = clave de la fila · c = parte de clave compuesta · N:1 = muchas filas → una\n1:1 = una a una · N:M = muchos a muchos · · = columna de agrupación sin unión",
             fontsize=6.4, color=APOYO, va="top")
     fig.savefig(path, dpi=200, bbox_inches="tight"); plt.close(fig)
 

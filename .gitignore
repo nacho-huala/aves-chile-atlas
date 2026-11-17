@@ -29,3 +29,20 @@ web/*.tsbuildinfo
 .DS_Store
 Thumbs.db
 ~$*
+
+# ── KBA / BirdLife: datos con términos de uso, no redistribuir ni versionar
+data/KBA_Data/
+data/kba_privado/
+# ── BirdLife / HBW: rangos de especies, términos de uso propios
+data/species_data/
+# BirdLife/HBW derivados: pendiente de respuesta de BirdLife sobre su uso público
+data/extra/e06_birdlife.csv
+data/extra/e07_fuera_rango.csv
+# UICN Red List: términos propios (sin redistribución; solo la categoría es de uso libre)
+data/UICN/
+data/extra/e04_iucn.csv
+# Insumos comprimidos para compartir por Drive (ver raw_data/LEEME.md)
+raw_data/*
+!raw_data/LEEME.md
+*.7z
+*.zip
