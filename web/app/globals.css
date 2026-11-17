@@ -350,3 +350,51 @@ main.pagina .vista__titulo { font-size: clamp(30px, 3.4vw, 44px); }
 .ola-svg { display: block; width: 100%; height: auto; overflow: visible; }
 .ola-svg text { font-size: 11px; font-family: var(--font-mono); fill: var(--texto-suave); }
 .ola-svg .t-fuerte { fill: var(--texto); }
+
+/* ── catálogo paginado */
+.catalogo__mas { display: flex; flex-wrap: wrap; gap: var(--esp-3); justify-content: center; margin-top: var(--esp-5); }
+.tarjeta__marcas { display: flex; gap: 4px; margin-top: 4px; }
+.marca-mini { font: 500 11px/1.5 var(--font-mono); padding: 0 6px; border-radius: var(--radio-pildora); border: 1px solid currentColor; }
+.marca-mini--nido { color: var(--sol); }
+.marca-mini--uicn { color: var(--foco); }
+.calendario--scroll { max-height: 560px; overflow-y: auto; border-bottom: 1px solid var(--linea); }
+.cal__nombre { fill: var(--texto) !important; font-family: var(--font-sans) !important; }
+main.pagina svg a:hover .cal__nombre { fill: var(--foco) !important; text-decoration: underline; }
+
+/* ── Lugares: mapa + lista + detalle */
+.kba-grid { display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr) minmax(0, 1.3fr); gap: var(--esp-5); align-items: start; }
+.kba-grid__mapa { position: sticky; top: 120px; }
+.kba-mapa { display: block; width: 100%; height: min(72vh, 720px); }
+.kba-mapa circle:focus-visible { outline: none; stroke: var(--foco); }
+.kba-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 72vh; overflow-y: auto; }
+.kba-lista button { width: 100%; display: grid; grid-template-columns: 10px 1fr auto; gap: 10px; align-items: center; text-align: left; padding: 10px 12px; border-radius: var(--radio-control); border: 1px solid var(--linea); background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer; }
+.kba-lista button:hover { border-color: var(--texto-suave); }
+.kba-lista button[aria-pressed="true"] { border-color: var(--foco); box-shadow: inset 3px 0 0 var(--foco); }
+.kba-lista i { width: 10px; height: 10px; border-radius: 50%; }
+.kba-detalle { position: sticky; top: 120px; }
+.kba-cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: var(--esp-3); margin: 0; }
+.kba-cifras dt { font: 500 11px/1.3 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--texto-suave); }
+.kba-cifras dd { margin: 0; font-family: var(--font-display); font-size: 28px; color: var(--foco); }
+.kba-aves { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.kba-aves li { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 42px; gap: 10px; align-items: center; font-size: 14px; }
+.kba-aves__barra { height: 8px; background: var(--superficie-hundida); border-radius: 4px; overflow: hidden; }
+.kba-aves__barra i { display: block; height: 100%; background: var(--musgo-4); }
+@media (max-width: 1000px) {
+  .kba-grid { grid-template-columns: minmax(150px, 220px) minmax(0, 1fr); }
+  .kba-grid__detalle { grid-column: 1 / -1; }
+  .kba-detalle { position: static; }
+}
+@media (max-width: 620px) {
+  .kba-grid { grid-template-columns: 1fr; }
+  .kba-grid__mapa { position: static; }
+  .kba-mapa { height: 420px; }
+  .kba-lista { max-height: 320px; }
+}
+/* ── ficha: nidificación */
+.nido-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--esp-6); align-items: start; }
+@media (max-width: 760px) { .nido-grid { grid-template-columns: 1fr; } }
+.meses-nido { list-style: none; padding: 0; margin: 0 0 var(--esp-3); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 3px; }
+.meses-nido li { text-align: center; font: 500 11px/1 var(--font-mono); padding: 8px 0; border-radius: 4px; background: var(--superficie-hundida); color: var(--texto-suave); }
+.meses-nido li[data-on="true"] { background: var(--sol); color: var(--sobre-foco); }
+.kba-destacados { margin: var(--esp-4) 0 0; padding-left: 1.4rem; display: grid; gap: 4px; font-size: 15px; }
+.kba-destacados li::marker { font-family: var(--font-mono); color: var(--foco); font-weight: 600; }

@@ -236,14 +236,14 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 ## 10. Sitio web: páginas y láminas
 
-**Implementado (v0.3):** tres pestañas, cada lámina de L2 en la que mejor responde a su pregunta.
+**Implementado (v0.4):** cuatro pestañas, cada lámina de L2 en la que mejor responde a su pregunta.
 
 | Ruta | Pestaña | Láminas (interactivas) | Datos |
 |---|---|---|---|
 | `/` | Portada | «¿Qué buscas hoy?» (Especie · Lugar · Estadísticas), cifras, salidas por año, mapa de macrozonas | `resumen`, `calculadora`, `marea` |
 | `/estadisticas` | **Estadísticas**: el país en conjunto | 7 Marea (streamgraph) · 1 Mapa bivariado · 8 Red de co-ocurrencia · 11 Espacio de rasgos | `marea`, `laminas/mapa`, `laminas/red`, `laminas/rasgos` |
-| `/especies` | **Especies**: una por una | Catálogo · 5 Enjambre de rareza · 9 Riesgo vs. visibilidad · 10 Oído vs. vista (con audio) · 2 La ola | `especies`, `laminas/especies`, `laminas/oido`, `laminas/ola` |
-| `/especies/[slug]` | Ficha | Foto, canto, fenología mensual, **su propia ola** (lámina 2), rasgos | `especies/<slug>.json` |
+| `/especies` | **Especies**: una por una | Catálogo paginado (24 por vez; filtros por estatus, nidificación y UICN) · 5 Enjambre de rareza · 9 Riesgo vs. visibilidad + tendencia UICN por categoría · 10 Oído vs. vista · 2 La ola · 14 Calendario de nidificación vs. eBird · 15 Altitud de nidificación | `especies`, `laminas/especies`, `laminas/oido`, `laminas/ola`, `laminas/nidificacion`, `uicn` |
+| `/especies/[slug]` | Ficha | Foto, canto, fenología con meses de nidificación, bloque «Nidificación en Chile» (resumen, meses, perfil de altitud), sitios KBA donde más se ve, **su propia ola** (lámina 2) | `especies/<slug>.json` |
 | `/calculadora` | **Tu salida**: planear una salida | 6 Calculadora (con mapa de macrozonas, acepta `?zona=`) · 3 Rueda «qué buscar este mes» · 4 Reloj «a qué hora» | `calculadora`, `laminas/rueda`, `laminas/reloj` |
 
 - Cada lámina lleva sus tres notas (Cómo leer · Hallazgo · Limitación); las cifras de los hallazgos se calculan desde los JSON al compilar.
@@ -253,7 +253,7 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 **Pendiente:** hexágonos H3 para el mapa, tendencia UICN (token), validar el denominador de salidas completas (C07).
 
-| `/lugares` | **Lugares**: dónde ir | Sitios KBA cerca de ti (geolocalización solo en el navegador o por macrozona), qué aves esperar, mejor mes; tabla de protección | `kba` |
+| `/lugares` | **Lugares**: dónde ir | 11 Mapa de sitios KBA + lista + ficha del sitio (geolocalización solo en el navegador o por macrozona; el mapa se encuadra en la selección) · 12 Dispersión esfuerzo vs. riqueza (sitios por explorar) · 13 Protección por tramo | `kba` |
 
 Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6 (tu salida).
 

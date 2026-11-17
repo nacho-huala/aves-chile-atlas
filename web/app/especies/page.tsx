@@ -1,5 +1,7 @@
 import { getEspecies, getResumen, getUicn } from "@/lib/data";
-import { getEspeciesLamina, getOido, getOla } from "@/lib/laminas-datos";
+import { getEspeciesLamina, getNidificacion, getOido, getOla } from "@/lib/laminas-datos";
+import { AltitudNidificacion, CalendarioNidificacion } from "@/components/laminas/Nidificacion";
+import { TendenciaUicn } from "@/components/laminas/Apiladas";
 import BuscadorEspecies from "@/components/BuscadorEspecies";
 import { Lamina, Subnav } from "@/components/laminas/Lamina";
 import { Enjambre, Riesgo } from "@/components/laminas/Enjambre";
@@ -11,7 +13,12 @@ const FUENTE = "eBird Basic Dataset (EBD) Chile, relSep-2026, 2019–2025";
 const es = (n: number) => n.toLocaleString("es-CL");
 
 export default async function PaginaEspecies() {
-  const [especies, r, lam, oido, ola, uicn] = await Promise.all([getEspecies(), getResumen(), getEspeciesLamina(), getOido(), getOla(), getUicn()]);
+  const [especies, r, lam, oido, ola, uicn, nid] = await Promise.all([getEspecies(), getResumen(), getEspeciesLamina(), getOido(), getOla(), getUicn(), getNidificacion()]);
+  const conAlt = nid.especies.filter((e) => e.alt && e.alt[1] > e.alt[0]);
+  const altas = conAlt.filter((e) => e.alt![1] >= 4000).length;
+  const masAlta = [...conAlt].sort((a, b) => b.alt![1] - a.alt![1])[0];
+  const mesesNid = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+  const mesMax = nid.porMes.indexOf(Math.max(...nid.porMes)), mesMin = nid.porMes.indexOf(Math.min(...nid.porMes));
   const amenazadas = lam.filter((e) => ["VU", "EN", "CR"].includes(e.uicn ?? ""));
   const invisibles = amenazadas.filter((e) => e.pct < 0.1).length;
   const visible = [...amenazadas].sort((a, b) => b.pct - a.pct)[0];
@@ -25,7 +32,7 @@ export default async function PaginaEspecies() {
         <h1>{es(especies.length)} especies, de lo cotidiano a lo casi imposible</h1>
         <p className="cuerpo-l">Busca una por nombre o recórrelas por rareza, amenaza, canto y temporada.</p>
       </header>
-      <Subnav items={[{ id: "catalogo", txt: "Catálogo" }, { id: "rareza", txt: "Rareza" }, { id: "amenazadas", txt: "Amenazadas" }, { id: "cantos", txt: "Cantos" }, { id: "ola", txt: "Temporadas" }]} />
+      <Subnav items={[{ id: "catalogo", txt: "Catálogo" }, { id: "rareza", txt: "Rareza" }, { id: "amenazadas", txt: "Amenazadas" }, { id: "cantos", txt: "Cantos" }, { id: "ola", txt: "Temporadas" }, { id: "nidificacion", txt: "Nidificación" }, { id: "altitud", txt: "Altitud" }]} />
 
       <section id="catalogo" className="vista" aria-label="Catálogo de especies">
         <BuscadorEspecies especies={especies} />
@@ -43,13 +50,8 @@ export default async function PaginaEspecies() {
         hallazgo={<>De {amenazadas.length} especies amenazadas (VU, EN, CR), <strong>{invisibles}</strong> aparecen en menos de 1 de cada 1.000 salidas, muchas de ellas marinas. La más visible: <strong>{visible.nombre}</strong> ({visible.uicn}).</>}
         limitacion="Categoría UICN global, sin la clasificación nacional (RCE). La tendencia poblacional se muestra solo como total por categoría, por los términos de uso de UICN. 11 especies sin categoría.">
         <Riesgo especies={lam} />
-        <h3 style={{ marginTop: "2rem" }}>Tendencia poblacional según UICN, por categoría</h3>
-        <table className="mono pequeno" style={{ borderCollapse: "collapse", width: "100%" }}>
-          <thead><tr><th align="left">Categoría</th><th align="right">Especies</th><th align="right">Decrece</th><th align="right">Estable</th><th align="right">Crece</th><th align="right">Desconocida</th></tr></thead>
-          <tbody>{uicn.categorias.map((c) => (
-            <tr key={c.cat}><td>{c.cat}</td><td align="right">{c.especies}</td><td align="right">{c.decreciente}</td><td align="right">{c.estable}</td><td align="right">{c.creciente}</td><td align="right">{c.desconocida}</td></tr>
-          ))}</tbody>
-        </table>
+        <h3 style={{ marginTop: "2.5rem" }}>Tendencia poblacional según UICN, por categoría</h3>
+        <TendenciaUicn uicn={uicn} />
         <p className="pie">{uicn.cita}</p>
       </Lamina>
 
@@ -67,6 +69,24 @@ export default async function PaginaEspecies() {
         hallazgo={<>El <strong>Fío-fío</strong> llega en primavera, cubre el centro-sur en verano y desaparece en invierno. La <strong>Viudita</strong> y el <strong>Picaflor chico</strong> hacen lo contrario: bajan al centro en invierno.</>}
         limitacion="Franjas de 0,5° con un mínimo de 40 salidas completas; donde hay pocas salidas la cresta se corta.">
         <OlaSelector especies={ola} />
+      </Lamina>
+
+      <Lamina id="nidificacion" num={14} tipo="Calendario · Nidificación" titulo="Lo más visto no coincide con la temporada de nidos"
+        bajada="Meses en que cada especie nidifica según el atlas (2011–2016), frente a cuándo se registra más en eBird (2019–2025)."
+        fuente={`Medrano et al. (2018), Atlas de las aves nidificantes de Chile + ${FUENTE} · 15_nidificacion`}
+        leer="Arriba, cuántas especies nidifican cada mes. Abajo, una fila por especie: la celda más oscura es su mes con más registros en eBird y la línea dorada marca los meses de nidificación."
+        hallazgo={<>La nidificación se concentra en {mesesNid[mesMax]} ({nid.porMes[mesMax]} especies) y cae en {mesesNid[mesMin]} ({nid.porMes[mesMin]}). En {nid.cruce.coincide} de {nid.cruce.n} especies ({Math.round((100 * nid.cruce.coincide) / nid.cruce.n)} %) el mes más registrado cae dentro de su temporada de nidos; por azar se esperaría {String(nid.cruce.azar).replace(".", ",")} %.</>}
+        limitacion="Los meses salen del texto del atlas y pueden incluir cuidado de polluelos; 60 fichas por revisar no se incluyen. Atlas y eBird cubren períodos distintos.">
+        <CalendarioNidificacion datos={nid} />
+      </Lamina>
+
+      <Lamina id="altitud" num={15} tipo="Rangos · Altitud de nidificación" titulo="De la playa al altiplano: dónde ponen sus nidos"
+        bajada="Rango de altitud en que nidifica cada especie según el atlas, ordenado de las que anidan más bajo a las que anidan más alto."
+        fuente="Medrano et al. (2018), Atlas de las aves nidificantes de Chile · 15_nidificacion"
+        leer="Cada barra vertical es una especie: va desde la altitud mínima a la máxima en que nidifica. Clic en la leyenda para filtrar por estatus; clic en una barra para abrir su ficha."
+        hallazgo={<>{altas} de {conAlt.length} especies nidifican sobre los 4.000 m; la que llega más alto es <strong>{masAlta?.nombre}</strong> ({masAlta?.alt?.[1].toLocaleString("es-CL")} m).</>}
+        limitacion="El rango resume los registros del atlas 2011–2016; especies con pocos nidos pueden tener rangos más estrechos que los reales.">
+        <AltitudNidificacion datos={nid} />
       </Lamina>
     </main>
   );
