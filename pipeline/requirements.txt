@@ -15,3 +15,7 @@ pandas
 matplotlib
 marimo
 altair
+geopandas
+pyogrio
+shapely
+pyarrow

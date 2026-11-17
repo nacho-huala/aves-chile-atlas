@@ -399,9 +399,12 @@ def combinar(data: Path, extra: Path):
           .when(pl.col("introducida").cast(pl.String) == "true").then(pl.lit("introducida"))
           .when((col("migracion_global") == "migratoria") | pl.col("estacional_en_chile")).then(pl.lit("migratoria / estacional"))
           .otherwise(pl.lit("nativa residente")).alias("estatus_final"))
+    # Términos UICN: solo la categoría es de uso libre. Tendencia, año y URL quedan en e04 (no versionado)
+    # y solo se publican como agregado (build_uicn.py → 14_uicn_agregado.csv).
+    E = E.drop([c for c in ("iucn_tendencia", "iucn_anio", "iucn_url") if c in E.columns])
     E.write_csv(data / "05b_especies_enriquecidas.csv"); print(f"  ✓ 05b_especies_enriquecidas.csv ({E.height} especies, {len(E.columns)} columnas)")
 
-    keep = [c for c in ["sci_name", "nombre", "pct_salidas", "salidas_con", "uicn", "uicn_fuente", "iucn_tendencia", "iucn_anio",
+    keep = [c for c in ["sci_name", "nombre", "pct_salidas", "salidas_con", "uicn", "uicn_fuente",
                         "estatus_final", "endemica", "macrozona_principal", "foto_cuadrada", "foto_credito", "foto_licencia"] if c in E.columns]
     R = E.select(keep).with_columns(pl.col("uicn").replace_strict(IUCN_ORDEN, default=None, return_dtype=pl.Int8).alias("uicn_orden"))
     R.write_csv(data / "10_riesgo.csv"); print(f"  ✓ 10_riesgo.csv ({R.drop_nulls('uicn').height} con categoría)")

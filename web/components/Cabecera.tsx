@@ -24,6 +24,7 @@ export function Cabecera() {
           <Link href="/estadisticas/">Estadísticas</Link>
           <Link href="/especies/">Especies</Link>
           <Link href="/calculadora/">Tu salida</Link>
+          <Link href="/lugares/">Lugares</Link>
           <TemaToggle />
         </nav>
       </div>

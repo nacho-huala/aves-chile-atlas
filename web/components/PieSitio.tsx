@@ -14,12 +14,12 @@ export function PieSitio() {
             </Link>
             <p className="cuerpo-s" style={{ maxWidth: 380, marginTop: 16 }}>Grupo 05 · Visualización de Datos y Storytelling, Magíster en Data Science, Universidad del Desarrollo.</p>
           </div>
-          <div><h2 className="etiqueta etiqueta--sol">Guía</h2><ul><li><Link href="/especies/">Especies</Link></li><li><Link href="/calculadora/">Tu salida</Link></li><li><Link href="/estadisticas/">Estadísticas</Link></li></ul></div>
-          <div><h2 className="etiqueta etiqueta--sol">Fuentes</h2><ul><li><a href="https://ebird.org/data/download">eBird (EBD)</a></li><li><a href="https://www.wikidata.org">Wikidata</a></li><li><a href="https://www.inaturalist.org">iNaturalist</a></li><li><a href="https://xeno-canto.org">xeno-canto</a></li></ul></div>
+          <div><h2 className="etiqueta etiqueta--sol">Guía</h2><ul><li><Link href="/especies/">Especies</Link></li><li><Link href="/calculadora/">Tu salida</Link></li><li><Link href="/lugares/">Lugares</Link></li><li><Link href="/estadisticas/">Estadísticas</Link></li></ul></div>
+          <div><h2 className="etiqueta etiqueta--sol">Fuentes</h2><ul><li><a href="https://ebird.org/data/download">eBird (EBD)</a></li><li><a href="https://www.wikidata.org">Wikidata</a></li><li><a href="https://www.inaturalist.org">iNaturalist</a></li><li><a href="https://xeno-canto.org">xeno-canto</a></li><li><a href="https://www.keybiodiversityareas.org">Key Biodiversity Areas</a></li><li><a href="https://www.iucnredlist.org">UICN Red List</a></li><li>Atlas de las aves nidificantes de Chile (Medrano et al. 2018)</li></ul></div>
           <div><h2 className="etiqueta etiqueta--sol">Equipo</h2><ul className="cuerpo-s"><li>Victoria Albornoz</li><li>Matías Gebauer</li><li>Luciano Hernández</li><li>Manuel Huala</li><li>Betzabeth Torres</li></ul></div>
         </div>
         <div className="pie-sitio__base cuerpo-s">
-          <span>Datos: eBird Basic Dataset relSep-2026, Cornell Lab of Ornithology. Foto del chincol: © Esteban Poveda, CC BY, vía iNaturalist. Mapa: BCN.</span>
+          <span>Datos: eBird Basic Dataset relSep-2026, Cornell Lab of Ornithology. Sitios: Key Biodiversity Areas (BirdLife International y socios del KBA Partnership, versión sep-2026), usados como filtro de sitios; ningún límite se publica aquí. Foto del chincol: © Esteban Poveda, CC BY, vía iNaturalist. Mapa: BCN.</span>
           <span>IA como apoyo, no como fuente de cifras.</span>
         </div>
       </div>

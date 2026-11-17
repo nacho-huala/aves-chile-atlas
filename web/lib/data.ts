@@ -36,6 +36,7 @@ export interface Ficha extends EspecieIndice {
   primerAvistamiento: string | null;
   ultimoAvistamiento: string | null;
   fenologia: (number | null)[] | null; // % de salidas COMPLETAS por mes, ene → dic
+  nidificacion: { resumen: string | null; revisar: boolean; meses: number[]; altitud: [number, number] | null } | null; // Medrano et al. 2018
   ola: { bandas: number[]; pct: (number | null)[][] } | null; // lámina 2: mes × franja de 0,5° (norte → sur)
   imagen: { url: string | null; credito: string | null; licencia: string | null };
   canto: {
@@ -67,8 +68,31 @@ export interface Calculadora {
 export interface FilaMarea { anio: number; mes: number; macrozona: string; salidas: number }
 
 // ─────────────── lectores
+export interface KbaEspecie { slug: string; nombre: string; salidas: number; p: number | null; mes: number | null }
+export interface KbaSitio {
+  id: number; nombre: string; region: string | null; macrozona: string | null;
+  salidas: number; localidades: number; especies: number; riqueza: number | null;
+  nGatillo: number | null; gatilloVistas: number | null;
+  punto: [number, number] | null; // celda de ~1 km derivada de eBird, no de la capa KBA
+  meses: number[]; // salidas por mes (1–12)
+  top: KbaEspecie[];
+}
+export interface Kba {
+  sitios: KbaSitio[];
+  resumen: { sitiosTotal: number; sitiosConDatos: number; sitiosSinSalidas: number; puntosPublicables: number;
+             proteccion: { tramo: string; sitios: number; salidas: number; pct: number }[] };
+  nota: string; cita: string;
+}
+
+export interface UicnAgregado {
+  categorias: { cat: string; especies: number; decreciente: number; estable: number; creciente: number; desconocida: number }[];
+  cita: string;
+}
+
 export const getResumen = () => leer<Resumen>("resumen.json");
 export const getEspecies = () => leer<EspecieIndice[]>("especies.json");
 export const getFicha = (slug: string) => leer<Ficha>(`especies/${slug}.json`);
 export const getCalculadora = () => leer<Calculadora>("calculadora.json");
 export const getMarea = () => leer<FilaMarea[]>("marea.json");
+export const getKba = () => leer<Kba>("kba.json");
+export const getUicn = () => leer<UicnAgregado>("uicn.json");

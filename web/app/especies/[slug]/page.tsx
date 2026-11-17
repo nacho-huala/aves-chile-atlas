@@ -53,8 +53,19 @@ export default async function FichaEspecie({ params }: Props) {
       {f.fenologia && (
         <section className="lamina">
           <h2>¿Cuándo buscarla?</h2>
-          <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} />
-          <p className="pie">% de salidas completas de cada mes en que se registró · eBird Chile 2019–2025</p>
+          <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} nidificacion={f.nidificacion?.meses} />
+          <p className="pie">% de salidas completas de cada mes en que se registró · eBird Chile 2019–2025
+            {f.nidificacion?.meses.length ? " · franja dorada: meses de nidificación según Medrano et al. (2018)" : ""}</p>
+        </section>
+      )}
+
+      {f.nidificacion?.resumen && (
+        <section className="lamina">
+          <h2>Nidificación en Chile</h2>
+          <p>{f.nidificacion.resumen}</p>
+          {f.nidificacion.altitud && <p className="apoyo">Altitud de nidificación: {entero(f.nidificacion.altitud[0])} a {entero(f.nidificacion.altitud[1])} m s. n. m.</p>}
+          {f.nidificacion.revisar && <p className="pie">Información reproductiva incompleta o por confirmar en el atlas.</p>}
+          <p className="pie">Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, Red de Observadores de Aves y Vida Silvestre de Chile (ROC). Datos de 2011–2016, distintos del período de eBird (2019–2025).</p>
         </section>
       )}
 

@@ -74,6 +74,14 @@ def main():
     # ─────────────── especies (índice + fichas)
     enr = [r for r in leer(d / "05b_especies_enriquecidas.csv") if not r["sci_name"].endswith(" sp.")]
     validas = {r["sci_name"] for r in enr}
+    nid: dict[str, dict] = {}  # atlas de nidificación (Medrano et al. 2018); lo genera build_nidificacion.py
+    if (d / "15_nidificacion.csv").exists():
+        for r in leer(d / "15_nidificacion.csv"):
+            nid[r["sci_name"]] = {
+                "resumen": txt(r["resumen"]), "revisar": r["revisar"] == "True",
+                "meses": [int(m) for m in r["meses_nidificacion"].split()] if r["meses_nidificacion"] else [],
+                "altitud": [int(float(r["altitud_min"])), int(float(r["altitud_max"]))] if txt(r["altitud_min"]) and txt(r["altitud_max"]) else None,
+            }
     fen: dict[str, list] = {}
     for r in leer(d / "03_fenologia.csv"):
         if r["sci_name"] in validas:
@@ -100,6 +108,7 @@ def main():
             "endemica": r["endemica"] == "true",
             "primerAvistamiento": txt(r["primer_avistamiento"]), "ultimoAvistamiento": txt(r["ultimo_avistamiento"]),
             "fenologia": fen.get(r["sci_name"]),  # % de salidas completas por mes (ene → dic); null si no hay
+            "nidificacion": nid.get(r["sci_name"]),  # null si el atlas no la registra como nidificante
             "ola": ola.get(r["sci_name"]),  # lámina 2: % de salidas completas por mes × franja de 0,5°
             "imagen": {"url": txt(r["foto_url"]), "credito": txt(r["foto_credito"]), "licencia": txt(r["foto_licencia"])},
             "canto": None if not txt(r["xc_audio"]) else {
@@ -155,8 +164,68 @@ def main():
                       "Norte Grande ≥ 180 min excluido."}, out / "calculadora.json")
 
     exportar_laminas(d, out, enr, nombre, fen, ola)
+    if (d / "14_uicn_agregado.csv").exists():  # tendencia UICN: solo agregado por categoría (términos UICN)
+        escribir({"categorias": [{"cat": r["categoria"], "especies": num(r["especies"], 0), "decreciente": num(r["decreciente"], 0),
+                                  "estable": num(r["estable"], 0), "creciente": num(r["creciente"], 0),
+                                  "desconocida": num(r["desconocida"], 0)} for r in leer(d / "14_uicn_agregado.csv")],
+                  "cita": "IUCN. The IUCN Red List of Threatened Species. https://www.iucnredlist.org (descargado el 14/11/2026)."}, out / "uicn.json")
+    if (d / "13_kba_sitios.csv").exists():
+        exportar_kba(d, out, nombre)
 
     print(f"✓ {fichas} fichas · especies.json · resumen.json · marea.json · calculadora.json · laminas/ → {out}")
+
+
+# ═══════════════ sitios KBA (contrato con web/lib/data.ts → getKba)
+
+MIN_SALIDAS_SITIO = 20     # un sitio se recomienda solo si tiene al menos 20 salidas dentro
+MAX_ESPECIES_SITIO = 20    # especies que se listan por sitio (las más frecuentes)
+CITA_KBA = ("BirdLife International (2026). Digital boundaries of Key Biodiversity Areas from the World Database of Key "
+            "Biodiversity Areas. Developed by the KBA Partnership: BirdLife International, International Union for the "
+            "Conservation of Nature, American Bird Conservancy, Amphibian Survival Alliance, Conservation International, "
+            "Critical Ecosystem Partnership Fund, Global Environment Facility, Re:Wild, NatureServe, Rainforest Trust, "
+            "Royal Society for the Protection of Birds, Wildlife Conservation Society and World Wildlife Fund. "
+            "Versión septiembre 2026. https://www.keybiodiversityareas.org (descargado el 14/11/2026).")
+
+
+def exportar_kba(d: Path, out: Path, nombre: dict):
+    """13_kba_sitios + 13_kba_especies (+ 13_kba_proteccion) → kba.json.
+    Solo indicadores derivados de eBird; ningún polígono ni coordenada de la capa KBA. El punto de cada sitio
+    sale de eBird (celda de ~1 km con más salidas) y solo existe si cumple las reglas de build_kba.py."""
+    esp: dict = {}
+    for r in leer(d / "13_kba_especies.csv"):
+        if r["sci_name"] in nombre:
+            s, n = nombre[r["sci_name"]]
+            esp.setdefault(r["kba_id"], []).append({"slug": s, "nombre": n, "salidas": num(r["salidas_con"], 0),
+                                                    "p": num(r["pct_completas"], 1), "mes": num(r["mes_pico"], 0)})
+    filas = leer(d / "13_kba_sitios.csv")
+    sitios = []
+    for r in filas:
+        if (num(r["salidas_dentro"], 0) or 0) < MIN_SALIDAS_SITIO:
+            continue
+        lista = sorted(esp.get(r["kba_id"], []), key=lambda e: -e["salidas"])[:MAX_ESPECIES_SITIO]
+        punto = [num(r["punto_lat"], 2), num(r["punto_lon"], 2)] if r["punto_publicable"] == "True" else None
+        sitios.append({
+            "id": num(r["kba_id"], 0), "nombre": r["nombre"], "region": txt(r["region"]), "macrozona": txt(r["macrozona"]),
+            "salidas": num(r["salidas_dentro"], 0), "localidades": num(r["localidades"], 0),
+            "especies": num(r["especies"], 0), "riqueza": num(r["riqueza_mediana"], 1),
+            "nGatillo": num(r["n_gatillo_aves"], 0), "gatilloVistas": num(r["gatillo_vistas"], 0),
+            "punto": punto, "meses": [num(r[f"mes_{m:02d}"], 0) for m in range(1, 13)], "top": lista,
+        })
+    sitios.sort(key=lambda s: -s["salidas"])
+    prot = []
+    if (d / "13_kba_proteccion.csv").exists():
+        prot = [{"tramo": r["tramo"], "sitios": num(r["sitios"], 0), "salidas": num(r["salidas_dentro"], 0),
+                 "pct": num(r["pct_salidas_en_kba"], 1)} for r in leer(d / "13_kba_proteccion.csv")]
+    escribir({
+        "sitios": sitios,
+        "resumen": {"sitiosTotal": len(filas), "sitiosConDatos": len(sitios),
+                    "sitiosSinSalidas": sum(1 for r in filas if (num(r["salidas_dentro"], 0) or 0) == 0),
+                    "puntosPublicables": sum(1 for s in sitios if s["punto"]), "proteccion": prot},
+        "nota": f"Sitios con al menos {MIN_SALIDAS_SITIO} salidas de eBird dentro del polígono KBA (2019–2025). "
+                "El punto es la celda de ~1 km con más salidas dentro del sitio, no su centro ni su límite.",
+        "cita": CITA_KBA,
+    }, out / "kba.json")
+    print(f"✓ kba.json: {len(sitios)} sitios con datos · {sum(1 for s in sitios if s['punto'])} con punto")
 
 
 # ═══════════════ láminas interactivas (contrato con web/lib/laminas-datos.ts)

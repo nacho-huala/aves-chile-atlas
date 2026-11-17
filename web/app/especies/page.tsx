@@ -1,4 +1,4 @@
-import { getEspecies, getResumen } from "@/lib/data";
+import { getEspecies, getResumen, getUicn } from "@/lib/data";
 import { getEspeciesLamina, getOido, getOla } from "@/lib/laminas-datos";
 import BuscadorEspecies from "@/components/BuscadorEspecies";
 import { Lamina, Subnav } from "@/components/laminas/Lamina";
@@ -11,7 +11,7 @@ const FUENTE = "eBird Basic Dataset (EBD) Chile, relSep-2026, 2019–2025";
 const es = (n: number) => n.toLocaleString("es-CL");
 
 export default async function PaginaEspecies() {
-  const [especies, r, lam, oido, ola] = await Promise.all([getEspecies(), getResumen(), getEspeciesLamina(), getOido(), getOla()]);
+  const [especies, r, lam, oido, ola, uicn] = await Promise.all([getEspecies(), getResumen(), getEspeciesLamina(), getOido(), getOla(), getUicn()]);
   const amenazadas = lam.filter((e) => ["VU", "EN", "CR"].includes(e.uicn ?? ""));
   const invisibles = amenazadas.filter((e) => e.pct < 0.1).length;
   const visible = [...amenazadas].sort((a, b) => b.pct - a.pct)[0];
@@ -38,11 +38,19 @@ export default async function PaginaEspecies() {
         <Enjambre especies={lam} salidas={r.salidas} />
       </Lamina>
 
-      <Lamina id="amenazadas" num={9} tipo="Riesgo vs. visibilidad" titulo="Las amenazadas que casi nadie ve" fuente={`UICN vía Wikidata + ${FUENTE} · 10_riesgo`}
+      <Lamina id="amenazadas" num={9} tipo="Riesgo vs. visibilidad" titulo="Las amenazadas que casi nadie ve" fuente={`UICN Red List (categorías) + Wikidata + ${FUENTE} · 10_riesgo · 14_uicn_agregado`}
         leer="Una fila por categoría UICN; cada punto es una especie según el % de salidas en que aparece (escala log)."
         hallazgo={<>De {amenazadas.length} especies amenazadas (VU, EN, CR), <strong>{invisibles}</strong> aparecen en menos de 1 de cada 1.000 salidas, muchas de ellas marinas. La más visible: <strong>{visible.nombre}</strong> ({visible.uicn}).</>}
-        limitacion="Categoría UICN global (Wikidata), sin tendencia poblacional ni la clasificación nacional (RCE). 42 especies sin categoría.">
+        limitacion="Categoría UICN global, sin la clasificación nacional (RCE). La tendencia poblacional se muestra solo como total por categoría, por los términos de uso de UICN. 11 especies sin categoría.">
         <Riesgo especies={lam} />
+        <h3 style={{ marginTop: "2rem" }}>Tendencia poblacional según UICN, por categoría</h3>
+        <table className="mono pequeno" style={{ borderCollapse: "collapse", width: "100%" }}>
+          <thead><tr><th align="left">Categoría</th><th align="right">Especies</th><th align="right">Decrece</th><th align="right">Estable</th><th align="right">Crece</th><th align="right">Desconocida</th></tr></thead>
+          <tbody>{uicn.categorias.map((c) => (
+            <tr key={c.cat}><td>{c.cat}</td><td align="right">{c.especies}</td><td align="right">{c.decreciente}</td><td align="right">{c.estable}</td><td align="right">{c.creciente}</td><td align="right">{c.desconocida}</td></tr>
+          ))}</tbody>
+        </table>
+        <p className="pie">{uicn.cita}</p>
       </Lamina>
 
       <Lamina id="cantos" num={10} tipo="Oído vs. vista" titulo="Las que se escuchan más de lo que se ven" fuente="xeno-canto (grabaciones en Chile) + eBird · 12_sonidos"
