@@ -315,6 +315,8 @@ Entradas (no se versionan; ver `.gitignore`): `data/KBA_Data/` (shapefiles, `KBA
 
 ## 11. Sistema visual
 
+**v0.5:** títulos de sección con ícono (`components/Icono.tsx`, trazo 1,7 en `currentColor`); fuentes en la tipografía de cuerpo con etiqueta «Fuente» (`<Fuente>` en `Lamina.tsx`), ya no en monoespaciada; escala UICN de verde a rojo (`.uicn--lc` … `.uicn--cr`, con variante noche); insignias de estatus con los colores categóricos; la ola usa el mapa horizontal de Chile como eje.
+
 Fuente: el sistema de diseño «Atlas de aves en Chile» (artifact en claude.ai). Los tokens viven en `web/app/tokens.css` (generado desde su `tokens.json`) y los estilos en `web/app/globals.css`. El tema se elige con el selector Día/Noche de la cabecera (se guarda en el navegador); por defecto sigue al sistema.
 
 | Token | Día de campo | Noche de campo |
