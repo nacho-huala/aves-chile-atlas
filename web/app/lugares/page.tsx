@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getKba } from "@/lib/data";
 import Lugares from "@/components/Lugares";
 import { Fuente, Lamina, Notas, Subnav } from "@/components/laminas/Lamina";
@@ -29,6 +30,10 @@ export default async function PaginaLugares() {
         <h1>¿Dónde conviene ir a observar?</h1>
         <p className="cuerpo-l">Chile tiene {r.sitiosTotal} Áreas Clave para la Biodiversidad (KBA). Cruzamos cada una con las salidas de eBird para mostrarte dónde están, qué aves esperar y en qué mes ir.</p>
       </header>
+      <aside className="aviso-plan">
+        <span><b>¿Quieres armar una ruta?</b> <span className="apoyo">Elige especies y te sugerimos la menor cantidad de sitios cercanos para verlas.</span></span>
+        <Link className="btn btn--primario" href="/planificar/">Planifica tu salida <span className="flecha" aria-hidden="true">→</span></Link>
+      </aside>
       <Subnav items={[{ id: "cerca", txt: "Mapa de sitios" }, { id: "explorar", txt: "Por explorar" }, { id: "proteccion", txt: "Protección" }]} />
 
       <section id="cerca" className="vista" aria-labelledby="cerca-t">
