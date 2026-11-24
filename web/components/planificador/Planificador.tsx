@@ -55,9 +55,11 @@ export default function Planificador() {
     setGps("buscando");
     // La ubicación se usa solo en tu navegador; no se envía a ningún servidor.
     navigator.geolocation.getCurrentPosition((p) => {
+      const punto: [number, number] = [p.coords.latitude, p.coords.longitude];
+      const c = [...CIUDADES].sort((a, b) => km(punto, [a[2], a[3]]) - km(punto, [b[2], b[3]]))[0];
       setGps(""); setTexto("");
-      conTransicion(() => { setOrigen({ nombre: "Tu ubicación", punto: [p.coords.latitude, p.coords.longitude], tipo: "gps" }); setSel(null); });
-    }, () => setGps("error"), { timeout: 10000 });
+      conTransicion(() => { setOrigen({ nombre: "Tu ubicación", punto, tipo: "gps", precision: p.coords.accuracy / 1000, cerca: c ? `${c[0]} (a ${Math.round(km(punto, [c[2], c[3]]))} km)` : undefined }); setSel(null); });
+    }, () => setGps("error"), { enableHighAccuracy: true, maximumAge: 0, timeout: 15000 });
   }
   function elegirTexto(v: string) {
     setTexto(v);
@@ -68,7 +70,17 @@ export default function Planificador() {
   }
 
   const cerca = useMemo(() => (datos && origen ? cercanos(datos, origen.punto, radio, 8) : []), [datos, origen, radio]);
-  const plan = useMemo(() => (datos && prob && lista.length ? planificar(datos, prob, lista, origen?.punto ?? null, { radio }) : null), [datos, prob, lista, origen, radio]);
+  // especies presentes en los sitios dentro del radio: base de los atajos, para que las listas sean alcanzables
+  const disponibles = useMemo(() => {
+    const m = new Map<number, number>(); // especie → % máximo en un sitio del radio
+    if (!datos || !prob) return m;
+    datos.s.forEach((s, i) => {
+      if (origen && radio !== Infinity && km(origen.punto, s.punto) > radio) return;
+      prob[i].forEach((x, e) => m.set(e, Math.max(m.get(e) ?? 0, x.p)));
+    });
+    return m;
+  }, [datos, prob, origen, radio]);
+  const plan = useMemo(() => (datos && prob && lista.length ? planificar(datos, prob, lista, origen?.punto ?? null, { radio, maxParadas: lista.length > 8 ? 8 : 5 }) : null), [datos, prob, lista, origen, radio]);
 
   if (error) return <p className="aviso"><Icono nombre="alerta" tam={16} />No pudimos cargar los datos del planificador.</p>;
   if (!datos || !prob) return <div className="plan-cargando" role="status">Cargando sitios y especies…</div>;
@@ -98,9 +110,13 @@ export default function Planificador() {
         <p className="pie" role="status">
           {gps === "buscando" && "Buscando tu ubicación…"}
           {gps === "error" && "No pudimos obtener tu ubicación. Escribe una ciudad."}
-          {!gps && origen && <>Partida: <b>{origen.nombre}</b>{origen.tipo === "gps" ? " (no sale de tu navegador)" : ""}. Distancias en línea recta.</>}
+          {!gps && origen && origen.tipo !== "gps" && <>Partida: <b>{origen.nombre}</b>. Distancias en línea recta.</>}
+          {!gps && origen?.tipo === "gps" && <>Partida: <b>tu ubicación</b>, cerca de <b>{origen.cerca}</b>{origen.precision ? ` · precisión ±${origen.precision < 1 ? "<1" : Math.round(origen.precision)} km` : ""}. No sale de tu navegador.</>}
           {!gps && !origen && "Puede ser donde estás o adonde vas a viajar. Sin punto de partida, el plan recorre todo Chile."}
         </p>
+        {origen?.tipo === "gps" && (origen.precision ?? 0) > 15 && (
+          <p className="aviso"><Icono nombre="alerta" tam={16} />Tu navegador entregó una ubicación aproximada (sin GPS, suele calcularse por la red). Si no estás cerca de {origen.cerca?.split(" (")[0]}, escribe tu ciudad arriba.</p>
+        )}
         <div className="plan-radio" role="radiogroup" aria-label="Distancia máxima">
           <span className="dato-eti">Hasta</span>
           {RADIOS.map((r) => <button key={r.t} type="button" role="radio" aria-checked={radio === r.v} onClick={() => conTransicion(() => setRadio(r.v))}>{r.t}</button>)}
@@ -118,7 +134,7 @@ export default function Planificador() {
             <Icono nombre="ave" tam={18} /><span><b>Buscar especies concretas</b><small>La ruta más corta para ver tu lista</small></span>
           </button>
         </div>
-        {modo === "lista" && <SelectorEspecies datos={datos} lista={lista} setLista={setLista} />}
+        {modo === "lista" && <SelectorEspecies datos={datos} lista={lista} setLista={setLista} disponibles={disponibles} hayOrigen={!!origen && radio !== Infinity} />}
       </section>
 
       {/* Paso 3 · el plan */}
@@ -141,7 +157,7 @@ export default function Planificador() {
   );
 }
 
-function SelectorEspecies({ datos, lista, setLista }: { datos: DatosPlan; lista: number[]; setLista: (f: (l: number[]) => number[]) => void }) {
+function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { datos: DatosPlan; lista: number[]; setLista: (f: (l: number[]) => number[]) => void; disponibles: Map<number, number>; hayOrigen: boolean }) {
   const [q, setQ] = useState(""), [abierto, setAbierto] = useState(false), [act, setAct] = useState(0);
   const ref = useRef<HTMLInputElement>(null);
   const opciones = useMemo(() => {
@@ -153,7 +169,20 @@ function SelectorEspecies({ datos, lista, setLista }: { datos: DatosPlan; lista:
       .sort((a, b) => rango(a.n) - rango(b.n) || b.e[4] - a.e[4]).slice(0, 8);
   }, [q, datos, lista]);
   const agregar = (i: number) => { setLista((l) => [...l, i]); setQ(""); setAct(0); ref.current?.focus(); };
-  const endemicas = datos.e.map((e, i) => ({ e, i })).filter(({ e }) => e[3] === "endémica").map(({ i }) => i);
+  const todas = datos.e.map((e, i) => ({ e, i })).filter((x) => disponibles.has(x.i));
+  const porFrec = [...todas].sort((a, b) => b.e[4] - a.e[4]);
+  const ATAJOS_BASE: { t: string; icono: string; ids: () => number[] }[] = [
+    { t: "Al azar", icono: "rueda", ids: () => [...todas].sort(() => Math.random() - 0.5).slice(0, 16).map((x) => x.i) },
+    { t: "Las más vistas", icono: "binoculares", ids: () => porFrec.slice(0, 10).map((x) => x.i) },
+    // raras en Chile pero con al menos un sitio donde aparecen en ≥ 5 % de las salidas: difíciles, no imposibles
+    { t: "Raras pero posibles", icono: "ojo", ids: () => todas.filter((x) => (disponibles.get(x.i) ?? 0) >= 0.05)
+        .sort((a, b) => a.e[4] - b.e[4]).slice(0, 10).map((x) => x.i) },
+    { t: "Amenazadas (UICN)", icono: "alerta", ids: () => todas.filter((x) => ["VU", "EN", "CR"].includes(x.e[5] ?? "")).map((x) => x.i) },
+    { t: "Endémicas de Chile", icono: "pin", ids: () => todas.filter((x) => x.e[3] === "endémica").map((x) => x.i) },
+    { t: "Migratorias", icono: "ola", ids: () => porFrec.filter((x) => x.e[3] === "migratoria / estacional").slice(0, 10).map((x) => x.i) },
+  ];
+  // cada atajo muestra cuántas especies trae; se ocultan los que quedarían vacíos en tu radio
+  const ATAJOS = ATAJOS_BASE.map((a) => ({ ...a, n: a.ids().length })).filter((a) => a.n > 0);
 
   return (
     <div className="plan-especies">
@@ -184,9 +213,15 @@ function SelectorEspecies({ datos, lista, setLista }: { datos: DatosPlan; lista:
             {datos.e[i][2] ? <img src={datos.e[i][2]!} alt="" /> : <span className="sin-foto" />}{datos.e[i][1]}<span aria-hidden="true">×</span>
           </button>
         ))}
-        {!lista.length && <span className="apoyo pequeno">Atajos:</span>}
-        {!lista.length && <button type="button" className="chip-atajo" onClick={() => setLista(() => endemicas)}>Las {endemicas.length} endémicas</button>}
         {lista.length > 0 && <button type="button" className="chip-atajo" onClick={() => setLista(() => [])}>Limpiar lista</button>}
+      </div>
+      <div className="atajos" role="group" aria-label="Listas sugeridas">
+        <span className="dato-eti">{lista.length ? "Reemplazar por" : "O parte con una lista"}{hayOrigen ? " · cerca de ti" : ""}</span>
+        {ATAJOS.map((a) => (
+          <button key={a.t} type="button" className="chip-atajo" onClick={() => setLista(() => a.ids())}>
+            <Icono nombre={a.icono} tam={14} />{a.t}<span className="chip-atajo__n">{a.n}</span>
+          </button>
+        ))}
       </div>
     </div>
   );

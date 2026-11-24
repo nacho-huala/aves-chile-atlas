@@ -5,10 +5,10 @@ export interface SitioPlan {
   id: number; nombre: string; region: string | null; macrozona: string | null;
   punto: [number, number]; salidas: number; especies: number; riqueza: number | null; meses: number[];
 }
-/** e: [slug, nombre, foto, estatus, % de todas las salidas de Chile] · r[i]: [índice de especie, % salidas completas, mes pico] */
-export interface DatosPlan { e: [string, string, string | null, string | null, number][]; s: SitioPlan[]; r: [number, number, number][][]; nota: string }
+/** e: [slug, nombre, foto, estatus, % de todas las salidas de Chile, UICN] · r[i]: [índice de especie, % salidas completas, mes pico] */
+export interface DatosPlan { e: [string, string, string | null, string | null, number, string | null][]; s: SitioPlan[]; r: [number, number, number][][]; nota: string }
 export type Punto = [number, number];
-export interface Origen { nombre: string; punto: Punto; tipo: "gps" | "ciudad" | "sitio" }
+export interface Origen { nombre: string; punto: Punto; tipo: "gps" | "ciudad" | "sitio"; precision?: number; cerca?: string }
 
 export function km(a: Punto, b: Punto) {
   const r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLon = (b[1] - a[1]) * r;
@@ -44,22 +44,24 @@ export function planificar(d: DatosPlan, prob: ReturnType<typeof indexar>, objet
   const q = new Map(objetivo.map((e) => [e, 1])); // probabilidad de NO verla aún
   const sinSitio = objetivo.filter((e) => !prob.some((m) => m.has(e)));
   const elegidos: number[] = [];
+  let primeraGanancia = 0;
   const candidatos = d.s.map((s, i) => i).filter((i) => !origen || km(origen, d.s[i].punto) <= radio);
   for (let paso = 0; paso < maxParadas; paso++) {
     const faltan = objetivo.filter((e) => 1 - (q.get(e) ?? 1) < meta && !sinSitio.includes(e));
     if (!faltan.length) break;
-    let mejor = -1, mejorScore = 0;
+    let mejor = -1, mejorScore = 0, mejorGan = 0;
     for (const i of candidatos) {
       if (elegidos.includes(i)) continue;
       let gan = 0;
       for (const e of faltan) { const x = prob[i].get(e); if (x) gan += (q.get(e) ?? 1) * x.p; }
-      if (gan < 0.08) continue; // una parada debe sumar al menos 8 puntos de probabilidad repartidos en la lista
+      if (gan < Math.max(0.05, 0.2 * primeraGanancia)) continue; // una parada extra debe aportar al menos 1/5 de lo que aportó la primera
       const anclas = [...(origen ? [origen] : []), ...elegidos.map((j) => d.s[j].punto)];
       const dist = anclas.length ? Math.min(...anclas.map((a) => km(a, d.s[i].punto))) : 0;
       const score = gan / (1 + dist / 150);
-      if (score > mejorScore) { mejorScore = score; mejor = i; }
+      if (score > mejorScore) { mejorScore = score; mejor = i; mejorGan = gan; }
     }
     if (mejor < 0) break;
+    if (!elegidos.length) primeraGanancia = mejorGan;
     elegidos.push(mejor);
     for (const e of objetivo) { const x = prob[mejor].get(e); if (x) q.set(e, (q.get(e) ?? 1) * (1 - x.p)); }
   }
