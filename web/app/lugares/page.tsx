@@ -1,6 +1,7 @@
 import { getKba } from "@/lib/data";
 import Lugares from "@/components/Lugares";
-import { Lamina, Subnav } from "@/components/laminas/Lamina";
+import { Fuente, Lamina, Notas, Subnav } from "@/components/laminas/Lamina";
+import { Icono } from "@/components/Icono";
 import { KbaDispersion } from "@/components/laminas/KbaDispersion";
 import { ProteccionKba } from "@/components/laminas/Apiladas";
 import { entero } from "@/lib/formato";
@@ -32,15 +33,14 @@ export default async function PaginaLugares() {
 
       <section id="cerca" className="vista" aria-labelledby="cerca-t">
         <p className="etiqueta etiqueta--sol vista__eti">Lámina 11 · Mapa de sitios KBA</p>
-        <h2 id="cerca-t" className="titulo-1 vista__titulo">Sitios clave con aves, cerca de ti</h2>
+        <h2 id="cerca-t" className="titulo-1 vista__titulo titulo-icono"><span className="titulo-icono__marca" aria-hidden="true"><Icono nombre="mapa" tam={24} /></span><span>Sitios clave con aves, cerca de ti</span></h2>
         <p className="cuerpo-l vista__bajada">{entero(r.sitiosConDatos)} sitios tienen al menos 20 salidas; {entero(r.puntosPublicables)} tienen punto en el mapa. En los sitios con aves clave (las que justifican el KBA), se registraron {entero(vistas)} de {entero(totG)}.</p>
         <div className="vista__lienzo"><Lugares sitios={s} /></div>
-        <div className="notas notas--fila">
-          <div className="nota"><span className="nota__tipo">Cómo leer</span><p>Cada círculo es un sitio KBA: su tamaño son las salidas de eBird dentro del sitio y su color la macrozona. Al elegir uno se ven sus cifras, sus meses y sus aves más frecuentes.</p></div>
-          <div className="nota nota--hallazgo"><span className="nota__tipo">Hallazgo</span><p>El sitio más observado es <strong>{s[0].nombre}</strong>, con {entero(s[0].salidas)} salidas y {s[0].especies} especies.</p></div>
-          <div className="nota"><span className="nota__tipo">Limitación</span><p>El punto no es el centro ni el límite del KBA: es la celda de ~1 km con más salidas dentro del sitio, y solo se muestra si hay 2 localidades y 20 salidas. Los límites oficiales no se publican aquí.</p></div>
-        </div>
-        <p className="pie">Fuente: {FUENTE}</p>
+        <Notas
+          leer="Cada círculo es un sitio KBA: su tamaño son las salidas de eBird dentro del sitio y su color la macrozona. Al elegir uno se ven sus cifras, sus meses y sus aves más frecuentes."
+          hallazgo={<>El sitio más observado es <strong>{s[0].nombre}</strong>, con {entero(s[0].salidas)} salidas y {s[0].especies} especies.</>}
+          limitacion="El punto no es el centro ni el límite del KBA: es la celda de ~1 km con más salidas dentro del sitio, y solo se muestra si hay 2 localidades y 20 salidas. Los límites oficiales no se publican aquí." />
+        <Fuente>{FUENTE}</Fuente>
       </section>
 
       <Lamina id="explorar" num={12} tipo="Dispersión · Esfuerzo y riqueza" titulo="Sitios con más especies de las que su esfuerzo hace esperar"
@@ -60,7 +60,7 @@ export default async function PaginaLugares() {
         fuente="eBird EBD relSep-2026 (2019–2025) · KBA World Database sep-2026 · 13_kba_proteccion">
         <ProteccionKba proteccion={r.proteccion} />
       </Lamina>
-      <p className="pie">{k.cita}</p>
+      <Fuente etiqueta="Cita KBA">{k.cita}</Fuente>
     </main>
   );
 }

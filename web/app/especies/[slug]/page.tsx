@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { getEspecies, getFicha } from "@/lib/data";
 import { entero, MESES_LARGOS, pct, UICN, unoDeCada } from "@/lib/formato";
+import { autorFoto, DIETA_ES, HABITAT_ES, licenciaCorta, UICN_ESCALA, urlLicencia } from "@/lib/ficha";
 import Fenologia from "@/components/Fenologia";
 import PerfilAltitud from "@/components/PerfilAltitud";
+import { Icono, TituloIcono } from "@/components/Icono";
+import { Fuente } from "@/components/laminas/Lamina";
 import { OlaGrafico } from "@/components/laminas/Ola";
 
 // Una página HTML por especie, generada al compilar.
@@ -17,35 +20,82 @@ export async function generateMetadata({ params }: Props) {
   return { title: `${f.nombre} · Aves en Chile` };
 }
 
+const ESTATUS_CLASE: Record<string, string> = {
+  "nativa residente": "musgo", "migratoria / estacional": "mar", "endémica": "vino", "introducida": "ocre",
+};
+
+/** Escala UICN de verde a rojo con la categoría de la especie marcada. */
+function EscalaUicn({ cat }: { cat: string }) {
+  const i = UICN_ESCALA.indexOf(cat as (typeof UICN_ESCALA)[number]);
+  return (
+    <div className="uicn" aria-label={`Categoría UICN: ${UICN[cat] ?? cat}`}>
+      <div className="uicn__cab"><span className="uicn__eti">Riesgo UICN</span><b className={`uicn__nombre uicn--${cat.toLowerCase()}`}>{UICN[cat] ?? cat}</b></div>
+      {i >= 0 ? (
+        <ol className="uicn__escala" aria-hidden="true">
+          {UICN_ESCALA.map((c, k) => <li key={c} className={`uicn--${c.toLowerCase()}`} data-on={k === i}>{c}</li>)}
+        </ol>
+      ) : <p className="pie" style={{ margin: 0 }}>Sin datos suficientes para evaluar su riesgo.</p>}
+    </div>
+  );
+}
+
 export default async function FichaEspecie({ params }: Props) {
   const f = await getFicha((await params).slug);
+  const datos: { icono: string; eti: string; valor: React.ReactNode; nota?: string }[] = [
+    { icono: "binoculares", eti: "Salidas con la especie", valor: entero(f.salidas), nota: pct(f.pct, 2) + " del total" },
+    ...(f.mejorMes ? [{ icono: "calendario", eti: "Mejor mes", valor: MESES_LARGOS[f.mejorMes - 1] }] : []),
+    ...(f.macrozona ? [{ icono: "pin", eti: "Zona con más registros", valor: f.macrozona }] : []),
+    ...(f.observadores ? [{ icono: "ojo", eti: "Observadores", valor: entero(f.observadores) }] : []),
+    ...(f.rasgos.masaG ? [{ icono: "ave", eti: "Masa", valor: `${entero(f.rasgos.masaG)} g` }] : []),
+    ...(f.rasgos.habitat ? [{ icono: "montana", eti: "Hábitat · dieta", valor: HABITAT_ES[f.rasgos.habitat] ?? f.rasgos.habitat,
+      nota: f.rasgos.dieta ? DIETA_ES[f.rasgos.dieta] ?? f.rasgos.dieta : undefined }] : []),
+  ];
+  const lic = licenciaCorta(f.canto?.licencia), licUrl = urlLicencia(f.canto?.licencia);
+  const licFoto = licenciaCorta(f.imagen.licencia), licFotoUrl = urlLicencia(f.imagen.licencia);
+
   return (
     <main className="pagina" id="contenido">
-      <p className="pequeno"><Link href="/especies/">← Especies</Link></p>
+      <Link href="/especies/" className="btn-volver"><Icono nombre="flecha" tam={18} />Volver a especies</Link>
       <div className="ficha-cabecera">
-        <figure style={{ margin: 0 }}>
-          {f.imagen.url ? <img src={f.imagen.url} alt={f.nombre} /> : null}
-          {f.imagen.credito && <figcaption className="pie">Foto: {f.imagen.credito} · vía iNaturalist</figcaption>}
+        <figure className="ficha-foto">
+          {f.imagen.url ? <img src={f.imagen.url} alt={f.nombre} /> : <div className="ficha-foto__vacia"><Icono nombre="ave" tam={64} /></div>}
+          {f.imagen.credito && (
+            <figcaption className="credito">
+              <Icono nombre="ojo" tam={14} />
+              <span>Foto: <b>{autorFoto(f.imagen.credito)}</b>{licFoto && <> · {licFotoUrl ? <a href={licFotoUrl}>{licFoto}</a> : licFoto}</>} · vía iNaturalist</span>
+            </figcaption>
+          )}
         </figure>
-        <div>
+
+        <div className="ficha-info">
           <h1>{f.nombre}</h1>
-          <p className="apoyo"><em>{f.sci}</em> · {f.nombreIngles}</p>
-          <p style={{ fontSize: "1.2rem" }}>Se registra <strong>{unoDeCada(f.pct)}</strong> en Chile.</p>
-          <p>{f.estatus && <span className="etiqueta-estatus">{f.estatus}</span>}{" "}
-            {f.uicn && <span className="etiqueta-estatus">UICN: {UICN[f.uicn] ?? f.uicn}</span>}</p>
-          <dl className="datos">
-            <dt>Salidas con la especie</dt><dd className="mono">{entero(f.salidas)} ({pct(f.pct, 2)})</dd>
-            {f.mejorMes && <><dt>Mejor mes</dt><dd>{MESES_LARGOS[f.mejorMes - 1]}</dd></>}
-            {f.macrozona && <><dt>Zona con más registros</dt><dd>{f.macrozona}</dd></>}
-            {f.observadores && <><dt>Observadores</dt><dd className="mono">{entero(f.observadores)}</dd></>}
-            {f.rasgos.masaG && <><dt>Masa</dt><dd className="mono">{entero(f.rasgos.masaG)} g</dd></>}
-            {f.rasgos.habitat && <><dt>Hábitat · dieta</dt><dd>{f.rasgos.habitat} · {f.rasgos.dieta}</dd></>}
+          <p className="ficha-sci"><em>{f.sci}</em> · {f.nombreIngles}</p>
+          <p className="ficha-frase">Se registra <strong>{unoDeCada(f.pct)}</strong> en Chile.</p>
+
+          <div className="insignias">
+            {f.estatus && <span className={`insignia insignia--${ESTATUS_CLASE[f.estatus] ?? "musgo"}`}><i aria-hidden="true" />{f.estatus}</span>}
+            {f.endemica && f.estatus !== "endémica" && <span className="insignia insignia--vino"><i aria-hidden="true" />endémica</span>}
+            {f.nidificacion && <span className="insignia insignia--sol"><Icono nombre="nido" tam={14} />nidifica en Chile</span>}
+          </div>
+          {f.uicn && <EscalaUicn cat={f.uicn} />}
+
+          <dl className="ficha-datos">
+            {datos.map((d) => (
+              <div key={d.eti} className="ficha-dato">
+                <dt><Icono nombre={d.icono} tam={15} />{d.eti}</dt>
+                <dd>{d.valor}{d.nota && <small>{d.nota}</small>}</dd>
+              </div>
+            ))}
           </dl>
+
           {f.canto && (
-            <div style={{ marginTop: "1rem" }}>
+            <div className="ficha-canto">
+              <div className="ficha-canto__cab"><Icono nombre="canto" tam={18} /><b>Escúchala</b>{f.canto.tipo && <span className="apoyo">· {f.canto.tipo}</span>}</div>
               <audio controls preload="none" src={f.canto.audio} />
-              <p className="pie">Canto ({f.canto.tipo}): {f.canto.autor} · {f.canto.licencia?.replace(/^\/\//, "")} ·{" "}
-                {f.canto.url && <a href={f.canto.url}>xeno-canto</a>}</p>
+              <p className="credito">
+                Grabación de <b>{f.canto.autor}</b>{lic && <> · {licUrl ? <a href={licUrl}>{lic}</a> : lic}</>}
+                {f.canto.url && <> · <a href={f.canto.url}>ver en xeno-canto</a></>}
+              </p>
             </div>
           )}
         </div>
@@ -53,43 +103,44 @@ export default async function FichaEspecie({ params }: Props) {
 
       {f.fenologia && (
         <section className="lamina">
-          <h2>¿Cuándo buscarla?</h2>
+          <TituloIcono icono="calendario">¿Cuándo buscarla?</TituloIcono>
           <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} nidificacion={f.nidificacion?.meses} />
-          <p className="pie">% de salidas completas de cada mes en que se registró · eBird Chile 2019–2025
-            {f.nidificacion?.meses.length ? " · franja dorada: meses de nidificación según Medrano et al. (2018)" : ""}</p>
+          <p className="pie">Barra = % de salidas completas de cada mes en que se registró.{f.nidificacion?.meses.length ? " Franja dorada = meses de nidificación según el atlas." : ""}</p>
+          <Fuente>eBird Chile 2019–2025{f.nidificacion?.meses.length ? " · Medrano et al. (2018)" : ""}</Fuente>
         </section>
       )}
 
       {f.nidificacion?.resumen && (
         <section className="lamina">
-          <h2>Nidificación en Chile</h2>
+          <TituloIcono icono="nido">Nidificación en Chile</TituloIcono>
           <div className={f.nidificacion.altitud ? "nido-grid" : undefined}>
             <div>
               <p className="cuerpo-l" style={{ marginTop: 0 }}>{f.nidificacion.resumen}</p>
               {f.nidificacion.meses.length > 0 && (
                 <>
-                  <p className="apoyo pequeno" style={{ marginBottom: 6 }}>Meses de nidificación</p>
+                  <p className="dato-eti">Meses de nidificación</p>
                   <ol className="meses-nido" aria-label="Meses de nidificación">
                     {MESES_LARGOS.map((m, i) => <li key={m} data-on={f.nidificacion!.meses.includes(i + 1)} title={m}>{m.slice(0, 3)}</li>)}
                   </ol>
                 </>
               )}
-              {f.nidificacion.revisar && <p className="pie">Información reproductiva incompleta o por confirmar en el atlas.</p>}
+              {f.nidificacion.revisar && <p className="aviso"><Icono nombre="alerta" tam={16} />Información reproductiva incompleta o por confirmar en el atlas.</p>}
             </div>
             {f.nidificacion.altitud && (
-              <figure style={{ margin: 0 }}>
+              <figure className="nido-perfil">
+                <p className="dato-eti">Altitud de nidificación</p>
                 <PerfilAltitud min={f.nidificacion.altitud[0]} max={f.nidificacion.altitud[1]} />
-                <figcaption className="pie">Altitud de nidificación (franja dorada) sobre un perfil esquemático costa–Andes.</figcaption>
+                <figcaption className="pie">Franja dorada: entre {entero(f.nidificacion.altitud[0])} y {entero(f.nidificacion.altitud[1])} m s. n. m., sobre un perfil esquemático de la costa a los Andes.</figcaption>
               </figure>
             )}
           </div>
-          <p className="pie">Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, ROC. Datos de 2011–2016, distintos del período de eBird (2019–2025).</p>
+          <Fuente>Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, ROC. Datos de 2011–2016, distintos del período de eBird (2019–2025).</Fuente>
         </section>
       )}
 
       {f.kba.length > 0 && (
         <section className="lamina">
-          <h2>¿Dónde verla? Sitios clave</h2>
+          <TituloIcono icono="pin">¿Dónde verla? Sitios clave</TituloIcono>
           <p className="apoyo" style={{ marginTop: 0 }}>Áreas Clave para la Biodiversidad donde aparece en más salidas completas (mínimo 10 salidas con la especie).</p>
           <ul className="kba-aves">
             {f.kba.map((k) => (
@@ -100,22 +151,22 @@ export default async function FichaEspecie({ params }: Props) {
               </li>
             ))}
           </ul>
-          <p className="pie">% de salidas completas del sitio con la especie · eBird 2019–2025 · KBA World Database sep-2026 · <Link href="/lugares/">Ver el mapa de sitios</Link></p>
+          <Fuente>% de salidas completas del sitio con la especie · eBird 2019–2025 · KBA World Database sep-2026 · <Link href="/lugares/">Ver el mapa de sitios</Link></Fuente>
         </section>
       )}
 
       {f.ola && f.ola.bandas.length > 2 && (
         <section className="lamina">
-          <h2>¿Dónde, mes a mes?</h2>
+          <TituloIcono icono="ola">¿Dónde, mes a mes?</TituloIcono>
           <OlaGrafico ola={f.ola} nombre={f.nombre} />
-          <p className="pie">% de salidas completas por franja de 0,5° de latitud (mín. 40 salidas) · eBird Chile 2019–2025 · <a href="/especies/#ola">Más sobre la ola</a></p>
+          <Fuente>% de salidas completas por franja de 0,5° de latitud (mín. 40 salidas) · eBird Chile 2019–2025 · <a href="/especies/#ola">Más sobre la ola</a></Fuente>
         </section>
       )}
 
-      <p className="pequeno">
+      <nav className="ficha-enlaces" aria-label="Más sobre esta especie">
         {[["eBird", f.enlaces.ebird], ["iNaturalist", f.enlaces.inaturalist], ["Wikipedia", f.enlaces.wikipedia]]
-          .filter(([, u]) => u).map(([n, u], i) => <span key={n}>{i > 0 && " · "}<a href={u!}>{n}</a></span>)}
-      </p>
+          .filter(([, u]) => u).map(([n, u]) => <a key={n} className="btn btn--secundario" href={u!}>{n} <span aria-hidden="true">↗</span></a>)}
+      </nav>
     </main>
   );
 }

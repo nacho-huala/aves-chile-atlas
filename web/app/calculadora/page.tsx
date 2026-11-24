@@ -1,3 +1,4 @@
+import { Icono } from "@/components/Icono";
 import { getCalculadora } from "@/lib/data";
 import { getZonas } from "@/lib/zonas";
 import { getReloj, getRueda } from "@/lib/laminas-datos";
@@ -24,7 +25,7 @@ export default async function PaginaCalculadora() {
 
       <section id="calculadora" className="vista" aria-labelledby="calc-t">
         <p className="etiqueta etiqueta--sol vista__eti">Lámina 6 · Calculadora de salida</p>
-        <h2 id="calc-t" className="titulo-1 vista__titulo">¿Cuántas especies veré en mi zona?</h2>
+        <h2 id="calc-t" className="titulo-1 vista__titulo titulo-icono"><span className="titulo-icono__marca" aria-hidden="true"><Icono nombre="binoculares" tam={24} /></span><span>¿Cuántas especies veré en mi zona?</span></h2>
         <p className="cuerpo-l vista__bajada">Elige la zona en el mapa y la duración: cuántas especies se registran (mediana y rango de la mitad central) y cuáles aparecen en más salidas.</p>
         <Calculadora datos={datos} zonas={zonas} />
       </section>

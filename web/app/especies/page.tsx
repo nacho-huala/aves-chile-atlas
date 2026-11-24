@@ -3,7 +3,7 @@ import { getEspeciesLamina, getNidificacion, getOido, getOla } from "@/lib/lamin
 import { AltitudNidificacion, CalendarioNidificacion } from "@/components/laminas/Nidificacion";
 import { TendenciaUicn } from "@/components/laminas/Apiladas";
 import BuscadorEspecies from "@/components/BuscadorEspecies";
-import { Lamina, Subnav } from "@/components/laminas/Lamina";
+import { Fuente, Lamina, Subnav } from "@/components/laminas/Lamina";
 import { Enjambre, Riesgo } from "@/components/laminas/Enjambre";
 import { Oido } from "@/components/laminas/Oido";
 import { OlaSelector } from "@/components/laminas/Ola";
@@ -52,7 +52,7 @@ export default async function PaginaEspecies() {
         <Riesgo especies={lam} />
         <h3 style={{ marginTop: "2.5rem" }}>Tendencia poblacional según UICN, por categoría</h3>
         <TendenciaUicn uicn={uicn} />
-        <p className="pie">{uicn.cita}</p>
+        <Fuente etiqueta="Cita UICN">{uicn.cita}</Fuente>
       </Lamina>
 
       <Lamina id="cantos" num={10} tipo="Oído vs. vista" titulo="Las que se escuchan más de lo que se ven" fuente="xeno-canto (grabaciones en Chile) + eBird · 12_sonidos"
