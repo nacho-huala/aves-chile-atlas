@@ -297,7 +297,8 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             eyebrow: `Salida de observación · ${s.region ?? ""}`, titulo: s.nombre,
             subtitulo: `${s.riqueza ?? "—"} especies en una salida típica · a ${entero(Math.round(km(origen.punto, s.punto)))} km de ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre}`,
             origen: origen.punto, puntos: [s.punto],
-            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 12).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p })) }],
+            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 12).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
+            contexto: datos.s.map((z) => z.punto),
             pie: "Sitio clave para la biodiversidad (KBA) · datos de eBird",
           }} />
       </div>
@@ -351,7 +352,8 @@ function PanelLista({ datos, plan, lista, origen, radio, elegido, setSel, urlPla
             eyebrow: "Ruta de observación", titulo: `${lista.length} especies en ${plan.paradas.length} ${plan.paradas.length === 1 ? "parada" : "paradas"}`,
             subtitulo: `${origen ? `Desde ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre} · ` : ""}${plan.kmTotal !== null ? `unos ${entero(Math.round(plan.kmTotal))} km en línea recta` : ""}`,
             origen: origen?.punto ?? null, puntos: plan.paradas.map((p) => p.s.punto),
-            bloques: plan.paradas.map((p) => ({ titulo: p.s.nombre, detalle: p.s.region ?? "", especies: p.aporta.slice(0, plan.paradas.length > 3 ? 2 : 4).map((a) => ({ nombre: datos.e[a.e][1], p: a.p })) })),
+            bloques: plan.paradas.map((p) => ({ titulo: p.s.nombre, detalle: p.s.region ?? "", especies: p.aporta.slice(0, plan.paradas.length > 3 ? 2 : plan.paradas.length > 2 ? 3 : 5).map((a) => ({ nombre: datos.e[a.e][1], p: a.p, foto: datos.e[a.e][2] })) })),
+            contexto: datos.s.map((z) => z.punto),
             pie: "Sitios clave para la biodiversidad (KBA) · datos de eBird",
           }} />
       )}

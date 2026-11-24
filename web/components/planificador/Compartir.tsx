@@ -50,11 +50,11 @@ export function Compartir({ tarjeta, url, maps, texto, lugar }: { tarjeta: Tarje
           <figcaption className="pie">Formato vertical 4:5, listo para Instagram, Facebook o WhatsApp.</figcaption>
         </figure>
         <div className="compartir__acciones">
-          {puedeCompartir && <button type="button" className="btn btn--primario" onClick={compartir}><Icono nombre="ave" tam={18} />Compartir…</button>}
-          <button type="button" className={`btn ${puedeCompartir ? "btn--secundario" : "btn--primario"}`} disabled={!img} onClick={() => img && descargar(img.blob, "mi-salida-de-aves.png")}>Descargar imagen</button>
-          <button type="button" className="btn btn--secundario" onClick={() => copiar(url, "Enlace copiado")}>Copiar enlace al plan</button>
-          <button type="button" className="btn btn--secundario" onClick={() => copiar(`${texto}\n${url}`, "Lista copiada")}>Copiar lista como texto</button>
-          {maps && <a className="btn btn--secundario" href={maps} target="_blank" rel="noopener noreferrer"><Icono nombre="mapa" tam={18} />Ruta en Google Maps</a>}
+          {puedeCompartir && <button type="button" className="btn btn--primario" onClick={compartir}><Icono nombre="compartir" tam={18} />Compartir…</button>}
+          <button type="button" className={`btn ${puedeCompartir ? "btn--secundario" : "btn--primario"}`} disabled={!img} onClick={() => img && descargar(img.blob, "mi-salida-de-aves.png")}><Icono nombre="descargar" tam={18} />Descargar imagen</button>
+          <button type="button" className="btn btn--secundario" onClick={() => copiar(url, "Enlace copiado")}><Icono nombre="enlace" tam={18} />Copiar enlace al plan</button>
+          <button type="button" className="btn btn--secundario" onClick={() => copiar(`${texto}\n${url}`, "Lista copiada")}><Icono nombre="copiar" tam={18} />Copiar lista como texto</button>
+          {maps && <a className="btn btn--secundario" href={maps} target="_blank" rel="noopener noreferrer"><Icono nombre="ruta" tam={18} />Ruta en Google Maps</a>}
           <div className="compartir__cal">
             <label>Fecha de la salida<input type="date" value={fecha} onChange={(e) => setFecha(e.target.value)} /></label>
             <button type="button" className="btn btn--secundario" onClick={() => descargar(new Blob([archivoICS(fecha, tarjeta.titulo, lugar, texto, url)], { type: "text/calendar" }), "salida-de-aves.ics")}>
@@ -62,9 +62,9 @@ export function Compartir({ tarjeta, url, maps, texto, lugar }: { tarjeta: Tarje
             </button>
           </div>
           <div className="compartir__redes" aria-label="Compartir en">
-            <a href={`https://wa.me/?text=${enc(`${texto}\n${url}`)}`} target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <a href={`https://x.com/intent/post?text=${enc(texto.split("\n")[0])}&url=${enc(url)}`} target="_blank" rel="noopener noreferrer">X</a>
-            <a href={`https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`} target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href={`https://wa.me/?text=${enc(`${texto}\n${url}`)}`} target="_blank" rel="noopener noreferrer"><Icono nombre="whatsapp" tam={18} />WhatsApp</a>
+            <a href={`https://x.com/intent/post?text=${enc(texto.split("\n")[0])}&url=${enc(url)}`} target="_blank" rel="noopener noreferrer" aria-label="Compartir en X"><Icono nombre="x" tam={16} />X</a>
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`} target="_blank" rel="noopener noreferrer"><Icono nombre="facebook" tam={18} />Facebook</a>
           </div>
           <p className="pie" role="status">{aviso || "Para Instagram: descarga la imagen o usa «Compartir…» desde el celular. El enlace guarda tu punto de partida como ciudad, no tu ubicación exacta."}</p>
         </div>
