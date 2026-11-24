@@ -322,6 +322,8 @@ No agrega datos: `exportar_planificador` reordena `13_kba_sitios` y `13_kba_espe
 
 **Llévate el plan** (`lib/compartir.ts`, `components/planificador/Compartir.tsx`): el estado del plan vive en la URL (`?desde=Castro&modo=lista&lista=slug,slug&radio=400&sitio=ID`), así «Copiar enlace» reproduce el mismo plan; una ubicación GPS se guarda como la ciudad más cercana (≤ 30 km) o redondeada a ~10 km. Además: imagen 1080×1350 dibujada en canvas (mapa con la ruta + paradas y especies), «Compartir…» con la hoja nativa del sistema (Instagram, WhatsApp… en el celular), ruta en Google Maps (hasta 9 paradas intermedias), evento de calendario `.ics` y enlaces a WhatsApp, X y Facebook. Nada sale del navegador hasta que la persona comparte.
 
+**Imagen para compartir:** miniaturas de las aves y capas de mapa a elección: *Regiones* (contorno y límites BCN), *Esfuerzo eBird* y *Riqueza* (celdas de 0,25° de `laminas/mapa.json`, por cuantiles y recortadas a la tierra), *Topográfico* (OpenTopoMap, CC-BY-SA; si no carga usa Regiones) y *Calles* (CARTO Voyager, solo si se define `NEXT_PUBLIC_CARTO_KEY`, gratis en carto.com/basemaps). Cada capa imprime su atribución. Las fotos deben ser del mismo dominio para dibujarse en el canvas: `python pipeline/descargar_miniaturas.py` baja las miniaturas con licencia Creative Commons a `web/public/fotos/` (con `creditos.csv`) y luego `export_web.py` las usa; sin ellas, la imagen muestra la inicial del ave.
+
 Las páginas `/calculadora` (macrozonas) y `/lugares` quedan como apoyo y enlazan al planificador.
 
 ---

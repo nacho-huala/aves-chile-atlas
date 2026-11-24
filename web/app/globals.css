@@ -609,3 +609,9 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 .compartir__acciones .btn--secundario svg { color: var(--foco); opacity: 1; }
 .compartir__redes a { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
 .compartir__redes a svg { color: var(--foco); }
+.capas { border: 0; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.capas legend { margin-bottom: 6px; padding: 0; }
+.capas label { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: var(--radio-pildora); border: 1.5px solid var(--linea); background: var(--fondo); font: 500 13px var(--font-sans); color: var(--texto); cursor: pointer; }
+.capas label:has(input:checked) { background: var(--texto); color: var(--fondo); border-color: var(--texto); }
+.capas label:has(input:focus-visible) { outline: 2px solid var(--anillo-foco); outline-offset: 2px; }
+.capas input { position: absolute; opacity: 0; pointer-events: none; }

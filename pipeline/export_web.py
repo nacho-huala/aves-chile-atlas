@@ -243,7 +243,10 @@ def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
         if r["sci_name"] not in esp_idx:
             e = info[r["sci_name"]]
             esp_idx[r["sci_name"]] = len(especies)
-            especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], txt(e["foto_cuadrada"]), txt(e["estatus_final"]),
+            # miniatura local si existe (mismo dominio: se puede dibujar en el canvas al compartir); si no, la de iNaturalist
+            local = out.parent / "fotos" / f"{nombre[r['sci_name']][0]}.jpg"
+            foto = f"/fotos/{local.name}" if local.exists() else txt(e["foto_cuadrada"])
+            especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], foto, txt(e["estatus_final"]),
                              num(e["pct_salidas"], 3), txt(e["uicn"])])
         reg[i].append([esp_idx[r["sci_name"]], num(r["pct_completas"], 1), num(r["mes_pico"], 0)])
     s = [{"id": num(r["kba_id"], 0), "nombre": r["nombre"], "region": txt(r["region"]), "macrozona": txt(r["macrozona"]),

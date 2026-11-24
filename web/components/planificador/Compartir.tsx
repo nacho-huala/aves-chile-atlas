@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { archivoICS, descargar, dibujarTarjeta, type Tarjeta } from "@/lib/compartir";
+import { archivoICS, CAPAS, descargar, dibujarTarjeta, type Capa, type Tarjeta } from "@/lib/compartir";
 import { Icono } from "@/components/Icono";
 
 function proximoSabado() {
@@ -13,12 +13,16 @@ export function Compartir({ tarjeta, url, maps, texto, lugar }: { tarjeta: Tarje
   const [img, setImg] = useState<{ blob: Blob; src: string } | null>(null);
   const [aviso, setAviso] = useState("");
   const [fecha, setFecha] = useState(proximoSabado);
-  const clave = JSON.stringify(tarjeta);
+  const [capa, setCapa] = useState<Capa>("atlas");
+  const [cargando, setCargando] = useState(false);
+  const clave = JSON.stringify(tarjeta) + capa;
 
   useEffect(() => {
     let vivo = true;
-    const t = setTimeout(() => dibujarTarjeta(tarjeta).then((blob) => {
+    setCargando(true);
+    const t = setTimeout(() => dibujarTarjeta({ ...tarjeta, capa }).then((blob) => {
       if (!vivo) return;
+      setCargando(false);
       setImg((prev) => { if (prev) URL.revokeObjectURL(prev.src); return { blob, src: URL.createObjectURL(blob) }; });
     }), 350);
     return () => { vivo = false; clearTimeout(t); };
@@ -46,8 +50,14 @@ export function Compartir({ tarjeta, url, maps, texto, lugar }: { tarjeta: Tarje
       <h3 id="compartir-t" className="titulo-icono"><span className="titulo-icono__marca" aria-hidden="true"><Icono nombre="pin" tam={20} /></span><span>Llévate el plan</span></h3>
       <div className="compartir__grid">
         <figure className="compartir__img">
-          {img ? <img src={img.src} alt={`Imagen para compartir: ${tarjeta.titulo}`} /> : <div className="compartir__cargando">Preparando la imagen…</div>}
-          <figcaption className="pie">Formato vertical 4:5, listo para Instagram, Facebook o WhatsApp.</figcaption>
+          {img ? <img src={img.src} alt={`Imagen para compartir: ${tarjeta.titulo}`} style={{ opacity: cargando ? 0.5 : 1 }} /> : <div className="compartir__cargando">Preparando la imagen…</div>}
+          <fieldset className="capas">
+            <legend className="dato-eti">Mapa de la imagen</legend>
+            {CAPAS.map((c) => (
+              <label key={c.id} title={c.nota}><input type="radio" name="capa" value={c.id} checked={capa === c.id} onChange={() => setCapa(c.id)} />{c.txt}</label>
+            ))}
+          </fieldset>
+          <figcaption className="pie">Formato vertical 4:5, listo para Instagram, Facebook o WhatsApp. {CAPAS.find((c) => c.id === capa)?.nota}.</figcaption>
         </figure>
         <div className="compartir__acciones">
           {puedeCompartir && <button type="button" className="btn btn--primario" onClick={compartir}><Icono nombre="compartir" tam={18} />Compartir…</button>}
