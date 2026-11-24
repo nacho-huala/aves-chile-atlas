@@ -228,7 +228,7 @@ def exportar_nidificacion(d: Path, out: Path, enr: list, nid: dict, fen: dict):
 
 def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
     """Sitios KBA con punto publicable × especies → planificador.json.
-    Compacto: e = especies [slug, nombre, foto, estatus]; s = sitios; r[i] = [[índice especie, % salidas completas, mes pico], …].
+    Compacto: e = especies [slug, nombre, foto, estatus, % salidas en Chile, UICN]; s = sitios; r[i] = [[índice especie, % salidas completas, mes pico], …].
     No agrega datos nuevos: reordena 13_kba_sitios y 13_kba_especies para calcular rutas en el navegador."""
     info = {r["sci_name"]: r for r in enr}
     sitios = [r for r in leer(d / "13_kba_sitios.csv")
@@ -244,7 +244,7 @@ def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
             e = info[r["sci_name"]]
             esp_idx[r["sci_name"]] = len(especies)
             especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], txt(e["foto_cuadrada"]), txt(e["estatus_final"]),
-                             num(e["pct_salidas"], 3)])
+                             num(e["pct_salidas"], 3), txt(e["uicn"])])
         reg[i].append([esp_idx[r["sci_name"]], num(r["pct_completas"], 1), num(r["mes_pico"], 0)])
     s = [{"id": num(r["kba_id"], 0), "nombre": r["nombre"], "region": txt(r["region"]), "macrozona": txt(r["macrozona"]),
           "punto": [num(r["punto_lat"], 2), num(r["punto_lon"], 2)], "salidas": num(r["salidas_dentro"], 0),

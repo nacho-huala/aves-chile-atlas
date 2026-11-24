@@ -575,3 +575,14 @@ main.pagina .vista__titulo.titulo-icono .titulo-icono__marca { width: 52px; heig
 .aviso-plan { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 14px 18px; margin-bottom: var(--esp-5); border-radius: var(--radio-tarjeta); border: 1.5px solid var(--foco); background: var(--superficie); }
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 220ms; }
 @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
+/* enlaces con forma de botón dentro de la página: el color de .btn gana sobre «main.pagina a» */
+main.pagina a.btn--primario, a.btn--primario { color: var(--sobre-foco); }
+main.pagina a.btn--secundario { color: var(--texto); }
+main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
+.btn svg { flex: none; }
+.atajos { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.atajos .dato-eti { margin: 0 6px 0 0; }
+.chip-atajo { display: inline-flex; align-items: center; gap: 6px; }
+.chip-atajo svg { color: var(--foco); }
+.chip-atajo:hover { border-color: var(--foco); border-style: solid; }
+.chip-atajo__n { font: 600 11px/1 var(--font-mono); padding: 2px 6px; border-radius: var(--radio-pildora); background: var(--superficie-hundida); color: var(--texto-suave); }
