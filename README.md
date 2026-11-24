@@ -320,6 +320,8 @@ No agrega datos: `exportar_planificador` reordena `13_kba_sitios` y `13_kba_espe
 - **Especies concretas:** cobertura voraz. En cada paso elige el sitio que más sube la probabilidad conjunta de ver las especies que faltan (P = 1 − Π(1 − pᵢ), suponiendo salidas independientes), dividida por (1 + distancia/150 km) al origen o a la parada más cercana ya elegida. Para al llegar a 75 % por especie, a 5 paradas o si ninguna parada suma 8 puntos. El orden de visita es el vecino más cercano.
 - **Límites:** solo sitios KBA con punto publicable; especies sin registros en esos sitios se avisan aparte. La probabilidad es una guía, no una garantía.
 
+**Llévate el plan** (`lib/compartir.ts`, `components/planificador/Compartir.tsx`): el estado del plan vive en la URL (`?desde=Castro&modo=lista&lista=slug,slug&radio=400&sitio=ID`), así «Copiar enlace» reproduce el mismo plan; una ubicación GPS se guarda como la ciudad más cercana (≤ 30 km) o redondeada a ~10 km. Además: imagen 1080×1350 dibujada en canvas (mapa con la ruta + paradas y especies), «Compartir…» con la hoja nativa del sistema (Instagram, WhatsApp… en el celular), ruta en Google Maps (hasta 9 paradas intermedias), evento de calendario `.ics` y enlaces a WhatsApp, X y Facebook. Nada sale del navegador hasta que la persona comparte.
+
 Las páginas `/calculadora` (macrozonas) y `/lugares` quedan como apoyo y enlazan al planificador.
 
 ---

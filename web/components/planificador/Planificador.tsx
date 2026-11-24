@@ -7,6 +7,8 @@ import { cercanos, indexar, km, planificar, type DatosPlan, type Origen } from "
 import { MESES, MESES_LARGOS, entero } from "@/lib/formato";
 import { Icono } from "@/components/Icono";
 import { MapaPlan } from "./MapaPlan";
+import { Compartir } from "./Compartir";
+import { aURL, deURL, origenParaURL, urlGoogleMaps } from "@/lib/compartir";
 
 const RADIOS = [{ v: 60, t: "60 km" }, { v: 150, t: "150 km" }, { v: 400, t: "400 km" }, { v: Infinity, t: "Todo Chile" }];
 const sinTildes = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
@@ -38,14 +40,27 @@ export default function Planificador() {
   const [modo, setModo] = useState<"cerca" | "lista">("cerca");
   const [sel, setSel] = useState<number | null>(null);
   const [lista, setLista] = useState<number[]>([]);
+  const [listo, setListo] = useState(false);
 
   useEffect(() => {
     fetch("/data/planificador.json").then((r) => r.json()).then((d: DatosPlan) => {
       setDatos(d);
-      // ?especie=slug (desde la ficha) abre el modo lista con esa especie
-      const q = new URLSearchParams(window.location.search).get("especie");
-      const i = q ? d.e.findIndex((e) => e[0] === q) : -1;
-      if (i >= 0) { setModo("lista"); setLista([i]); }
+      // estado inicial desde la URL: ?desde=Castro&modo=lista&lista=slug,slug&radio=400&sitio=ID (o ?especie=slug desde la ficha)
+      const u = deURL();
+      if (u.desde) {
+        const c = CIUDADES.find((x) => sinTildes(x[0]) === sinTildes(u.desde!)), s = d.s.find((x) => sinTildes(x.nombre) === sinTildes(u.desde!));
+        const m = u.desde.match(/^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$/);
+        if (c) { setOrigen({ nombre: c[0], punto: [c[2], c[3]], tipo: "ciudad" }); setTexto(c[0]); }
+        else if (s) { setOrigen({ nombre: s.nombre, punto: s.punto, tipo: "sitio" }); setTexto(s.nombre); }
+        else if (m) setOrigen({ nombre: "Punto compartido", punto: [Number(m[1]), Number(m[2])], tipo: "ciudad" });
+      }
+      if (u.radio !== undefined && !Number.isNaN(u.radio)) setRadio(u.radio);
+      const slugs = [...(u.lista ?? []), ...(u.especie ? [u.especie] : [])];
+      const idx = slugs.map((sl) => d.e.findIndex((e) => e[0] === sl)).filter((i) => i >= 0);
+      if (idx.length) setLista([...new Set(idx)]);
+      if (u.modo === "lista" || u.especie) setModo("lista");
+      if (u.sitio !== undefined) { const i = d.s.findIndex((x) => x.id === u.sitio); if (i >= 0) setSel(i); }
+      setListo(true);
     }).catch(() => setError(true));
   }, []);
   const prob = useMemo(() => (datos ? indexar(datos) : null), [datos]);
@@ -81,6 +96,13 @@ export default function Planificador() {
     return m;
   }, [datos, prob, origen, radio]);
   const plan = useMemo(() => (datos && prob && lista.length ? planificar(datos, prob, lista, origen?.punto ?? null, { radio, maxParadas: lista.length > 8 ? 8 : 5 }) : null), [datos, prob, lista, origen, radio]);
+
+  // la URL refleja el plan (sin la ubicación exacta), para que «copiar enlace» reproduzca lo mismo
+  const urlPlan = useMemo(() => {
+    if (!datos || !listo) return "";
+    return aURL({ desde: origenParaURL(origen), modo, lista: lista.map((i) => datos.e[i][0]), radio, sitio: modo === "cerca" && sel !== null ? datos.s[sel].id : undefined });
+  }, [datos, listo, origen, modo, lista, radio, sel]);
+  useEffect(() => { if (urlPlan) window.history.replaceState(null, "", urlPlan); }, [urlPlan]);
 
   if (error) return <p className="aviso"><Icono nombre="alerta" tam={16} />No pudimos cargar los datos del planificador.</p>;
   if (!datos || !prob) return <div className="plan-cargando" role="status">Cargando sitios y especies…</div>;
@@ -147,8 +169,8 @@ export default function Planificador() {
           <div className="plan-grid__panel">
             {modo === "cerca"
               ? <PanelCerca datos={datos} prob={prob} cerca={cerca} origen={origen} elegido={elegido} setSel={setSel} lista={lista}
-                  agregar={(e) => setLista((l) => (l.includes(e) ? l : [...l, e]))} irALista={() => conTransicion(() => setModo("lista"))} />
-              : <PanelLista datos={datos} plan={plan} lista={lista} origen={origen} radio={radio} setSel={setSel} elegido={elegido} />}
+                  agregar={(e) => setLista((l) => (l.includes(e) ? l : [...l, e]))} irALista={() => conTransicion(() => setModo("lista"))} urlPlan={urlPlan} />
+              : <PanelLista datos={datos} plan={plan} lista={lista} origen={origen} radio={radio} setSel={setSel} elegido={elegido} urlPlan={urlPlan} />}
           </div>
         </div>
       </section>
@@ -229,9 +251,9 @@ function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { 
 
 function FotoMini({ src }: { src: string | null }) { return src ? <img className="foto-mini" src={src} alt="" loading="lazy" /> : <span className="foto-mini sin-foto" />; }
 
-function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agregar, irALista }: {
+function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agregar, irALista, urlPlan }: {
   datos: DatosPlan; prob: ReturnType<typeof indexar>; cerca: ReturnType<typeof cercanos>; origen: Origen | null; elegido: number | null;
-  setSel: (i: number) => void; lista: number[]; agregar: (e: number) => void; irALista: () => void;
+  setSel: (i: number) => void; lista: number[]; agregar: (e: number) => void; irALista: () => void; urlPlan: string;
 }) {
   if (!origen) return <Vacio icono="pin" t="Elige un punto de partida" d="Te mostraremos los sitios clave más cercanos y qué aves se registran en cada uno." />;
   if (!cerca.length) return <Vacio icono="mapa" t="No hay sitios con datos en ese radio" d="Amplía la distancia máxima en el paso 1." />;
@@ -268,12 +290,23 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
         </ul>
         {lista.length > 0 && <button type="button" className="btn btn--secundario" onClick={irALista}>Planificar mi lista ({lista.length}) <span className="flecha" aria-hidden="true">→</span></button>}
       </article>
+      <div className="plan-cerca__compartir">
+        <Compartir url={urlPlan} maps={urlGoogleMaps(origen.punto, [s.punto])} lugar={`${s.nombre}, ${s.region ?? "Chile"}`}
+          texto={`Salida de observación de aves a ${s.nombre} (${s.region}). Podría ver: ${aves.slice(0, 6).map(([e, x]) => `${datos.e[e][1]} (${Math.max(1, Math.round(x.p * 10))}/10)`).join(", ")}.`}
+          tarjeta={{
+            eyebrow: `Salida de observación · ${s.region ?? ""}`, titulo: s.nombre,
+            subtitulo: `${s.riqueza ?? "—"} especies en una salida típica · a ${entero(Math.round(km(origen.punto, s.punto)))} km de ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre}`,
+            origen: origen.punto, puntos: [s.punto],
+            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 12).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p })) }],
+            pie: "Sitio clave para la biodiversidad (KBA) · datos de eBird",
+          }} />
+      </div>
     </div>
   );
 }
 
-function PanelLista({ datos, plan, lista, origen, radio, elegido, setSel }: {
-  datos: DatosPlan; plan: ReturnType<typeof planificar> | null; lista: number[]; origen: Origen | null; radio: number; elegido: number | null; setSel: (i: number) => void;
+function PanelLista({ datos, plan, lista, origen, radio, elegido, setSel, urlPlan }: {
+  datos: DatosPlan; plan: ReturnType<typeof planificar> | null; lista: number[]; origen: Origen | null; radio: number; elegido: number | null; setSel: (i: number) => void; urlPlan: string;
 }) {
   if (!lista.length || !plan) return <Vacio icono="ave" t="Arma tu lista de especies" d="Agrégalas en el paso 2. Buscaremos la menor cantidad de sitios, lo más cerca posible, donde tengas buenas opciones de verlas." />;
   const buenas = plan.especies.filter((x) => x.prob >= 0.5).length;
@@ -308,6 +341,19 @@ function PanelLista({ datos, plan, lista, origen, radio, elegido, setSel }: {
       </ul>
       {plan.sinSitio.length > 0 && (
         <p className="aviso"><Icono nombre="alerta" tam={16} />Sin registros en sitios clave: {plan.sinSitio.map((e) => datos.e[e][1]).join(", ")}. Revisa su ficha para ver dónde y cuándo aparece.</p>
+      )}
+      {plan.paradas.length > 0 && (
+        <Compartir url={urlPlan} maps={urlGoogleMaps(origen?.punto ?? null, plan.paradas.map((p) => p.s.punto))}
+          lugar={plan.paradas.map((p) => p.s.nombre).join(" → ")}
+          texto={[`Mi ruta para ver ${lista.length} especies de aves en ${plan.paradas.length} paradas:`,
+            ...plan.paradas.map((p, n) => `${n + 1}. ${p.s.nombre} (${p.s.region}): ${p.aporta.slice(0, 5).map((a) => datos.e[a.e][1]).join(", ")}`)].join("\n")}
+          tarjeta={{
+            eyebrow: "Ruta de observación", titulo: `${lista.length} especies en ${plan.paradas.length} ${plan.paradas.length === 1 ? "parada" : "paradas"}`,
+            subtitulo: `${origen ? `Desde ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre} · ` : ""}${plan.kmTotal !== null ? `unos ${entero(Math.round(plan.kmTotal))} km en línea recta` : ""}`,
+            origen: origen?.punto ?? null, puntos: plan.paradas.map((p) => p.s.punto),
+            bloques: plan.paradas.map((p) => ({ titulo: p.s.nombre, detalle: p.s.region ?? "", especies: p.aporta.slice(0, plan.paradas.length > 3 ? 2 : 4).map((a) => ({ nombre: datos.e[a.e][1], p: a.p })) })),
+            pie: "Sitios clave para la biodiversidad (KBA) · datos de eBird",
+          }} />
       )}
       <p className="pie">La probabilidad combina la frecuencia en salidas completas de cada parada como si fueran salidas independientes; es una guía, no una garantía. Supone una salida por sitio.</p>
     </div>
