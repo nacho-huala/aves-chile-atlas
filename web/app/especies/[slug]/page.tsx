@@ -151,6 +151,7 @@ export default async function FichaEspecie({ params }: Props) {
               </li>
             ))}
           </ul>
+          <Link className="btn btn--primario" href={`/planificar/?especie=${f.slug}`} style={{ marginTop: 16 }}><Icono nombre="pin" tam={18} />Planifica cómo verla</Link>
           <Fuente>% de salidas completas del sitio con la especie · eBird 2019–2025 · KBA World Database sep-2026 · <Link href="/lugares/">Ver el mapa de sitios</Link></Fuente>
         </section>
       )}

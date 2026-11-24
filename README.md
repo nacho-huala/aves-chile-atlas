@@ -236,7 +236,7 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 ## 10. Sitio web: páginas y láminas
 
-**Implementado (v0.4):** cuatro pestañas, cada lámina de L2 en la que mejor responde a su pregunta.
+**Implementado (v0.6):** cuatro pestañas más el planificador, cada lámina de L2 en la que mejor responde a su pregunta.
 
 | Ruta | Pestaña | Láminas (interactivas) | Datos |
 |---|---|---|---|
@@ -253,6 +253,7 @@ Diccionario campo por campo: [`docs/README_tecnico.md`](docs/README_tecnico.md) 
 
 **Pendiente:** hexágonos H3 para el mapa, tendencia UICN (token), validar el denominador de salidas completas (C07).
 
+| `/planificar` | **Planifica** (entrada principal) | 1 Punto de partida (ubicación, ciudad o sitio KBA) y radio · 2 Modo: «Ver qué hay cerca» o «Buscar especies concretas» · 3 Tu plan: mapa con ruta, ficha del sitio o itinerario con probabilidad de ver cada especie. Acepta `?especie=slug` (botón «Planifica cómo verla» en cada ficha) | `planificador` (se carga en el navegador) |
 | `/lugares` | **Lugares**: dónde ir | 11 Mapa de sitios KBA + lista + ficha del sitio (geolocalización solo en el navegador o por macrozona; el mapa se encuadra en la selección) · 12 Dispersión esfuerzo vs. riqueza (sitios por explorar) · 13 Protección por tramo | `kba` |
 
 Orden narrativo sugerido: 7 → 1 → 2, 3, 4 → 5, 9 → 8 → 10 → 11 → 6 (tu salida).
@@ -310,6 +311,16 @@ Entradas (no se versionan; ver `.gitignore`): `data/KBA_Data/` (shapefiles, `KBA
 **Resultado:** el mes de mayor registro en eBird cae dentro de la temporada de nidificación en 99 de 242 especies (41 %), poco más que lo esperable por azar (34 %): lo más visible no coincide, en general, con el período reproductivo. Se muestra en cada ficha (franja dorada bajo la fenología y un bloque «Nidificación en Chile»).
 
 **Límites:** el atlas es de 2011–2016 y eBird de 2019–2025, y se muestran como fuentes separadas; los meses salen de frases del texto y pueden incluir cuidado de polluelos; solo se publica el resumen propio con la cita de Medrano et al. (2018), *Atlas de las aves nidificantes de Chile*, ROC. El PDF está en `raw_data/07_referencias/`.
+
+### Planificador (`lib/planificador.ts`)
+
+No agrega datos: `exportar_planificador` reordena `13_kba_sitios` y `13_kba_especies` en `planificador.json` (100 sitios con punto de eBird · 425 especies · 7.761 pares sitio-especie; ~180 KB, se descarga al abrir la página). En el navegador:
+
+- **Qué hay cerca:** los 8 sitios más cercanos al punto de partida dentro del radio (distancia en línea recta), con riqueza típica por salida y las 12 especies más frecuentes (% de salidas completas y mes pico).
+- **Especies concretas:** cobertura voraz. En cada paso elige el sitio que más sube la probabilidad conjunta de ver las especies que faltan (P = 1 − Π(1 − pᵢ), suponiendo salidas independientes), dividida por (1 + distancia/150 km) al origen o a la parada más cercana ya elegida. Para al llegar a 75 % por especie, a 5 paradas o si ninguna parada suma 8 puntos. El orden de visita es el vecino más cercano.
+- **Límites:** solo sitios KBA con punto publicable; especies sin registros en esos sitios se avisan aparte. La probabilidad es una guía, no una garantía.
+
+Las páginas `/calculadora` (macrozonas) y `/lugares` quedan como apoyo y enlazan al planificador.
 
 ---
 

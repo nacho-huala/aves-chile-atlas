@@ -8,7 +8,7 @@ export function Cierre() {
         <h2 id="cierre-titulo" className="cierre__h">Sal a buscar<br />tu próxima especie.</h2>
         <div className="cierre__acciones">
           <Link className="btn btn--primario" href="/especies/">Ver el catálogo <span className="flecha" aria-hidden="true">→</span></Link>
-          <Link className="btn btn--secundario" href="/calculadora/">Planear mi salida</Link>
+          <Link className="btn btn--secundario" href="/planificar/">Planificar mi salida</Link>
           <Link className="btn btn--secundario" href="/lugares/">Sitios clave cerca de ti</Link>
           <Link className="btn btn--secundario" href="/estadisticas/">Ver las estadísticas</Link>
         </div>

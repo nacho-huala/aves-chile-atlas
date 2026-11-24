@@ -23,8 +23,8 @@ export function Cabecera() {
         <nav className="cabecera__nav" aria-label="Principal">
           <Link href="/estadisticas/">Estadísticas</Link>
           <Link href="/especies/">Especies</Link>
-          <Link href="/calculadora/">Tu salida</Link>
           <Link href="/lugares/">Lugares</Link>
+          <Link href="/planificar/" className="nav-cta">Planifica</Link>
           <TemaToggle />
         </nav>
       </div>

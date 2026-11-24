@@ -5,6 +5,7 @@ import type { Calculadora as Datos } from "@/lib/data";
 import { entero } from "@/lib/formato";
 import type { ZonaResumen } from "@/lib/zonas";
 import { MapaMacrozonas } from "./MapaMacrozonas";
+import { Fuente } from "./laminas/Lamina";
 
 export default function Calculadora({ datos, zonas }: { datos: Datos; zonas: ZonaResumen[] }) {
   const [zona, setZona] = useState(datos.zonas.includes("Sur") ? "Sur" : datos.zonas[0]);
@@ -93,7 +94,8 @@ export default function Calculadora({ datos, zonas }: { datos: Datos; zonas: Zon
           <p className="pie">% de esas salidas en que se registró la especie</p>
         </div>
       </div>
-      <p className="pie">{datos.nota} Fuente: eBird Basic Dataset relSep-2026 (06_acumulacion, 06_probabilidad). Es frecuencia de reporte, no garantía de avistamiento.</p>
+      <p className="pie">{datos.nota} Es frecuencia de reporte, no garantía de avistamiento.</p>
+      <Fuente>eBird Basic Dataset relSep-2026 (06_acumulacion, 06_probabilidad)</Fuente>
     </section>
     </>
   );

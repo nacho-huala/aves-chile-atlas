@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icono } from "@/components/Icono";
 import { getCalculadora } from "@/lib/data";
 import { getZonas } from "@/lib/zonas";
@@ -7,7 +8,7 @@ import { Lamina, Subnav } from "@/components/laminas/Lamina";
 import { Rueda } from "@/components/laminas/Rueda";
 import { Reloj } from "@/components/laminas/Reloj";
 
-export const metadata = { title: "Tu salida · Atlas de aves en Chile" };
+export const metadata = { title: "Cuánto, cuándo y a qué hora · Atlas de aves en Chile" };
 const FUENTE = "eBird Basic Dataset (EBD) Chile, relSep-2026, 2019–2025";
 
 export default async function PaginaCalculadora() {
@@ -17,10 +18,14 @@ export default async function PaginaCalculadora() {
   return (
     <main className="pagina" id="contenido">
       <header className="pestana__cabeza">
-        <p className="etiqueta etiqueta--sol" style={{ margin: 0 }}>02 · Lugar · Tu salida</p>
+        <p className="etiqueta etiqueta--sol" style={{ margin: 0 }}>02 · Planifica · Cuánto, cuándo y a qué hora</p>
         <h1>Si salgo a observar, ¿qué voy a ver?</h1>
         <p className="cuerpo-l">Elige dónde, cuánto rato, en qué mes y a qué hora. Todo con salidas reales de eBird.</p>
       </header>
+      <aside className="aviso-plan">
+        <span><b>¿Ya sabes desde dónde sales o adónde vas?</b> <span className="apoyo">El planificador usa sitios concretos en vez de macrozonas.</span></span>
+        <Link className="btn btn--primario" href="/planificar/">Planifica tu salida <span className="flecha" aria-hidden="true">→</span></Link>
+      </aside>
       <Subnav items={[{ id: "calculadora", txt: "Dónde y cuánto" }, { id: "que-buscar", txt: "Qué buscar este mes" }, { id: "a-que-hora", txt: "A qué hora" }]} />
 
       <section id="calculadora" className="vista" aria-labelledby="calc-t">

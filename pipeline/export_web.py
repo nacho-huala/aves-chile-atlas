@@ -190,6 +190,7 @@ def main():
                   "cita": "IUCN. The IUCN Red List of Threatened Species. https://www.iucnredlist.org (descargado el 14/11/2026)."}, out / "uicn.json")
     if (d / "13_kba_sitios.csv").exists():
         exportar_kba(d, out, nombre)
+        exportar_planificador(d, out, enr, nombre)
 
     print(f"✓ {fichas} fichas · especies.json · resumen.json · marea.json · calculadora.json · laminas/ → {out}")
 
@@ -221,6 +222,38 @@ def exportar_nidificacion(d: Path, out: Path, enr: list, nid: dict, fen: dict):
               "cita": "Medrano F, Barros R, Norambuena H V, Matus R y Schmitt F. 2018. Atlas de las aves nidificantes de Chile. "
                       "Red de Observadores de Aves y Vida Silvestre de Chile. Santiago, Chile."},
              out / "laminas" / "nidificacion.json")
+
+
+# ═══════════════ planificador (contrato con web/lib/planificador.ts)
+
+def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
+    """Sitios KBA con punto publicable × especies → planificador.json.
+    Compacto: e = especies [slug, nombre, foto, estatus]; s = sitios; r[i] = [[índice especie, % salidas completas, mes pico], …].
+    No agrega datos nuevos: reordena 13_kba_sitios y 13_kba_especies para calcular rutas en el navegador."""
+    info = {r["sci_name"]: r for r in enr}
+    sitios = [r for r in leer(d / "13_kba_sitios.csv")
+              if r["punto_publicable"] == "True" and (num(r["salidas_dentro"], 0) or 0) >= MIN_SALIDAS_SITIO]
+    ids = {r["kba_id"]: i for i, r in enumerate(sitios)}
+    esp_idx: dict[str, int] = {}
+    especies, reg = [], [[] for _ in sitios]
+    for r in leer(d / "13_kba_especies.csv"):
+        i = ids.get(r["kba_id"])
+        if i is None or r["sci_name"] not in nombre or not txt(r["pct_completas"]):
+            continue
+        if r["sci_name"] not in esp_idx:
+            e = info[r["sci_name"]]
+            esp_idx[r["sci_name"]] = len(especies)
+            especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], txt(e["foto_cuadrada"]), txt(e["estatus_final"]),
+                             num(e["pct_salidas"], 3)])
+        reg[i].append([esp_idx[r["sci_name"]], num(r["pct_completas"], 1), num(r["mes_pico"], 0)])
+    s = [{"id": num(r["kba_id"], 0), "nombre": r["nombre"], "region": txt(r["region"]), "macrozona": txt(r["macrozona"]),
+          "punto": [num(r["punto_lat"], 2), num(r["punto_lon"], 2)], "salidas": num(r["salidas_dentro"], 0),
+          "especies": num(r["especies"], 0), "riqueza": num(r["riqueza_mediana"], 0),
+          "meses": [num(r[f"mes_{m:02d}"], 0) for m in range(1, 13)]} for r in sitios]
+    escribir({"e": especies, "s": s, "r": reg,
+              "nota": "Sitios KBA con punto de referencia de eBird (≥ 20 salidas). Probabilidad = % de salidas completas del sitio "
+                      "con la especie, 2019–2025. Distancias en línea recta."}, out / "planificador.json")
+    print(f"✓ planificador.json: {len(s)} sitios · {len(especies)} especies · {sum(map(len, reg))} pares sitio-especie")
 
 
 # ═══════════════ sitios KBA (contrato con web/lib/data.ts → getKba)
