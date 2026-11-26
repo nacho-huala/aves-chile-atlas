@@ -104,13 +104,27 @@ def main():
         for k in kba_esp:
             kba_esp[k] = sorted(kba_esp[k], key=lambda x: (-x["p"], -x["salidas"]))[:5]
 
+    # fotos: se usan solo las de licencia libre. iNaturalist CC → igual que antes; si no, la de Wikimedia Commons
+    # (fotos_commons.py); si tampoco hay, la especie queda sin foto en vez de enlazar una foto con todos los derechos reservados.
+    commons = {r["sci_name"]: r for r in leer(d / "extra" / "fotos_commons.csv")} if (d / "extra" / "fotos_commons.csv").exists() else {}
+    def foto_libre(r):
+        if (r.get("foto_licencia") or "").lower().startswith("cc"):
+            return txt(r["foto_cuadrada"]), {"url": txt(r["foto_url"]), "credito": txt(r["foto_credito"]), "licencia": txt(r["foto_licencia"]), "fuente": "iNaturalist"}
+        c = commons.get(r["sci_name"])
+        if c:
+            local = out.parent / "fotos" / f"{c['slug']}.jpg"
+            return (f"/fotos/{local.name}" if local.exists() else c["url_640"]), {
+                "url": c["url_640"], "credito": c["autor"], "licencia": c["licencia_url"] or c["licencia"], "fuente": "Wikimedia Commons"}
+        return None, {"url": None, "credito": None, "licencia": None, "fuente": None}
+    FOTO = {r["sci_name"]: foto_libre(r) for r in enr}
+
     indice, fichas = [], 0
     for r in sorted(enr, key=lambda r: -float(r["salidas_con"])):
         s = slug(r["sci_name"])
         base = {
             "slug": s, "sci": r["sci_name"], "nombre": txt(r["nombre"]) or r["common_name"],
             "familia": txt(r["familia"]), "pct": num(r["pct_salidas"], 4), "salidas": num(r["salidas_con"], 0),
-            "estatus": txt(r["estatus_final"]), "uicn": txt(r["uicn"]), "foto": txt(r["foto_cuadrada"]),
+            "estatus": txt(r["estatus_final"]), "uicn": txt(r["uicn"]), "foto": FOTO[r["sci_name"]][0],
             "mejorMes": num(r["mejor_mes"], 0),
             "nidifica": r["sci_name"] in nid,  # registrada como nidificante en el atlas (Medrano et al. 2018)
         }
@@ -127,7 +141,7 @@ def main():
             "nidificacion": nid.get(r["sci_name"]),
             "kba": kba_esp.get(r["sci_name"], []),  # sitios KBA donde más se registra  # null si el atlas no la registra como nidificante
             "ola": ola.get(r["sci_name"]),  # lámina 2: % de salidas completas por mes × franja de 0,5°
-            "imagen": {"url": txt(r["foto_url"]), "credito": txt(r["foto_credito"]), "licencia": txt(r["foto_licencia"])},
+            "imagen": FOTO[r["sci_name"]][1],
             "canto": None if not txt(r["xc_audio"]) else {
                 "audio": r["xc_audio"], "tipo": txt(r["xc_tipo"]), "calidad": txt(r["xc_calidad"]),
                 "autor": txt(r["xc_autor"]), "licencia": txt(r["xc_licencia"]), "url": txt(r["xc_url"]),
@@ -190,7 +204,7 @@ def main():
                   "cita": "IUCN. The IUCN Red List of Threatened Species. https://www.iucnredlist.org (descargado el 14/11/2026)."}, out / "uicn.json")
     if (d / "13_kba_sitios.csv").exists():
         exportar_kba(d, out, nombre)
-        exportar_planificador(d, out, enr, nombre)
+        exportar_planificador(d, out, enr, nombre, {k: v[0] for k, v in FOTO.items()})
 
     print(f"✓ {fichas} fichas · especies.json · resumen.json · marea.json · calculadora.json · laminas/ → {out}")
 
@@ -226,9 +240,9 @@ def exportar_nidificacion(d: Path, out: Path, enr: list, nid: dict, fen: dict):
 
 # ═══════════════ planificador (contrato con web/lib/planificador.ts)
 
-def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
+def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict, fotos: dict):
     """Sitios KBA con punto publicable × especies → planificador.json.
-    Compacto: e = especies [slug, nombre, foto, estatus, % salidas en Chile, UICN]; s = sitios; r[i] = [[índice especie, % salidas completas, mes pico], …].
+    Compacto: e = especies [slug, nombre, foto, estatus, % salidas en Chile, UICN, dieta, hábitat]; s = sitios; r[i] = [[índice especie, % salidas completas, mes pico], …].
     No agrega datos nuevos: reordena 13_kba_sitios y 13_kba_especies para calcular rutas en el navegador."""
     info = {r["sci_name"]: r for r in enr}
     sitios = [r for r in leer(d / "13_kba_sitios.csv")
@@ -243,8 +257,11 @@ def exportar_planificador(d: Path, out: Path, enr: list, nombre: dict):
         if r["sci_name"] not in esp_idx:
             e = info[r["sci_name"]]
             esp_idx[r["sci_name"]] = len(especies)
-            especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], txt(e["foto_cuadrada"]), txt(e["estatus_final"]),
-                             num(e["pct_salidas"], 3), txt(e["uicn"])])
+            # miniatura local si existe (mismo dominio: se puede dibujar en el canvas al compartir); si no, la de iNaturalist
+            local = out.parent / "fotos" / f"{nombre[r['sci_name']][0]}.jpg"
+            foto = f"/fotos/{local.name}" if local.exists() else fotos.get(r["sci_name"])
+            especies.append([nombre[r["sci_name"]][0], nombre[r["sci_name"]][1], foto, txt(e["estatus_final"]),
+                             num(e["pct_salidas"], 3), txt(e["uicn"]), DIETA.get(e.get("nicho_trofico") or ""), HABITAT.get(e.get("habitat") or "")])
         reg[i].append([esp_idx[r["sci_name"]], num(r["pct_completas"], 1), num(r["mes_pico"], 0)])
     s = [{"id": num(r["kba_id"], 0), "nombre": r["nombre"], "region": txt(r["region"]), "macrozona": txt(r["macrozona"]),
           "punto": [num(r["punto_lat"], 2), num(r["punto_lon"], 2)], "salidas": num(r["salidas_dentro"], 0),
@@ -419,6 +436,24 @@ def exportar_laminas(d: Path, out: Path, enr: list, nombre: dict, fen: dict, ola
     aristas = [{"a": r["source"], "b": r["target"], "lift": num(r["lift"], 2), "juntas": num(r["juntas"], 0)}
                for r in leer(d / "08_aristas.csv") if r["source"] in ids and r["target"] in ids and float(r["lift"]) >= 2]
     escribir({"nodos": nodos, "aristas": aristas}, L / "red.json")
+
+    # 8b · red ampliada y navegable (build_red_ampliada.py): 150 especies, vínculos con lift ≥ 2, índices compactos
+    if (d / "08b_red_nodos.csv").exists():
+        nb = [r for r in leer(d / "08b_red_nodos.csv") if r["sci_name"] in nombre]
+        idx = {r["sci_name"]: i for i, r in enumerate(nb)}
+        nodos_b = [{**ref(r["sci_name"]), "pct": num(r["pct_salidas"], 2), "c": num(r["comunidad"], 0),
+                    "habitat": HABITAT.get(rasgos.get(r["sci_name"], {}).get("habitat", ""))} for r in nb]
+        ar_b = [[idx[r["source"]], idx[r["target"]], num(r["lift"], 2), num(r["juntas"], 0)] for r in leer(d / "08b_red_aristas.csv")
+                if r["source"] in idx and r["target"] in idx and float(r["lift"]) >= 2]
+        # nombre de cada comunidad: su hábitat dominante (AVONET) y la especie más vista
+        from collections import Counter
+        comunidades = []
+        for c in sorted({n["c"] for n in nodos_b}):
+            miembros = [n for n in nodos_b if n["c"] == c]
+            hab = Counter(n["habitat"] for n in miembros if n["habitat"]).most_common(1)
+            comunidades.append({"id": c, "habitat": hab[0][0] if hab else None, "n": len(miembros),
+                                "ejemplo": max(miembros, key=lambda n: n["pct"] or 0)["nombre"]})
+        escribir({"nodos": nodos_b, "aristas": ar_b, "comunidades": comunidades}, L / "red_ampliada.json")
 
 
 if __name__ == "__main__":

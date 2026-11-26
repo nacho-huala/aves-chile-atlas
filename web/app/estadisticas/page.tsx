@@ -3,7 +3,7 @@ import { getMapa, getRasgos, getRed } from "@/lib/laminas-datos";
 import { Lamina, Subnav } from "@/components/laminas/Lamina";
 import { Marea } from "@/components/laminas/Marea";
 import { MapaBivariado } from "@/components/laminas/MapaBivariado";
-import { Red } from "@/components/laminas/Red";
+import { RedNavegable } from "@/components/laminas/RedNavegable";
 import { Rasgos } from "@/components/laminas/Rasgos";
 
 export const metadata = { title: "Estadísticas · Atlas de aves en Chile" };
@@ -43,12 +43,12 @@ export default async function PaginaEstadisticas() {
         <MapaBivariado datos={mapa} />
       </Lamina>
 
-      <Lamina id="red" num={8} tipo="Red de co-ocurrencia" titulo="Las especies se agrupan en dos mundos: agua y tierra" fuente={`${FUENTE} · 08_nodos, 08_aristas + hábitat AVONET`}
-        bajada={`Las ${red.nodos.length} especies más avistadas, unidas si comparten salidas completas más de lo esperado (lift ≥ 2: ${red.aristas.length} vínculos).`}
-        leer="Nodo = especie (tamaño = % de salidas); línea = se ven juntas; grosor = lift. Color = hábitat principal (AVONET)."
-        hallazgo={<>El par más fuerte: <strong>{nom(fuerte.a)}</strong> y <strong>{nom(fuerte.b)}</strong> (×{fuerte.lift.toLocaleString("es-CL")}). Louvain separa dos comunidades: agua (humedal y costa) y tierra.</>}
-        limitacion="La posición en el plano no tiene escala: solo importan las conexiones. Lift = P(A∩B) / P(A)·P(B), en salidas completas.">
-        <Red datos={red} />
+      <Lamina id="red" num={8} tipo="Red de co-ocurrencia" titulo="Dime con quién te ven y te diré dónde vives" fuente={`${FUENTE} · 08b_red_nodos, 08b_red_aristas (build_red_ampliada.py) + hábitat AVONET`}
+        bajada="Hasta 150 especies unidas cuando se anotan juntas en la misma salida más de lo que pasaría por azar. Muévete, acércate y fija una especie para ver sus compañeras."
+        leer="Cada círculo es una especie (más grande = más vista). Una línea une dos especies que suelen aparecer en la misma salida; más gruesa, más fuerte esa preferencia. El color muestra el «barrio» que forma la red por sí sola, o el hábitat principal."
+        hallazgo={<>Sin darle información de hábitat, la red se separa en cinco barrios: humedal, matorral, bosque, costa y costa austral. Entre las 40 más vistas, el par más unido es <strong>{nom(fuerte.a)}</strong> y <strong>{nom(fuerte.b)}</strong> (×{fuerte.lift.toLocaleString("es-CL")}).</>}
+        limitacion="La distancia en el plano no se mide: solo importan las líneas. Que dos especies se vean juntas no significa que interactúen; suele indicar que comparten lugar o temporada. Se usan solo salidas completas.">
+        <RedNavegable />
       </Lamina>
 
       <Lamina id="rasgos" num={11} tipo="Espacio de rasgos" titulo="La masa y el pico delatan la dieta" fuente="AVONET (Tobias et al. 2022) + eBird · 11_rasgos"

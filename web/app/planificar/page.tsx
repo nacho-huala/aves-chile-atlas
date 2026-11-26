@@ -3,7 +3,11 @@ import Planificador from "@/components/planificador/Planificador";
 import { Icono } from "@/components/Icono";
 import { Fuente } from "@/components/laminas/Lamina";
 
-export const metadata = { title: "Planifica tu salida · Atlas de aves en Chile" };
+export const metadata = {
+  title: "Planifica tu salida · Atlas de aves en Chile",
+  description: "Sitios clave para observar aves cerca de ti y la ruta más corta para ver tu lista de especies.",
+  openGraph: { title: "Planifica tu salida de observación de aves", description: "Sitios clave cercanos, qué aves esperar y la ruta para ver tu lista.", images: ["/og.png"] },
+};
 
 const AFINAR = [
   { href: "/calculadora/#a-que-hora", icono: "reloj", t: "¿A qué hora salir?", d: "Cuándo se concentran las salidas en cada mes y zona." },

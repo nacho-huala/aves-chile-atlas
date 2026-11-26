@@ -8,7 +8,13 @@ import "./globals.css";
 import { Cabecera } from "@/components/Cabecera";
 import { PieSitio } from "@/components/PieSitio";
 
+// URL absoluta para las vistas previas (WhatsApp, Facebook, X). En Vercel se toma del dominio de producción.
+const SITIO = process.env.NEXT_PUBLIC_SITE_URL
+  ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : undefined)
+  ?? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITIO),
   title: "Atlas de aves en Chile · guía de campo con datos de eBird",
   description:
     "Guía de campo con 7,3 millones de registros de eBird en Chile (2019–2025): busca una especie, elige un lugar o explora los datos.",
@@ -17,7 +23,10 @@ export const metadata: Metadata = {
     description: "566 especies y 524.381 salidas de observación, ordenadas para que sepas qué mirar y dónde.",
     locale: "es_CL",
     type: "website",
+    siteName: "Atlas de aves en Chile",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Atlas de aves en Chile: qué aves ver, dónde y cuándo" }],
   },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export const viewport: Viewport = {
