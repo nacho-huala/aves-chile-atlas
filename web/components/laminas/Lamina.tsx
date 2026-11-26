@@ -17,7 +17,7 @@ export function Lamina({ id, num, tipo, titulo, bajada, leer, hallazgo, limitaci
 }) {
   return (
     <section id={id} className="vista" aria-labelledby={`${id}-t`}>
-      <p className="etiqueta etiqueta--sol vista__eti">Lámina {num} · {tipo}</p>
+      <p className="etiqueta etiqueta--sol vista__eti">{tipo}</p>
       <h2 id={`${id}-t`} className="titulo-1 vista__titulo titulo-icono">
         <span className="titulo-icono__marca" aria-hidden="true"><Icono nombre={icono ?? iconoDeTipo(tipo)} tam={24} /></span>
         <span>{titulo}</span>

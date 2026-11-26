@@ -615,3 +615,39 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 .capas label:has(input:checked) { background: var(--texto); color: var(--fondo); border-color: var(--texto); }
 .capas label:has(input:focus-visible) { outline: 2px solid var(--anillo-foco); outline-offset: 2px; }
 .capas input { position: absolute; opacity: 0; pointer-events: none; }
+
+/* ── red navegable */
+.red-nav { display: grid; gap: var(--esp-3); }
+.red-nav__controles { display: flex; flex-wrap: wrap; gap: var(--esp-3) var(--esp-5); align-items: center; }
+.red-nav__lift { display: grid; gap: 2px; font-size: 13px; color: var(--texto-suave); }
+.red-nav__lift input { width: 180px; }
+.red-nav__buscar { position: relative; display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: var(--radio-pildora); border: 1.5px solid var(--linea); background: var(--fondo); color: var(--texto-suave); flex: 1 1 220px; max-width: 320px; }
+.red-nav__buscar input { border: 0; background: transparent; min-height: 36px; padding: 0; flex: 1; color: var(--texto); font: 15px var(--font-sans); outline: none; }
+.red-nav__buscar .combo__lista li { grid-template-columns: 14px 1fr auto; }
+.red-nav__buscar .combo__lista .sin-foto { width: 12px; height: 12px; border-radius: 50%; }
+.red-nav__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 300px); gap: var(--esp-4); align-items: start; }
+@media (max-width: 860px) { .red-nav__grid { grid-template-columns: 1fr; } }
+.red-nav__lienzo { position: relative; height: min(72vh, 640px); border-radius: var(--radio-tarjeta); border: 1px solid var(--linea); background: var(--fondo); overflow: hidden; touch-action: none; }
+.red-nav__lienzo svg { display: block; width: 100%; height: 100%; cursor: grab; }
+.red-nav__lienzo svg:active { cursor: grabbing; }
+.red-nav__lienzo text { font-family: var(--font-sans) !important; fill: var(--texto-suave); }
+.red-nav__lienzo .t-fuerte { fill: var(--texto); font-weight: 600; }
+.red-nav__zoom { position: absolute; top: 12px; right: 12px; display: grid; gap: 4px; }
+.red-nav__zoom button { width: 36px; height: 36px; border-radius: var(--radio-control); border: 1px solid var(--linea); background: var(--superficie); color: var(--texto); font: 600 18px/1 var(--font-sans); cursor: pointer; display: grid; place-items: center; }
+.red-nav__zoom button:hover { border-color: var(--foco); color: var(--foco); }
+.red-nav__pista { position: absolute; left: 12px; bottom: 10px; margin: 0; display: flex; gap: 6px; align-items: center; padding: 5px 10px; border-radius: var(--radio-pildora); background: color-mix(in srgb, var(--superficie) 88%, transparent); font-size: 12.5px; color: var(--texto-suave); pointer-events: none; }
+.red-nav__panel { padding: var(--esp-4); border-radius: var(--radio-tarjeta); border: 1px solid var(--linea); background: var(--superficie); max-height: min(72vh, 640px); overflow-y: auto; }
+.red-nav__panel a { color: var(--texto); }
+.red-nav__explica p { font-size: 15px; line-height: 1.5; margin: 0 0 10px; }
+.red-nav__vecino { appearance: none; border: 0; background: none; padding: 0; color: var(--texto); font: inherit; text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: var(--linea); text-underline-offset: 3px; }
+.red-nav__vecino:hover { color: var(--foco); }
+/* fuentes: etiqueta e ícono alineados al centro con el texto */
+.fuente { align-items: center; }
+.fuente__eti svg { transform: none; }
+.fuente__txt { align-self: center; }
+.combo-lugar__lista li { grid-template-columns: 24px 1fr auto; }
+.combo-lugar__ico { display: grid; place-items: center; color: var(--foco); }
+.atajos__cant { display: inline-flex; gap: 2px; padding: 2px; margin-right: 6px; border-radius: var(--radio-pildora); border: 1px solid var(--linea); background: var(--fondo); }
+.atajos__cant button { min-height: 28px; padding: 0 10px; border: 0; border-radius: var(--radio-pildora); background: transparent; color: var(--texto); font: 600 12px var(--font-sans); cursor: pointer; }
+.atajos__cant button[aria-checked="true"] { background: var(--texto); color: var(--fondo); }
+.plan-ver-todas { margin-top: var(--esp-3); width: 100%; justify-content: center; }

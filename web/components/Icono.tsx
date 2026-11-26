@@ -36,7 +36,7 @@ export type NombreIcono = keyof typeof P;
 
 export function Icono({ nombre, tam = 20, className }: { nombre: string; tam?: number; className?: string }) {
   return (
-    <svg className={className} width={tam} height={tam} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    <svg className={`icono ${className ?? ""}`} width={tam} height={tam} style={{ width: tam, height: tam, flex: "none" }} viewBox="0 0 24 24" fill="none" stroke="currentColor"
       strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
       {P[nombre] ?? P.ave}
     </svg>

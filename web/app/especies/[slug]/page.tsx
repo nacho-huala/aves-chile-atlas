@@ -62,7 +62,7 @@ export default async function FichaEspecie({ params }: Props) {
           {f.imagen.credito && (
             <figcaption className="credito">
               <Icono nombre="ojo" tam={14} />
-              <span>Foto: <b>{autorFoto(f.imagen.credito)}</b>{licFoto && <> · {licFotoUrl ? <a href={licFotoUrl}>{licFoto}</a> : licFoto}</>} · vía iNaturalist</span>
+              <span>Foto: <b>{autorFoto(f.imagen.credito)}</b>{licFoto && <> · {licFotoUrl ? <a href={licFotoUrl}>{licFoto}</a> : licFoto}</>} · vía {f.imagen.fuente ?? "iNaturalist"}</span>
             </figcaption>
           )}
         </figure>

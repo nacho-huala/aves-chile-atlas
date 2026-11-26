@@ -326,6 +326,11 @@ No agrega datos: `exportar_planificador` reordena `13_kba_sitios` y `13_kba_espe
 
 Las páginas `/calculadora` (macrozonas) y `/lugares` quedan como apoyo y enlazan al planificador.
 
+### Red navegable y fotos libres (v0.7)
+
+- **Red de co-ocurrencia ampliada:** `python pipeline/build_red_ampliada.py` recalcula la red desde `avist.parquet` con las 150 especies más vistas en salidas completas (lift ≥ 1,5, ≥ 30 salidas juntas, Louvain con semilla fija) → `data/08b_red_nodos.csv`, `data/08b_red_aristas.csv`; `export_web.py` publica `laminas/red_ampliada.json` (vínculos con lift ≥ 2). La lámina de Estadísticas se puede arrastrar y acercar (d3-zoom), elegir 40/80/150 especies, el vínculo mínimo, color por barrio o hábitat, y buscar una especie. Las tablas 08 originales no cambian.
+- **Fotos solo con licencia libre:** las fotos de iNaturalist «todos los derechos reservados» ya no se muestran. `python pipeline/fotos_commons.py` busca la imagen de Wikimedia Commons de esas especies (vía Wikidata), guarda autor y licencia en `data/extra/fotos_commons.csv` y la miniatura en `web/public/fotos/`. `data/extra/especies_sin_foto.csv` lista las que siguen sin foto y por qué.
+
 ---
 
 ## 11. Sistema visual

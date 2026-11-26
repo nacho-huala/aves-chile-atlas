@@ -48,3 +48,7 @@ export const getRed = () => leer<DatosRed>("red.json");
 export interface NidEspecie extends Ref { estatus: string | null; pct: number; meses: number[]; alt: [number, number] | null; revisar: boolean; fen: number[] | null }
 export interface DatosNidificacion { especies: NidEspecie[]; porMes: number[]; cruce: { n: number; coincide: number; azar: number | null }; cita: string }
 export const getNidificacion = () => leer<DatosNidificacion>("nidificacion.json");
+
+/** 8b · red ampliada (build_red_ampliada.py): aristas = [índice A, índice B, lift, salidas juntas]; se carga en el navegador. */
+export interface NodoRedB extends Ref { pct: number; c: number; habitat: string | null }
+export interface DatosRedB { nodos: NodoRedB[]; aristas: [number, number, number, number][]; comunidades: { id: number; habitat: string | null; n: number; ejemplo: string }[] }

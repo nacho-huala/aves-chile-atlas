@@ -95,7 +95,7 @@ export default function Planificador() {
     });
     return m;
   }, [datos, prob, origen, radio]);
-  const plan = useMemo(() => (datos && prob && lista.length ? planificar(datos, prob, lista, origen?.punto ?? null, { radio, maxParadas: lista.length > 8 ? 8 : 5 }) : null), [datos, prob, lista, origen, radio]);
+  const plan = useMemo(() => (datos && prob && lista.length ? planificar(datos, prob, lista, origen?.punto ?? null, { radio, maxParadas: lista.length > 25 ? 10 : lista.length > 8 ? 8 : 5 }) : null), [datos, prob, lista, origen, radio]);
 
   // la URL refleja el plan (sin la ubicación exacta), para que «copiar enlace» reproduzca lo mismo
   const urlPlan = useMemo(() => {
@@ -119,15 +119,7 @@ export default function Planificador() {
         <div className="plan-origen">
           <button type="button" className="btn btn--primario" onClick={ubicar}><Icono nombre="pin" tam={18} />Usar mi ubicación</button>
           <span className="apoyo">o</span>
-          <label className="plan-buscar">
-            <span className="sr-only">Ciudad o sitio de destino</span>
-            <Icono nombre="mapa" tam={18} />
-            <input list="plan-lugares" placeholder="Escribe una ciudad o un sitio: Castro, Putre, Humedal…" value={texto} onChange={(e) => elegirTexto(e.target.value)} />
-            <datalist id="plan-lugares">
-              {CIUDADES.map((c) => <option key={c[0]} value={c[0]}>{c[1]}</option>)}
-              {datos.s.map((s) => <option key={s.id} value={s.nombre}>{s.region ?? ""} · sitio KBA</option>)}
-            </datalist>
-          </label>
+          <BuscadorLugar datos={datos} texto={texto} setTexto={elegirTexto} />
         </div>
         <p className="pie" role="status">
           {gps === "buscando" && "Buscando tu ubicación…"}
@@ -179,8 +171,45 @@ export default function Planificador() {
   );
 }
 
+/** Combobox de ciudades y sitios: la lista siempre aparece bajo el campo (la del navegador cambia de lugar según el sistema). */
+function BuscadorLugar({ datos, texto, setTexto }: { datos: DatosPlan; texto: string; setTexto: (v: string) => void }) {
+  const [abierto, setAbierto] = useState(false), [act, setAct] = useState(0);
+  const opciones = useMemo(() => {
+    const t = sinTildes(texto.trim());
+    if (!t) return [];
+    const todas = [...CIUDADES.map((c) => ({ n: c[0], d: c[1], kba: false })), ...datos.s.map((s) => ({ n: s.nombre, d: s.region ?? "", kba: true }))];
+    const rango = (n: string) => { const x = sinTildes(n); return x.startsWith(t) ? 0 : x.split(/[\s,-]/).some((w) => w.startsWith(t)) ? 1 : x.includes(t) ? 2 : 9; };
+    return todas.map((o) => ({ ...o, r: rango(o.n) })).filter((o) => o.r < 9 && sinTildes(o.n) !== t).sort((a, b) => a.r - b.r || Number(a.kba) - Number(b.kba) || a.n.localeCompare(b.n, "es")).slice(0, 8);
+  }, [texto, datos]);
+  const elegir = (n: string) => { setTexto(n); setAbierto(false); setAct(0); };
+  return (
+    <div className="plan-buscar combo-lugar" role="combobox" aria-expanded={abierto && opciones.length > 0} aria-haspopup="listbox" aria-owns="lugar-lista">
+      <Icono nombre="mapa" tam={18} />
+      <input value={texto} placeholder="Escribe una ciudad o un sitio: Castro, Putre, Humedal…" aria-label="Ciudad o sitio de partida" aria-autocomplete="list" aria-controls="lugar-lista"
+        aria-activedescendant={opciones[act] ? `lugar-${act}` : undefined}
+        onChange={(e) => { setTexto(e.target.value); setAbierto(true); setAct(0); }} onFocus={() => setAbierto(true)} onBlur={() => setTimeout(() => setAbierto(false), 120)}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowDown") { e.preventDefault(); setAct((a) => Math.min(a + 1, opciones.length - 1)); }
+          if (e.key === "ArrowUp") { e.preventDefault(); setAct((a) => Math.max(a - 1, 0)); }
+          if (e.key === "Enter" && opciones[act]) { e.preventDefault(); elegir(opciones[act].n); }
+          if (e.key === "Escape") setAbierto(false);
+        }} />
+      {abierto && opciones.length > 0 && (
+        <ul id="lugar-lista" role="listbox" className="combo__lista combo-lugar__lista">
+          {opciones.map((o, k) => (
+            <li key={`${o.n}-${o.kba}`} id={`lugar-${k}`} role="option" aria-selected={k === act} onMouseDown={(ev) => { ev.preventDefault(); elegir(o.n); }} onMouseEnter={() => setAct(k)}>
+              <span className="combo-lugar__ico"><Icono nombre={o.kba ? "pin" : "mapa"} tam={16} /></span><span>{o.n}</span><small>{o.kba ? `${o.d} · sitio clave` : o.d}</small>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { datos: DatosPlan; lista: number[]; setLista: (f: (l: number[]) => number[]) => void; disponibles: Map<number, number>; hayOrigen: boolean }) {
   const [q, setQ] = useState(""), [abierto, setAbierto] = useState(false), [act, setAct] = useState(0);
+  const [cant, setCant] = useState(16); // tamaño de las listas sugeridas (Infinity = todas las disponibles)
   const ref = useRef<HTMLInputElement>(null);
   const opciones = useMemo(() => {
     const t = sinTildes(q.trim());
@@ -194,14 +223,14 @@ function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { 
   const todas = datos.e.map((e, i) => ({ e, i })).filter((x) => disponibles.has(x.i));
   const porFrec = [...todas].sort((a, b) => b.e[4] - a.e[4]);
   const ATAJOS_BASE: { t: string; icono: string; ids: () => number[] }[] = [
-    { t: "Al azar", icono: "rueda", ids: () => [...todas].sort(() => Math.random() - 0.5).slice(0, 16).map((x) => x.i) },
-    { t: "Las más vistas", icono: "binoculares", ids: () => porFrec.slice(0, 10).map((x) => x.i) },
+    { t: "Al azar", icono: "rueda", ids: () => [...todas].sort(() => Math.random() - 0.5).slice(0, cant).map((x) => x.i) },
+    { t: "Las más vistas", icono: "binoculares", ids: () => porFrec.slice(0, cant).map((x) => x.i) },
     // raras en Chile pero con al menos un sitio donde aparecen en ≥ 5 % de las salidas: difíciles, no imposibles
     { t: "Raras pero posibles", icono: "ojo", ids: () => todas.filter((x) => (disponibles.get(x.i) ?? 0) >= 0.05)
-        .sort((a, b) => a.e[4] - b.e[4]).slice(0, 10).map((x) => x.i) },
-    { t: "Amenazadas (UICN)", icono: "alerta", ids: () => todas.filter((x) => ["VU", "EN", "CR"].includes(x.e[5] ?? "")).map((x) => x.i) },
-    { t: "Endémicas de Chile", icono: "pin", ids: () => todas.filter((x) => x.e[3] === "endémica").map((x) => x.i) },
-    { t: "Migratorias", icono: "ola", ids: () => porFrec.filter((x) => x.e[3] === "migratoria / estacional").slice(0, 10).map((x) => x.i) },
+        .sort((a, b) => a.e[4] - b.e[4]).slice(0, cant).map((x) => x.i) },
+    { t: "Amenazadas (UICN)", icono: "alerta", ids: () => todas.filter((x) => ["VU", "EN", "CR"].includes(x.e[5] ?? "")).slice(0, cant).map((x) => x.i) },
+    { t: "Endémicas de Chile", icono: "pin", ids: () => todas.filter((x) => x.e[3] === "endémica").slice(0, cant).map((x) => x.i) },
+    { t: "Migratorias", icono: "ola", ids: () => porFrec.filter((x) => x.e[3] === "migratoria / estacional").slice(0, cant).map((x) => x.i) },
   ];
   // cada atajo muestra cuántas especies trae; se ocultan los que quedarían vacíos en tu radio
   const ATAJOS = ATAJOS_BASE.map((a) => ({ ...a, n: a.ids().length })).filter((a) => a.n > 0);
@@ -239,6 +268,9 @@ function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { 
       </div>
       <div className="atajos" role="group" aria-label="Listas sugeridas">
         <span className="dato-eti">{lista.length ? "Reemplazar por" : "O parte con una lista"}{hayOrigen ? " · cerca de ti" : ""}</span>
+        <span className="atajos__cant" role="radiogroup" aria-label="Cuántas especies por lista">
+          {[10, 16, 25, 40, Infinity].map((c) => <button key={c} type="button" role="radio" aria-checked={cant === c} onClick={() => setCant(c)}>{Number.isFinite(c) ? c : "Todas"}</button>)}
+        </span>
         {ATAJOS.map((a) => (
           <button key={a.t} type="button" className="chip-atajo" onClick={() => setLista(() => a.ids())}>
             <Icono nombre={a.icono} tam={14} />{a.t}<span className="chip-atajo__n">{a.n}</span>
@@ -255,10 +287,12 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
   datos: DatosPlan; prob: ReturnType<typeof indexar>; cerca: ReturnType<typeof cercanos>; origen: Origen | null; elegido: number | null;
   setSel: (i: number) => void; lista: number[]; agregar: (e: number) => void; irALista: () => void; urlPlan: string;
 }) {
+  const [todasAves, setTodasAves] = useState(false);
   if (!origen) return <Vacio icono="pin" t="Elige un punto de partida" d="Te mostraremos los sitios clave más cercanos y qué aves se registran en cada uno." />;
   if (!cerca.length) return <Vacio icono="mapa" t="No hay sitios con datos en ese radio" d="Amplía la distancia máxima en el paso 1." />;
   const s = elegido !== null ? datos.s[elegido] : cerca[0].s, i = elegido ?? cerca[0].i;
-  const aves = [...prob[i].entries()].sort((a, b) => b[1].p - a[1].p).slice(0, 12);
+  const todasOrd = [...prob[i].entries()].sort((a, b) => b[1].p - a[1].p);
+  const aves = todasAves ? todasOrd : todasOrd.slice(0, 12);
   const mesTop = s.meses.indexOf(Math.max(...s.meses));
   return (
     <div className="plan-cerca">
@@ -288,6 +322,11 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             </li>
           ))}
         </ul>
+        {todasOrd.length > 12 && (
+          <button type="button" className="btn btn--secundario plan-ver-todas" onClick={() => setTodasAves(!todasAves)}>
+            {todasAves ? "Ver solo las 12 más frecuentes" : `Ver las ${todasOrd.length} especies registradas aquí`}
+          </button>
+        )}
         {lista.length > 0 && <button type="button" className="btn btn--secundario" onClick={irALista}>Planificar mi lista ({lista.length}) <span className="flecha" aria-hidden="true">→</span></button>}
       </article>
       <div className="plan-cerca__compartir">
@@ -297,7 +336,7 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             eyebrow: `Salida de observación · ${s.region ?? ""}`, titulo: s.nombre,
             subtitulo: `${s.riqueza ?? "—"} especies en una salida típica · a ${entero(Math.round(km(origen.punto, s.punto)))} km de ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre}`,
             origen: origen.punto, puntos: [s.punto],
-            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 12).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
+            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 30).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
             contexto: datos.s.map((z) => z.punto),
             pie: "Sitio clave para la biodiversidad (KBA) · datos de eBird",
           }} />
@@ -347,12 +386,12 @@ function PanelLista({ datos, plan, lista, origen, radio, elegido, setSel, urlPla
         <Compartir url={urlPlan} maps={urlGoogleMaps(origen?.punto ?? null, plan.paradas.map((p) => p.s.punto))}
           lugar={plan.paradas.map((p) => p.s.nombre).join(" → ")}
           texto={[`Mi ruta para ver ${lista.length} especies de aves en ${plan.paradas.length} paradas:`,
-            ...plan.paradas.map((p, n) => `${n + 1}. ${p.s.nombre} (${p.s.region}): ${p.aporta.slice(0, 5).map((a) => datos.e[a.e][1]).join(", ")}`)].join("\n")}
+            ...plan.paradas.map((p, n) => `${n + 1}. ${p.s.nombre} (${p.s.region}): ${p.aporta.map((a) => datos.e[a.e][1]).join(", ")}`)].join("\n")}
           tarjeta={{
             eyebrow: "Ruta de observación", titulo: `${lista.length} especies en ${plan.paradas.length} ${plan.paradas.length === 1 ? "parada" : "paradas"}`,
             subtitulo: `${origen ? `Desde ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre} · ` : ""}${plan.kmTotal !== null ? `unos ${entero(Math.round(plan.kmTotal))} km en línea recta` : ""}`,
             origen: origen?.punto ?? null, puntos: plan.paradas.map((p) => p.s.punto),
-            bloques: plan.paradas.map((p) => ({ titulo: p.s.nombre, detalle: p.s.region ?? "", especies: p.aporta.slice(0, plan.paradas.length > 3 ? 2 : plan.paradas.length > 2 ? 3 : 5).map((a) => ({ nombre: datos.e[a.e][1], p: a.p, foto: datos.e[a.e][2] })) })),
+            bloques: plan.paradas.map((p) => ({ titulo: p.s.nombre, detalle: p.s.region ?? "", especies: p.aporta.map((a) => ({ nombre: datos.e[a.e][1], p: a.p, foto: datos.e[a.e][2] })) })),
             contexto: datos.s.map((z) => z.punto),
             pie: "Sitios clave para la biodiversidad (KBA) · datos de eBird",
           }} />

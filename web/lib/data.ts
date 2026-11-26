@@ -40,7 +40,7 @@ export interface Ficha extends EspecieIndice {
   nidificacion: { resumen: string | null; revisar: boolean; meses: number[]; altitud: [number, number] | null } | null; // Medrano et al. 2018
   kba: { id: number; nombre: string; region: string | null; p: number; salidas: number }[]; // sitios KBA donde más se registra
   ola: { bandas: number[]; pct: (number | null)[][] } | null; // lámina 2: mes × franja de 0,5° (norte → sur)
-  imagen: { url: string | null; credito: string | null; licencia: string | null };
+  imagen: { url: string | null; credito: string | null; licencia: string | null; fuente?: string | null }; // solo fotos de licencia libre
   canto: {
     audio: string; tipo: string | null; calidad: string | null; autor: string | null;
     licencia: string | null; url: string | null; grabacionesChile: number | null;

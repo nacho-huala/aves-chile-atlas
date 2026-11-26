@@ -274,6 +274,27 @@ export async function dibujarTarjeta(t: Tarjeta): Promise<Blob> {
   // ── paradas y especies (con miniatura de cada ave)
   const LX = MX + MW + 40, LW = W - 84 - LX; let ly = MY + 4;
   const maxY = MY + MH, numerar = t.bloques.length > 1, IND = numerar ? 50 : 0;
+  // reparto del alto disponible: cada parada recibe filas según su lista; lo que no cabe se resume como «+N más»
+  const FILA = 50, CAB = 84;
+  const filasTot = Math.max(t.bloques.length, Math.floor((MH - t.bloques.length * (CAB + 14)) / FILA));
+  const dosCol = t.bloques.length === 1 && t.bloques[0].especies.length > filasTot; // un solo sitio con muchas aves → dos columnas
+  const porBloque = t.bloques.map((b) => b.especies.length);
+  const cupo = porBloque.map(() => 1); let libres = filasTot - cupo.length;
+  while (libres > 0 && cupo.some((c, i) => c < porBloque[i])) { cupo.forEach((c, i) => { if (libres > 0 && c < porBloque[i]) { cupo[i]++; libres--; } }); }
+  const filaAve = (e: { nombre: string; p: number; foto?: string | null }, x0: number, ancho: number, fy: number, R2: number, fs: number) => {
+    const fx = x0 + R2, im = e.foto ? fotos.get(e.foto) : null;
+    ctx.save(); ctx.beginPath(); ctx.arc(fx, fy, R2, 0, 7); ctx.closePath();
+    if (im) { ctx.clip(); const m = Math.min(im.width, im.height); ctx.drawImage(im, (im.width - m) / 2, (im.height - m) / 2, m, m, fx - R2, fy - R2, R2 * 2, R2 * 2); }
+    else { ctx.fillStyle = C.hund; ctx.fill(); ctx.fillStyle = C.sol; ctx.font = `600 ${R2}px ${DISP}`; ctx.textAlign = "center"; ctx.fillText(e.nombre[0], fx, fy + R2 * 0.35); ctx.textAlign = "left"; }
+    ctx.restore();
+    ctx.strokeStyle = C.linea; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(fx, fy, R2, 0, 7); ctx.stroke();
+    const barra = dosCol ? 44 : 84, bx = x0 + ancho - barra - 48;
+    ctx.fillStyle = C.texto; ctx.font = `500 ${fs}px ${SANS}`;
+    ctx.fillText(envolver(ctx, e.nombre, bx - (x0 + R2 * 2 + 12) - 8)[0], x0 + R2 * 2 + 12, fy + fs * 0.35);
+    ctx.fillStyle = C.hund; ctx.beginPath(); ctx.roundRect(bx, fy - 5, barra, 10, 5); ctx.fill();
+    ctx.fillStyle = C.musgo; ctx.beginPath(); ctx.roundRect(bx, fy - 5, Math.max(5, barra * e.p), 10, 5); ctx.fill();
+    ctx.fillStyle = C.suave; ctx.font = `500 ${fs - 4}px ${SANS}`; ctx.fillText(`${Math.max(1, Math.round(e.p * 10))}/10`, bx + barra + 6, fy + 6);
+  };
   t.bloques.forEach((b, i) => {
     if (ly > maxY - 100) return;
     if (numerar) {
@@ -283,23 +304,18 @@ export async function dibujarTarjeta(t: Tarjeta): Promise<Blob> {
     ctx.fillStyle = C.texto; ctx.font = `600 29px ${DISP}`;
     const tt = envolver(ctx, b.titulo, LW - IND).slice(0, 2); tt.forEach((l, k) => ctx.fillText(l, LX + IND, ly + 24 + k * 33)); ly += tt.length * 33 + 2;
     ctx.fillStyle = C.suave; ctx.font = `400 20px ${SANS}`; ctx.fillText(b.detalle, LX + IND, ly + 14); ly += 32;
-    for (const e of b.especies) {
-      if (ly > maxY - 48) break;
-      const R2 = 21, fx = LX + IND + R2, fy = ly + R2;
-      const im = e.foto ? fotos.get(e.foto) : null;
-      ctx.save(); ctx.beginPath(); ctx.arc(fx, fy, R2, 0, 7); ctx.closePath();
-      if (im) { ctx.clip(); const m = Math.min(im.width, im.height); ctx.drawImage(im, (im.width - m) / 2, (im.height - m) / 2, m, m, fx - R2, fy - R2, R2 * 2, R2 * 2); }
-      else { ctx.fillStyle = C.hund; ctx.fill(); ctx.fillStyle = C.sol; ctx.font = `600 20px ${DISP}`; ctx.textAlign = "center"; ctx.fillText(e.nombre[0], fx, fy + 7); ctx.textAlign = "left"; }
-      ctx.restore();
-      ctx.strokeStyle = C.linea; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(fx, fy, R2, 0, 7); ctx.stroke();
-      ctx.fillStyle = C.texto; ctx.font = `500 23px ${SANS}`;
-      const nom = envolver(ctx, e.nombre, LW - IND - 54 - 140)[0]; ctx.fillText(nom, LX + IND + 54, fy + 8);
-      const bx = LX + LW - 132; ctx.fillStyle = C.hund; ctx.beginPath(); ctx.roundRect(bx, fy - 6, 84, 12, 6); ctx.fill();
-      ctx.fillStyle = C.musgo; ctx.beginPath(); ctx.roundRect(bx, fy - 6, Math.max(6, 84 * e.p), 12, 6); ctx.fill();
-      ctx.fillStyle = C.suave; ctx.font = `500 19px ${SANS}`; ctx.fillText(`${Math.max(1, Math.round(e.p * 10))}/10`, bx + 92, fy + 7);
-      ly += 50;
+    if (dosCol) {
+      const filas = Math.floor((maxY - ly) / 40), colW = (LW - 16) / 2;
+      const max = Math.min(b.especies.length, filas * 2);
+      b.especies.slice(0, max).forEach((e, k) => filaAve(e, LX + (k < filas ? 0 : colW + 16), colW, ly + 16 + (k % filas) * 40, 16, 18));
+      if (b.especies.length > max) { ctx.fillStyle = C.suave; ctx.font = `500 18px ${SANS}`; ctx.fillText(`+${b.especies.length - max} especies más`, LX, maxY + 4); }
+      ly = maxY;
+    } else {
+      const n = Math.min(b.especies.length, cupo[i]);
+      for (const e of b.especies.slice(0, n)) { if (ly > maxY - 40) break; filaAve(e, LX + IND, LW - IND, ly + 21, 21, 23); ly += FILA; }
+      if (b.especies.length > n) { ctx.fillStyle = C.suave; ctx.font = `500 19px ${SANS}`; ctx.fillText(`+${b.especies.length - n} especies más en esta parada`, LX + IND, ly + 10); ly += 30; }
     }
-    ly += 16;
+    ly += 14;
   });
 
   // ── pie: logo a la izquierda, leyenda «x/10» encuadrada a la derecha

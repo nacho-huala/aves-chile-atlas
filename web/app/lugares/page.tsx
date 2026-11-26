@@ -37,7 +37,7 @@ export default async function PaginaLugares() {
       <Subnav items={[{ id: "cerca", txt: "Mapa de sitios" }, { id: "explorar", txt: "Por explorar" }, { id: "proteccion", txt: "Protección" }]} />
 
       <section id="cerca" className="vista" aria-labelledby="cerca-t">
-        <p className="etiqueta etiqueta--sol vista__eti">Lámina 11 · Mapa de sitios KBA</p>
+        <p className="etiqueta etiqueta--sol vista__eti">Mapa de sitios KBA</p>
         <h2 id="cerca-t" className="titulo-1 vista__titulo titulo-icono"><span className="titulo-icono__marca" aria-hidden="true"><Icono nombre="mapa" tam={24} /></span><span>Sitios clave con aves, cerca de ti</span></h2>
         <p className="cuerpo-l vista__bajada">{entero(r.sitiosConDatos)} sitios tienen al menos 20 salidas; {entero(r.puntosPublicables)} tienen punto en el mapa. En los sitios con aves clave (las que justifican el KBA), se registraron {entero(vistas)} de {entero(totG)}.</p>
         <div className="vista__lienzo"><Lugares sitios={s} /></div>
