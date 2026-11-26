@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { KbaSitio } from "@/lib/data";
-import { COLOR_MACROZONA, geo, MACROZONAS, proyectar } from "@/lib/geo";
+import { COLOR_MACROZONA, geo, MACROZONAS, proyectarVertical } from "@/lib/geo";
+import { RecuadrosIslas } from "@/components/RecuadrosIslas";
 import { MESES, MESES_LARGOS, entero } from "@/lib/formato";
 
-const P = proyectar("vertical");
+const { P, recuadros } = proyectarVertical();
 const G = geo.vertical;
 
 function km(a: [number, number], b: [number, number]) {
@@ -39,6 +40,7 @@ function MapaSitios({ sitios, foco, sel, pos, elegir }: {
   return (
     <svg className="kba-mapa" viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} role="img" aria-label="Mapa de Chile con los sitios KBA que tienen punto de referencia de eBird">
       {Object.values(G.zonas as Record<string, string>).map((d, i) => <path key={i} d={d} fill="var(--superficie-hundida)" stroke="var(--linea)" strokeWidth={0.6 * k} />)}
+      <RecuadrosIslas recuadros={recuadros} u={vb.h / 1000} />
       {pts.map(({ s, xy }) => (
         <circle key={s.id} cx={xy[0]} cy={xy[1]} r={r(s) * Math.max(k, 0.25)} fill={COLOR_MACROZONA[s.macrozona ?? ""] ?? "var(--texto-suave)"}
           fillOpacity={enFoco.has(s.id) ? 0.85 : 0.18} stroke={sel === s.id ? "var(--texto)" : "var(--superficie)"} strokeWidth={(sel === s.id ? 2.5 : 0.8) * Math.max(k, 0.25)}
