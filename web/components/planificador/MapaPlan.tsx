@@ -1,9 +1,10 @@
 "use client";
 import { useMemo } from "react";
-import { COLOR_MACROZONA, geo, proyectar } from "@/lib/geo";
+import { COLOR_MACROZONA, geo, proyectarVertical } from "@/lib/geo";
+import { RecuadrosIslas } from "@/components/RecuadrosIslas";
 import type { Punto, SitioPlan } from "@/lib/planificador";
 
-const P = proyectar("vertical");
+const { P, recuadros } = proyectarVertical();
 const G = geo.vertical;
 const xy = (p: Punto) => P(p[1], p[0]);
 
@@ -27,6 +28,7 @@ export function MapaPlan({ sitios, destacados, ruta, origen, sel, elegir }: {
     <svg className="plan-mapa" viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} role="img"
       aria-label={`Mapa con ${destacados.length} sitios recomendados${origen ? " y tu punto de partida" : ""}`}>
       {Object.values(G.zonas as Record<string, string>).map((d, i) => <path key={i} d={d} fill="var(--superficie-hundida)" stroke="var(--linea)" strokeWidth={0.6 * k} />)}
+      <RecuadrosIslas recuadros={recuadros} u={k} />
       {sitios.map((s, i) => { const [x, y] = xy(s.punto); return destacados.includes(i) ? null : <circle key={s.id} cx={x} cy={y} r={2.2 * k} fill="var(--texto-suave)" opacity={0.35} />; })}
       {linea.length > 1 && <polyline points={linea.map((p) => p.join(",")).join(" ")} fill="none" stroke="var(--foco)" strokeWidth={2 * k} strokeDasharray={`${5 * k} ${4 * k}`} strokeLinejoin="round" />}
       {destacados.map((i) => {

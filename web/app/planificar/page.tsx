@@ -10,10 +10,10 @@ export const metadata = {
 };
 
 const AFINAR = [
-  { href: "/calculadora/#a-que-hora", icono: "reloj", t: "¿A qué hora salir?", d: "Cuándo se concentran las salidas en cada mes y zona." },
-  { href: "/calculadora/#que-buscar", icono: "rueda", t: "¿Qué buscar este mes?", d: "Las especies que tienen su temporada ahora." },
-  { href: "/calculadora/#calculadora", icono: "reloj", t: "¿Cuánto rato?", d: "Cuántas especies suma cada media hora de salida." },
-  { href: "/lugares/", icono: "mapa", t: "Explorar todos los sitios", d: "El mapa completo de sitios clave, su esfuerzo y su protección." },
+  { href: "/calculadora/#a-que-hora", icono: "reloj", t: "¿A qué hora salir?", d: "Las horas en que más se sale a observar, según el mes y la zona." },
+  { href: "/calculadora/#que-buscar", icono: "calendario", t: "¿Qué buscar este mes?", d: "Las especies que están en su mejor temporada ahora." },
+  { href: "/calculadora/#calculadora", icono: "barras", t: "¿Cuánto tiempo salir?", d: "Cuántas especies más suma cada media hora de salida." },
+  { href: "/lugares/", icono: "mapa", t: "¿Dónde más ir?", d: "El mapa de todos los sitios clave, su esfuerzo y su protección." },
 ];
 
 export default function PaginaPlanificar() {
@@ -35,8 +35,8 @@ export default function PaginaPlanificar() {
           {AFINAR.map((a) => (
             <li key={a.href}><Link href={a.href} className="afinar__item">
               <span className="titulo-icono__marca" aria-hidden="true"><Icono nombre={a.icono} tam={22} /></span>
-              <span><b>{a.t}</b><span className="apoyo">{a.d}</span></span>
-              <span className="flecha" aria-hidden="true">→</span>
+              <span className="afinar__titulo">{a.t}</span>
+              <span className="afinar__texto">{a.d}</span>
             </Link></li>
           ))}
         </ul>
