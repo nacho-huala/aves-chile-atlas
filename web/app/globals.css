@@ -651,3 +651,8 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 .atajos__cant button { min-height: 28px; padding: 0 10px; border: 0; border-radius: var(--radio-pildora); background: transparent; color: var(--texto); font: 600 12px var(--font-sans); cursor: pointer; }
 .atajos__cant button[aria-checked="true"] { background: var(--texto); color: var(--fondo); }
 .plan-ver-todas { margin-top: var(--esp-3); width: 100%; justify-content: center; }
+/* explorador de aves del sitio */
+.explorar-aves { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: flex-end; margin: var(--esp-4) 0 var(--esp-2); padding: 12px; border-radius: var(--radio-control); background: var(--superficie-hundida); }
+.explorar-aves label { display: grid; gap: 3px; font: 600 11px/1.2 var(--font-sans); letter-spacing: .05em; text-transform: uppercase; color: var(--texto-suave); }
+.explorar-aves select { min-height: 36px; padding: 0 8px; font: 500 14px var(--font-sans); text-transform: none; letter-spacing: 0; border-width: 1px; }
+.explorar-aves .chip-atajo { min-height: 36px; }

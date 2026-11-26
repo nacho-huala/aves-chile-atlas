@@ -5,8 +5,8 @@ export interface SitioPlan {
   id: number; nombre: string; region: string | null; macrozona: string | null;
   punto: [number, number]; salidas: number; especies: number; riqueza: number | null; meses: number[];
 }
-/** e: [slug, nombre, foto, estatus, % de todas las salidas de Chile, UICN] · r[i]: [índice de especie, % salidas completas, mes pico] */
-export interface DatosPlan { e: [string, string, string | null, string | null, number, string | null][]; s: SitioPlan[]; r: [number, number, number][][]; nota: string }
+/** e: [slug, nombre, foto, estatus, % de todas las salidas de Chile, UICN, dieta, hábitat] · r[i]: [índice de especie, % salidas completas, mes pico] */
+export interface DatosPlan { e: [string, string, string | null, string | null, number, string | null, string | null, string | null][]; s: SitioPlan[]; r: [number, number, number][][]; nota: string }
 export type Punto = [number, number];
 export interface Origen { nombre: string; punto: Punto; tipo: "gps" | "ciudad" | "sitio"; precision?: number; cerca?: string }
 

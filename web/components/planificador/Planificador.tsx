@@ -287,12 +287,27 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
   datos: DatosPlan; prob: ReturnType<typeof indexar>; cerca: ReturnType<typeof cercanos>; origen: Origen | null; elegido: number | null;
   setSel: (i: number) => void; lista: number[]; agregar: (e: number) => void; irALista: () => void; urlPlan: string;
 }) {
-  const [todasAves, setTodasAves] = useState(false);
+  const [ver, setVer] = useState<{ cant: number; orden: string; tipo: string; dieta: string; habitat: string; semilla: number }>(
+    { cant: 12, orden: "aqui", tipo: "", dieta: "", habitat: "", semilla: 1 });
   if (!origen) return <Vacio icono="pin" t="Elige un punto de partida" d="Te mostraremos los sitios clave más cercanos y qué aves se registran en cada uno." />;
   if (!cerca.length) return <Vacio icono="mapa" t="No hay sitios con datos en ese radio" d="Amplía la distancia máxima en el paso 1." />;
   const s = elegido !== null ? datos.s[elegido] : cerca[0].s, i = elegido ?? cerca[0].i;
-  const todasOrd = [...prob[i].entries()].sort((a, b) => b[1].p - a[1].p);
-  const aves = todasAves ? todasOrd : todasOrd.slice(0, 12);
+  // explorador: filtra por tipo, dieta y hábitat, y ordena de distintas formas (no siempre la misma lista)
+  const RIESGO: Record<string, number> = { CR: 0, EN: 1, VU: 2, NT: 3, LC: 4, DD: 5 };
+  const mezcla = (e: number) => ((e * 9301 + ver.semilla * 49297) % 233280) / 233280;
+  const filtradas = [...prob[i].entries()].filter(([e]) => (!ver.tipo || datos.e[e][3] === ver.tipo) && (!ver.dieta || datos.e[e][6] === ver.dieta) && (!ver.habitat || datos.e[e][7] === ver.habitat));
+  const ORDENES: Record<string, (a: [number, { p: number }], b: [number, { p: number }]) => number> = {
+    aqui: (a, b) => b[1].p - a[1].p, menos: (a, b) => a[1].p - b[1].p,
+    rara: (a, b) => datos.e[a[0]][4] - datos.e[b[0]][4], comun: (a, b) => datos.e[b[0]][4] - datos.e[a[0]][4],
+    riesgo: (a, b) => (RIESGO[datos.e[a[0]][5] ?? ""] ?? 9) - (RIESGO[datos.e[b[0]][5] ?? ""] ?? 9) || b[1].p - a[1].p,
+    azar: (a, b) => mezcla(a[0]) - mezcla(b[0]),
+  };
+  const todasOrd = filtradas.sort(ORDENES[ver.orden]);
+  const aves = todasOrd.slice(0, ver.cant);
+  const total = prob[i].size;
+  const cambiar = (c: Partial<typeof ver>) => setVer((v) => ({ ...v, ...c }));
+  const etiqueta = (e: number) => ver.orden === "rara" || ver.orden === "comun" ? `en Chile: ${datos.e[e][4] < 0.1 ? "rara" : datos.e[e][4] < 1 ? "poco común" : "común"}`
+    : ver.orden === "riesgo" && datos.e[e][5] ? `UICN ${datos.e[e][5]}` : null;
   const mesTop = s.meses.indexOf(Math.max(...s.meses));
   return (
     <div className="plan-cerca">
@@ -311,20 +326,39 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
           <div><dt>Registradas en total</dt><dd>{s.especies}</dd></div>
           <div><dt>Mes más visitado</dt><dd>{MESES_LARGOS[mesTop]}</dd></div>
         </dl>
-        <p className="dato-eti">Qué puedes ver · frecuencia en salidas completas</p>
+        <div className="explorar-aves" role="group" aria-label="Explorar las aves de este sitio">
+          <label>Mostrar<select value={ver.cant} onChange={(e) => cambiar({ cant: Number(e.target.value) })}>
+            {[6, 12, 24, 48].map((n) => <option key={n} value={n}>{n}</option>)}<option value={Infinity}>Todas</option></select></label>
+          <label>Ordenar por<select value={ver.orden} onChange={(e) => cambiar({ orden: e.target.value })}>
+            <option value="aqui">Más vistas aquí</option><option value="menos">Menos vistas aquí</option>
+            <option value="rara">Más raras en Chile</option><option value="comun">Más comunes en Chile</option>
+            <option value="riesgo">Mayor riesgo (UICN)</option><option value="azar">Al azar</option></select></label>
+          <label>Tipo<select value={ver.tipo} onChange={(e) => cambiar({ tipo: e.target.value })}>
+            <option value="">Todas</option><option value="nativa residente">Nativas residentes</option><option value="endémica">Endémicas</option>
+            <option value="migratoria / estacional">Migratorias</option><option value="introducida">Introducidas</option></select></label>
+          <label>Dieta<select value={ver.dieta} onChange={(e) => cambiar({ dieta: e.target.value })}>
+            <option value="">Todas</option><option value="invertívora">Insectívoras</option><option value="carnívora / pescadora">Carnívoras y pescadoras</option>
+            <option value="granívora / herbívora">Granívoras y herbívoras</option><option value="nectarívora / frugívora">Néctar y frutos</option><option value="omnívora">Omnívoras</option></select></label>
+          <label>Hábitat<select value={ver.habitat} onChange={(e) => cambiar({ habitat: e.target.value })}>
+            <option value="">Todos</option><option value="humedal">Humedal</option><option value="costa">Costa y mar</option><option value="bosque">Bosque</option>
+            <option value="matorral">Matorral y pradera</option><option value="ciudad">Ciudad</option></select></label>
+          {ver.orden === "azar" && <button type="button" className="chip-atajo" onClick={() => cambiar({ semilla: ver.semilla + 1 })}><Icono nombre="rueda" tam={14} />Otra mezcla</button>}
+        </div>
+        <p className="dato-eti" role="status">Mostrando {aves.length} de {todasOrd.length}{todasOrd.length < total ? ` (filtradas de ${total})` : ""} · frecuencia en salidas completas</p>
+        {!aves.length && <p className="apoyo">Ninguna especie de este sitio cumple esos filtros.</p>}
         <ul className="plan-aves">
           {aves.map(([e, x]) => (
             <li key={e}>
               <FotoMini src={datos.e[e][2]} />
-              <span><Link href={`/especies/${datos.e[e][0]}/`}>{datos.e[e][1]}</Link><small>{frecuencia(x.p)}{x.mes ? ` · más en ${MESES[x.mes - 1]}` : ""}</small></span>
+              <span><Link href={`/especies/${datos.e[e][0]}/`}>{datos.e[e][1]}</Link><small>{frecuencia(x.p)}{x.mes ? ` · más en ${MESES[x.mes - 1]}` : ""}{etiqueta(e) ? ` · ${etiqueta(e)}` : ""}</small></span>
               <Medidor p={x.p} />
               <button type="button" className="mas" aria-label={`Agregar ${datos.e[e][1]} a mi lista`} aria-pressed={lista.includes(e)} onClick={() => agregar(e)}>{lista.includes(e) ? "✓" : "+"}</button>
             </li>
           ))}
         </ul>
-        {todasOrd.length > 12 && (
-          <button type="button" className="btn btn--secundario plan-ver-todas" onClick={() => setTodasAves(!todasAves)}>
-            {todasAves ? "Ver solo las 12 más frecuentes" : `Ver las ${todasOrd.length} especies registradas aquí`}
+        {todasOrd.length > aves.length && (
+          <button type="button" className="btn btn--secundario plan-ver-todas" onClick={() => cambiar({ cant: ver.cant >= 48 ? Infinity : ver.cant * 2 })}>
+            Ver más ({todasOrd.length - aves.length} restantes)
           </button>
         )}
         {lista.length > 0 && <button type="button" className="btn btn--secundario" onClick={irALista}>Planificar mi lista ({lista.length}) <span className="flecha" aria-hidden="true">→</span></button>}
@@ -336,7 +370,7 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             eyebrow: `Salida de observación · ${s.region ?? ""}`, titulo: s.nombre,
             subtitulo: `${s.riqueza ?? "—"} especies en una salida típica · a ${entero(Math.round(km(origen.punto, s.punto)))} km de ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre}`,
             origen: origen.punto, puntos: [s.punto],
-            bloques: [{ titulo: "Qué puedo ver", detalle: `Mes más visitado: ${MESES_LARGOS[mesTop]}`, especies: aves.slice(0, 30).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
+            bloques: [{ titulo: "Qué puedo ver", detalle: ver.orden === "aqui" && !ver.tipo && !ver.dieta && !ver.habitat ? `Mes más visitado: ${MESES_LARGOS[mesTop]}` : `Selección: ${[ver.tipo, ver.dieta, ver.habitat].filter(Boolean).join(", ") || ({ menos: "menos vistas aquí", rara: "más raras en Chile", comun: "más comunes en Chile", riesgo: "mayor riesgo UICN", azar: "al azar", aqui: "más vistas aquí" } as Record<string, string>)[ver.orden]}`, especies: aves.slice(0, 30).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
             contexto: datos.s.map((z) => z.punto),
             pie: "Sitio clave para la biodiversidad (KBA) · datos de eBird",
           }} />

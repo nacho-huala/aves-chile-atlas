@@ -146,7 +146,7 @@ export async function dibujarTarjeta(t: Tarjeta): Promise<Blob> {
   const fotos = new Map(urls.map((u, i) => [u, fotosL[i]]));
 
   // ── mapa
-  const MX = 84, MY = y, MW = 330, MH = H - y - 200;
+  const MX = 84, MY = y, MW = 330, MH = H - y - 226;
   let capa = capaPedida;
   const P = proyectar("vertical"), G = geo.vertical;
   const pts = [...t.puntos, ...(t.origen ? [t.origen] : [])].map((p) => P(p[1], p[0]));
@@ -319,20 +319,20 @@ export async function dibujarTarjeta(t: Tarjeta): Promise<Blob> {
   });
 
   // ── pie: logo a la izquierda, leyenda «x/10» encuadrada a la derecha
-  const PY = H - 150;
+  const PY = H - 168;
   ctx.strokeStyle = C.linea; ctx.lineWidth = 2; ctx.setLineDash([6, 6]); ctx.beginPath(); ctx.moveTo(84, PY); ctx.lineTo(W - 84, PY); ctx.stroke(); ctx.setLineDash([]);
-  const LBW = 390, LBX = W - 84 - LBW, LBY = PY + 20;
+  const LBW = 400, LBX = W - 84 - LBW, LBY = PY + 18;
   if (logo) { const lh = 56, lw = (logo.width / logo.height) * lh; ctx.drawImage(logo, 76, PY + 14, lw, lh); }
   else { ctx.fillStyle = C.texto; ctx.font = `500 34px ${DISP}`; ctx.fillText("Atlas de aves en Chile", 84, PY + 54); }
-  ctx.fillStyle = C.suave; ctx.font = `400 16px ${SANS}`;
-  envolver(ctx, `${t.pie}${[...fotos.values()].some(Boolean) ? " · fotos: iNaturalist (CC)" : ""}`, LBX - 84 - 24).slice(0, 2)
-    .forEach((l, i) => ctx.fillText(l, 84, PY + 92 + i * 20));
+  ctx.fillStyle = C.suave; ctx.font = `400 15px ${SANS}`;
+  envolver(ctx, `${t.pie}${[...fotos.values()].some(Boolean) ? " · fotos: iNaturalist y Wikimedia Commons (licencias CC)" : ""}`, LBX - 84 - 24).slice(0, 2)
+    .forEach((l, i) => ctx.fillText(l, 84, PY + 90 + i * 19));
   ctx.fillStyle = C.hund; ctx.beginPath(); ctx.roundRect(LBX, LBY, LBW, 84, 12); ctx.fill();
   ctx.strokeStyle = C.linea; ctx.lineWidth = 1.5; ctx.stroke();
   ctx.fillStyle = C.sup; ctx.beginPath(); ctx.roundRect(LBX + 18, LBY + 24, 84, 12, 6); ctx.fill();
   ctx.fillStyle = C.musgo; ctx.beginPath(); ctx.roundRect(LBX + 18, LBY + 24, 50, 12, 6); ctx.fill();
   ctx.fillStyle = C.texto; ctx.font = `700 19px ${SANS}`; ctx.fillText("6/10", LBX + 112, LBY + 36);
   ctx.font = `400 17px ${SANS}`; ctx.fillText("= en 6 de cada 10 salidas", LBX + 166, LBY + 36);
-  ctx.fillStyle = C.suave; ctx.font = `400 15px ${SANS}`; ctx.fillText("se registró la especie · salidas completas, eBird 2019–2025", LBX + 18, LBY + 64);
+  ctx.fillStyle = C.suave; ctx.font = `400 15px ${SANS}`; ctx.fillText("se registró la especie · eBird 2019–2025", LBX + 18, LBY + 64);
   return new Promise((res) => cv.toBlob((b) => res(b!), "image/png"));
 }
