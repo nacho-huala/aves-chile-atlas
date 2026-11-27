@@ -30,6 +30,7 @@ const P: Record<string, React.ReactNode> = {
   x: <path d="M4.5 4.5l15 15M19.5 4.5l-15 15" strokeWidth={2.2} />,
   facebook: <path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.6 1.6-1.6h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H8v3h2.5V21" />,
   binoculares: <><circle cx="7" cy="15" r="3.5" /><circle cx="17" cy="15" r="3.5" /><path d="M10.5 15h3M5 12l1.5-6h3l1 6M19 12l-1.5-6h-3l-1 6" /></>,
+  casa: <><path d="M3.5 11L12 4l8.5 7" /><path d="M5.5 9.5V20h13V9.5" /><path d="M10 20v-5.5h4V20" /></>,
   ojo: <><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z" /><circle cx="12" cy="12" r="2.6" /></>,
 };
 export type NombreIcono = keyof typeof P;

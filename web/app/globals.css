@@ -595,7 +595,7 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 /* ── Llévate el plan */
 .compartir { margin-top: var(--esp-5); padding: var(--esp-5); border-radius: var(--radio-tarjeta); border: 1.5px solid var(--foco); background: var(--superficie); container-type: inline-size; }
 .compartir h3 { margin: 0 0 var(--esp-4) !important; align-items: center; }
-.compartir__grid { display: grid; gap: var(--esp-5); grid-template-columns: 1fr; }
+.compartir__grid { display: grid; gap: var(--esp-5); grid-template-columns: minmax(0, 1fr); }
 @container (min-width: 560px) { .compartir__grid { grid-template-columns: minmax(180px, 240px) minmax(0, 1fr); } }
 .compartir__img { margin: 0; }
 .compartir__img img, .compartir__cargando { display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radio-control); box-shadow: var(--sombra-alzada); }
@@ -661,3 +661,49 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 .explorar-aves label { display: grid; gap: 3px; font: 600 11px/1.2 var(--font-sans); letter-spacing: .05em; text-transform: uppercase; color: var(--texto-suave); }
 .explorar-aves select { min-height: 36px; padding: 0 8px; font: 500 14px var(--font-sans); text-transform: none; letter-spacing: 0; border-width: 1px; }
 .explorar-aves .chip-atajo { min-height: 36px; }
+
+/* ── v0.8 · celular ───────────────────────────────────────── */
+/* Navegación inferior en celulares (la barra superior solo deja el logo y el tema) */
+.nav-movil { display: none; }
+@media (max-width: 860px) {
+  .nav-movil { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--fondo) 94%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--linea); }
+  .nav-movil a { display: grid; justify-items: center; gap: 3px; padding: 6px 2px; border-radius: var(--radio-control); color: var(--texto-suave) !important;
+    text-decoration: none; font: 600 11px/1.1 var(--font-sans); letter-spacing: .01em; }
+  .nav-movil a[aria-current="page"] { color: var(--foco) !important; background: color-mix(in srgb, var(--foco) 10%, transparent); }
+  body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+}
+
+@media (max-width: 640px) {
+  /* menos marcos anidados para que el contenido respire */
+  .plan-ficha { padding: 16px 14px; }
+  .compartir { padding: 16px 14px; }
+  /* fila de ave: foto | nombre y frecuencia, con la barra debajo | botón */
+  .plan-aves li { grid-template-columns: 36px minmax(0, 1fr) auto; grid-template-areas: "f t b" "f m b"; row-gap: 6px; column-gap: 12px; padding: 4px 0; }
+  .plan-aves li > :nth-child(1) { grid-area: f; align-self: center; }
+  .plan-aves li > :nth-child(2) { grid-area: t; }
+  .plan-aves li > :nth-child(3) { grid-area: m; }
+  .plan-aves li > :nth-child(4) { grid-area: b; }
+  .itinerario ul li { grid-template-columns: 32px minmax(0, 1fr); grid-template-areas: "f t" "f m"; row-gap: 6px; }
+  .itinerario ul li > :nth-child(1) { grid-area: f; }
+  .itinerario ul li > :nth-child(2) { grid-area: t; }
+  .itinerario ul li > :nth-child(3) { grid-area: m; }
+  /* filtros del explorador en dos columnas parejas */
+  .explorar-aves { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .explorar-aves select { width: 100%; font-size: 13.5px; padding: 0 4px; }
+  .explorar-aves label:nth-of-type(5) { grid-column: 1 / -1; }
+  .explorar-aves .chip-atajo { grid-column: 1 / -1; justify-content: center; }
+}
+
+/* Llévate el plan: la imagen y los botones nunca más anchos que la tarjeta */
+.compartir__img img { max-width: 100%; height: auto; }
+.compartir__acciones { grid-template-columns: minmax(0, 1fr); }
+.compartir__acciones .btn { min-width: 0; white-space: normal; text-align: left; }
+.compartir__cal { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.compartir__cal input { width: 100%; min-width: 0; }
+.compartir__redes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.compartir__redes a { min-width: 0; }
+@container (max-width: 430px) {
+  .compartir__redes a { flex-direction: column; gap: 4px; padding: 10px 4px; border-radius: var(--radio-control); font-size: 13px; }
+}
