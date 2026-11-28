@@ -1,5 +1,7 @@
-// Puntos de partida frecuentes (coordenadas aproximadas del centro de cada localidad). Sin geocodificador externo:
-// la búsqueda es local y no envía nada a ningún servidor.
+import { COMUNAS } from "./comunas";
+
+// Ciudades de referencia: son las que se rotulan en el mapa de la imagen para compartir (pocas, para que no se amontonen).
+// Sin geocodificador externo: la búsqueda es local y no envía nada a ningún servidor.
 export const CIUDADES: [string, string, number, number][] = [
   ["Arica", "Arica y Parinacota", -18.48, -70.31], ["Putre", "Arica y Parinacota", -18.2, -69.56],
   ["Iquique", "Tarapacá", -20.22, -70.15], ["Pica", "Tarapacá", -20.49, -69.33],
@@ -17,3 +19,12 @@ export const CIUDADES: [string, string, number, number][] = [
   ["Puerto Natales", "Magallanes", -51.73, -72.51], ["Punta Arenas", "Magallanes", -53.16, -70.91], ["Porvenir", "Magallanes", -53.3, -70.37],
   ["Puerto Williams", "Magallanes", -54.93, -67.61],
 ];
+
+const sinTildes = (t: string) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+/** Todo lo que se puede escribir como punto de partida: las ciudades de arriba (con sus nombres de uso, como
+ *  Puerto Natales) y las 346 comunas de Chile. Si un nombre se repite, gana la ciudad. */
+export const LOCALIDADES: [string, string, number, number][] = (() => {
+  const vistas = new Set(CIUDADES.map((c) => sinTildes(c[0])));
+  return [...CIUDADES, ...COMUNAS.filter((c) => !vistas.has(sinTildes(c[0])))];
+})();

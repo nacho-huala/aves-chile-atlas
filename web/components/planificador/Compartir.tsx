@@ -76,7 +76,7 @@ export function Compartir({ tarjeta, url, maps, texto, lugar }: { tarjeta: Tarje
             <a href={`https://x.com/intent/post?text=${enc(texto.split("\n")[0])}&url=${enc(url)}`} target="_blank" rel="noopener noreferrer" aria-label="Compartir en X"><Icono nombre="x" tam={16} />X</a>
             <a href={`https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`} target="_blank" rel="noopener noreferrer"><Icono nombre="facebook" tam={18} />Facebook</a>
           </div>
-          <p className="pie" role="status">{aviso || "Para Instagram: descarga la imagen o usa «Compartir…» desde el celular. El enlace guarda tu punto de partida como ciudad, no tu ubicación exacta."}</p>
+          <p className="pie" role="status">{aviso || "Para Instagram: descarga la imagen o usa «Compartir…» desde el celular. El enlace guarda tu punto de partida como comuna, no tu ubicación exacta."}</p>
         </div>
       </div>
     </section>

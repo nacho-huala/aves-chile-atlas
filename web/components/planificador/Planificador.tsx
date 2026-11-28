@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { flushSync } from "react-dom";
-import { CIUDADES } from "@/lib/ciudades";
+import { LOCALIDADES } from "@/lib/ciudades";
 import { cercanos, indexar, km, planificar, type DatosPlan, type Origen } from "@/lib/planificador";
 import { MESES, MESES_LARGOS, entero } from "@/lib/formato";
 import { Icono } from "@/components/Icono";
@@ -48,7 +48,7 @@ export default function Planificador() {
       // estado inicial desde la URL: ?desde=Castro&modo=lista&lista=slug,slug&radio=400&sitio=ID (o ?especie=slug desde la ficha)
       const u = deURL();
       if (u.desde) {
-        const c = CIUDADES.find((x) => sinTildes(x[0]) === sinTildes(u.desde!)), s = d.s.find((x) => sinTildes(x.nombre) === sinTildes(u.desde!));
+        const c = LOCALIDADES.find((x) => sinTildes(x[0]) === sinTildes(u.desde!)), s = d.s.find((x) => sinTildes(x.nombre) === sinTildes(u.desde!));
         const m = u.desde.match(/^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$/);
         if (c) { setOrigen({ nombre: c[0], punto: [c[2], c[3]], tipo: "ciudad" }); setTexto(c[0]); }
         else if (s) { setOrigen({ nombre: s.nombre, punto: s.punto, tipo: "sitio" }); setTexto(s.nombre); }
@@ -71,14 +71,14 @@ export default function Planificador() {
     // La ubicación se usa solo en tu navegador; no se envía a ningún servidor.
     navigator.geolocation.getCurrentPosition((p) => {
       const punto: [number, number] = [p.coords.latitude, p.coords.longitude];
-      const c = [...CIUDADES].sort((a, b) => km(punto, [a[2], a[3]]) - km(punto, [b[2], b[3]]))[0];
+      const c = [...LOCALIDADES].sort((a, b) => km(punto, [a[2], a[3]]) - km(punto, [b[2], b[3]]))[0];
       setGps(""); setTexto("");
       conTransicion(() => { setOrigen({ nombre: "Tu ubicación", punto, tipo: "gps", precision: p.coords.accuracy / 1000, cerca: c ? `${c[0]} (a ${Math.round(km(punto, [c[2], c[3]]))} km)` : undefined }); setSel(null); });
     }, () => setGps("error"), { enableHighAccuracy: true, maximumAge: 0, timeout: 15000 });
   }
   function elegirTexto(v: string) {
     setTexto(v);
-    const c = CIUDADES.find((x) => sinTildes(x[0]) === sinTildes(v.trim()));
+    const c = LOCALIDADES.find((x) => sinTildes(x[0]) === sinTildes(v.trim()));
     if (c) conTransicion(() => { setOrigen({ nombre: c[0], punto: [c[2], c[3]], tipo: "ciudad" }); setSel(null); });
     const s = datos?.s.find((x) => sinTildes(x.nombre) === sinTildes(v.trim()));
     if (s && !c) conTransicion(() => { setOrigen({ nombre: s.nombre, punto: s.punto, tipo: "sitio" }); setSel(null); });
@@ -123,13 +123,13 @@ export default function Planificador() {
         </div>
         <p className="pie" role="status">
           {gps === "buscando" && "Buscando tu ubicación…"}
-          {gps === "error" && "No pudimos obtener tu ubicación. Escribe una ciudad."}
+          {gps === "error" && "No pudimos obtener tu ubicación. Escribe tu comuna."}
           {!gps && origen && origen.tipo !== "gps" && <>Partida: <b>{origen.nombre}</b>. Distancias en línea recta.</>}
           {!gps && origen?.tipo === "gps" && <>Partida: <b>tu ubicación</b>, cerca de <b>{origen.cerca}</b>{origen.precision ? ` · precisión ±${origen.precision < 1 ? "<1" : Math.round(origen.precision)} km` : ""}. No sale de tu navegador.</>}
           {!gps && !origen && "Puede ser donde estás o adonde vas a viajar. Sin punto de partida, el plan recorre todo Chile."}
         </p>
         {origen?.tipo === "gps" && (origen.precision ?? 0) > 15 && (
-          <p className="aviso"><Icono nombre="alerta" tam={16} />Tu navegador entregó una ubicación aproximada (sin GPS, suele calcularse por la red). Si no estás cerca de {origen.cerca?.split(" (")[0]}, escribe tu ciudad arriba.</p>
+          <p className="aviso"><Icono nombre="alerta" tam={16} />Tu navegador entregó una ubicación aproximada (sin GPS, suele calcularse por la red). Si no estás cerca de {origen.cerca?.split(" (")[0]}, escribe tu comuna arriba.</p>
         )}
         <div className="plan-radio" role="radiogroup" aria-label="Distancia máxima">
           <span className="dato-eti">Hasta</span>
@@ -177,7 +177,7 @@ function BuscadorLugar({ datos, texto, setTexto }: { datos: DatosPlan; texto: st
   const opciones = useMemo(() => {
     const t = sinTildes(texto.trim());
     if (!t) return [];
-    const todas = [...CIUDADES.map((c) => ({ n: c[0], d: c[1], kba: false })), ...datos.s.map((s) => ({ n: s.nombre, d: s.region ?? "", kba: true }))];
+    const todas = [...LOCALIDADES.map((c) => ({ n: c[0], d: c[1], kba: false })), ...datos.s.map((s) => ({ n: s.nombre, d: s.region ?? "", kba: true }))];
     const rango = (n: string) => { const x = sinTildes(n); return x.startsWith(t) ? 0 : x.split(/[\s,-]/).some((w) => w.startsWith(t)) ? 1 : x.includes(t) ? 2 : 9; };
     return todas.map((o) => ({ ...o, r: rango(o.n) })).filter((o) => o.r < 9 && sinTildes(o.n) !== t).sort((a, b) => a.r - b.r || Number(a.kba) - Number(b.kba) || a.n.localeCompare(b.n, "es")).slice(0, 8);
   }, [texto, datos]);
@@ -185,7 +185,7 @@ function BuscadorLugar({ datos, texto, setTexto }: { datos: DatosPlan; texto: st
   return (
     <div className="plan-buscar combo-lugar" role="combobox" aria-expanded={abierto && opciones.length > 0} aria-haspopup="listbox" aria-owns="lugar-lista">
       <Icono nombre="mapa" tam={18} />
-      <input value={texto} placeholder="Escribe una ciudad o un sitio: Castro, Putre, Humedal…" aria-label="Ciudad o sitio de partida" aria-autocomplete="list" aria-controls="lugar-lista"
+      <input value={texto} placeholder="Escribe tu comuna o un sitio: Panguipulli, Putre, Humedal…" aria-label="Comuna, ciudad o sitio de partida" aria-autocomplete="list" aria-controls="lugar-lista"
         aria-activedescendant={opciones[act] ? `lugar-${act}` : undefined}
         onChange={(e) => { setTexto(e.target.value); setAbierto(true); setAct(0); }} onFocus={() => setAbierto(true)} onBlur={() => setTimeout(() => setAbierto(false), 120)}
         onKeyDown={(e) => {
