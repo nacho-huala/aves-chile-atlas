@@ -226,7 +226,7 @@ function SelectorEspecies({ datos, lista, setLista, disponibles, hayOrigen }: { 
     { t: "Al azar", icono: "rueda", ids: () => [...todas].sort(() => Math.random() - 0.5).slice(0, cant).map((x) => x.i) },
     { t: "Las más vistas", icono: "binoculares", ids: () => porFrec.slice(0, cant).map((x) => x.i) },
     // raras en Chile pero con al menos un sitio donde aparecen en ≥ 5 % de las salidas: difíciles, no imposibles
-    { t: "Raras pero posibles", icono: "ojo", ids: () => todas.filter((x) => (disponibles.get(x.i) ?? 0) >= 0.05)
+    { t: "Poco registradas pero posibles", icono: "ojo", ids: () => todas.filter((x) => (disponibles.get(x.i) ?? 0) >= 0.05)
         .sort((a, b) => a.e[4] - b.e[4]).slice(0, cant).map((x) => x.i) },
     { t: "Amenazadas (UICN)", icono: "alerta", ids: () => todas.filter((x) => ["VU", "EN", "CR"].includes(x.e[5] ?? "")).slice(0, cant).map((x) => x.i) },
     { t: "Endémicas de Chile", icono: "pin", ids: () => todas.filter((x) => x.e[3] === "endémica").slice(0, cant).map((x) => x.i) },
@@ -306,7 +306,7 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
   const aves = todasOrd.slice(0, ver.cant);
   const total = prob[i].size;
   const cambiar = (c: Partial<typeof ver>) => setVer((v) => ({ ...v, ...c }));
-  const etiqueta = (e: number) => ver.orden === "rara" || ver.orden === "comun" ? `en Chile: ${datos.e[e][4] < 0.1 ? "rara" : datos.e[e][4] < 1 ? "poco común" : "común"}`
+  const etiqueta = (e: number) => ver.orden === "rara" || ver.orden === "comun" ? `en Chile: ${datos.e[e][4] < 0.1 ? "muy poco registrada" : datos.e[e][4] < 1 ? "poco registrada" : "muy registrada"}`
     : ver.orden === "riesgo" && datos.e[e][5] ? `UICN ${datos.e[e][5]}` : null;
   const mesTop = s.meses.indexOf(Math.max(...s.meses));
   return (
@@ -331,7 +331,7 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             {[6, 12, 24, 48].map((n) => <option key={n} value={n}>{n}</option>)}<option value={Infinity}>Todas</option></select></label>
           <label>Ordenar por<select value={ver.orden} onChange={(e) => cambiar({ orden: e.target.value })}>
             <option value="aqui">Más vistas aquí</option><option value="menos">Menos vistas aquí</option>
-            <option value="rara">Más raras en Chile</option><option value="comun">Más comunes en Chile</option>
+            <option value="rara">Menos registradas en Chile</option><option value="comun">Más registradas en Chile</option>
             <option value="riesgo">Mayor riesgo (UICN)</option><option value="azar">Al azar</option></select></label>
           <label>Tipo<select value={ver.tipo} onChange={(e) => cambiar({ tipo: e.target.value })}>
             <option value="">Todas</option><option value="nativa residente">Nativas residentes</option><option value="endémica">Endémicas</option>
@@ -370,7 +370,7 @@ function PanelCerca({ datos, prob, cerca, origen, elegido, setSel, lista, agrega
             eyebrow: `Salida de observación · ${s.region ?? ""}`, titulo: s.nombre,
             subtitulo: `${s.riqueza ?? "—"} especies en una salida típica · a ${entero(Math.round(km(origen.punto, s.punto)))} km de ${origen.tipo === "gps" ? (origen.cerca?.split(" (")[0] ?? "mi ubicación") : origen.nombre}`,
             origen: origen.punto, puntos: [s.punto],
-            bloques: [{ titulo: "Qué puedo ver", detalle: ver.orden === "aqui" && !ver.tipo && !ver.dieta && !ver.habitat ? `Mes más visitado: ${MESES_LARGOS[mesTop]}` : `Selección: ${[ver.tipo, ver.dieta, ver.habitat].filter(Boolean).join(", ") || ({ menos: "menos vistas aquí", rara: "más raras en Chile", comun: "más comunes en Chile", riesgo: "mayor riesgo UICN", azar: "al azar", aqui: "más vistas aquí" } as Record<string, string>)[ver.orden]}`, especies: aves.slice(0, 30).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
+            bloques: [{ titulo: "Qué puedo ver", detalle: ver.orden === "aqui" && !ver.tipo && !ver.dieta && !ver.habitat ? `Mes más visitado: ${MESES_LARGOS[mesTop]}` : `Selección: ${[ver.tipo, ver.dieta, ver.habitat].filter(Boolean).join(", ") || ({ menos: "menos vistas aquí", rara: "menos registradas en Chile", comun: "más registradas en Chile", riesgo: "mayor riesgo (UICN)", azar: "al azar", aqui: "más vistas aquí" } as Record<string, string>)[ver.orden]}`, especies: aves.slice(0, 30).map(([e, x]) => ({ nombre: datos.e[e][1], p: x.p, foto: datos.e[e][2] })) }],
             contexto: datos.s.map((z) => z.punto),
             pie: "Sitio clave para la biodiversidad (KBA) · datos de eBird",
           }} />

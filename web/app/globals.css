@@ -102,7 +102,7 @@ a { color: inherit; }
 .hero__dato a { display: grid; gap: 2px; background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio-tarjeta); padding: var(--esp-3) var(--esp-4); text-decoration: none; color: var(--texto); transition: transform var(--dur-media) cubic-bezier(.2,.7,.2,1), box-shadow var(--dur-media); }
 .hero__dato a:hover { transform: translateY(-2px); box-shadow: var(--sombra-alzada); }
 .hero__dato b { font-family: var(--font-display); font-variation-settings: "SOFT" 100, "WONK" 1; font-size: 24px; font-weight: 540; line-height: 1.1; }
-.opciones { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--esp-4); }
+.opciones { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--esp-4); }
 .opcion { position: relative; height: 100%; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto auto auto; column-gap: var(--esp-4); row-gap: var(--esp-1); align-items: center; padding: var(--esp-5); border-radius: var(--radio-tarjeta); background: var(--superficie); border: 1.5px solid var(--linea); text-decoration: none; color: var(--texto); transition: transform var(--dur-media) cubic-bezier(.2,.7,.2,1), border-color var(--dur-rapida), box-shadow var(--dur-media); }
 .opcion:hover { transform: translateY(-2px); border-color: var(--texto-suave); box-shadow: var(--sombra-alzada); }
 .opcion:focus-visible { outline: 2px solid var(--anillo-foco); outline-offset: 3px; }
@@ -336,10 +336,29 @@ main.pagina .vista__titulo { font-size: clamp(30px, 3.4vw, 44px); }
   --bv-02: #b0596a; --bv-12: #d8907a; --bv-22: #f6e7a6;
 }
 .bv-leyenda { display: flex; gap: var(--esp-3); align-items: center; margin-top: var(--esp-4); }
+.bv-leyenda__txt { display: grid; gap: 2px; }
+/* lámina 1: marco con zoom (el contenido acercado no se sale del marco) */
+.bv-marco { position: relative; }
+.bv-marco--v { display: none; }
+.vista__lienzo .bv-svg { overflow: hidden; touch-action: pan-y; }
+.bv-zoom { position: absolute; top: 8px; right: 8px; display: grid; gap: 4px; }
+.bv-zoom button { width: 36px; height: 36px; border-radius: var(--radio-control); border: 1px solid var(--linea); background: var(--superficie); color: var(--texto); font: 600 18px/1 var(--font-sans); cursor: pointer; display: grid; place-items: center; }
+.bv-zoom button:disabled { opacity: .4; cursor: default; }
+.bv-pista { display: flex; gap: 6px; align-items: center; margin: 8px 0 0; }
+.bv-ficha { margin-top: var(--esp-4); padding: var(--esp-4); border: 1px solid var(--foco); border-radius: var(--radio-tarjeta); background: var(--superficie); }
+.bv-ficha__cab { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.bv-ficha__cerrar { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--linea); background: var(--fondo); color: var(--texto); font: 500 18px/1 var(--font-sans); cursor: pointer; }
+.bv-ficha__cifras { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--esp-3); margin: 0 0 var(--esp-3); }
+.bv-ficha__cifras dt { font: 500 11px/1.3 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--texto-suave); }
+.bv-ficha__cifras dd { margin: 0; font-family: var(--font-display); font-size: 28px; color: var(--foco); }
+.bv-ficha__cifras small { color: var(--texto-suave); font-size: 13px; }
+.bv-ficha__coords { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.bv-ficha__coords .mono { padding: 6px 10px; border-radius: var(--radio-control); background: var(--superficie-hundida); }
 .bv-leyenda__grilla { display: grid; grid-template-columns: repeat(3, 18px); gap: 2px; }
 .bv-leyenda__grilla i { width: 18px; height: 18px; border-radius: 2px; }
 .vista__lienzo .mapa__svg--v { display: none; }
-@media (max-width: 900px) { .vista__lienzo .mapa__svg--h { display: none; } .vista__lienzo .mapa__svg--v { display: block; max-height: 720px; width: auto; margin: 0 auto; } }
+@media (max-width: 900px) { .vista__lienzo .mapa__svg--h { display: none; } .vista__lienzo .mapa__svg--v { display: block; max-height: 720px; width: auto; margin: 0 auto; }
+  .bv-marco--h { display: none; } .bv-marco--v { display: block; } }
 .aa-leyenda { display: flex; flex-wrap: wrap; gap: var(--esp-2); list-style: none; padding: 0; margin: 0; }
 .aa-leyenda li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px 6px 8px; border-radius: var(--radio-pildora); background: var(--fondo); border: 1px solid var(--linea); font-size: 14px; }
 .aa-leyenda i { width: 12px; height: 12px; border-radius: var(--radio-celda); display: inline-block; flex: none; }
@@ -364,7 +383,9 @@ main.pagina svg a:hover .cal__nombre { fill: var(--foco) !important; text-decora
 /* ── Lugares: mapa + lista + detalle */
 .kba-grid { display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr) minmax(0, 1.3fr); gap: var(--esp-5); align-items: start; }
 .kba-grid__mapa { position: sticky; top: 120px; }
-.kba-mapa { display: block; width: 100%; height: min(72vh, 720px); }
+/* overflow oculto: al acercar a una macrozona el resto de Chile no debe tapar los controles (antes bloqueaba la vuelta a la vista general) */
+.vista__lienzo .kba-mapa { display: block; width: 100%; height: min(72vh, 720px); overflow: hidden; }
+.kba-grid__detalle { scroll-margin-top: 90px; }
 .kba-mapa circle:focus-visible { outline: none; stroke: var(--foco); }
 .kba-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 72vh; overflow-y: auto; }
 .kba-lista button { width: 100%; display: grid; grid-template-columns: 10px 1fr auto; gap: 10px; align-items: center; text-align: left; padding: 10px 12px; border-radius: var(--radio-control); border: 1px solid var(--linea); background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer; }
@@ -387,7 +408,7 @@ main.pagina svg a:hover .cal__nombre { fill: var(--foco) !important; text-decora
 @media (max-width: 620px) {
   .kba-grid { grid-template-columns: 1fr; }
   .kba-grid__mapa { position: static; }
-  .kba-mapa { height: 420px; }
+  .vista__lienzo .kba-mapa { height: 420px; }
   .kba-lista { max-height: 320px; }
 }
 /* ── ficha: nidificación */
@@ -673,6 +694,8 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
     text-decoration: none; font: 600 11px/1.1 var(--font-sans); letter-spacing: .01em; }
   .nav-movil a[aria-current="page"] { color: var(--foco) !important; background: color-mix(in srgb, var(--foco) 10%, transparent); }
   body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+  /* lo que se desplaza a la vista (anclas, foco con teclado) no queda bajo la cabecera ni bajo la barra inferior */
+  html { scroll-padding: 84px 0 calc(80px + env(safe-area-inset-bottom)); }
 }
 
 @media (max-width: 640px) {
@@ -707,3 +730,16 @@ main.pagina a.btn--primario:hover { color: var(--sobre-foco); }
 @container (max-width: 430px) {
   .compartir__redes a { flex-direction: column; gap: 4px; padding: 10px 4px; border-radius: var(--radio-control); font-size: 13px; }
 }
+
+/* lámina 8: claves de lectura y ejemplo del lift junto a la lista */
+.red-nav__claves { margin: 0 0 10px; padding-left: 1.1rem; display: grid; gap: 4px; font-size: 14px; line-height: 1.45; }
+.red-nav__lift-ej { margin-top: 10px; padding: 10px 12px; border-radius: var(--radio-control); background: var(--superficie-hundida); }
+.filtros-ayuda { margin: 4px 0 var(--esp-3); font-size: 14px; }
+.filtros-ayuda summary { cursor: pointer; color: var(--foco); font-weight: 600; }
+.filtros-ayuda ul { margin: 8px 0 0; padding-left: 1.1rem; display: grid; gap: 4px; line-height: 1.45; max-width: 72ch; }
+.cal-claves { list-style: none; margin: var(--esp-3) 0 0; padding: 0; display: grid; gap: 8px; font-size: 14.5px; line-height: 1.45; }
+.cal-claves li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+.cal-claves i { display: block; margin-top: 4px; border-radius: 2px; }
+.cal-claves__barra { width: 12px; height: 16px; background: var(--musgo-3); margin-left: 5px; }
+.cal-claves__nido { width: 22px; height: 5px; background: var(--sol); margin-top: 9px !important; }
+.cal-claves__sin { width: 22px; height: 5px; border: 1px dashed var(--texto-suave); margin-top: 8px !important; }

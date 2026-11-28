@@ -78,7 +78,10 @@ export default function Calculadora({ datos, zonas }: { datos: Datos; zonas: Zon
         </figure>
 
         <div>
-          <h3 style={{ fontSize: "1.1rem" }}>Las diez más probables</h3>
+          <h3 style={{ fontSize: "1.1rem", marginBottom: 4 }}>Las diez especies más registradas en salidas de esta zona y duración</h3>
+          <p className="apoyo pequeno" style={{ margin: "0 0 10px" }}>
+            Base: <strong>{entero(punto.n)} salidas</strong> completas de {sel === 15 ? 5 : sel - 14}–{sel} min en {zona}, 2019–2025 (tipo «Traveling» o «Stationary»).
+          </p>
           {top.length === 0 && <p className="apoyo">Sin desglose por especie para esta combinación.</p>}
           <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {top.map((e) => (
@@ -91,7 +94,7 @@ export default function Calculadora({ datos, zonas }: { datos: Datos; zonas: Zon
               </li>
             ))}
           </ol>
-          <p className="pie">% de esas salidas en que se registró la especie</p>
+          <p className="pie">% de esas {entero(punto.n)} salidas en que se registró cada especie. Sirve para saber qué esperar en condiciones parecidas, no es una probabilidad garantizada para tu próxima visita.</p>
         </div>
       </div>
       <p className="pie">{datos.nota} Es frecuencia de reporte, no garantía de avistamiento.</p>
