@@ -1,7 +1,7 @@
 // Compartir un plan: URL con el estado, ruta en Google Maps, evento .ics e imagen 1080×1350 dibujada en canvas.
 // Todo ocurre en el navegador; no hay servidor ni se envían datos a terceros hasta que la persona elige compartir.
 import { geo, proyectar } from "@/lib/geo";
-import { CIUDADES } from "@/lib/ciudades";
+import { CIUDADES, LOCALIDADES } from "@/lib/ciudades";
 import { km, type Origen, type Punto } from "@/lib/planificador";
 
 export interface EstadoURL { desde?: string; lista?: string[]; modo?: "cerca" | "lista"; radio?: number; sitio?: number }
@@ -10,7 +10,7 @@ export interface EstadoURL { desde?: string; lista?: string[]; modo?: "cerca" | 
 export function origenParaURL(o: Origen | null) {
   if (!o) return undefined;
   if (o.tipo !== "gps") return o.nombre;
-  const c = [...CIUDADES].sort((a, b) => km(o.punto, [a[2], a[3]]) - km(o.punto, [b[2], b[3]]))[0];
+  const c = [...LOCALIDADES].sort((a, b) => km(o.punto, [a[2], a[3]]) - km(o.punto, [b[2], b[3]]))[0];
   if (c && km(o.punto, [c[2], c[3]]) <= 30) return c[0];
   return `${o.punto[0].toFixed(1)},${o.punto[1].toFixed(1)}`;
 }
