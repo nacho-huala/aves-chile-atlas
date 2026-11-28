@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { KbaSitio } from "@/lib/data";
 import { COLOR_MACROZONA, geo, MACROZONAS, proyectarVertical } from "@/lib/geo";
 import { RecuadrosIslas } from "@/components/RecuadrosIslas";
@@ -36,15 +36,16 @@ function MapaSitios({ sitios, foco, sel, pos, elegir }: {
   }, [foco, sitios.length, pos]);
   const k = vb.h / (G.height + 12); // escala para que los círculos no crezcan al acercar
   const enFoco = new Set(foco.map((s) => s.id));
+  const acercado = k < 0.98; // con zoom, los recuadros de islas quedarían fuera de lugar
 
   return (
     <svg className="kba-mapa" viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} role="img" aria-label="Mapa de Chile con los sitios KBA que tienen punto de referencia de eBird">
       {Object.values(G.zonas as Record<string, string>).map((d, i) => <path key={i} d={d} fill="var(--superficie-hundida)" stroke="var(--linea)" strokeWidth={0.6 * k} />)}
-      <RecuadrosIslas recuadros={recuadros} u={vb.h / 1000} />
+      {!acercado && <RecuadrosIslas recuadros={recuadros} u={vb.h / 1000} />}
       {pts.map(({ s, xy }) => (
         <circle key={s.id} cx={xy[0]} cy={xy[1]} r={r(s) * Math.max(k, 0.25)} fill={COLOR_MACROZONA[s.macrozona ?? ""] ?? "var(--texto-suave)"}
           fillOpacity={enFoco.has(s.id) ? 0.85 : 0.18} stroke={sel === s.id ? "var(--texto)" : "var(--superficie)"} strokeWidth={(sel === s.id ? 2.5 : 0.8) * Math.max(k, 0.25)}
-          tabIndex={0} role="button" aria-label={`${s.nombre}: ${s.especies} especies`} style={{ cursor: "pointer" }}
+          tabIndex={enFoco.has(s.id) ? 0 : -1} role="button" pointerEvents={enFoco.has(s.id) ? undefined : "none"} aria-label={`${s.nombre}: ${s.especies} especies`} style={{ cursor: "pointer" }}
           onClick={() => elegir(s.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(s.id); } }}>
           <title>{`${s.nombre} · ${s.especies} especies · ${entero(s.salidas)} salidas`}</title>
         </circle>
@@ -92,6 +93,7 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
   const [estado, setEstado] = useState<"" | "buscando" | "error">("");
   const [zona, setZona] = useState("");
   const [sel, setSel] = useState<number | null>(sitios[0]?.id ?? null);
+  const detalleRef = useRef<HTMLDivElement>(null);
 
   function ubicar() {
     if (!navigator.geolocation) { setEstado("error"); return; }
@@ -101,6 +103,14 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
       (p) => { const q: [number, number] = [p.coords.latitude, p.coords.longitude]; setPos(q); setZona(""); setEstado("");
         const cerca = sitios.filter((s) => s.punto).sort((a, b) => km(q, a.punto!) - km(q, b.punto!))[0]; if (cerca) setSel(cerca.id); },
       () => setEstado("error"), { timeout: 10000 });
+  }
+
+  // vuelve a la vista general desde una macrozona o desde «mi ubicación»
+  function verTodo() { setPos(null); setZona(""); setEstado(""); }
+  // en el celular el detalle queda bajo el mapa y la lista: al elegir un sitio, se muestra
+  function elegir(id: number) {
+    setSel(id);
+    if (window.matchMedia("(max-width: 860px)").matches) requestAnimationFrame(() => detalleRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
 
   const lista = useMemo(() => {
@@ -121,7 +131,7 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
             {MACROZONAS.map((z) => <option key={z} value={z}>{z}</option>)}
           </select>
         </label>
-        {pos && <button type="button" className="btn btn--secundario" onClick={() => setPos(null)}>Quitar ubicación</button>}
+        {(pos || zona) && <button type="button" className="btn btn--secundario" onClick={verTodo}>Volver a todo Chile</button>}
       </div>
       <p className="pie" role="status">
         {estado === "buscando" && "Buscando tu ubicación…"}
@@ -131,7 +141,7 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
       </p>
       <div className="kba-grid">
         <div className="kba-grid__mapa">
-          <MapaSitios sitios={sitios} foco={foco} sel={elegido?.id ?? null} pos={pos} elegir={setSel} />
+          <MapaSitios sitios={sitios} foco={foco} sel={elegido?.id ?? null} pos={pos} elegir={elegir} />
           <ul className="aa-leyenda" aria-hidden="true" style={{ marginTop: 8 }}>
             {MACROZONAS.map((z) => <li key={z}><i style={{ background: COLOR_MACROZONA[z], borderRadius: "50%" }} />{z}</li>)}
           </ul>
@@ -140,7 +150,7 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
           <ol className="kba-lista">
             {lista.map(({ s, d }) => (
               <li key={s.id}>
-                <button type="button" aria-pressed={elegido?.id === s.id} onClick={() => setSel(s.id)}>
+                <button type="button" aria-pressed={elegido?.id === s.id} onClick={() => elegir(s.id)}>
                   <i style={{ background: COLOR_MACROZONA[s.macrozona ?? ""] }} aria-hidden="true" />
                   <span><b>{s.nombre}</b><br /><span className="apoyo pequeno">{[s.region, d !== null ? `${entero(Math.round(d))} km` : null, !s.punto ? "sin punto en el mapa" : null].filter(Boolean).join(" · ")}</span></span>
                   <span className="mono pequeno">{s.especies} spp.</span>
@@ -149,7 +159,7 @@ export default function Lugares({ sitios }: { sitios: KbaSitio[] }) {
             ))}
           </ol>
         </div>
-        <div className="kba-grid__detalle">{elegido && <DetalleSitio s={elegido} d={dElegido} />}</div>
+        <div className="kba-grid__detalle" ref={detalleRef}>{elegido && <DetalleSitio s={elegido} d={dElegido} />}</div>
       </div>
     </div>
   );

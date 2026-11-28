@@ -106,7 +106,7 @@ export function RedNavegable() {
         <div className="chips" role="radiogroup" aria-label="Cuántas especies">
           {[40, 80, 150].map((c) => <button key={c} type="button" role="radio" aria-checked={cuantas === c} onClick={() => { setCuantas(c); setFija(null); }}>{c} especies</button>)}
         </div>
-        <label className="red-nav__lift">Vínculo mínimo <b>×{es(minLift, 1)}</b>
+        <label className="red-nav__lift">Lift mínimo <b>×{es(minLift, 1)}</b>
           <input type="range" min={2} max={6} step={0.5} value={minLift} onChange={(e) => { setMinLift(Number(e.target.value)); setFija(null); }} />
         </label>
         <div className="chips" role="radiogroup" aria-label="Color">
@@ -159,19 +159,33 @@ export function RedNavegable() {
               <p className="etiqueta etiqueta--sol" style={{ margin: 0 }}>{fija ? "Especie fijada" : "Se ve junto a"}</p>
               <h3 className="titulo-3" style={{ margin: "4px 0 2px" }}><a href={`/especies/${activo.slug}/`}>{activo.nombre}</a></h3>
               <p className="apoyo pequeno" style={{ margin: "0 0 12px" }}>Aparece en {pctTxt(activo.pct)} de las salidas completas · {vecinos.length} vínculos</p>
+              {vecinos[0] ? (
+                <p className="pie red-nav__lift-ej" style={{ margin: "0 0 12px" }}>
+                  <b>Cómo leer el ×:</b> {activo.nombre} y {vecinos[0].n.nombre} se registran juntas {es(vecinos[0].lift, 1)} veces lo esperado si sus registros fueran
+                  independientes (lift ×{es(vecinos[0].lift, 1)}). Es una medida del par, no de la especie sola: no dice que una cause la presencia de la otra
+                  ni que tengas {es(vecinos[0].lift, 1)} veces más probabilidad de verla en cualquier salida.
+                </p>
+              ) : <p className="pie">Sin vínculos sobre el lift mínimo elegido.</p>}
+              {vecinos.length > 0 && <p className="dato-eti" style={{ margin: "0 0 4px" }}>Especie con la que se registra · lift del par</p>}
               <ol className="lista-rank">
                 {vecinos.slice(0, 12).map((v) => (
                   <li key={v.n.slug}><button type="button" className="red-nav__vecino" onClick={() => centrar(v.n)}>{v.n.nombre}</button>
                     <span className="barra-mini"><span style={{ width: `${(v.lift / maxLift) * 100}%`, background: "var(--foco)" }} /></span><span className="num">×{es(v.lift, 1)}</span></li>
                 ))}
               </ol>
-              <p className="pie">×3 = se anotan juntas el triple de lo que pasaría por azar.</p>
+
             </>
           ) : (
             <div className="red-nav__explica">
               <p className="dato-eti" style={{ marginTop: 0 }}>¿Cómo se arma esta red?</p>
               <p>Revisamos <b>407 mil salidas</b> en que la persona anotó todas las aves que vio, y contamos qué especies aparecen <b>juntas en la misma salida</b>.</p>
-              <p>Si dos especies coinciden mucho más de lo que pasaría por casualidad, las unimos con una línea: más gruesa cuanto más fuerte la preferencia. Por ejemplo, el Pilpilén y el Zarapito se anotan juntos unas 7 veces más de lo esperado, porque comparten la playa.</p>
+              <p>Si dos especies coinciden mucho más de lo que pasaría por casualidad, las unimos con una línea. Esa razón se llama <b>lift</b>: por ejemplo, el Pilpilén y el Zarapito se registran juntos unas 7 veces lo esperado si sus registros fueran independientes, porque comparten la playa. El lift describe al par, no causa ni probabilidad de ver una especie.</p>
+              <ul className="red-nav__claves">
+                <li><b>Tamaño:</b> % de salidas en que se registra la especie.</li>
+                <li><b>Línea:</b> más gruesa, mayor lift del par.</li>
+                <li><b>Color:</b> barrio que forma la red sola, o hábitat principal.</li>
+                <li><b>Posición:</b> cada barrio ocupa una zona; la distancia exacta no se mide.</li>
+              </ul>
               <p>Sin decirle nada sobre hábitats, la red se ordena sola en <b>barrios</b>: aves de humedal, de costa, de bosque, de matorral…</p>
               <p className="apoyo pequeno">Pasa sobre una especie o búscala para ver con quién se junta.</p>
             </div>

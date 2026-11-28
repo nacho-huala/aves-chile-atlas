@@ -24,6 +24,7 @@ export function Cabecera() {
     return () => window.removeEventListener('scroll', on);
   }, []);
   return (
+    <>
     <header className="cabecera" data-scrolled={scrolled}>
       <div className="wrap cabecera__fila">
         <Link href="/" className="cabecera__logo" aria-label="Atlas de aves en Chile, inicio">
@@ -39,7 +40,9 @@ export function Cabecera() {
           <TemaToggle />
         </nav>
       </div>
-      {/* En celulares la navegación va abajo, al alcance del pulgar */}
+    </header>
+      {/* En celulares la navegación va abajo, al alcance del pulgar. Va fuera de <header>: su backdrop-filter
+          haría que algunos navegadores (Safari) ubiquen la barra fija respecto de la cabecera y no de la pantalla. */}
       <nav className="nav-movil" aria-label="Secciones">
         {SECCIONES.map((x) => (
           <Link key={x.href} href={x.href} aria-current={activa(x.href) ? 'page' : undefined}>
@@ -47,6 +50,6 @@ export function Cabecera() {
           </Link>
         ))}
       </nav>
-    </header>
+    </>
   );
 }

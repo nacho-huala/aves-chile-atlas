@@ -38,10 +38,10 @@ export default async function PaginaEspecies() {
         <BuscadorEspecies especies={especies} />
       </section>
 
-      <Lamina id="rareza" num={5} tipo="Enjambre de rareza" titulo="La mayoría de las especies se ve muy pocas veces" fuente={`${FUENTE} + iNaturalist + AVONET · 05b`}
+      <Lamina id="rareza" num={5} tipo="Enjambre de rareza" titulo="La mayoría de las especies se registra muy pocas veces" fuente={`${FUENTE} + iNaturalist + AVONET · 05b`}
         leer="Cada punto es una especie según el % de salidas en que aparece (escala log); el tamaño es el número de observadores. Clic en la leyenda para filtrar por estatus."
         hallazgo={<><strong>{raras} especies</strong> se vieron en menos de 10 salidas. Zorzal patagónico, Tiuque y Chincol aparecen en 1 de cada 3.</>}
-        limitacion="El estatus (nativa, migratoria, endémica, introducida) combina fuentes globales y estacionalidad en Chile: es un aproximado.">
+        limitacion="Poco registrada no es lo mismo que rara en la naturaleza: influyen dónde se observa y cuán fácil es detectarla. El origen y la presencia (nativa, migratoria, endémica, introducida) combinan fuentes globales y estacionalidad en Chile: son un aproximado.">
         <Enjambre especies={lam} salidas={r.salidas} />
       </Lamina>
 

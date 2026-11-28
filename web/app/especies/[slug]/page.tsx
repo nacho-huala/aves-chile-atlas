@@ -29,7 +29,7 @@ function EscalaUicn({ cat }: { cat: string }) {
   const i = UICN_ESCALA.indexOf(cat as (typeof UICN_ESCALA)[number]);
   return (
     <div className="uicn" aria-label={`Categoría UICN: ${UICN[cat] ?? cat}`}>
-      <div className="uicn__cab"><span className="uicn__eti">Riesgo UICN</span><b className={`uicn__nombre uicn--${cat.toLowerCase()}`}>{UICN[cat] ?? cat}</b></div>
+      <div className="uicn__cab"><span className="uicn__eti">Estado de conservación (UICN)</span><b className={`uicn__nombre uicn--${cat.toLowerCase()}`}>{UICN[cat] ?? cat}</b></div>
       {i >= 0 ? (
         <ol className="uicn__escala" aria-hidden="true">
           {UICN_ESCALA.map((c, k) => <li key={c} className={`uicn--${c.toLowerCase()}`} data-on={k === i}>{c}</li>)}
@@ -75,7 +75,7 @@ export default async function FichaEspecie({ params }: Props) {
           <div className="insignias">
             {f.estatus && <span className={`insignia insignia--${ESTATUS_CLASE[f.estatus] ?? "musgo"}`}><i aria-hidden="true" />{f.estatus}</span>}
             {f.endemica && f.estatus !== "endémica" && <span className="insignia insignia--vino"><i aria-hidden="true" />endémica</span>}
-            {f.nidificacion && <span className="insignia insignia--sol"><Icono nombre="nido" tam={14} />nidifica en Chile</span>}
+            {f.nidificacion && <span className="insignia insignia--sol" title="Con registro de nidificación en el atlas 2011–2016"><Icono nombre="nido" tam={14} />nidifica en Chile</span>}
           </div>
           {f.uicn && <EscalaUicn cat={f.uicn} />}
 
@@ -101,40 +101,41 @@ export default async function FichaEspecie({ params }: Props) {
         </div>
       </div>
 
-      {f.fenologia && (
+      {(f.fenologia || f.nidificacion?.resumen) && (
         <section className="lamina">
-          <TituloIcono icono="calendario">¿Cuándo buscarla?</TituloIcono>
-          <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} nidificacion={f.nidificacion?.meses} />
-          <p className="pie">Barra = % de salidas completas de cada mes en que se registró.{f.nidificacion?.meses.length ? " Franja dorada = meses de nidificación según el atlas." : ""}</p>
-          <Fuente>eBird Chile 2019–2025{f.nidificacion?.meses.length ? " · Medrano et al. (2018)" : ""}</Fuente>
-        </section>
-      )}
-
-      {f.nidificacion?.resumen && (
-        <section className="lamina">
-          <TituloIcono icono="nido">Nidificación en Chile</TituloIcono>
-          <div className={f.nidificacion.altitud ? "nido-grid" : undefined}>
-            <div>
-              <p className="cuerpo-l" style={{ marginTop: 0 }}>{f.nidificacion.resumen}</p>
-              {f.nidificacion.meses.length > 0 && (
-                <>
-                  <p className="dato-eti">Meses de nidificación</p>
+          <TituloIcono icono="calendario">{f.nidificacion?.meses.length ? "¿Cuándo buscarla y cuándo nidifica?" : "¿Cuándo buscarla?"}</TituloIcono>
+          {f.fenologia && <Fenologia valores={f.fenologia} mejorMes={f.mejorMes} nidificacion={f.nidificacion?.meses} />}
+          {/* dos lecturas distintas, cada una con su fuente */}
+          <ul className="cal-claves">
+            {f.fenologia && <li><i className="cal-claves__barra" aria-hidden="true" /><span><b>Barras: cuándo se registra más.</b> % de salidas completas de cada mes con la especie (eBird Chile, 2019–2025). El mes más alto va en otro color.</span></li>}
+            {f.nidificacion?.meses.length
+              ? <li><i className="cal-claves__nido" aria-hidden="true" /><span><b>Franja dorada: cuándo nidifica.</b> Meses de nidificación según Medrano et al. (2018), atlas de 2011–2016. Puede incluir el cuidado de polluelos.</span></li>
+              : f.nidificacion
+                ? <li><i className="cal-claves__sin" aria-hidden="true" /><span><b>Nidifica en Chile, sin meses precisos.</b> El atlas 2011–2016 registra su nidificación, pero su ficha no permite fijar los meses con seguridad.</span></li>
+                : <li><i className="cal-claves__sin" aria-hidden="true" /><span><b>Sin registro de nidificación en el atlas.</b> El atlas 2011–2016 no encontró evidencia de que nidifique en Chile; eso no prueba que no lo haga.</span></li>}
+          </ul>
+          {f.nidificacion?.resumen && (
+            <div className={f.nidificacion.altitud ? "nido-grid" : undefined} style={{ marginTop: "var(--esp-5)" }}>
+              <div>
+                <p className="dato-eti" style={{ marginTop: 0 }}><Icono nombre="nido" tam={14} /> Sobre su nidificación</p>
+                <p className="cuerpo-l" style={{ marginTop: 0 }}>{f.nidificacion.resumen}</p>
+                {!f.fenologia && f.nidificacion.meses.length > 0 && (
                   <ol className="meses-nido" aria-label="Meses de nidificación">
                     {MESES_LARGOS.map((m, i) => <li key={m} data-on={f.nidificacion!.meses.includes(i + 1)} title={m}>{m.slice(0, 3)}</li>)}
                   </ol>
-                </>
+                )}
+                {f.nidificacion.revisar && <p className="aviso"><Icono nombre="alerta" tam={16} />Información reproductiva incompleta o por confirmar en el atlas.</p>}
+              </div>
+              {f.nidificacion.altitud && (
+                <figure className="nido-perfil">
+                  <p className="dato-eti">Altitud de nidificación</p>
+                  <PerfilAltitud min={f.nidificacion.altitud[0]} max={f.nidificacion.altitud[1]} />
+                  <figcaption className="pie">Franja dorada: entre {entero(f.nidificacion.altitud[0])} y {entero(f.nidificacion.altitud[1])} m s. n. m., sobre un perfil esquemático de la costa a los Andes.</figcaption>
+                </figure>
               )}
-              {f.nidificacion.revisar && <p className="aviso"><Icono nombre="alerta" tam={16} />Información reproductiva incompleta o por confirmar en el atlas.</p>}
             </div>
-            {f.nidificacion.altitud && (
-              <figure className="nido-perfil">
-                <p className="dato-eti">Altitud de nidificación</p>
-                <PerfilAltitud min={f.nidificacion.altitud[0]} max={f.nidificacion.altitud[1]} />
-                <figcaption className="pie">Franja dorada: entre {entero(f.nidificacion.altitud[0])} y {entero(f.nidificacion.altitud[1])} m s. n. m., sobre un perfil esquemático de la costa a los Andes.</figcaption>
-              </figure>
-            )}
-          </div>
-          <Fuente>Resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, ROC. Datos de 2011–2016, distintos del período de eBird (2019–2025).</Fuente>
+          )}
+          <Fuente>{f.fenologia ? "Registros: eBird Chile 2019–2025. " : ""}{f.nidificacion?.meses.length || f.nidificacion?.resumen ? <>Nidificación: resumen propio a partir de Medrano et al. (2018), <em>Atlas de las aves nidificantes de Chile</em>, ROC (datos 2011–2016, período distinto al de eBird).</> : null}</Fuente>
         </section>
       )}
 

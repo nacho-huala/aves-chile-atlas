@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { GlifoDatos, GlifoEspecie, GlifoLugar } from "./Glifos";
+import { GlifoDatos, GlifoEspecie, GlifoLugar, GlifoSitios } from "./Glifos";
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
@@ -21,9 +21,10 @@ export function Hero({ especies, salidas, desde, hasta, destacada }: HeroProps) 
   const es = (n: number) => n.toLocaleString("es-CL");
 
   const OPCIONES = [
-    { tecla: "1", num: "01 · Especie", titulo: "Una especie", texto: `Busca entre ${es(especies)} especies por nombre o estatus.`, href: "/especies/", Glifo: GlifoEspecie },
+    { tecla: "1", num: "01 · Especie", titulo: "Una especie", texto: `Busca entre ${es(especies)} especies por nombre, origen o estado de conservación.`, href: "/especies/", Glifo: GlifoEspecie },
     { tecla: "2", num: "02 · Salida", titulo: "Planificar una salida", texto: "Desde donde estás o adonde vas: sitios cercanos, qué aves esperar y la ruta para ver tu lista.", href: "/planificar/", Glifo: GlifoLugar },
-    { tecla: "3", num: "03 · Datos", titulo: "Los datos", texto: "La marea de salidas, dónde hay más especies y quién aparece con quién.", href: "/estadisticas/", Glifo: GlifoDatos },
+    { tecla: "3", num: "03 · Lugares", titulo: "Sitios clave", texto: "El mapa de las Áreas Clave para la Biodiversidad: qué aves tiene cada sitio y en qué mes ir.", href: "/lugares/", Glifo: GlifoSitios },
+    { tecla: "4", num: "04 · Datos", titulo: "Los datos", texto: "La marea de salidas, dónde hay más especies y quién aparece con quién.", href: "/estadisticas/", Glifo: GlifoDatos },
   ];
 
   // Atajo: 1, 2 o 3 abre la vía correspondiente.

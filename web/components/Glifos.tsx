@@ -14,6 +14,11 @@ export function GlifoLugar() {
   const tira: [number, number][] = [[3,0],[3,1],[3,2],[2,3],[3,3],[2,4],[2,5],[1,6]];
   return <svg viewBox="0 0 42 42" aria-hidden="true">{cel(tira, 'var(--musgo-4)')}<rect x="13" y="25" width="5" height="5" rx="1" fill="var(--foco)" /><circle cx="15.5" cy="27.5" r="8" fill="none" stroke="var(--foco)" strokeWidth="1.5" /></svg>;
 }
+export function GlifoSitios() {
+  // franja de Chile con varios sitios marcados (mapa de sitios clave)
+  const tira: [number, number][] = [[3,0],[3,1],[3,2],[2,3],[3,3],[2,4],[2,5],[1,6]];
+  return <svg viewBox="0 0 42 42" aria-hidden="true">{cel(tira, 'var(--musgo-3)')}{[[21.5,9.5],[15.5,27.5],[9.5,39]].map(([x, y]) => <circle key={x} cx={x} cy={y} r="3.2" fill="var(--foco)" stroke="var(--superficie)" strokeWidth="1" />)}</svg>;
+}
 export function GlifoDatos() {
   const alturas = [2, 3, 3, 4, 5, 6, 6];
   const out: React.ReactNode[] = [];

@@ -51,3 +51,43 @@ export function Marea({ filas, anual }: { filas: Fila[]; anual: { anio: number; 
     </div>
   );
 }
+
+/** Descompone el crecimiento: salidas = observadores × salidas por observador, en índice (primer año = 100). */
+export function CrecimientoEbird({ anual }: { anual: { anio: number; salidas: number; observadores: number }[] }) {
+  const W = 1100, H = 250, m = { t: 20, r: 230, b: 34, l: 46 };
+  const b = anual[0];
+  const series = [
+    { id: "salidas", txt: "Salidas", color: "var(--texto)", v: anual.map((a) => (100 * a.salidas) / b.salidas), ancho: 2.5 },
+    { id: "obs", txt: "Observadores", color: "var(--foco)", v: anual.map((a) => (100 * a.observadores) / b.observadores), ancho: 2.5 },
+    { id: "spo", txt: "Salidas por observador", color: "var(--musgo-4)", v: anual.map((a) => (100 * a.salidas / a.observadores) / (b.salidas / b.observadores)), ancho: 2, guion: "6 5" },
+  ];
+  const max = Math.max(...series.flatMap((s) => s.v)) * 1.08;
+  const x = (i: number) => m.l + (i / (anual.length - 1)) * (W - m.l - m.r);
+  const y = (v: number) => m.t + (1 - v / max) * (H - m.t - m.b);
+  const fin = anual.length - 1;
+  // rótulos al final de cada línea, separados al menos 18 unidades para que no se encimen
+  const ys = series.map((s, k) => ({ k, y: y(s.v[fin]) })).sort((a, b) => a.y - b.y);
+  ys.forEach((o, i) => { if (i > 0 && o.y - ys[i - 1].y < 18) o.y = ys[i - 1].y + 18; });
+  const yRot = Object.fromEntries(ys.map((o) => [o.k, o.y]));
+  return (
+    <figure className="crecimiento" style={{ margin: "var(--esp-5) 0 0" }}>
+      <figcaption className="dato-eti" style={{ marginBottom: 6 }}>¿De dónde viene el crecimiento? Índice, {b.anio} = 100</figcaption>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Salidas, observadores y salidas por observador en índice, ${b.anio} = 100`}>
+        {[0, 100, 200].filter((v) => v < max).map((v) => (
+          <g key={v}><line x1={m.l} x2={W - m.r} y1={y(v)} y2={y(v)} stroke="var(--linea)" /><text x={m.l - 8} y={y(v) + 4} textAnchor="end" fontSize={12}>{v}</text></g>
+        ))}
+        {anual.map((a, i) => <text key={a.anio} x={x(i)} y={H - 10} textAnchor="middle" fontSize={12}>{a.anio}</text>)}
+        {series.map((s, k) => (
+          <g key={s.id}>
+            <polyline points={s.v.map((v, i) => `${x(i)},${y(v)}`).join(" ")} fill="none" stroke={s.color} strokeWidth={s.ancho} strokeDasharray={s.guion} />
+            <circle cx={x(fin)} cy={y(s.v[fin])} r={4} fill={s.color} />
+            <text x={x(fin) + 10} y={yRot[k] + 4} fontSize={13} className="t-fuerte">{s.txt} · {Math.round(s.v[fin])}</text>
+          </g>
+        ))}
+      </svg>
+      <p className="pie" style={{ marginTop: 4 }}>
+        Si las salidas crecen y las salidas por observador se mantienen cerca de 100, el aumento viene de que más personas registran en eBird.
+      </p>
+    </figure>
+  );
+}
